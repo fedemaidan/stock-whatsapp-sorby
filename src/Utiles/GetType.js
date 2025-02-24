@@ -1,5 +1,5 @@
 /**
- * Función para identificar el tipo de mensaje recibido
+ * FunciÃ³n para identificar el tipo de mensaje recibido
  * @param {object} message - Objeto del mensaje
  * @returns {string} - Tipo de mensaje
  */
@@ -15,9 +15,9 @@ const GetType = (message) => {
     if (message.contactMessage) return 'contact';
     if (message.locationMessage) return 'location';
     if (message.liveLocationMessage) return 'live_location';
-    // Si no coincide con ningún tipo conocido, se retorna 'unknown'
+    // Si no coincide con ningÃºn tipo conocido, se retorna 'unknown'
     return 'unknown';
 };
 
-// Exporta la función para poder identificar el tipo en index.js
+// Exporta la funciÃ³n para poder identificar el tipo en index.js
 module.exports = GetType;
