@@ -1,4 +1,4 @@
-const openai = require('../Chatgpt/openai');
+﻿const openai = require('../Chatgpt/openai');
 
 function limpiarJson(str) {
     return str.replace(/```json\n?|```\n?/g, '').trim();

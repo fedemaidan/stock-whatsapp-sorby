@@ -1,4 +1,4 @@
-class FlowManager {
+﻿class FlowManager {
     constructor() {
         this.userFlows = {}; // Almacena los flujos de cada usuario
     }

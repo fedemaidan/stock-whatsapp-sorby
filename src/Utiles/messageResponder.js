@@ -1,4 +1,4 @@
-// src/Utiles/messageResponder.js
+Ôªø// src/Utiles/messageResponder.js
 const FlowMapper = require('../FlowControl/FlowMapper');
 const FlowManager = require('../FlowControl/FlowManager');
 
@@ -60,7 +60,7 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         default: {
             await sock.sendMessage(sender, {
-                text: `No entiendo este tipo de mensaje (${messageType}). Por favor, envÌame texto o un comando v·lido.`,
+                text: `No entiendo este tipo de mensaje (${messageType}). Por favor, env√≠ame texto o un comando v√°lido.`,
             });
         }
     }
