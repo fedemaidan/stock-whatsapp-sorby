@@ -20,5 +20,4 @@
         delete this.userFlows[userId];
     }
 }
-
 module.exports = new FlowManager();

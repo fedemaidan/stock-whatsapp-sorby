@@ -1,7 +1,6 @@
 ﻿const FlowManager = require('./FlowManager');
 const EgresoMaterialesFlow = require('../FLOWS/EgresoDeMateriales/EgresoDeMaterialesFlow');
 const defaultFlow = require('../FLOWS/INITFLOW/INIT');
-
 class FlowMapper {
     async handleMessage(userId, message, sock, messageType) {
         const flow = FlowManager.getFlow(userId);
@@ -11,6 +10,10 @@ class FlowMapper {
             switch (flow.flowName)
             {
                 case 'EGRESOMATERIALES':
+                    await EgresoMaterialesFlow.Handle(userId, message, flow.currentStep, sock, messageType);
+                    break;
+
+                case 'INGRESOMATERIALES':
                     await EgresoMaterialesFlow.Handle(userId, message, flow.currentStep, sock, messageType);
                     break;
 

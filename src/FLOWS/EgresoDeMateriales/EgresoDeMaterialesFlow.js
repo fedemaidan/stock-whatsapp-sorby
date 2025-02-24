@@ -8,10 +8,8 @@ const FlowEgresoMateriales = {
         await sock.sendMessage(userId, { text: '📝 Registrando su pedido \n Listando datos detectados:' });
 
         if (userId != null && sock != null) {
-            console.log("Entro al step 1 en INIT")
-
             if (typeof EgresoMaterialSteps["CrearEgreso"] === 'function') {
-                await EgresoMaterialSteps["CrearEgreso"](userId,data, sock);
+                await EgresoMaterialSteps["CrearEgreso"](userId, data, sock);
             } else {
                 console.log("El step solicitado no existe");
             }
@@ -25,12 +23,9 @@ const FlowEgresoMateriales = {
 
         if (userId != null && sock != null) {
 
-
-            let data = await analizarIntencion(message, userId)
-
             // Y que EgresoMaterialSteps es un objeto que contiene tus funciones
             if (typeof EgresoMaterialSteps[currentStep] === 'function') {
-                await EgresoMaterialSteps[currentStep](userId,data, sock);
+                await EgresoMaterialSteps[currentStep](userId, message, sock);
             } else {
                 console.log("El step solicitado no existe");
             }

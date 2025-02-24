@@ -1,6 +1,10 @@
 ﻿const FlowManager = require('../../../FlowControl/FlowManager')
-module.exports = async function ModificarPedido(userId, data, sock)
+const ChatModificarPedido = require('../../../Utiles/Chatgpt/Operaciones/ChatModificarPedido')
+module.exports = async function ModificarPedido(userId, message, sock)
 {
+
+    const data = await ChatModificarPedido(message, userId);
+
     const { obra_id, obra_name, items } = data.data;
 
     // Creamos un string con la información de la obra

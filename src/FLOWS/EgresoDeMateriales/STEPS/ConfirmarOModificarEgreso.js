@@ -1,14 +1,12 @@
-﻿const FlowManager = require('../../../FlowControl/FlowManager')
-module.exports = async function ConfirmarOModificarEgreso(userId, data, sock) {
+﻿const opcionElegida  = require("../../../Utiles/Chatgpt/Operaciones/opcionElegida");
+const FlowManager = require('../../../FlowControl/FlowManager')
+module.exports = async function ConfirmarOModificarEgreso(userId,message, sock) {
 
-
-    console.log(data)
-
+    const data = await opcionElegida(message);
 
     if (data.data.Eleccion == "1") {
         await sock.sendMessage(userId, { text: "🔄 *Procesando...*" });
         await sock.sendMessage(userId, { text: "✅ *Pedido finalizado con éxito.* ¡Gracias por su solicitud! 🙌" });
-
         FlowManager.resetFlow(userId)
     }
     else {
