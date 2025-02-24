@@ -37,7 +37,13 @@ const connectToWhatsApp = async () => {
 
     // Maneja eventos de actualización de la conexión
     sock.ev.on('connection.update', (update) => {
-        const { connection, lastDisconnect } = update;
+        const { connection, lastDisconnect, qr } = update;
+
+        if (qr) {
+            latestQR = qr;
+            console.log('QR actualizado. Escanea en: http://localhost:3000/qr');
+        }
+        
         if (connection === 'close') {
             // Si la desconexión no es por error 401 (autenticación), se reconecta
             const shouldReconnect = lastDisconnect.error?.output?.statusCode !== 401;
