@@ -1,4 +1,4 @@
-﻿const { getByChatgpt35TurboByText } = require("./base");
+﻿const { getByChatgpt35TurboByText } = require("./Base");
 const stock = require("../MaterialsService");
 const Obras = require("../ObrasService");
 const FlowManager = require('../../FlowControl/FlowManager')
