@@ -15,7 +15,6 @@ const startBot = async () => {
 
         // Identificar el tipo de mensaje
         const messageType = getMessageType(msg.message);
-        console.log(`Tipo de mensaje recibido: ${messageType}`);
 
         // Delegar manejo al messageResponder
         await messageResponder(messageType, msg, sock, sender);

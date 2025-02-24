@@ -12,7 +12,6 @@ class FlowManager {
 
     // Obtener el flujo actual de un usuario
     getFlow(userId) {
-        console.log("---------------------TRATO DE GETTEAR EL FLOW---------------------------")
         return this.userFlows[userId] || null;
     }
 

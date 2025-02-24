@@ -1,18 +1,23 @@
-﻿
+﻿const FlowManager = require('../../FlowControl/FlowManager')
 const { EgresoMaterialSteps } = require('../EgresoDeMateriales/EgresoMaterialSteps');
-
+const { analizarIntencion } = require('../../Utiles/Chatgpt/AnalizarIntencion');
 const FlowEgresoMateriales = {
 
-    async start(userId, Data, sock)
+    async start(userId, data, sock)
     {
         await sock.sendMessage(userId, { text: '📝 Registrando su pedido \n Listando datos detectados:' });
 
-        if (userId != null  && sock != null) {
-            await EgresoMaterialSteps.CrearEgreso(userId, Data, sock)
+        if (userId != null && sock != null) {
+            console.log("Entro al step 1 en INIT")
+
+            if (typeof EgresoMaterialSteps["CrearEgreso"] === 'function') {
+                await EgresoMaterialSteps["CrearEgreso"](userId,data, sock);
+            } else {
+                console.log("El step solicitado no existe");
+            }
         } else
         {
-            await sock.sendMessage(userId, { text: "Ocurrio un error con los datos" });
-            console.error("----------FALLO EN EgresoMaterialSteps Start ya que Algun parametro fue null al ingresar---------------")
+            console.log("Ocurrio un error con los datos")
         }
     },
 
@@ -20,44 +25,18 @@ const FlowEgresoMateriales = {
 
         if (userId != null && sock != null) {
 
-            /* MODIFICAR PEDIDO*/
-            const result =
-            {
-                accion: "CrearEgreso",
-                data:
-                {
-                    obra_id: 1,
-                    obra_name: "Las toscas",
-                    items: [{ producto_id: 1, producto_name: "Cable", cantidad: 20 }, { producto_id: 2, producto_name: "Fierro", cantidad: 50 }]
-                }
-            }
-            let data = {}
 
-            //ME PIDE O EL MENSAJE O EL DATO ESTO DEBERIA INTERPRETARLO CHAT ?
-
-            console.log(currentStep)
-            switch (currentStep) {
-                case "ConfirmarOModificarEgreso":
-                    data = message
-                    break
-
-                case "ModificarPedido":
-                    data = result.data
-                    break
-            }
-            
-            const stepName = currentStep; // "CrearEgreso" por ejemplo
+            let data = await analizarIntencion(message, userId)
 
             // Y que EgresoMaterialSteps es un objeto que contiene tus funciones
-            if (typeof EgresoMaterialSteps[stepName] === 'function') {
-                await EgresoMaterialSteps[stepName](userId, { data: data }, sock);
+            if (typeof EgresoMaterialSteps[currentStep] === 'function') {
+                await EgresoMaterialSteps[currentStep](userId,data, sock);
             } else {
-                await sock.sendMessage(userId, { text: "El step solicitado no existe" });
+                console.log("El step solicitado no existe");
             }
 
         } else {
-            await sock.sendMessage(userId, { text: "Ocurrio un error con los datos" });
-            console.error("----------FALLO EN EgresoMaterialSteps Handler ya que Algun parametro fue null al ingresar---------------")
+            console.log("Ocurrio un error con los datos")
         }
     }
 
