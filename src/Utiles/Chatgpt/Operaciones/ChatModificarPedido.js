@@ -1,7 +1,7 @@
 ﻿const { getByChatgpt35TurboByText } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
-const stock = require("../../MaterialsService");
-const Obras = require("../../ObrasService");
+const stock = require("../../BDServices/MaterialsService");
+const Obras = require("../../BDServices/ObrasService");
 
 const ChatModificarPedido = async (message, userId) => {
 
@@ -14,6 +14,8 @@ Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedi
 2. **Sumar cantidad:** Si el producto ya existe en el pedido y el usuario indica "agregar" o "sumar", incrementar la cantidad existente.  
 3. **Quitar o eliminar:** Si el usuario indica "quitar" o "eliminar" un producto, reducir la cantidad o eliminarlo completamente si la cantidad a quitar es igual o mayor a la existente.  
 4. **Modificar cantidad:** Si el usuario pide cambiar la cantidad de un producto, actualizar la cantidad a la solicitada.  
+5. **Modificar la obra:** Si el usuario pide cambiar la obra por otra debes buscar en el listado de obras y interpretar a cual se refiere si no lo pide no lo cambies.
+6. **Modificar nro compra:** Si el usuario pide cambiar el nro de compra modificalo por el solicitado si no lo pide no lo cambies.
 
 ### **Reglas de Coincidencia:**
 - Solo se agregará un producto si su nombre en el stock tiene **una coincidencia alta** con la solicitud del usuario.  

@@ -1,6 +1,5 @@
 ﻿const FlowManager = require('../../FlowControl/FlowManager')
 const { EgresoMaterialSteps } = require('../EgresoDeMateriales/EgresoMaterialSteps');
-const { analizarIntencion } = require('../../Utiles/Chatgpt/AnalizarIntencion');
 const FlowEgresoMateriales = {
 
     async start(userId, data, sock)

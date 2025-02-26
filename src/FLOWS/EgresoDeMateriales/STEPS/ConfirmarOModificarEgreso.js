@@ -1,12 +1,20 @@
 ﻿const opcionElegida  = require("../../../Utiles/Chatgpt/Operaciones/opcionElegida");
 const FlowManager = require('../../../FlowControl/FlowManager')
+const realizarMovimientoRetiro = require('../../../Utiles/Helpers/EgresoMateriales/realizarMovimientoRetiro');  // Verifica la ruta aquí
+
 module.exports = async function ConfirmarOModificarEgreso(userId,message, sock) {
 
     const data = await opcionElegida(message);
 
     if (data.data.Eleccion == "1") {
         await sock.sendMessage(userId, { text: "🔄 *Procesando...*" });
-        await sock.sendMessage(userId, { text: "✅ *Pedido finalizado con éxito.* ¡Gracias por su solicitud! 🙌" });
+
+        if (await realizarMovimientoRetiro(userId)) {
+            await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
+        } else {
+            await sock.sendMessage(userId, { text: "❌ Hubo un problema y no se continuó con el ingreso." });
+        }
+
         FlowManager.resetFlow(userId)
     }
     else {

@@ -1,24 +1,23 @@
 ﻿const { analizarIntencion } = require('../../Utiles/Chatgpt/AnalizarIntencion');
 const FlowManager = require('../../FlowControl/FlowManager');
 const EgresoDeMaterialesFlow = require('../EgresoDeMateriales/EgresoDeMaterialesFlow');
+const IngresoDeMaterialesFlow = require('../IngresoDeMateriales/IngresoDeMaterialesFlow');
 const defaultFlow = {
 
     async Init(userId, message, sock, messageType) {
         try {
             const result = await analizarIntencion(message, userId);
 
-  
             console.log(JSON.stringify(result, null, 2));
-
 
             switch (result.accion)
             {
-                case "CrearEgreso":
+                case "Crear Egreso":
                     EgresoDeMaterialesFlow.start(userId,{ data: result.data },sock)
                     break;
 
-                case "CrearIngreso":
-                    console.log("NO REGISTRADO")
+                case "Crear Ingreso":
+                    IngresoDeMaterialesFlow.start(userId, { data: result.data }, sock)
                     break;
 
                 case "NoRegistrado":

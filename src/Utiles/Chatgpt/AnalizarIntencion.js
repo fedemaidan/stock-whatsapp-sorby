@@ -1,11 +1,11 @@
 ﻿const { getByChatgpt35TurboByText } = require("./Base");
-const stock = require("../MaterialsService");
-const Obras = require("../ObrasService");
+const stock = require("../BDServices/MaterialsService");
+const Obras = require("../BDServices/ObrasService");
 const FlowManager = require('../../FlowControl/FlowManager')
 
 const opciones = [
     {
-        accion: "CrearEgreso",
+        accion: "Crear Egreso",
         data:
         {
             obra_id: "Id de la obra",
@@ -14,11 +14,13 @@ const opciones = [
         }
     }, 
     {
-        accion: "CrearIngreso",
+        accion: "Crear Ingreso",
         data:
         {
-            obra_id: "Id de la obra",
-            obra_name: "El nombre de la obra / identificacion hacia donde iran los materiales",
+            Obra_id: "El id de la obra a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
+            Obra_name:"Aqui va la obra a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            Nro_compra: "Aqui va el numero del remito o factura en caso de no haber ingresado nada el usuario referiendose a este mismo simplemente poner 00000",
+            Nro_Pedido: "este se deja en blanco o con este mismo texto",
             items: [{ producto_id: "id del producto al que me estoy refiriendo", producto_name: "nombre del producto al que me estoy refiriendo", cantidad: "Cantidad de este material indicado" },]
         }
     }
@@ -39,7 +41,9 @@ Advertencia: Revisa cuidadosamente el mensaje del usuario y asegúrate de coinci
 Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y ayudar a los usuarios a encontrar y seleccionar artículos en función de sus descripciones. Si el usuario proporciona características específicas (como "2,5mm", "celeste", "tamaño 3/4"), debo garantizar que la selección sea precisa.
 
 El usuario dice: "${message}"
-Tienes estas acciones posibles: ${opcionesTxt}.
+
+Tienes estas acciones posibles debes analizar la palabra clave del usuario tanto si quiere retirar algo del stock o ingresarlo: ${opcionesTxt}.
+
 Aquí está el stock disponible:
 ${JSON.stringify(stock, null, 2)}
 Aqui estan las obras disponibles:
