@@ -20,6 +20,11 @@ const defaultFlow = {
                     IngresoDeMaterialesFlow.start(userId, { data: result.data }, sock)
                     break;
 
+
+                case "Crear Confirmacion":
+                    ConfirmarPedidoFlow.start(userId, { data: result.data }, sock)
+                    break;
+
                 case "NoRegistrado":
                     console.log("NO REGISTRADO")
                     break;

@@ -23,6 +23,13 @@ const opciones = [
             Nro_Pedido: "este se deja en blanco o con este mismo texto",
             items: [{ producto_id: "id del producto al que me estoy refiriendo", producto_name: "nombre del producto al que me estoy refiriendo", cantidad: "Cantidad de este material indicado" },]
         }
+    },
+    {
+        accion: "Crear Confirmacion",
+        data:
+        {
+            Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
+        }
     }
 ];
 
