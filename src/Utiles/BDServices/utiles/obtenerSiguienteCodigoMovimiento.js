@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const filePath = path.join(__dirname, '../../BDServices/Movimientos.json');
@@ -9,7 +9,7 @@ const obtenerSiguienteCodigoMovimiento = async () => {
         const jsonData = JSON.parse(data);
 
         if (!jsonData.Movimiento || jsonData.Movimiento.length === 0) {
-            console.log('No hay movimientos en el JSON. Se usar� "Cod_movimiento" inicial en 1.');
+            console.log('No hay movimientos en el JSON. Se usará "Cod_movimiento" inicial en 1.');
             return 1;
         }
 

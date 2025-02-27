@@ -1,4 +1,4 @@
-const FlowManager = require('../../../FlowControl/FlowManager');
+﻿const FlowManager = require('../../../FlowControl/FlowManager');
 const obtenerObrasConStock = require('../EgresoMateriales/ObtenerObrasConStock');
 const calcularStock = require('../EgresoMateriales/CalcularStock');
 const agregarMovimientos = require('../../../Utiles/BDServices/MovimientosServices');
@@ -9,7 +9,7 @@ module.exports = async function realizarMovimientoRetiro(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
 
     if (!pedidoAntiguo) {
-        console.error('No se encontr� un flujo de datos para el usuario:', userId);
+        console.error('No se encontró un flujo de datos para el usuario:', userId);
         return false;
     }
 

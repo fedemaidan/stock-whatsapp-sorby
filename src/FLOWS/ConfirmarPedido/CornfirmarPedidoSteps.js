@@ -1,10 +1,12 @@
-const CrearConfirmacion = require('../ConfirmarPedido/STEPS/CrearConfirmacion');
-const dos = require('../ConfirmarPedido/STEPS/CrearConfirmacion');
-const tres = require('../ConfirmarPedido/STEPS/CrearConfirmacion');
+﻿const CrearConfirmacion = require('../ConfirmarPedido/STEPS/CrearConfirmacion');
+const RecepcionParcial = require('../ConfirmarPedido/STEPS/RecepcionParcial');
+const SeleccionarOpcion = require('../ConfirmarPedido/STEPS/SeleccionarOpcion');
 
 
 const CornfirmarPedidoSteps =
 {
     CrearConfirmacion,
+    RecepcionParcial,
+    SeleccionarOpcion
 }
 module.exports = { CornfirmarPedidoSteps };

@@ -2,6 +2,7 @@
 const FlowManager = require('../../FlowControl/FlowManager');
 const EgresoDeMaterialesFlow = require('../EgresoDeMateriales/EgresoDeMaterialesFlow');
 const IngresoDeMaterialesFlow = require('../IngresoDeMateriales/IngresoDeMaterialesFlow');
+const ConfirmarPedidoFlow = require('../ConfirmarPedido/ConfirmarPedidoFlow');
 const defaultFlow = {
 
     async Init(userId, message, sock, messageType) {
