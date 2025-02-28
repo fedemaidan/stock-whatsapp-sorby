@@ -6,7 +6,7 @@ const RechazarPedido = require('../../../Utiles/Helpers/ConfirmarPedido/Rechazar
 module.exports = async function SeleccionarOpcion(userId, message, sock) {
 
     const data = await RecepcionDeRetiro(message);
-    await sock.sendMessage(userId, { text: "🔄 *Procesando...*" });
+    await sock.sendMessage(userId, { text: "🔄 Procesando..." });
 
     if (data.data.Eleccion == "1") {
         //await AprobarPedido(operacion)
@@ -15,7 +15,7 @@ module.exports = async function SeleccionarOpcion(userId, message, sock) {
     }
     else if (data.data.Eleccion == "2")
     { 
-        await sock.sendMessage(userId, { text: "✏️ *Por favor, indique cual fue el problema del pedido.*\n \nEJ:Faltaron los tornillos, 3 bastidores no llegaron." });
+        await sock.sendMessage(userId, { text: "✏️ Por favor, indique cual fue el problema del pedido.\n \nEJ:Faltaron los tornillos, 3 bastidores no llegaron." });
         FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "RecepcionParcial", FlowManager.userFlows[userId]?.flowData)
     }
     else if (data.data.Eleccion == "3")
