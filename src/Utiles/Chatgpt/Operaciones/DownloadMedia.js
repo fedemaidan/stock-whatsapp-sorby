@@ -2,15 +2,29 @@
 const fs = require('fs');
 const path = require('path');
 
-const downloadMedia = async (message, messageType) => {
+module.exports = async function downloadMedia(message) {
     try {
-        // Verificar si el mensaje contiene contenido multimedia
-        const mediaContent = message?.[`${messageType}Message`];
+        console.log('Mensaje recibido:', message);
+
+        // Determinar el tipo de mensaje
+        const messageType = message?.message?.imageMessage
+            ? 'image'
+            : message?.message?.documentMessage
+                ? 'document'
+                : message?.message?.audioMessage
+                    ? 'audio'
+                    : null;
+
+        if (!messageType) {
+            throw new Error('No se encontró contenido multimedia en el mensaje.');
+        }
+
+        // Obtener el contenido multimedia
+        const mediaContent = message.message[`${messageType}Message`];
         if (!mediaContent) {
             throw new Error('No se encontró contenido multimedia en el mensaje.');
         }
 
-        // Construir la estructura mínima del mensaje
         const enrichedMessage = {
             key: message.key || {
                 remoteJid: 'unknown',
@@ -24,24 +38,41 @@ const downloadMedia = async (message, messageType) => {
 
         console.log('Mensaje enriquecido:', enrichedMessage);
 
-        // Descargar el contenido multimedia (ya es un Buffer)
+        // Descargar el contenido
         const buffer = await downloadMediaMessage(enrichedMessage, 'buffer');
-        console.log('Buffer obtenido:', buffer);
+        console.log('Buffer obtenido:', buffer ? 'Sí' : 'No');
 
-        // Guardar el archivo en el sistema
-        const fileName = `${messageType}_${Date.now()}.jpeg`;
+        // Obtener el nombre del archivo y su extensión
+        let fileName = mediaContent.fileName || `${messageType}_${Date.now()}`;
+        let ext = path.extname(fileName);
+
+        // Si no tiene extensión, asignar una según el tipo de mensaje
+        if (!ext) {
+            ext =
+                messageType === 'image'
+                    ? '.jpeg'
+                    : messageType === 'document'
+                        ? '.pdf' // Asumimos PDF si no tiene extensión
+                        : messageType === 'audio'
+                            ? '.ogg'
+                            : '.bin'; // Si no se reconoce, se guarda como binario
+
+            fileName += ext;
+        }
+
+        // Ruta donde se guardará el archivo
         const filePath = path.join(__dirname, '../downloads', fileName);
 
-        // Crear el directorio si no existe
+        // Crear directorio si no existe
         fs.mkdirSync(path.dirname(filePath), { recursive: true });
-        fs.writeFileSync(filePath, buffer);
 
+        // Guardar el archivo
+        fs.writeFileSync(filePath, buffer);
         console.log(`Archivo guardado en: ${filePath}`);
+
         return filePath;
     } catch (error) {
         console.error('Error descargando contenido multimedia:', error.message);
         return null;
     }
 };
-
-module.exports = { downloadMedia };

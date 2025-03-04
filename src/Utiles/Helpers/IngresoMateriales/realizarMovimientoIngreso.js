@@ -1,4 +1,4 @@
-﻿const agregarMovimientos = require('../../../Utiles/BDServices/MovimientosServices');
+const agregarMovimientos = require('../../../Utiles/BDServices/MovimientosServices');
 const FlowManager = require('../../../FlowControl/FlowManager');
 const { obtenerSiguienteNroPedido } = require('../../../Utiles/BDServices/utiles/obtenerSiguienteNroPedido');
 const { obtenerSiguienteCodigoMovimiento } = require('../../../Utiles/BDServices/utiles/obtenerSiguienteCodigoMovimiento');
@@ -15,10 +15,6 @@ const obtenerFecha = () => {
 // Función principal para realizar el movimiento de ingreso
 module.exports = async function realizarMovimientoIngreso(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
-
-    console.log("/*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/----/-/-/-/-/-/-/--/--")
-    console.log("ENTRO A LA FUNCION!!!!!")
-    console.log("/*/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/----/-/-/-/-/-/-/--/--")
 
     if (!pedidoAntiguo) {
         console.error('No se encontró un flujo de datos para el usuario:', userId);

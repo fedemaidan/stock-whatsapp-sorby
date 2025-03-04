@@ -1,7 +1,7 @@
-﻿const FlowMapper = require('../FlowControl/FlowMapper');
+const FlowMapper = require('../FlowControl/FlowMapper');
 const FlowManager = require('../FlowControl/FlowManager');
 const transcribeAudio = require('../Utiles/Chatgpt/transcribeAudio');
-const downloadMedia = require('../Utiles/Chatgpt/Operaciones/downloadMedia');
+const downloadMedia = require('../Utiles/Chatgpt/Operaciones/DownloadMedia');
 const transcribeDoc = require('../Utiles/Chatgpt/transcribeDoc')
 const transcribeImage = require('../Utiles/Chatgpt/transcribeImage')
 
@@ -16,21 +16,34 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'image': {
             try {
-                if (!msg.message || !msg.message.extractedImage || !msg.message.transcribeImage) {
-                    await sock.sendMessage(sender, { text: "❌ No se encontró un audio en el mensaje." });
+                // Verificar si el mensaje tiene una imagen (no audio)
+                if (!msg.message || !msg.message.imageMessage) {
+                    await sock.sendMessage(sender, { text: "❌ No se encontró una imagen en el mensaje." });
                     return;
                 }
 
-                // Pasar el mensaje completo
-                const filePath = await downloadMedia(msg, 'image');
+                // Descargar la imagen
+                const filePath = await downloadMedia(msg,'image');
 
+                if (!filePath) {
+                    await sock.sendMessage(sender, { text: "❌ No se pudo descargar la imagen." });
+                    return;
+                }
+
+                // Realizar OCR sobre la imagen para extraer el texto
                 const transcripcion = await transcribeImage(filePath);
-                await sock.sendMessage(sender, { text: `📝 He recibido tu audio y lo he transcrito:\n\n${transcripcion}` });
 
-                await FlowMapper.handleMessage(sender, transcripcion, sock, messageType);
+                if (!transcripcion) {
+                    await sock.sendMessage(sender, { text: "⚠️ No pude extraer texto de la imagen." });
+                    return;
+                }
+
+                // Enviar el texto extraído al flujo de procesamiento
+                await FlowMapper.handleMessage(sender, transcripcion, sock, 'text');
+
             } catch (error) {
-                console.error("Error al procesar el audio:", error);
-                await sock.sendMessage(sender, { text: "❌ Hubo un error al procesar tu audio." });
+                console.error("Error al procesar la imagen:", error);
+                await sock.sendMessage(sender, { text: "❌ Hubo un error al procesar tu imagen." });
             }
             break;
         }
@@ -65,66 +78,65 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'document': {
             try {
-                if (!msg.message || !msg.message.documentMessage) {
+        
+                // Extraer el mensaje de documento desde diferentes posibles estructuras
+                const documentMessage =
+                    msg?.message?.documentMessage ||
+                    msg?.message?.documentWithCaptionMessage?.message?.documentMessage;
+
+                if (!documentMessage) {
+                    console.log("❌ No se encontró un documento en el mensaje.");
                     await sock.sendMessage(sender, { text: "❌ No se encontró un documento en el mensaje." });
                     return;
                 }
 
-                // Descargar documento
-                const filePath = await downloadMedia(msg, 'document');
+                const filePath = await downloadMedia({ message: { documentMessage } }, 'document');
 
                 if (!filePath) {
+                    console.log("❌ Error: No se pudo descargar el documento.");
                     await sock.sendMessage(sender, { text: "❌ No se pudo descargar el documento." });
                     return;
                 }
 
-                // Verificar si es PDF y extraer texto
-                const extractedImage = await extractTextFromPDF(filePath);
-                if (!extractedImage) {
-                    await sock.sendMessage(sender, { text: "⚠️ No pude extraer el texto del documento." });
-                    return;
-                }
+                const transcripcion = await transcribeDoc(filePath);
+                const text = await transcribeImage(transcripcion);
 
+                await FlowMapper.handleMessage(sender, text, sock, "text");
 
-
-                await sock.sendMessage(sender, { text: `📄 He extraído el siguiente contenido del documento:\n\n${extractedText}` });
-
-                // Enviar el texto extraído al flujo de procesamiento
-                await FlowMapper.handleMessage(sender, extractedText, sock, 'document');
             } catch (error) {
-                console.error("Error al procesar el documento:", error);
+                console.error("❌ Error al procesar el documento:", error);
                 await sock.sendMessage(sender, { text: "❌ Hubo un error al procesar tu documento." });
             }
             break;
         }
-        case 'document-caption': {
+        case 'document-caption':{
             try {
-                if (!msg.message || !msg.message.documentMessage) {
+
+                // Extraer el mensaje de documento desde diferentes posibles estructuras
+                const documentMessage =
+                    msg?.message?.documentMessage ||
+                    msg?.message?.documentWithCaptionMessage?.message?.documentMessage;
+
+                if (!documentMessage) {
+                    console.log("❌ No se encontró un documento en el mensaje.");
                     await sock.sendMessage(sender, { text: "❌ No se encontró un documento en el mensaje." });
                     return;
-                }
-
-                // Descargar documento
-                const filePath = await downloadMedia(msg, 'document-caption');
+                };
+                const filePath = await downloadMedia({ message: { documentMessage } }, 'document-caption');
 
                 if (!filePath) {
+                    console.log("❌ Error: No se pudo descargar el documento.");
                     await sock.sendMessage(sender, { text: "❌ No se pudo descargar el documento." });
                     return;
                 }
 
-                // Verificar si es PDF y extraer texto
-                const extractedText = await extractTextFromPDF(filePath);
-                if (!extractedText) {
-                    await sock.sendMessage(sender, { text: "⚠️ No pude extraer el texto del documento." });
-                    return;
-                }
+                const transcripcion = await transcribeDoc(filePath);
+                const text = await transcribeImage(transcripcion);
 
-                await sock.sendMessage(sender, { text: `📄 He extraído el siguiente contenido del documento:\n\n${extractedText}` });
+                await FlowMapper.handleMessage(sender, text, sock, "text");
 
-                // Enviar el texto extraído al flujo de procesamiento
-                await FlowMapper.handleMessage(sender, extractedText, sock, 'document');
             } catch (error) {
-                console.error("Error al procesar el documento:", error);
+                console.error("❌ Error al procesar el documento:", error);
                 await sock.sendMessage(sender, { text: "❌ Hubo un error al procesar tu documento." });
             }
             break;
@@ -138,15 +150,3 @@ const messageResponder = async (messageType, msg, sock, sender) =>
 };
 
 module.exports = messageResponder;
-
-
-/* ACA VA LA LOGICA QUE INTERPRETA CHAT  Y NOS DEVUELVE ALGO PARA EVALUAR A QUE FLUJO NOS MOVEMOS Y EN QUE STEP
-      // Si el mensaje es "Retiro", inicia el flujo de EgresoMaterial
-      if (text.trim().toLowerCase() === "retiro") {
-          FlowManager.setFlow(sender, "EgresoMaterial", "IngresoDeMaterial", {}); // Asigna el flujo y el step inicial
-          await sock.sendMessage(sender, { text: "Iniciando flujo de retiro de material..." });
-          console.log(sender)
-          await FlowMapper.processMessage(sender,"", sock);
-          return; // Puedes salir, o continuar con otro comportamiento
-      }
-      */

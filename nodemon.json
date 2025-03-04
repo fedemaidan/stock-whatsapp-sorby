@@ -1,3 +1,11 @@
-﻿{
-  "ignore": ["auth_info/*"]
+{
+  "ignore": [
+    "auth_info/**",
+    "src/Utiles/Helpers/EgresoMateriales/Impresos/**/*.pdf",
+    "src/Utiles/Helpers/EgresoMateriales/Impresos/**",
+    "src/Utiles/Helpers/EgresoMateriales/**",
+    "src/Utiles/Chatgpt/downloads/**",
+    "src/Utiles/Chatgpt/Utiles/**",
+    "src/Utiles/BDServices/Movimientos.json"
+  ]
 }
