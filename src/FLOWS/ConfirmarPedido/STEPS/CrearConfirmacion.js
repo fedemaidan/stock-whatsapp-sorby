@@ -38,10 +38,10 @@ module.exports = async function CrearConfirmacion(userId, data, sock) {
 
     await sock.sendMessage(userId, { text: output });
 
-    const opciones = `✅ *¿En qué estado recibió el pedido?* ✅\n\n` +
-        `1️⃣ *Perfecto, no se registraron problemas*\n` +
-        `2️⃣ *Parcial, hubo percances en cuanto al pedido*\n` +
-        `3️⃣ *Rechazado, el pedido no se recibió*`;
+    const opciones = `¿En qué estado recibió el pedido? \n\n` +
+        `1️⃣ *Perfecto*, no se registraron problemas\n` +
+        `2️⃣ *Parcial*, hubo percances en cuanto al pedido\n` +
+        `3️⃣ *Rechazado*, el pedido no se recibió`;
 
     await sock.sendMessage(userId, { text: opciones });
 

@@ -6,7 +6,7 @@ const RechazarPedido = require('../../../Utiles/Helpers/ConfirmarPedido/Rechazar
 module.exports = async function SeleccionarOpcion(userId, message, sock) {
 
     const data = await RecepcionDeRetiro(message);
-    await sock.sendMessage(userId, { text: "🔄 *Procesando...*" });
+    await sock.sendMessage(userId, { text: "🔄 Procesando..." });
 
     if (data.data.Eleccion == "1") {
         //await AprobarPedido(operacion)

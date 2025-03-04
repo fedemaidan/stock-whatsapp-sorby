@@ -7,7 +7,7 @@ module.exports = async function ConfirmarOModificarIngreso(userId, message, sock
     const data = await opcionElegida(message);
 
     if (data.data.Eleccion == "1") {
-        await sock.sendMessage(userId, { text: "🔄 *Procesando...*" });
+        await sock.sendMessage(userId, { text: "🔄 Procesando..." });
 
         if (await realizarMovimientoIngreso(userId)) {
             await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
