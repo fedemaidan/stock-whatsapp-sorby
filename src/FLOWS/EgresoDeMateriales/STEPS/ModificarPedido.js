@@ -17,7 +17,7 @@ module.exports = async function ModificarPedido(userId, message, sock)
     await sock.sendMessage(userId, { text: output });
 
     await sock.sendMessage(userId, {
-        text: "✅ *¿Desea confirmar el pedido?* ✅\n\n1️⃣ *Sí, confirmar pedido*\n2️⃣ *No, realizar cambios*"
+        text: "✅ ¿Desea confirmar el pedido? \n\n1️⃣ *Sí*, confirmar pedido\n2️⃣ *No*, realizar cambios"
     });
     //userId, flowName, initialStep = 0, flowData = {}//
     FlowManager.setFlow(userId, "EGRESOMATERIALES", "ConfirmarOModificarEgreso", data)

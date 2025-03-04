@@ -12,7 +12,7 @@ module.exports = async function CrearIngreso(userId, data, sock) {
 
     await sock.sendMessage(userId, { text: output });
 
-    await sock.sendMessage(userId, { text: "✅ *¿Desea confirmar el Ingreso?* ✅\n\n1️⃣ *Sí, confirmar ingreso*\n2️⃣ *No, realizar cambios*" });
+    await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios" });
 
     FlowManager.setFlow(userId, "INGRESOMATERIALES", "ConfirmarOModificarIngreso", data)
 }

@@ -16,7 +16,7 @@ module.exports = async function ModificarPedido(userId, message, sock) {
     await sock.sendMessage(userId, { text: output });
 
     await sock.sendMessage(userId, {
-        text: "✅ *¿Desea confirmar el Ingreso?* ✅\n\n1️⃣ *Sí, confirmar ingreso*\n2️⃣ *No, realizar cambios*"
+        text: "✅ ¿Desea confirmar el Ingreso? \n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios"
     });
     //userId, flowName, initialStep = 0, flowData = {}//
     FlowManager.setFlow(userId, "INGRESOMATERIALES", "ConfirmarOModificarIngreso", data)

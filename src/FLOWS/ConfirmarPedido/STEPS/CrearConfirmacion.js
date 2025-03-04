@@ -38,11 +38,25 @@ module.exports = async function CrearConfirmacion(userId, data, sock) {
 
     await sock.sendMessage(userId, { text: output });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    const opciones = `¿En qué estado recibió el pedido? \n\n` +
+        `1️⃣ *Perfecto*, no se registraron problemas\n` +
+        `2️⃣ *Parcial*, hubo percances en cuanto al pedido\n` +
+        `3️⃣ *Rechazado*, el pedido no se recibió`;
+
+=======
+>>>>>>> main
     const opciones = `✅ Confirmación de Conformidad de Recepción ✅\n\n` +
         `Por favor, indique el estado en el que recibió el pedido:\n\n` +
         `1️⃣ *Recepción Conforme* - El pedido fue recibido en perfectas condiciones.\n` +
         `2️⃣ *Recepción Parcial* - Se detectaron irregularidades o faltantes.\n` +
         `3️⃣ *Rechazado* - El pedido no fue aceptado`;
+<<<<<<< HEAD
+=======
+>>>>>>> ff70c51 (Guardado antes de librerias)
+>>>>>>> main
     await sock.sendMessage(userId, { text: opciones });
 
     FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "SeleccionarOpcion", data);
