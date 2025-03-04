@@ -1,28 +1,30 @@
-﻿const fs = require('fs');
-const openai = require('../Chatgpt/openai');
-const stock = require('../../Utiles/BDServices/MaterialsService');
+﻿const path = require('path');
+const fs = require('fs');
+const pdfPoppler = require('pdf-poppler');
 
-async function transcribeDoc(filePath) {
+module.exports = async function transcribeDoc(pdfPath) {
     try {
-        // Prompts para analizar el cheque
-        const prompt = `
-            Eres un experto pasando archivos y documentos a texto. Voy a proporcionarte una imagen o documento de un remito ADJUNTA.
+        const outputDir = path.join(__dirname, 'Utiles', 'Chatgpt', 'Operaciones', 'temp');
 
-            devuelve los datos como texto plano de lo que se encuentra en los archivos.
-        `;
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
 
-        // Consultar a OpenAI
-        const response = await getByChatgpt4Vision([filePath], prompt);
+        const outputFilePath = path.join(outputDir, 'pdf_output');
 
-        const respuesta = JSON.parse(response);
-        console.log('Respuesta de OpenAI:', respuesta);
-        if (respuesta.hasOwnProperty('json_data'))
-            return { respuesta: respuesta.json_data};
-        else
-            return { respuesta: respuesta};
+        let options = {
+            format: 'jpeg',
+            out_dir: outputDir,
+            out_prefix: 'pdf_output',
+            page: 1
+        };
+
+        await pdfPoppler.convert(pdfPath, options);
+
+        console.log(`Imagen generada en: ${outputFilePath}-1.jpg`);
+        return `${outputFilePath}-1.jpg`;
     } catch (error) {
-        console.error('Error analizando el cheque:', error.message);
+        console.error('Error al convertir el PDF:', error);
         return null;
     }
 };
-module.exports = transcribeDoc;

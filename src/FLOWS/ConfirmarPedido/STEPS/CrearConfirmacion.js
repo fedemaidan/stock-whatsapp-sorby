@@ -1,4 +1,4 @@
-﻿const FlowManager = require('../../../FlowControl/FlowManager')
+const FlowManager = require('../../../FlowControl/FlowManager')
 
 module.exports = async function CrearConfirmacion(userId, data, sock) {
     const { Nro_Pedido } = data.data;
@@ -8,7 +8,7 @@ module.exports = async function CrearConfirmacion(userId, data, sock) {
         "data": {
             "Obra_id": 1,
             "Fecha":"27/2/2025",
-            "Obra_name": "GENERAL",
+            "Obra_Name": "Don Alberto",
             "Nro_compra": "00000",
             "Nro_Pedido": Nro_Pedido,
             "items": [
@@ -29,7 +29,7 @@ module.exports = async function CrearConfirmacion(userId, data, sock) {
     let output = `📋 Detalles de la Solicitud de Retiro 📋\n\n`;
     output += `📅 Fecha: 24/2/2025\n`;
     output += `🏗️ Número de retiro: ${data.data.Nro_Pedido}\n`;
-    output += `📍 Obra destino: ${data.data.Obra_id}\n\n`;
+    output += `📍 Obra destino: ${data.data.Obra_Name}\n\n`;
     output += `🛒 Productos Solicitados:\n`;
 
     data.data.items.forEach(item => {

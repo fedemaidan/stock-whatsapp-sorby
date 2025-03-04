@@ -1,15 +1,16 @@
-﻿const FlowManager = require('../../../FlowControl/FlowManager')
+const FlowManager = require('../../../FlowControl/FlowManager')
 const ChatModificarConfirmacion = require('../../../Utiles/Chatgpt/Operaciones/ChatModificarConfirmacion')
 const AprobarParcial = require('../../../Utiles/Helpers/ConfirmarPedido/AprobarParcial')
+
 module.exports = async function RecepcionParcial(userId, message, sock) {
     const data = await ChatModificarConfirmacion(message, userId);
-    const { obra_id, obra_name, items, Nro_Pedido } = data.data;
+    const { obra_id, obra_Name, items, Nro_Pedido } = data.data;
 
     // Mensaje de productos aprobados
     let output = `📋 Detalles de la Solicitud de Retiro 📋\n\n`;
     output += `📅 Fecha: 24/2/2025\n`;
     output += `🏗️ Número de retiro: ${Nro_Pedido}\n`;
-    output += `📍 Obra destino: ${obra_name}\n\n`;
+    output += `📍 Obra destino: ${obra_Name}\n\n`;
     output += `🛒 Productos Aprobados:\n`;
 
     items.forEach(item => {
@@ -30,6 +31,7 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
         outputEliminados += `📝 Aclaración: "${data.eliminados.aclaracion}"\n\n`;
         await sock.sendMessage(userId, { text: outputEliminados });
     }
+
 
     await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
 

@@ -1,7 +1,7 @@
-﻿const opcionElegida  = require("../../../Utiles/Chatgpt/Operaciones/opcionElegida");
+const opcionElegida  = require("../../../Utiles/Chatgpt/Operaciones/opcionElegida");
 const FlowManager = require('../../../FlowControl/FlowManager')
 const realizarMovimientoRetiro = require('../../../Utiles/Helpers/EgresoMateriales/realizarMovimientoRetiro');  // Verifica la ruta aquí
-//const generarPDFConformidad = require('../../../Utiles/Helpers/EgresoMateriales/ImprimirConformidad');
+const generarPDFConformidad = require('../../../Utiles/Helpers/EgresoMateriales/ImprimirConformidad');
 
 module.exports = async function ConfirmarOModificarEgreso(userId,message, sock) {
 
@@ -12,7 +12,7 @@ module.exports = async function ConfirmarOModificarEgreso(userId,message, sock) 
 
         if (await realizarMovimientoRetiro(userId)) { 
             await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
-            await generarPDFConformidad();
+            await generarPDFConformidad(sock, userId);
         } else {
             await sock.sendMessage(userId, { text: "❌ Hubo un problema y no se continuó con el ingreso." });
         }
