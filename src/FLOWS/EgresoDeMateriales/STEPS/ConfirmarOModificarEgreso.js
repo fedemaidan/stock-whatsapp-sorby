@@ -10,11 +10,16 @@ module.exports = async function ConfirmarOModificarEgreso(userId,message, sock) 
     if (data.data.Eleccion == "1") {
         await sock.sendMessage(userId, { text: "🔄 Procesando..." });
 
-        if (await realizarMovimientoRetiro(userId)) { 
+        const Operacion = await realizarMovimientoRetiro(userId)
+
+        if (Operacion.Success) { 
+
             await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
             await generarPDFConformidad(sock, userId);
-        } else {
-            await sock.sendMessage(userId, { text: "❌ Hubo un problema y no se continuó con el ingreso." });
+
+        } else
+        {
+            await sock.sendMessage(userId, { text: Operacion.msg });
         }
 
         FlowManager.resetFlow(userId)

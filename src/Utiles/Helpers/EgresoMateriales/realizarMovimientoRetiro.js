@@ -1,4 +1,4 @@
-﻿const FlowManager = require('../../../FlowControl/FlowManager');
+const FlowManager = require('../../../FlowControl/FlowManager');
 const obtenerObrasConStock = require('../EgresoMateriales/ObtenerObrasConStock');
 const calcularStock = require('../EgresoMateriales/CalcularStock');
 const agregarMovimientos = require('../../../Utiles/BDServices/MovimientosServices');
@@ -83,11 +83,11 @@ module.exports = async function realizarMovimientoRetiro(userId) {
 
         if (cantidadRestante > 0) {
             console.error(`Stock insuficiente para SKU: ${item.producto_id} (Falta: ${cantidadRestante})`);
-            return false;
+            return {Success: false, msg: `❌ Stock insuficiente \n Producto: ${item.producto_name} \n Faltan ${cantidadRestante}` }
         }
     }
     console.log('Movimientos generados:', movimientos);
-    return await agregarMovimientos(movimientos);
+    return { Succes: await agregarMovimientos(movimientos)}
 };
 
 const obtenerFecha = () => {
