@@ -67,8 +67,6 @@ const messageResponder = async (messageType, msg, sock, sender) =>
                 const filePath = await downloadMedia(msg,'audio');
 
                 const transcripcion = await transcribeAudio(filePath);
-                await sock.sendMessage(sender, { text: `📝 He recibido tu audio y lo he transcrito:\n\n${transcripcion}` });
-
                 await FlowMapper.handleMessage(sender, transcripcion, sock, messageType);
             } catch (error) {
                 console.error("Error al procesar el audio:", error);

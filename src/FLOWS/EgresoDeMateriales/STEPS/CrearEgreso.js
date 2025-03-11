@@ -1,7 +1,7 @@
-﻿const FlowManager = require('../../../FlowControl/FlowManager')
+const FlowManager = require('../../../FlowControl/FlowManager')
 module.exports = async function CrearEgreso(userId, data, sock)
 {
-    const { obra_id, obra_name, items } = data.data;
+    const {obra_name, items } = data.data;
 
     // Creamos un string con la información de la obra
     let output = `📋 *Detalles de la Solicitud de Retiro* 📋\n\n🏗️ *Obra:* ${obra_name}\n\n🛒 *Productos Solicitados:*\n`;

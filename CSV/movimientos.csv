@@ -1,0 +1,6 @@
+Fecha,Descripcion,Codigo,Tipo,Centro de Costos,Cantidad,Saldo,Obra Receptora
+10/2/2025,Mensulas Ino Flotante,Gr-MIF-Elect-Z1A,Ingreso,Don Alberto,5,5,
+10/2/2025,Bastidor Tablero,Ide-BT-Sant-Z2B,Ingreso,Don Alberto,2,2,
+10/2/2025,Bastidor Tablero,Ide-BT-Sant-Z2B,Egreso,Don Alberto,1,1,
+10/2/2025,Rollo Manguera Azul 3/4,180º-RMA3/4-Elect-Z1A,Egreso,Pool 460/459,3,3,
+10/2/2025,Mensulas Ino Flotante,Gr-MIF-Elect-Z1A,Transferencia,Don Alberto,2,-2,Pool 460/459

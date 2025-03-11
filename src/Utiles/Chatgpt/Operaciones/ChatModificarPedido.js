@@ -1,11 +1,13 @@
-﻿const { getByChatgpt35TurboByText } = require("../Base");
+const { getByChatgpt35TurboByText } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
-const stock = require("../../BDServices/MaterialsService");
-const Obras = require("../../BDServices/ObrasService");
+const { obtenerTodosLosMateriales } = require('../../BDServices/Funciones/FuncionesMaterial');
+const { obtenerTodasLasObras } = require('../../BDServices/Funciones/FuncionesObra');
 
 const ChatModificarPedido = async (message, userId) => {
 
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
+    const materiales = await obtenerTodosLosMateriales();
+    const Obras = await obtenerTodasLasObras()
 
     prompt = `
 Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedido según los cambios solicitados por el usuario, sin sobreescribir completamente el pedido anterior. Para ello, debo interpretar la solicitud y aplicar una de las siguientes acciones:
@@ -33,7 +35,7 @@ Formato de respuesta: Devuelve exclusivamente un JSON con el pedido actualizado,
 Mensaje del cliente: "${message}"
 
 Pedido antiguo: ${JSON.stringify(pedidoAntiguo, null, 2)}
-Stock disponible: ${JSON.stringify(stock, null, 2)}
+Stock disponible: ${JSON.stringify(materiales, null, 2)}
 Obras disponibles: ${JSON.stringify(Obras, null, 2)}
 `;
 

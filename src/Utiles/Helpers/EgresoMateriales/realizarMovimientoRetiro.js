@@ -1,9 +1,9 @@
 const FlowManager = require('../../../FlowControl/FlowManager');
 const obtenerObrasConStock = require('../EgresoMateriales/ObtenerObrasConStock');
 const calcularStock = require('../EgresoMateriales/CalcularStock');
-const agregarMovimientos = require('../../../Utiles/BDServices/MovimientosServices');
 const { obtenerSiguienteNroPedido } = require('../../../Utiles/BDServices/utiles/obtenerSiguienteNroPedido');
-const { obtenerSiguienteCodigoMovimiento } = require('../../../Utiles/BDServices/utiles/obtenerSiguienteCodigoMovimiento');
+const { Pedido, Movimiento, sequelize } = require('../../../models'); // Agregamos sequelize para transacciones
+const generarPDFConformidad = require('../../Helpers/EgresoMateriales/ImprimirConformidad');
 
 module.exports = async function realizarMovimientoRetiro(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
@@ -13,87 +13,108 @@ module.exports = async function realizarMovimientoRetiro(userId) {
         return false;
     }
 
-    const { Obra_id, Nro_compra, items } = pedidoAntiguo.data;
-    let movimientos = [];
+    const FiletPath = await generarPDFConformidad(userId);
+    const { obra_id, items } = pedidoAntiguo.data;
+    const fecha = obtenerFecha();
 
-    const UltimoNroPedido = await obtenerSiguienteNroPedido();
-    let CodMovimiento = await obtenerSiguienteCodigoMovimiento();
+    let productosFaltantes = [];
 
-    for (const item of items) {
+    // **Primero verificamos el stock de todos los productos**
+    const stockVerificado = await Promise.all(items.map(async (item) => {
         let cantidadRestante = item.cantidad;
-        let fuentesStock = [{ obra_id: Obra_id }, { obra_id: 0 }];
+        let fuentesStock = [{ obra_id: obra_id }];
 
         if (cantidadRestante > 0) {
             const obrasConStock = await obtenerObrasConStock(item.producto_id);
-            fuentesStock = [...fuentesStock, ...obrasConStock.map(o => ({ obra_id: o.obra_id }))];
+            fuentesStock.push(...obrasConStock.map(o => ({ obra_id: o.obra_id })));
         }
 
         for (const fuente of fuentesStock) {
-            const obraIdFuente = fuente.obra_id;
             if (cantidadRestante <= 0) break;
 
-            const stockDisponible = await calcularStock(item.producto_id, obraIdFuente);
+            const stockDisponible = await calcularStock(item.producto_id, fuente.obra_id);
+            console.log(`🔍 Verificando stock para SKU: ${item.producto_id} en obra ${fuente.obra_id} - Disponible: ${stockDisponible}`);
+
             if (stockDisponible > 0) {
-                const cantidadATomar = Math.min(cantidadRestante, stockDisponible);
-                cantidadRestante -= cantidadATomar;
-
-                // Movimiento de salida desde la fuente
-                movimientos.push({
-                    Cod_movimiento: CodMovimiento++,
-                    Fecha: obtenerFecha(),
-                    SKU: item.producto_id,
-                    Descripcion: item.producto_name,
-                    Cod_obraO: obraIdFuente,
-                    cantidad: cantidadATomar,
-                    tipo: false,
-                    Nro_compra,
-                    Nro_Pedido: UltimoNroPedido.toString(),
-                    cod_obraD: Obra_id
-                });
-
-                // Movimiento de entrada en la obra solicitante
-                movimientos.push({
-                    Cod_movimiento: CodMovimiento++,
-                    Fecha: obtenerFecha(),
-                    SKU: item.producto_id,
-                    Descripcion: item.producto_name,
-                    Cod_obraO: Obra_id,
-                    cantidad: cantidadATomar,
-                    tipo: true,
-                    Nro_compra,
-                    Nro_Pedido: UltimoNroPedido.toString(),
-                    cod_obraD: Obra_id
-                });
+                cantidadRestante -= Math.min(cantidadRestante, stockDisponible);
             }
         }
 
-        // Movimiento de salida desde la obra solicitante (consumo final)
-        movimientos.push({
-            Cod_movimiento: CodMovimiento++,
-            Fecha: obtenerFecha(),
-            SKU: item.producto_id,
-            Descripcion: item.producto_name,
-            Cod_obraO: Obra_id,
-            cantidad: item.cantidad,
-            tipo: false,
-            Nro_compra,
-            Nro_Pedido: UltimoNroPedido.toString(),
-            cod_obraD: null // No hay destino, es egreso final
-        });
-
         if (cantidadRestante > 0) {
-            console.error(`Stock insuficiente para SKU: ${item.producto_id} (Falta: ${cantidadRestante})`);
-            return {Success: false, msg: `❌ Stock insuficiente \n Producto: ${item.producto_name} \n Faltan ${cantidadRestante}` }
+            productosFaltantes.push({ producto_name: item.producto_name, cantidad: cantidadRestante });
+            return false;
         }
+
+        return true;
+    }));
+
+    // **Si hay productos sin stock, cancelamos la operación**
+    if (stockVerificado.includes(false)) {
+        const productosFaltantesMsg = productosFaltantes.map(item => `${item.producto_name}: Faltan ${item.cantidad}`).join("\n");
+        console.error(`❌ Stock insuficiente:\n${productosFaltantesMsg}`);
+        return { Success: false, msg: `❌ Stock insuficiente para los siguientes productos:\n${productosFaltantesMsg}` };
     }
-    console.log('Movimientos generados:', movimientos);
-    return { Succes: await agregarMovimientos(movimientos)}
+
+    // **Comenzamos la transacción**
+    const transaction = await sequelize.transaction();
+
+    try {
+        // **Creamos el pedido**
+        const nuevoPedido = await Pedido.create({
+            fecha,
+            aclaracion: "",
+            estado: "En Proceso",
+            url_remito: FiletPath
+        }, { transaction });
+
+        const UltimoNroPedido = await obtenerSiguienteNroPedido();
+
+        // **Creamos los movimientos**
+        for (const item of items) {
+            let cantidadRestante = item.cantidad;
+            let fuentesStock = [{ obra_id: obra_id }];
+
+            if (cantidadRestante > 0) {
+                const obrasConStock = await obtenerObrasConStock(item.producto_id);
+                fuentesStock.push(...obrasConStock.map(o => ({ obra_id: o.obra_id })));
+            }
+
+            for (const fuente of fuentesStock) {
+                const obraIdFuente = fuente.obra_id;
+                if (cantidadRestante <= 0) break;
+
+                const stockDisponible = await calcularStock(item.producto_id, obraIdFuente);
+
+                if (stockDisponible > 0) {
+                    const cantidadATransferir = Math.min(cantidadRestante, stockDisponible);
+                    cantidadRestante -= cantidadATransferir;
+
+                    const Cod_ObraDestino = obraIdFuente !== obra_id ? obra_id : null;
+
+                    await Movimiento.create({
+                        fecha: obtenerFecha(),
+                        nombre: item.producto_name,
+                        id_material: item.producto_id,
+                        cod_obra_origen: obraIdFuente,
+                        cantidad: cantidadATransferir,
+                        tipo: false, // Siempre egreso
+                        nro_pedido: UltimoNroPedido.toString(),
+                        cod_obradestino: Cod_ObraDestino
+                    }, { transaction });
+                }
+            }
+        }
+
+        // **Si todo sale bien, confirmamos la transacción**
+        await transaction.commit();
+        console.log('✅ Movimientos generados con éxito');
+        return { Success: true };
+    } catch (error) {
+        // **Si algo falla, deshacemos todo**
+        await transaction.rollback();
+        console.error('❌ Error al realizar el movimiento:', error.message);
+        return { Success: false, msg: `❌ Error al realizar el movimiento: ${error.message}` };
+    }
 };
 
-const obtenerFecha = () => {
-    const fecha = new Date();
-    const dia = fecha.getDate();
-    const mes = fecha.getMonth() + 1; // Meses en JS van de 0 a 11
-    const anio = fecha.getFullYear();
-    return `${dia}/${mes}/${anio}`;
-};
+const obtenerFecha = () => new Date();

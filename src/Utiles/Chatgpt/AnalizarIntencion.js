@@ -1,6 +1,6 @@
-﻿const { getByChatgpt35TurboByText } = require("./Base");
-const stock = require("../BDServices/MaterialsService");
-const Obras = require("../BDServices/ObrasService");
+const { getByChatgpt35TurboByText } = require("./Base");
+const { obtenerTodosLosMateriales } = require('../BDServices/Funciones/FuncionesMaterial');
+const {obtenerTodasLasObras } = require('../BDServices/Funciones/FuncionesObra');
 const FlowManager = require('../../FlowControl/FlowManager')
 
 const opciones = [
@@ -10,18 +10,35 @@ const opciones = [
         {
             obra_id: "Id de la obra",
             obra_name: "El nombre de la obra / identificacion hacia donde iran los materiales",
-            items: [{ producto_id: "id del producto al que me estoy refiriendo", producto_name: "nombre del producto al que me estoy refiriendo", cantidad: "Cantidad de este material indicado" },]
+            items:
+            [
+                {
+                    producto_id: "id del producto al que me estoy refiriendo",
+                    producto_name: "nombre del producto al que me estoy refiriendo",
+                    cantidad: "Cantidad de este material indicado",
+                    SKU: "El codigo interno del deposito",
+                    zona: "ubicacion, en que zona del deposito se encuentra el material."
+                },
+            ]
         }
     }, 
     {
         accion: "Crear Ingreso",
         data:
         {
-            Obra_id: "El id de la obra a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
-            Obra_name:"Aqui va la obra a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
-            Nro_compra: "Aqui va el numero del remito o factura en caso de no haber ingresado nada el usuario referiendose a este mismo simplemente poner 00000",
-            Nro_Pedido: "este se deja en blanco o con este mismo texto",
-            items: [{ producto_id: "id del producto al que me estoy refiriendo", producto_name: "nombre del producto al que me estoy refiriendo", cantidad: "Cantidad de este material indicado" },]
+            obra_id: "El id de la obra a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
+            obra_name:"Aqui va la obra a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            nro_compra: "Aqui va el numero del remito o factura en caso de no haber ingresado nada el usuario referiendose a este mismo simplemente poner 00000",
+            items:
+            [
+                {
+                    producto_id: "id del producto al que me estoy refiriendo",
+                    producto_name: "nombre del producto al que me estoy refiriendo",
+                    cantidad: "Cantidad de este material indicado",
+                    SKU: "El codigo interno del deposito",
+                    zona: "ubicacion, en que zona del deposito se encuentra el material."
+                },
+            ]
         }
     },
     {
@@ -37,6 +54,9 @@ const opciones = [
 const analizarIntencion = async (message, userId) => {
     try
     {
+        const materiales = await obtenerTodosLosMateriales();
+        const Obras = await obtenerTodasLasObras()
+  
         const opcionesTxt = JSON.stringify(opciones);
         prompt = `
 Como bot de un sistema de control de stock, quiero identificar la intención del usuario y ejecutar la acción adecuada para gestionar correctamente las operaciones posibles.
@@ -52,7 +72,7 @@ El usuario dice: "${message}"
 Tienes estas acciones posibles debes analizar la palabra clave del usuario tanto si quiere retirar algo del stock o ingresarlo: ${opcionesTxt}.
 
 Aquí está el stock disponible:
-${JSON.stringify(stock, null, 2)}
+${JSON.stringify(materiales, null, 2)}
 Aqui estan las obras disponibles:
 ${JSON.stringify(Obras, null, 2)}
 `;

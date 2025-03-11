@@ -1,24 +1,21 @@
-﻿const fs = require('fs');
-const path = require('path');
-
-const filePath = path.join(__dirname, '../../BDServices/Movimientos.json');
+const Movimiento = require("../../../models/Movimiento");
 
 const obtenerSiguienteCodigoMovimiento = async () => {
     try {
-        const data = await fs.promises.readFile(filePath, 'utf8');
-        const jsonData = JSON.parse(data);
+        // Obtener el último Cod_movimiento registrado en la base de datos
+        const ultimoMovimiento = await Movimiento.findOne({
+            attributes: ["id"],
+            order: [["id", "DESC"]], // Ordenar en orden descendente para obtener el más reciente
+        });
 
-        if (!jsonData.Movimiento || jsonData.Movimiento.length === 0) {
-            console.log('No hay movimientos en el JSON. Se usará "Cod_movimiento" inicial en 1.');
+        if (!ultimoMovimiento) {
+            console.log('No hay movimientos en la BD. Se usará "Cod_movimiento" inicial en 1.');
             return 1;
         }
 
-        const ultimoCodigo = jsonData.Movimiento.reduce((max, mov) =>
-            Math.max(max, parseInt(mov.Cod_movimiento, 10) || 0), 0);
-
-        return ultimoCodigo + 1;
-    } catch (err) {
-        console.error('Error al leer el archivo:', err);
+        return ultimoMovimiento.Cod_movimiento + 1;
+    } catch (error) {
+        console.error("Error al obtener el siguiente código de movimiento:", error);
         return 1;
     }
 };

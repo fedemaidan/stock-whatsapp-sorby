@@ -1,26 +1,24 @@
-﻿const fs = require('fs');
+const { Movimiento } = require("../../../models");
 
-const path = require('path');
-
-const filePath = path.join(__dirname, '../../BDServices/Movimientos.json');
-module.exports =  async function calcularStock(sku, obraId) {
+module.exports = async function calcularStock(sku, obraId) {
     try {
-        const data = fs.readFileSync(filePath, 'utf8');
-        const jsonData = JSON.parse(data);
+        // Obtener todos los movimientos del material en la obra específica
+        const movimientos = await Movimiento.findAll({
+            attributes: ["cantidad", "tipo"],
+            where: {
+                id_material: sku,
+                cod_obra_origen: obraId
+            }
+        });
 
-        let stockDisponible = 0;
+        // Calcular el stock sumando entradas y restando salidas
+        const stockDisponible = movimientos.reduce((total, mov) => {
+            return total + (mov.tipo ? mov.cantidad : -mov.cantidad);
+        }, 0);
 
-        if (Array.isArray(jsonData.Movimiento)) {
-            jsonData.Movimiento.forEach(mov => {
-                if (mov.SKU === sku && mov.Cod_obraO === obraId) {
-                    stockDisponible += mov.tipo ? mov.cantidad : -mov.cantidad;
-                }
-            });
-        }
         return stockDisponible;
     } catch (err) {
         console.error(`Error al calcular stock para SKU ${sku} en obra ${obraId}:`, err);
         return 0;
     }
-}
-
+};

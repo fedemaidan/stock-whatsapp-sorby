@@ -1,40 +1,56 @@
-const FlowManager = require('../../../FlowControl/FlowManager')
-const ChatModificarConfirmacion = require('../../../Utiles/Chatgpt/Operaciones/ChatModificarConfirmacion')
-const AprobarParcial = require('../../../Utiles/Helpers/ConfirmarPedido/AprobarParcial')
+const FlowManager = require('../../../FlowControl/FlowManager');
+const ChatModificarConfirmacion = require('../../../Utiles/Chatgpt/Operaciones/ChatModificarConfirmacion');
+const AprobarParcial = require('../../../Utiles/Helpers/ConfirmarPedido/AprobarParcial');
 
 module.exports = async function RecepcionParcial(userId, message, sock) {
+
     const data = await ChatModificarConfirmacion(message, userId);
-    const { obra_id, obra_Name, items, Nro_Pedido } = data.data;
+
+    if (!data) {
+        console.error(`Error: No se recibió respuesta de ChatModificarConfirmacion para userId: ${userId}`);
+        await sock.sendMessage(userId, { text: "❌ Ocurrió un error al procesar la solicitud." });
+        return;
+    }
+
+    const { nro_pedido: Nro_Pedido, aprobados, rechazados, aclaracion } = data;
+
+    // Verificar si `aprobados` es un array
+    if (!Array.isArray(aprobados)) {
+        console.error(`Error: 'aprobados' no es un array o está undefined para el usuario ${userId}`);
+        console.error('Datos recibidos:', data);
+        await sock.sendMessage(userId, { text: "❌ Ocurrió un error al procesar los productos aprobados." });
+        return;
+    }
 
     // Mensaje de productos aprobados
     let output = `📋 Detalles de la Solicitud de Retiro 📋\n\n`;
-    output += `📅 Fecha: 24/2/2025\n`;
+    output += `📅 Fecha: ${data.fecha}\n`;
     output += `🏗️ Número de retiro: ${Nro_Pedido}\n`;
-    output += `📍 Obra destino: ${obra_Name}\n\n`;
+    output += `📍 Obra destino: ${aprobados[0]?.obra_destino || aprobados[0]?.obra_origen}\n\n`;
     output += `🛒 Productos Aprobados:\n`;
 
-    items.forEach(item => {
+    aprobados.forEach(item => {
         output += `🔹 ${item.producto_name}\n   📦 Cantidad: ${item.cantidad}\n\n`;
     });
 
     await sock.sendMessage(userId, { text: output });
 
-    // Mensaje de productos no aprobados
-    if (data.eliminados?.items?.length > 0) {
-        let outputEliminados = `⚠️ Modificaciones en su solicitud ⚠️\n\n`;
-        outputEliminados += `Algunos productos fueron ajustados o eliminados según las condiciones establecidas:\n\n`;
+    // Mensaje de productos rechazados
+    if (Array.isArray(rechazados) && rechazados.length > 0) {
+        let outputRechazados = `⚠️ Productos rechazados ⚠️\n\n`;
+        outputRechazados += `Los siguientes productos no fueron aprobados:\n\n`;
 
-        data.eliminados.items.forEach(item => {
-            outputEliminados += `❌ ${item.producto_name}\n   🚫 *Cantidad afectada: ${item.cantidad}\n\n`;
+        rechazados.forEach(item => {
+            outputRechazados += `❌ ${item.producto_name}\n   🚫 Cantidad rechazada: ${item.cantidad}\n\n`;
         });
 
-        outputEliminados += `📝 Aclaración: "${data.eliminados.aclaracion}"\n\n`;
-        await sock.sendMessage(userId, { text: outputEliminados });
+        outputRechazados += `📝 Aclaración: "${aclaracion}"\n\n`;
+        await sock.sendMessage(userId, { text: outputRechazados });
     }
 
-
     await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
+    FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "RecepcionParcial", data );
+    await AprobarParcial(userId)
 
-    // await AprobarParcial(operacion)
     FlowManager.resetFlow(userId);
 };
