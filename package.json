@@ -23,6 +23,8 @@
     "csv-parser": "^3.2.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^146.0.0",
     "openai": "^4.85.3",
     "pdf-poppler": "^0.2.1",
     "pdf2image": "^1.2.3",

@@ -1,6 +1,6 @@
 const FlowManager = require('../../../FlowControl/FlowManager');
 const { Material,Movimiento } = require('../../../models');  // Importa el modelo Material
-
+const { addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
 module.exports = async function realizarMovimientoIngreso(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
 
@@ -26,14 +26,24 @@ module.exports = async function realizarMovimientoIngreso(userId) {
             cod_obradestino: obra_id,
             estado: "Finalizado"
         };
-
         Preingreso.push(nuevoMovimiento);
     }
 
     console.log('Movimientos generados:', Preingreso);
 
-    await Movimiento.bulkCreate(Preingreso);
 
+    const movimientosCreados = await Movimiento.bulkCreate(Preingreso);
+
+    //aqui logica para llamar al googlesheet//
+    //'1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek'
+    const movimientosConIds = movimientosCreados.map(movimiento => ({
+        ...movimiento.dataValues,  // Esto contiene los datos, incluidos los IDs generados
+    }));
+
+    for (const movimiento of movimientosConIds) {
+        await addMovimientoToSheetWithClientGeneral(movimiento, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+    }
+    //---------------------------------------//
     return { Success: true, msg: 'Movimientos ingresados correctamente' };
 };
 
