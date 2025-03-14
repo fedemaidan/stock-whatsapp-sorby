@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "cd src && npx sequelize db:migrate",
+    "migrate-prod": "cd src && npx sequelize db:migrate --env production",
     "start": "node index.js"
   },
   "repository": {
