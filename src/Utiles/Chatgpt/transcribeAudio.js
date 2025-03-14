@@ -1,10 +1,10 @@
 const fs = require('fs');
 const openai = require('../Chatgpt/openai');
-const { obtenerTodosMateriales, obtenerMaterialPorId } = require('../BDServices/Funciones/FuncionesMaterial');
+const { obtenerTodosLosMateriales } = require('../BDServices/Funciones/FuncionesMaterial');
 
 
 module.exports = async function transcribeAudio(filePath) {
-    const stock = await obtenerTodosMateriales()
+    const stock = await obtenerTodosLosMateriales()
     const db_json = JSON.stringify(stock);
     const prompt = "Sos un experto transcribiendo audios. Ten en cuenta que el usuario tiene la siguiente base de datos: " + db_json;
 
