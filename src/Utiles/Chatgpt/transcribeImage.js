@@ -1,22 +1,24 @@
-﻿const Tesseract = require('tesseract.js');
+const getByChatgpt4Vision = require('../Chatgpt/Base')
+const { obtenerTodosLosMateriales } = require('../BDServices/Funciones/FuncionesMaterial');
 
 async function transcribeImage(imagePath) {
     try {
-        // Iniciar el reconocimiento OCR sobre la imagen en español
-        const { data: { text } } = await Tesseract.recognize(
-            imagePath,   // Ruta de la imagen
-            'spa',       // Idioma español
-            {
-                logger: (m) => console.log(m)  // Opcional: ver el progreso
-            }
-        );
+        // Prompts para analizar el cheque
+        const prompt = "Sos un experto transcribiendo imagenes. Ten en cuenta que el usuario tiene la siguiente base de datos: " + db_json;
+        // Consultar a OpenAI
+        const response = await getByChatgpt4Vision([filePath], prompt);
 
-        console.log('Texto extraído de la imagen:', text);
-        return text;  // Devuelve el texto extraído
-    } catch (error) {
-        console.error('Error al extraer texto de la imagen:', error.message);
+        const respuesta = JSON.parse(response);
+        console.log('Respuesta de OpenAI:', respuesta);
+        if (respuesta.hasOwnProperty('json_data'))
+            return { respuesta: respuesta.json_data, prompt: prompt };
+        else
+            return { respuesta: respuesta, prompt: prompt };
+
+    } catch (error)
+    {
+        console.error('Error analizando el cheque:', error.message);
         return null;
     }
 }
-
 module.exports = transcribeImage;

@@ -2,8 +2,7 @@ const FlowMapper = require('../FlowControl/FlowMapper');
 const FlowManager = require('../FlowControl/FlowManager');
 const transcribeAudio = require('../Utiles/Chatgpt/transcribeAudio');
 const downloadMedia = require('../Utiles/Chatgpt/Operaciones/DownloadMedia');
-const transcribeDoc = require('../Utiles/Chatgpt/transcribeDoc')
-const transcribeImage = require('../Utiles/Chatgpt/transcribeImage')
+const { saveImageToStorage } = require('../Utiles/Chatgpt/storageHandler');
 
 const messageResponder = async (messageType, msg, sock, sender) =>
 {
@@ -76,7 +75,6 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'document': {
             try {
-        
                 // Extraer el mensaje de documento desde diferentes posibles estructuras
                 const documentMessage =
                     msg?.message?.documentMessage ||
@@ -88,16 +86,9 @@ const messageResponder = async (messageType, msg, sock, sender) =>
                     return;
                 }
 
-                const filePath = await downloadMedia({ message: { documentMessage } }, 'document');
+                const transcripcion = await saveImageToStorage(message, sender);
 
-                if (!filePath) {
-                    console.log("❌ Error: No se pudo descargar el documento.");
-                    await sock.sendMessage(sender, { text: "❌ No se pudo descargar el documento." });
-                    return;
-                }
-
-                const transcripcion = await transcribeDoc(filePath);
-                const text = await transcribeImage(transcripcion);
+                const text = await transcribeImage(transcripcion.localPath);
 
                 await FlowMapper.handleMessage(sender, text, sock, "text");
 
@@ -109,7 +100,6 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'document-caption':{
             try {
-
                 // Extraer el mensaje de documento desde diferentes posibles estructuras
                 const documentMessage =
                     msg?.message?.documentMessage ||
@@ -119,17 +109,10 @@ const messageResponder = async (messageType, msg, sock, sender) =>
                     console.log("❌ No se encontró un documento en el mensaje.");
                     await sock.sendMessage(sender, { text: "❌ No se encontró un documento en el mensaje." });
                     return;
-                };
-                const filePath = await downloadMedia({ message: { documentMessage } }, 'document-caption');
-
-                if (!filePath) {
-                    console.log("❌ Error: No se pudo descargar el documento.");
-                    await sock.sendMessage(sender, { text: "❌ No se pudo descargar el documento." });
-                    return;
                 }
 
-                const transcripcion = await transcribeDoc(filePath);
-                const text = await transcribeImage(transcripcion);
+                const transcripcion = await saveImageToStorage(message, sender);
+                const text = await transcribeImage(transcripcion.localPath);
 
                 await FlowMapper.handleMessage(sender, text, sock, "text");
 
