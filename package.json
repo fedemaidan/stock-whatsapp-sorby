@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,6 @@
     "google-auth-library": "^9.15.1",
     "googleapis": "^146.0.0",
     "openai": "^4.85.3",
-    "pdf-poppler": "^0.2.1",
-    "pdf2image": "^1.2.3",
     "pdfkit": "^0.16.0",
     "pg": "^8.13.3",
     "pg-hstore": "^2.3.4",

@@ -1,6 +1,6 @@
 const FlowManager = require('../../../FlowControl/FlowManager');
 const ChatModificarConfirmacion = require('../../../Utiles/Chatgpt/Operaciones/ChatModificarConfirmacion');
-const AprobarParcial = require('../../../Utiles/Helpers/ConfirmarPedido/AprobarParcial');
+
 
 module.exports = async function RecepcionParcial(userId, message, sock) {
 
@@ -49,8 +49,10 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
     }
 
     await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
-    FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "RecepcionParcial", data );
-    await AprobarParcial(userId)
+
+
+    FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "ConfirmarOpcion", data );
+    
 
     FlowManager.resetFlow(userId);
-};
+};     

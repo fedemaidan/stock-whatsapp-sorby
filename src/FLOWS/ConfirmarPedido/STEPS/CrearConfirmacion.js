@@ -34,7 +34,8 @@ module.exports = async function CrearConfirmacion(userId, data, sock) {
         `Por favor, indique el estado en el que recibió el pedido:\n\n` +
         `1️⃣ *Recepción Conforme* - El pedido fue recibido en perfectas condiciones.\n` +
         `2️⃣ *Recepción Parcial* - Se detectaron irregularidades o faltantes.\n` +
-        `3️⃣ *Rechazado* - El pedido no fue aceptado`;
+        `3️⃣ *Rechazado* - El pedido no fue aceptado\n` +
+        `4️⃣ *Cancelar* - Detener Operacion`;
 
     // Enviamos las opciones de confirmación
     await sock.sendMessage(userId, { text: opciones });

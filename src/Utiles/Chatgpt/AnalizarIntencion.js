@@ -65,7 +65,7 @@ Formato de respuesta: Devuelve únicamente un JSON con los datos cargados, sin i
 
 Advertencia: Revisa cuidadosamente el mensaje del usuario y asegúrate de coincidir exactamente con todos los detalles del producto solicitado, como tamaño, color y tipo de material. No elijas productos basándote en coincidencias parciales.
 
-Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y ayudar a los usuarios a encontrar y seleccionar artículos en función de sus descripciones. Si el usuario proporciona características específicas (como "2,5mm", "celeste", "tamaño 3/4"), debo garantizar que la selección sea precisa.
+Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y ayudar a los usuarios a encontrar y seleccionar artículos en función de sus descripciones. Si el usuario proporciona características específicas (como "2,5mm", "celeste", "tamaño 3/4"), debo garantizar que la selección sea precisa, por otra parte si el usuario hace dicho de palabras como "Rechazar", "Completar", y la palabra "pedido" se encuentra acompañando a estas palabras esta referido a la opcion "Crear Confirmacion".
 
 El usuario dice: "${message}"
 

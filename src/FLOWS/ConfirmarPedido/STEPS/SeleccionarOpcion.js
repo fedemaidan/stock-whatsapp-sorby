@@ -35,4 +35,11 @@ module.exports = async function SeleccionarOpcion(userId, message, sock) {
 
         FlowManager.resetFlow(userId);
     }
+    else if (data.data.Eleccion == "4") {
+        await sock.sendMessage(userId, { text: "la operación ha sido cancelada. ❌" });
+        FlowManager.resetFlow(userId)
+    }
+    else {
+        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido. 🤔" });
+    }
 };
