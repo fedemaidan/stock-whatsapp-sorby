@@ -3,6 +3,7 @@ const FlowManager = require('../FlowControl/FlowManager');
 const transcribeAudio = require('../Utiles/Chatgpt/transcribeAudio');
 const downloadMedia = require('../Utiles/Chatgpt/Operaciones/DownloadMedia');
 const { saveImageToStorage } = require('../Utiles/Chatgpt/storageHandler');
+const transcribeImage = require('../Utiles/Chatgpt/transcribeImage');
 
 const messageResponder = async (messageType, msg, sock, sender) =>
 {
@@ -75,22 +76,45 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'document': {
             try {
-                // Extraer el mensaje de documento desde diferentes posibles estructuras
-                const documentMessage =
-                    msg?.message?.documentMessage ||
-                    msg?.message?.documentWithCaptionMessage?.message?.documentMessage;
-
-                if (!documentMessage) {
-                    console.log("❌ No se encontró un documento en el mensaje.");
-                    await sock.sendMessage(sender, { text: "❌ No se encontró un documento en el mensaje." });
+                if (!msg || !msg.message) {
+                    console.error("❌ El objeto 'msg' no tiene la propiedad 'message'");
+                    await sock.sendMessage(sender, { text: "❌ Hubo un problema al procesar tu documento." });
                     return;
                 }
 
-                const transcripcion = await saveImageToStorage(message, sender);
+                // Depuración: imprimir el contenido del mensaje recibido
+                console.log("📩 Contenido del mensaje recibido:", JSON.stringify(msg.message, null, 2));
 
-                const text = await transcribeImage(transcripcion.localPath);
+                // Verificar si el mensaje contiene un documento
+                let docMessage = msg.message.documentMessage
+                    || (msg.message.documentWithCaptionMessage?.message?.documentMessage);
 
-                await FlowMapper.handleMessage(sender, text, sock, "text");
+
+                if (!docMessage) {
+                    console.error("❌ El mensaje no contiene un documento válido.");
+                    await sock.sendMessage(sender, { text: "❌ No se encontró un documento adjunto." });
+                    return;
+                }
+
+                // Extraer la URL y el nombre del archivo
+                const fileUrl = docMessage.url;
+                const fileName = docMessage.fileName || "archivo.pdf";
+
+                console.log(`📄 Documento recibido: ${fileName}, URL: ${fileUrl}`);
+
+                // Guardar el documento y obtener su ruta
+                const transcripcion = await saveImageToStorage(docMessage, sender);
+                if (!transcripcion) {
+                    console.error("❌ No se pudo obtener el documento.");
+                    await sock.sendMessage(sender, { text: "❌ No se pudo procesar tu documento." });
+                    return;
+                }
+
+                // Llamar a la función de transcripción con la ruta obtenida
+                const text = await transcribeImage(transcripcion.imagenFirebase);
+
+                // Enviar el resultado a FlowMapper
+                await FlowMapper.handleMessage(sender, text, sock, "document");
 
             } catch (error) {
                 console.error("❌ Error al procesar el documento:", error);
@@ -98,23 +122,47 @@ const messageResponder = async (messageType, msg, sock, sender) =>
             }
             break;
         }
-        case 'document-caption':{
-            try {
-                // Extraer el mensaje de documento desde diferentes posibles estructuras
-                const documentMessage =
-                    msg?.message?.documentMessage ||
-                    msg?.message?.documentWithCaptionMessage?.message?.documentMessage;
 
-                if (!documentMessage) {
-                    console.log("❌ No se encontró un documento en el mensaje.");
-                    await sock.sendMessage(sender, { text: "❌ No se encontró un documento en el mensaje." });
+        case 'document-caption': {
+            try {
+                if (!msg || !msg.message) {
+                    console.error("❌ El objeto 'msg' no tiene la propiedad 'message'");
+                    await sock.sendMessage(sender, { text: "❌ Hubo un problema al procesar tu documento." });
                     return;
                 }
 
-                const transcripcion = await saveImageToStorage(message, sender);
-                const text = await transcribeImage(transcripcion.localPath);
+                // Depuración: imprimir el contenido del mensaje recibido
+                console.log("📩 Contenido del mensaje recibido:", JSON.stringify(msg.message, null, 2));
 
-                await FlowMapper.handleMessage(sender, text, sock, "text");
+                // Verificar si el mensaje contiene un documento
+                let docMessage = msg.message.documentMessage
+                    || (msg.message.documentWithCaptionMessage?.message?.documentMessage);
+
+
+                if (!docMessage) {
+                    console.error("❌ El mensaje no contiene un documento válido.");
+                    await sock.sendMessage(sender, { text: "❌ No se encontró un documento adjunto." });
+                    return;
+                }
+
+                // Extraer la URL y el nombre del archivo
+                const fileUrl = docMessage.url;
+                const fileName = docMessage.fileName || "archivo.pdf";
+
+                console.log(`📄 Documento recibido: ${fileName}, URL: ${fileUrl}`);
+
+                // Guardar el documento y obtener su ruta
+                const transcripcion = await saveImageToStorage(docMessage, sender);
+                if (!transcripcion) {
+                    console.error("❌ No se pudo obtener el documento.");
+                    await sock.sendMessage(sender, { text: "❌ No se pudo procesar tu documento." });
+                    return;
+                }
+                // Llamar a la función de transcripción con la ruta obtenida
+                const text = await transcribeImage(transcripcion.imagenFirebase);
+
+                // Enviar el resultado a FlowMapper
+                await FlowMapper.handleMessage(sender, text, sock, "document-caption");
 
             } catch (error) {
                 console.error("❌ Error al procesar el documento:", error);

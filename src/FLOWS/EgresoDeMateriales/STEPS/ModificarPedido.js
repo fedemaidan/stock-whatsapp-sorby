@@ -1,4 +1,4 @@
-﻿const FlowManager = require('../../../FlowControl/FlowManager')
+const FlowManager = require('../../../FlowControl/FlowManager')
 const ChatModificarPedido = require('../../../Utiles/Chatgpt/Operaciones/ChatModificarPedido')
 module.exports = async function ModificarPedido(userId, message, sock)
 {
@@ -17,7 +17,7 @@ module.exports = async function ModificarPedido(userId, message, sock)
     await sock.sendMessage(userId, { text: output });
 
     await sock.sendMessage(userId, {
-        text: "✅ ¿Desea confirmar el pedido? \n\n1️⃣ *Sí*, confirmar pedido\n2️⃣ *No*, realizar cambios"
+        text: "✅ ¿Desea confirmar el Egreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación"
     });
     //userId, flowName, initialStep = 0, flowData = {}//
     FlowManager.setFlow(userId, "EGRESOMATERIALES", "ConfirmarOModificarEgreso", data)

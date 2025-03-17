@@ -1,6 +1,6 @@
 const { addRow, updateRow, updateSheetWithBatchDelete } = require('../General');
 const { Material, Movimiento, Obra, Pedido } = require('../../../models');  // Importa los modelos necesarios
-const general_range = 'Movimientos!A1:Z1000';
+const general_range = 'MovimientoRAW!A1:Z1000';
 
 async function getArrayToSheetGeneral(movimiento) {
     const material = await Material.findOne({ where: { id: movimiento.id_material } });
@@ -13,7 +13,13 @@ async function getArrayToSheetGeneral(movimiento) {
         tipoMovimiento = obraDestino ? "Transferencia" : "Egreso";
     }
 
-    // Preparar los valores tangibles para la hoja de cálculo
+    // Calcular saldo según el tipo de movimiento
+    let saldo = movimiento.cantidad; // Por defecto positivo
+    if (tipoMovimiento === "Egreso" || tipoMovimiento === "Transferencia") {
+        saldo = -movimiento.cantidad; // Negativo para egresos y transferencias
+    }
+
+    // Preparar los valores para la hoja de cálculo
     const values = [
         movimiento.id,
         movimiento.fecha,
@@ -25,6 +31,7 @@ async function getArrayToSheetGeneral(movimiento) {
         obraDestino ? obraDestino.id : 'No Aplica',
         obraDestino ? obraDestino.nombre : 'No Aplica',
         movimiento.cantidad,
+        saldo,  // Agregado saldo calculado
         tipoMovimiento,  // Tipo modificado según la lógica
         movimiento.nro_compra || "",
         movimiento.nro_pedido || "",

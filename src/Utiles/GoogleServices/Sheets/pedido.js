@@ -1,6 +1,6 @@
 const { addRow, updateRow, updateSheetWithBatchDelete } = require('../General');
 const { Material, Movimiento, Obra, Pedido } = require('../../../models');  // Importa los modelos necesarios
-const general_range = 'Pedidos!A1:Z1000';
+const general_range = 'PedidoRAW!A1:Z1000';
 
 async function getArrayToSheetGeneral(pedido) {
     // Preparar los valores tangibles para la hoja de cálculo

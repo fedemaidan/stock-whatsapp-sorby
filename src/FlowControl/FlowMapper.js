@@ -1,4 +1,4 @@
-﻿const FlowManager = require('./FlowManager');
+const FlowManager = require('./FlowManager');
 const EgresoMaterialesFlow = require('../FLOWS/EgresoDeMateriales/EgresoDeMaterialesFlow');
 const IngresoDeMaterialesFlow = require('../FLOWS/IngresoDeMateriales/IngresoDeMaterialesFlow');
 const ConfirmarPedidoFlow = require('../FLOWS/ConfirmarPedido/ConfirmarPedidoFlow');
@@ -30,7 +30,8 @@ class FlowMapper {
         {
             if (messageType === 'image' || messageType === 'document' || messageType === 'document-caption')
             {
-                await defaultFlow.handle(userId, message, sock, messageType);
+                FlowManager.setFlow(userId, 'INITFLOW');
+                await defaultFlow.Init(userId, message, sock, messageType);
             }
             else 
             {

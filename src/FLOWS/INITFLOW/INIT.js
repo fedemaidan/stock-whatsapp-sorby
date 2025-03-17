@@ -1,4 +1,4 @@
-﻿const { analizarIntencion } = require('../../Utiles/Chatgpt/AnalizarIntencion');
+const { analizarIntencion } = require('../../Utiles/Chatgpt/AnalizarIntencion');
 const FlowManager = require('../../FlowControl/FlowManager');
 const EgresoDeMaterialesFlow = require('../EgresoDeMateriales/EgresoDeMaterialesFlow');
 const IngresoDeMaterialesFlow = require('../IngresoDeMateriales/IngresoDeMaterialesFlow');
@@ -7,10 +7,22 @@ const defaultFlow = {
 
     async Init(userId, message, sock, messageType) {
         try {
-            const result = await analizarIntencion(message, userId);
+
+            //si es texto se analiza en cambio si es una imagen o documento o document-caption este ya se encuentra analizado y salta el "Analizar intencion"
+            let result;
+
+            if (messageType == "text" || messageType == "text_extended") {
+                result = await analizarIntencion(message, userId);
+               
+            }
+            else
+            {
+                result = message;
+            }
+
 
             console.log(JSON.stringify(result, null, 2));
-
+            
             switch (result.accion)
             {
                 case "Crear Egreso":

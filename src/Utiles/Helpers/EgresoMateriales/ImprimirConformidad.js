@@ -24,11 +24,11 @@ module.exports = async function generarPDFConformidad(userId) {
         fs.mkdirSync(outputDir);
     }
 
-    // Definir el nombre completo del archivo PDF
-    const filePath = path.join(outputDir, `Conformidad_${obraName.replace(/\s+/g, '_')}_Pedido_${nroPedido}.pdf`);
-
+    const filePath = path.join(outputDir, `Conformidad_${obraName.replace(/[\/\\:*?"<>|]/g, '_').replace(/\s+/g, '_')}_Pedido_${nroPedido}.pdf`);
     const doc = new PDFDocument({ margin: 50 });
+
     const stream = fs.createWriteStream(filePath);
+
     doc.pipe(stream);
 
     // Título
@@ -62,9 +62,12 @@ module.exports = async function generarPDFConformidad(userId) {
 
     doc.end();
 
-    stream.on("finish", async () => {
-        console.log(`PDF generado: ${filePath}`);
-       
+
+    await new Promise((resolve, reject) => {
+        stream.on("finish", async () => {
+            console.log(`PDF generado: ${filePath}`);
+            resolve()
+        });
     });
     return filePath;
 }

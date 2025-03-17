@@ -12,7 +12,7 @@ module.exports = async function ConfirmarOModificarEgreso(userId,message, sock) 
 
         const Operacion = await realizarMovimientoRetiro(userId)
         if (Operacion.Success) {
-            await enviarPDFWhatsApp(sock, userId)
+            await enviarPDFWhatsApp(Operacion.FiletPath,sock, userId)
             await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
 
         } else {

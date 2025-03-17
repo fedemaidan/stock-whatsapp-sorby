@@ -2,9 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const { Pedido } = require('../../../models'); // Asegúrate de importar el modelo correctamente
 
-module.exports = async function enviarPDFWhatsApp(sock, recipient) {
+module.exports = async function enviarPDFWhatsApp(filepath,sock, recipient) {
     try {
-        // Buscar el último pedido generado
+
+        /* Buscar el último pedido generado
         const ultimoPedido = await Pedido.findOne({
             order: [['id', 'DESC']], // Ordenar por ID descendente para obtener el último
             attributes: ['url_remito'] // Obtener solo el campo url_remito
@@ -13,8 +14,15 @@ module.exports = async function enviarPDFWhatsApp(sock, recipient) {
         if (!ultimoPedido || !ultimoPedido.url_remito) {
             throw new Error('No se encontró un pedido con un archivo válido.');
         }
+        */
 
-        const filePath = path.resolve(ultimoPedido.url_remito); // Ruta absoluta al archivo
+
+
+
+        //const filePath = path.resolve(ultimoPedido.url_remito); // Ruta absoluta al archivo
+
+        const filePath = filepath;
+
 
         if (!fs.existsSync(filePath)) {
             throw new Error('El archivo PDF no existe en la ruta especificada.');

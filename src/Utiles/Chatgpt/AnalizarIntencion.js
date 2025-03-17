@@ -79,6 +79,9 @@ ${JSON.stringify(Obras, null, 2)}
         const response = await getByChatgpt35TurboByText(prompt);
         const respuesta = JSON.parse(response);
         console.log(response)
+        console.log("-----------------*-----------------------------*----------------------")
+        console.log("ENTRO A ANALIZAR INTENCION")
+        console.log("-----------------*-----------------------------*----------------------")
         if (respuesta.hasOwnProperty('json_data'))
         {
             return respuesta.json_data
