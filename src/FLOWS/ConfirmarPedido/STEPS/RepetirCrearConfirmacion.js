@@ -1,12 +1,9 @@
 const FlowManager = require('../../../FlowControl/FlowManager')
-const ObtenerPedido = require('../../../Utiles/Helpers/ConfirmarPedido/ObtenerPedido')
 
-module.exports = async function CrearConfirmacion(userId, data, sock)
-{
-    const { Nro_Pedido } = data.data;
+module.exports = async function CrearConfirmacion(userId, data, sock) {
 
     // Obtenemos los detalles del pedido
-    const pedido = await ObtenerPedido(Nro_Pedido);
+    const pedido = FlowManager.userFlows[userId]?.flowData
 
     if (!pedido) {
         await sock.sendMessage(userId, { text: '❌ No se pudo encontrar el pedido.' });

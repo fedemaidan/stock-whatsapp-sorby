@@ -27,6 +27,6 @@ module.exports = async function ConfirmarOModificarEgreso(userId, message, sock)
         FlowManager.resetFlow(userId)
     } else
     {
-        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido. 🤔" });
+        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido" });
     }
 }

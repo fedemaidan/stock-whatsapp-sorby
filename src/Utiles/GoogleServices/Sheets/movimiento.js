@@ -19,10 +19,11 @@ async function getArrayToSheetGeneral(movimiento) {
         saldo = -movimiento.cantidad; // Negativo para egresos y transferencias
     }
 
+    const fechaSolo = movimiento.fecha.toISOString().split('T')[0];
     // Preparar los valores para la hoja de cálculo
     const values = [
         movimiento.id,
-        movimiento.fecha,
+        fechaSolo,
         material ? material.nombre : 'Desconocido',
         material ? material.id : movimiento.id_material,  // Si no encontramos el material, ponemos el ID
         material.SKU,
@@ -40,7 +41,6 @@ async function getArrayToSheetGeneral(movimiento) {
     ];
     return values;
 }
-
 
 function getTitlesToSheetGeneral() {
     return [

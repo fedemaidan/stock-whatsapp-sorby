@@ -40,6 +40,11 @@ const defaultFlow = {
                     ConfirmarPedidoFlow.start(userId, { data: result.data }, sock)
                     break;
 
+                case "No comprendido":
+                    await sock.sendMessage(userId, { text: "No entendi tu mensaje, porfavor repitelo"});
+                    FlowManager.resetFlow(userId)
+                    break;
+
                 case "NoRegistrado":
                     console.log("NO REGISTRADO")
                     break;

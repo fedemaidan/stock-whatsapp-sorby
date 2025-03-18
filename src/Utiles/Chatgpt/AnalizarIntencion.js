@@ -61,6 +61,13 @@ const opciones = [
         {
             Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
         }
+    },
+    {
+        accion: "No comprendido",
+        data:
+        {
+            Default: "No se comprendio el mensaje o es demasiado ambiguo en sus peticiones.",
+        }
     }
 ];
 

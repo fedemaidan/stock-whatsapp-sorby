@@ -47,4 +47,7 @@ module.exports = async function realizarMovimientoIngreso(userId) {
     return { Success: true, msg: 'Movimientos ingresados correctamente' };
 };
 
-const obtenerFecha = () => new Date();
+const obtenerFecha = () => {
+    return new Date(); // Devuelve la fecha como objeto Date
+};
+

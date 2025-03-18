@@ -4,7 +4,7 @@ const FlowManager = require('../../../../src/FlowControl/FlowManager')
 const ChatModificarConfirmacion = async (message, userId) => {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
 
-    prompt = `
+    const prompt = `
 Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedido según los cambios solicitados por el usuario, sin sobreescribir completamente el pedido anterior. Para ello, debo interpretar la solicitud y aplicar una de las siguientes acciones:
 
 3. **Quitar o eliminar:** Si el usuario indica "quitar" o "eliminar" un producto, reducir la cantidad o eliminarlo completamente si la cantidad a quitar es igual o mayor a la existente. Los productos eliminados o reducidos se deben almacenar en un campo separado llamado "eliminados".
@@ -15,27 +15,25 @@ SOLO DEVUELVE EL JSON MODIFICADO anexado abajo SEGUN LA INTERPRETACION NADA MAS
 json (solo esto tiene que salir en este formato, de esta manera con los datos que corresponda cambiar nada mas.)
 \`\`\`
 {
-  accion: "Modificar Confirmacion",
-  nro_pedido: numero del pedido,
-  fecha: fecha del pedido,
-  estado: 'Rechazado',
-  aclaracion: "Mensaje original del usuario que motivó los cambios",
-  aprobados: [
+  "accion": "Modificar Confirmacion",
+  "nro_pedido": "numero del pedido",
+  "fecha": "fecha del pedido",
+  "estado": "Rechazado",
+  "aclaracion": "Mensaje original del usuario que motivó los cambios",
+  "aprobados": [
     {
-      // Datos del pedido actualizado y como quedo luego de la modificacion
-      producto_name: nombre del producto,
-      cantidad: cantidad del producto,
-      obra_origen: obra que sedio los productos,
-      obra_destino: obra a la que se destinaron (puede estar vacio)
+      "producto_name": "nombre del producto",
+      "cantidad": "cantidad del producto",
+      "obra_origen": "obra que sedio los productos",
+      "obra_destino": "obra a la que se destinaron (puede estar vacio)"
     }
-  ]
-  rechazados: [
+  ],
+  "rechazados": [
     {
-      // Aquí van los productos eliminados o reducidos
-      producto_name: nombre del producto,
-      cantidad: cantidad del producto,
-      obra_origen: obra que sedio los productos,
-      obra_destino: obra a la que se destinaron (puede estar vacio)
+      "producto_name": "nombre del producto",
+      "cantidad": "cantidad del producto",
+      "obra_origen": "obra que sedio los productos",
+      "obra_destino": "obra a la que se destinaron (puede estar vacio)"
     }
   ]
 }
@@ -43,6 +41,7 @@ json (solo esto tiene que salir en este formato, de esta manera con los datos qu
 Mensaje del cliente: "${message}"
 
 Pedido antiguo:
+
 ${JSON.stringify(pedidoAntiguo, null, 2)}
 `;
 

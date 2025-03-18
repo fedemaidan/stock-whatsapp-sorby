@@ -4,6 +4,7 @@ const ChatModificarConfirmacion = require('../../../Utiles/Chatgpt/Operaciones/C
 
 module.exports = async function RecepcionParcial(userId, message, sock) {
 
+    //modificado
     const data = await ChatModificarConfirmacion(message, userId);
 
     if (!data) {
@@ -24,7 +25,10 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
 
     // Mensaje de productos aprobados
     let output = `📋 Detalles de la Solicitud de Retiro 📋\n\n`;
-    output += `📅 Fecha: ${data.fecha}\n`;
+    const fechaFormateada = new Date(data.fecha).toISOString().split('T')[0];
+
+    output += `📅 Fecha: ${fechaFormateada}\n`;
+
     output += `🏗️ Número de retiro: ${Nro_Pedido}\n`;
     output += `📍 Obra destino: ${aprobados[0]?.obra_destino || aprobados[0]?.obra_origen}\n\n`;
     output += `🛒 Productos Aprobados:\n`;
@@ -48,7 +52,10 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
         await sock.sendMessage(userId, { text: outputRechazados });
     }
 
-    await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el pedido?\n\n1️⃣ *Sí*, confirmar pedido\n2️⃣ *No*, cancelar operacion\n" });
+    await sock.sendMessage(userId, {
+        text: "✅ ¿Desea confirmar el pedido?\n\n1️⃣ *Sí*, confirmar pedido\n2️⃣ *No*, volver atras\n3️⃣ *Salir*" });
 
-    FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "ConfirmarOpcion", data );
+
+    FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "ConfirmarOpcion", {Dataoriginal:FlowManager.userFlows[userId]?.flowData, datamodificado: data});
+    console.log(FlowManager.userFlows[userId]?.flowData)
 };     

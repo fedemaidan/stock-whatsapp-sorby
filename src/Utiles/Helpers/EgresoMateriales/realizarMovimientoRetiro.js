@@ -16,18 +16,6 @@ module.exports = async function realizarMovimientoRetiro(userId) {
         return false;
     }
 
-    const FiletPath = await generarPDFConformidad(userId);
-
-    const result = await GuardarArchivoFire(FiletPath, userId)
-    if (result.success) {
-        console.log("Se guardo correctamente el egreso en el FIREBASE")
-    }
-    else
-    {
-        console.error("ocurrio un problema en el egreso del FIREBASE")
-    }
-
-
     const { obra_id, items } = pedidoAntiguo.data;
     const fecha = obtenerFecha();
 
@@ -75,14 +63,10 @@ module.exports = async function realizarMovimientoRetiro(userId) {
             fecha,
             aclaracion: "",
             estado: "En Proceso",
-            url_remito: result.signedUrl
+            url_remito: null // Se actualizará después
         }, { transaction });
 
         const UltimoNroPedido = await obtenerSiguienteNroPedido();
-
-        // **Enviamos el pedido a Google Sheets**
-        console.log("➡ Enviando PEDIDO a Sheets", nuevoPedido.dataValues);
-        await addPedidoToSheetWithClientGeneral(nuevoPedido.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
 
         // **Creamos los movimientos**
         let movimientosParaCrear = [];
@@ -108,14 +92,13 @@ module.exports = async function realizarMovimientoRetiro(userId) {
 
                     const Cod_ObraDestino = obraIdFuente !== obra_id ? obra_id : null;
 
-                    // **Agregamos a la lista de movimientos**
                     movimientosParaCrear.push({
-                        fecha: obtenerFecha(),
+                        fecha,
                         nombre: item.producto_name,
                         id_material: item.producto_id,
                         cod_obra_origen: obraIdFuente,
                         cantidad: cantidadATransferir,
-                        tipo: false, // Siempre egreso
+                        tipo: false,
                         nro_pedido: UltimoNroPedido.toString(),
                         cod_obradestino: Cod_ObraDestino
                     });
@@ -126,24 +109,53 @@ module.exports = async function realizarMovimientoRetiro(userId) {
         // **Creamos todos los movimientos en batch**
         const movimientosCreados = await Movimiento.bulkCreate(movimientosParaCrear, { transaction });
 
+        // **Generar y subir el PDF solo si todo salió bien**
+        const FiletPath = await generarPDFConformidad(userId);
+        const result = await GuardarArchivoFire(FiletPath, userId);
+
+        if (!result.success) {
+            throw new Error("No se pudo guardar el archivo en Firebase");
+        }
+
+        console.log("✅ Se guardó correctamente el egreso en Firebase");
+
+        // **Actualizar el pedido con la URL del PDF**
+        await Pedido.update(
+            { url_remito: result.signedUrl },
+            { where: { id: nuevoPedido.id }, transaction }
+        );
+
         // **Confirmamos la transacción**
         await transaction.commit();
         console.log('✅ Movimientos y pedido generados con éxito');
 
-        // **Preparar y enviar los datos a Google Sheets**
-        const movimientosConIds = movimientosCreados.map(movimiento => movimiento.dataValues);
+        // **Enviar datos a Google Sheets**
+        console.log("➡ Enviando PEDIDO a Sheets");
+        await addPedidoToSheetWithClientGeneral(nuevoPedido.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
 
         console.log("➡ Enviando MOVIMIENTOS a Sheets");
-        for (const movimiento of movimientosConIds) {
+        for (const movimiento of movimientosCreados) {
             console.log("📤 Enviando movimiento:", movimiento.dataValues);
-            await addMovimientoToSheetWithClientGeneral(movimiento, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await addMovimientoToSheetWithClientGeneral(movimiento.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
         }
 
         return { Success: true, FiletPath: FiletPath };
+
     } catch (error) {
-        await transaction.rollback();
+        // Solo se hace rollback si hubo un error antes del commit.
+        if (transaction.finished !== 'commit') {
+            await transaction.rollback();
+        }
         console.error('❌ Error al realizar el movimiento:', error.message);
         return { Success: false, msg: `❌ Error al realizar el movimiento: ${error.message}` };
     }
-}
-const obtenerFecha = () => new Date();
+};
+
+
+const obtenerFecha = () => {
+    const fecha = new Date();
+    const year = fecha.getFullYear();
+    const month = String(fecha.getMonth() + 1).padStart(2, '0'); // getMonth() es base 0
+    const day = String(fecha.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`; // Devuelve la fecha como cadena en formato YYYY-MM-DD
+};

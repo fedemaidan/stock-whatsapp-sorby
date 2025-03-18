@@ -4,9 +4,12 @@ const general_range = 'PedidoRAW!A1:Z1000';
 
 async function getArrayToSheetGeneral(pedido) {
     // Preparar los valores tangibles para la hoja de cálculo
+
+    const fechaSolo = pedido.fecha.toISOString().split('T')[0];
+
     const values = [
         pedido.id,
-        pedido.fecha,
+        fechaSolo,
         pedido.aclaracion,
         pedido.estado,
         pedido.url_remito,

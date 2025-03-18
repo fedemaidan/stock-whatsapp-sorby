@@ -9,7 +9,6 @@ const opcion =
     }
 }
 async function RecepcionDeRetiro(mensajeCliente) {
-    console.log("ENTRO A RecepcionDeRetiro-*-*-*-*-*-*-*-*-*--*-*-*-*-*")
 
     prompt = `
 Como bot de un sistema de control de stock, quiero identificar la intención del usuario y ejecutar la acción adecuada para gestionar correctamente la confirmación o cancelación de pedidos.
@@ -26,6 +25,7 @@ Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y 
 El usuario dice: "${mensajeCliente}"
 
 Formato de respuesta esperado (EXCLUSIVAMENTE JSON, sin texto adicional):
+
 ${JSON.stringify(opcion, null, 2)}
 `;
 

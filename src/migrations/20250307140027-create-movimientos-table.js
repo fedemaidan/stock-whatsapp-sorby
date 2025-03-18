@@ -34,7 +34,7 @@ module.exports = {
                 },
             },
             cantidad: {
-                type: Sequelize.INTEGER,
+                type: Sequelize.FLOAT,
                 allowNull: false,
             },
             tipo: {
