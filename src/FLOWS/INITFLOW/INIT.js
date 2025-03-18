@@ -35,6 +35,8 @@ const defaultFlow = {
 
 
                 case "Crear Confirmacion":
+                case "Rechazar":
+                case "Aprobar Parcial":
                     ConfirmarPedidoFlow.start(userId, { data: result.data }, sock)
                     break;
 

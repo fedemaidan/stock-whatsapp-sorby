@@ -47,6 +47,20 @@ const opciones = [
         {
             Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
         }
+    },
+    {
+        accion: "Aprobar Parcial",
+        data:
+        {
+            Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
+        }
+    },
+    {
+        accion: "Rechazar",
+        data:
+        {
+            Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
+        }
     }
 ];
 
@@ -66,8 +80,6 @@ Formato de respuesta: Devuelve únicamente un JSON con los datos cargados, sin i
 Advertencia: Revisa cuidadosamente el mensaje del usuario y asegúrate de coincidir exactamente con todos los detalles del producto solicitado, como tamaño, color y tipo de material. No elijas productos basándote en coincidencias parciales.
 
 Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y ayudar a los usuarios a encontrar y seleccionar artículos en función de sus descripciones. Si el usuario proporciona características específicas (como "2,5mm", "celeste", "tamaño 3/4"), debo garantizar que la selección sea precisa.
-
-En caso del usuario ingresa un mensaje tal como "Rechazar 12","Aprobar parcial 24","aprobar 16", "confirmar pedido 26". Se referira a la opcion "Crear Confirmacion".
 
 
 El usuario dice: "${message}"
