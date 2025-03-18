@@ -11,9 +11,9 @@ Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedi
 4. **Modificar cantidad:** Si el usuario pide cambiar la cantidad de un producto, actualizar la cantidad a la solicitada.
 
 **Estructura esperada del JSON de respuesta:**  NO ADHIERAS EL PEDIDO VIEJO AL NUEVO JSON
+SOLO DEVUELVE EL JSON MODIFICADO anexado abajo SEGUN LA INTERPRETACION NADA MAS
 json (solo esto tiene que salir en este formato, de esta manera con los datos que corresponda cambiar nada mas.)
 \`\`\`
-
 {
   accion: "Modificar Confirmacion",
   nro_pedido: numero del pedido,
@@ -44,8 +44,6 @@ Mensaje del cliente: "${message}"
 
 Pedido antiguo:
 ${JSON.stringify(pedidoAntiguo, null, 2)}
-
-SOLO DEVUELVE EL JSON MODIFICADO SEGUN LA INTERPRETACION NADA MAS
 `;
 
     const response = await getByChatgpt35TurboByText(prompt);

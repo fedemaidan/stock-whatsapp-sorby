@@ -40,6 +40,6 @@ module.exports = async function SeleccionarOpcion(userId, message, sock) {
         FlowManager.resetFlow(userId)
     }
     else {
-        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido. 🤔" });
+        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido." });
     }
 };

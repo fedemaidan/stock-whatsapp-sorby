@@ -1,5 +1,6 @@
 const AprobarParcial = require('../../../Utiles/Helpers/ConfirmarPedido/AprobarParcial');
-
+const opcionElegida = require('../../../Utiles/Chatgpt/Operaciones/opcionElegida')
+const FlowManager = require('../../../FlowControl/FlowManager');
 
 module.exports = async function ConfirmarOpcion(userId, message, sock) {
 
@@ -24,6 +25,6 @@ module.exports = async function ConfirmarOpcion(userId, message, sock) {
         await sock.sendMessage(userId, { text: "la operación ha sido cancelada. ❌" });
         FlowManager.resetFlow(userId)
     } else {
-        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido. 🤔" });
+        await sock.sendMessage(userId, { text: "Disculpa, no lo he entendido." });
     }
 }

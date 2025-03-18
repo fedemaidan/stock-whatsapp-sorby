@@ -48,11 +48,7 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
         await sock.sendMessage(userId, { text: outputRechazados });
     }
 
-    await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
-
+    await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el pedido?\n\n1️⃣ *Sí*, confirmar pedido\n2️⃣ *No*, cancelar operacion\n" });
 
     FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "ConfirmarOpcion", data );
-    
-
-    FlowManager.resetFlow(userId);
 };     
