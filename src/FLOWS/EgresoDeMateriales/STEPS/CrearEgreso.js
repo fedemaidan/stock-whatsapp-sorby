@@ -12,7 +12,7 @@ module.exports = async function CrearEgreso(userId, data, sock)
 
     await sock.sendMessage(userId, { text: output });
 
-    await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el Egreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación" });
+    await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el Egreso?\n\n1️⃣ *Sí*, confirmar Egreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación" });
 
     FlowManager.setFlow(userId, "EGRESOMATERIALES", "ConfirmarOModificarEgreso", data)
 }

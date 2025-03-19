@@ -11,7 +11,7 @@ const defaultFlow = {
             //si es texto se analiza en cambio si es una imagen o documento o document-caption este ya se encuentra analizado y salta el "Analizar intencion"
             let result;
 
-            if (messageType == "text" || messageType == "text_extended") {
+            if (messageType == "text" || messageType == "text_extended" || messageType == "audio" ) {
                 result = await analizarIntencion(message, userId);
                
             }

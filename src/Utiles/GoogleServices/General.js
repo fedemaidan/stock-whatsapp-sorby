@@ -69,7 +69,8 @@ async function addRow(sheetId, values, range) {
     }
 }
 
-//obtiene la ultima fila 
+//obtiene la ultima fila
+/*
 async function getLastRow(sheetId, sheetName) {
     const request = {
         spreadsheetId: sheetId,
@@ -78,6 +79,18 @@ async function getLastRow(sheetId, sheetName) {
     const response = await sheets.spreadsheets.values.get(request);
     const rows = response.data.values || [];
     return rows.length;  // Número de filas ocupadas en la columna A
+}
+*/
+async function getLastRow(sheetId, sheetName) {
+    const request = {
+        spreadsheetId: sheetId,
+        range: `${sheetName}!A:A`,  // Obtiene la columna A
+    };
+    const response = await sheets.spreadsheets.values.get(request);
+    const rows = response.data.values || [];
+
+    // Si no hay filas, devolver 1 para empezar desde la segunda fila
+    return rows.length === 0 ? 1 : rows.length;
 }
 
 
@@ -100,6 +113,7 @@ async function checkIfSheetExists(sheetId, sheetName) {
 }
 
 // Función para crear una hoja
+
 async function createSheet(sheetId, sheetName) {
     const request = {
         spreadsheetId: sheetId,

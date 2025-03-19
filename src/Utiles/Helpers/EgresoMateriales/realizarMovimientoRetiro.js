@@ -125,6 +125,7 @@ module.exports = async function realizarMovimientoRetiro(userId) {
             { where: { id: nuevoPedido.id }, transaction }
         );
 
+        nuevoPedido.url_remito = result.signedUrl;
         // **Confirmamos la transacción**
         await transaction.commit();
         console.log('✅ Movimientos y pedido generados con éxito');
