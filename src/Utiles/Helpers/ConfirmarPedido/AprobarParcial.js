@@ -112,8 +112,8 @@ module.exports = async function AprobarParcial(userId) {
                 fecha: obtenerFecha(),
                 nombre: mov.producto_name,
                 id_material: material.id,
-                cod_obra_origen: obraDestinoId,
-                cod_obradestino: obraOrigen.id,
+                cod_obra_origen: obraOrigen.id,
+                //cod_obradestino: obraOrigen.id,
                 cantidad: mov.cantidad,  // Movimiento positivo para balancear
                 tipo: true,
                 nro_pedido: Nro_Pedido,
