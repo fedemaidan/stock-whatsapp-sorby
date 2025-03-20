@@ -81,8 +81,9 @@ Mensaje del cliente: "${message}"
 
 console.log(prompt)
 
-    const respuesta = await getByChatGpt4o(prompt);
-    // let respuesta = JSON.parse(response);
+    const response = await getByChatGpt4o(prompt);
+    const respuestaLimpia = limpiarJson(response.choices[0].message.content);
+    let respuesta = JSON.parse(respuestaLimpia);
     respuesta.accion = "Modificar Confirmacion";
     respuesta.nro_pedido = pedidoAntiguo.Nro_Pedido;
     respuesta.fecha = pedidoAntiguo.Fecha;

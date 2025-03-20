@@ -6,7 +6,7 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
 
     //modificado
     const data = await ChatModificarConfirmacion(message, userId);
-
+    console.log("data", data)
     if (!data) {
         console.error(`Error: No se recibió respuesta de ChatModificarConfirmacion para userId: ${userId}`);
         await sock.sendMessage(userId, { text: "❌ Ocurrió un error al procesar la solicitud." });
