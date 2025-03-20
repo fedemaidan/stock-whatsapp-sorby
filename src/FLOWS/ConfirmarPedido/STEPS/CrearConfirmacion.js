@@ -22,7 +22,9 @@ module.exports = async function CrearConfirmacion(userId, data, sock)
 
 
     output += `🏗️ Número de retiro: ${pedido.Nro_Pedido}\n`;
-    output += `📍 Obra destino: ${pedido.movimientos[0]?.obra_destino || 'No definida'}\n\n`; // Usamos la obra destino del primer movimiento (si existe)
+    const movimiento = pedido.movimientos.find(m => m.obra_destino) || pedido.movimientos[0];
+
+    output += `📍 Obra destino: ${movimiento?.obra_destino || movimiento?.obra_origen || 'No disponible'}\n`;
 
     output += `🛒 Productos Solicitados:\n`;
 
