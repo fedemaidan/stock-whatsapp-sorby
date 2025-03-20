@@ -1,6 +1,11 @@
 const { getByChatGpt4o } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
 
+function limpiarJson(str) {
+  return str.replace(/```json\n?|```\n?/g, '').trim();
+}
+
+
 const ChatModificarConfirmacion = async (message, userId) => {
     console.log("🔵 [ChatModificarConfirmacion]: ", message);
     console.log("🔵 [FlowData]: ", FlowManager.userFlows[userId]?.flowData);
