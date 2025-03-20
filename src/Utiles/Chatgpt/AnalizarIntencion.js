@@ -43,6 +43,7 @@ const opciones = [
     },
     {
         accion: "Crear Confirmacion",
+        info: "Aqui se debe crear la confirmacion de un pedido de retiro",
         data:
         {
             Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
@@ -50,6 +51,7 @@ const opciones = [
     },
     {
         accion: "Aprobar Parcial",
+        info: "Aqui se debe aprobar parcialmente un pedido de retiro",
         data:
         {
             Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
@@ -57,6 +59,7 @@ const opciones = [
     },
     {
         accion: "Rechazar",
+        info: "Aqui se debe rechazar un pedido de retiro",
         data:
         {
             Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
