@@ -28,14 +28,24 @@ async function ObtenerPedido(Nro_Pedido) {
                 }
             }
 
+
+            console.log("movimiento.cod_obra_origen")
+            console.log(movimiento.cod_obra_origen)
+            console.log(movimiento.cod_obradestino)
+
+
             const obraOrigen = await Obra.findByPk(movimiento.cod_obra_origen);
             const obraDestino = await Obra.findByPk(movimiento.cod_obradestino);
+
+            console.log("OBRAS")
+            console.log(obraOrigen)
+            console.log(obraDestino)
 
             return {
                 producto_name: materialName,
                 cantidad: movimiento.cantidad,
                 obra_origen: obraOrigen ? obraOrigen.nombre : 'No definida',
-                obra_destino: obraDestino ? obraDestino.nombre : 'No definida',
+                obra_destino: obraDestino ? obraDestino.nombre : null,
             };
         }));
 

@@ -22,10 +22,9 @@ module.exports = async function CrearConfirmacion(userId, data, sock)
 
 
     output += `🏗️ Número de retiro: ${pedido.Nro_Pedido}\n`;
-    const movimiento = pedido.movimientos.find(m => m.obra_destino) || pedido.movimientos[0];
 
+    const movimiento = pedido.movimientos.find(m => m.obra_origen) || pedido.movimientos[0];
     output += `📍 Obra destino: ${movimiento?.obra_destino || movimiento?.obra_origen || 'No disponible'}\n`;
-
     output += `🛒 Productos Solicitados:\n`;
 
     // Iteramos sobre los movimientos del pedido y mostramos los productos
