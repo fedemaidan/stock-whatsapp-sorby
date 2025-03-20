@@ -2,8 +2,10 @@ const { getByChatgpt35TurboByText } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
 
 const ChatModificarConfirmacion = async (message, userId) => {
+    console.log("🔵 [ChatModificarConfirmacion]: ", message);
+    console.log("🔵 [FlowData]: ", FlowManager.userFlows[userId]?.flowData);
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
-    const itemsOriginales = pedidoAntiguo.items;
+    const itemsOriginales = pedidoAntiguo.movimientos;
 
     const prompt = `
 Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedido según los cambios solicitados por el usuario, sin sobreescribir completamente el pedido anterior. Para ello, debo interpretar la solicitud y aplicar una de las siguientes acciones:
