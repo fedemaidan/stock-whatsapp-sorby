@@ -3,6 +3,7 @@ const FlowManager = require('../../../../src/FlowControl/FlowManager')
 
 const ChatModificarConfirmacion = async (message, userId) => {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
+    const itemsOriginales = pedidoAntiguo.items;
 
     const prompt = `
 Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedido según los cambios solicitados por el usuario, sin sobreescribir completamente el pedido anterior. Para ello, debo interpretar la solicitud y aplicar una de las siguientes acciones:
@@ -15,11 +16,7 @@ SOLO DEVUELVE EL JSON MODIFICADO anexado abajo SEGUN LA INTERPRETACION NADA MAS
 json (solo esto tiene que salir en este formato, de esta manera con los datos que corresponda cambiar nada mas.)
 \`\`\`
 {
-  "accion": "Modificar Confirmacion",
-  "nro_pedido": "numero del pedido",
-  "fecha": "fecha del pedido",
-  "estado": "Rechazado",
-  "aclaracion": "Mensaje original del usuario que motivó los cambios",
+  "items_originales": ${JSON.stringify(itemsOriginales, null, 2)},
   "aprobados": [
     {
       "producto_name": "nombre del producto",
@@ -40,14 +37,15 @@ json (solo esto tiene que salir en este formato, de esta manera con los datos qu
 \`\`\`
 Mensaje del cliente: "${message}"
 
-Pedido antiguo:
-
-${JSON.stringify(pedidoAntiguo, null, 2)}
 `;
 
     const response = await getByChatgpt35TurboByText(prompt);
-    const respuesta = JSON.parse(response);
-
+    let respuesta = JSON.parse(response);
+    respuesta.accion = "Modificar Confirmacion";
+    respuesta.nro_pedido = pedidoAntiguo.nro_pedido;
+    respuesta.fecha = pedidoAntiguo.fecha;
+    respuesta.estado = "Rechazado";
+    respuesta.aclaracion = message;
     if (respuesta.hasOwnProperty('json_data')) {
         return respuesta.json_data;
     } else {

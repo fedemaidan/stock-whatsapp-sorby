@@ -86,7 +86,7 @@ module.exports = async function AprobarParcial(userId) {
                 id_material: movimiento.id_material,
                 cod_obra_origen: obraOrigen.id,
                 cod_obradestino: movimiento.cod_obradestino,
-                cantidad: -mov.cantidad,  // Movimiento negativo
+                cantidad: mov.cantidad, 
                 tipo: false,
                 nro_pedido: Nro_Pedido,
                 estado: 'Rechazado'
