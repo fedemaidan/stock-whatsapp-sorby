@@ -30,8 +30,9 @@ module.exports = async function ConfirmarOpcion(userId, message, sock) {
         FlowManager.setFlow(userId, "CONFIRMARPEDIDO", "RepetirCrearConfirmacion", Dataoriginal)
         RepetirCrearConfirmacion(userId,message,sock)
     }
-    else if (data.data.Eleccion == "2")
+    else if (data.data.Eleccion == "3")
     {
+        await sock.sendMessage(userId, { text: "❌ La operación fue cancelada." });
         FlowManager.resetFlow(userId)
     }
 }
