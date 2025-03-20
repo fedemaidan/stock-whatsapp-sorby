@@ -7,7 +7,7 @@ const ChatModificarConfirmacion = async (message, userId) => {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
     const itemsOriginales = pedidoAntiguo.movimientos;
 
-    const prompt2 = `
+    const prompt = `
     Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedido según los cambios solicitados por el usuario, sin sobreescribir completamente el pedido anterior. Para ello, debo interpretar la solicitud y aplicar una de las siguientes acciones:
 
 Aprobados: Todo lo que no fue rechazado debe ser aprobado. Es decir, si tengo X de un producto, y el cliente dice que falta Y del mismo producto. Tengo aprobado X-Y
@@ -45,7 +45,7 @@ Las suma de la cantidad del aprobados y rechazados deben ser igual a la de items
 Mensaje del cliente: "${message}"`
 
 
-    const prompt = `
+    const prompt2 = `
 Como bot de gestión de pedidos de retiro de materiales, debo actualizar el pedido según los cambios solicitados por el usuario, sin sobreescribir completamente el pedido anterior. Para ello, debo interpretar la solicitud y aplicar una de las siguientes acciones:
 
 3. **Quitar o eliminar:** Si el usuario indica "quitar" o "eliminar" un producto, reducir la cantidad o eliminarlo completamente si la cantidad a quitar es igual o mayor a la existente. Los productos eliminados o reducidos se deben almacenar en un campo separado llamado "eliminados".
