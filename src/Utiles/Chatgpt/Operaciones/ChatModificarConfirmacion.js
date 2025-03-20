@@ -1,4 +1,4 @@
-const { getByChatgpt35TurboByText } = require("../Base");
+const { getByChatGpt4o } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
 
 const ChatModificarConfirmacion = async (message, userId) => {
@@ -41,7 +41,9 @@ Mensaje del cliente: "${message}"
 
 `;
 
-    const response = await getByChatgpt35TurboByText(prompt);
+console.log(prompt)
+
+    const response = await getByChatGpt4o(prompt);
     let respuesta = JSON.parse(response);
     respuesta.accion = "Modificar Confirmacion";
     respuesta.nro_pedido = pedidoAntiguo.Nro_Pedido;

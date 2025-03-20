@@ -42,4 +42,20 @@ async function getByChatgpt35TurboByText(prompt) {
     });
     return limpiarJson(response.choices[0].message.content);
 }
-module.exports = { getByChatgpt35TurboByText, getByChatgpt4Vision };
+
+async function getByChatGpt4o(prompt) {
+    try {
+      return await openai.chat.completions.create({
+        model: "gpt-4o", // 🔥 Mejor rendimiento y costo
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.2,
+        max_tokens: 10000,
+        response_format: { type: "json_object" }
+      });
+  
+    } catch (error) {
+      console.error("Error en OpenAI:", error);
+      return null;
+    }
+  }
+module.exports = { getByChatgpt35TurboByText, getByChatgpt4Vision, getByChatGpt4o };
