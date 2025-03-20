@@ -25,7 +25,7 @@ module.exports = async function RecepcionParcial(userId, message, sock) {
 
     // Mensaje de productos aprobados
     let output = `📋 Detalles de la Solicitud de Retiro 📋\n\n`;
-    const fechaFormateada = new Date(data.fecha).toISOString().split('T')[0];
+    const fechaFormateada = data.fecha.toISOString().split('T')[0];
 
     output += `📅 Fecha: ${fechaFormateada}\n`;
 

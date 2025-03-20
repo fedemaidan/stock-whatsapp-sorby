@@ -44,8 +44,8 @@ Mensaje del cliente: "${message}"
     const response = await getByChatgpt35TurboByText(prompt);
     let respuesta = JSON.parse(response);
     respuesta.accion = "Modificar Confirmacion";
-    respuesta.nro_pedido = pedidoAntiguo.nro_pedido;
-    respuesta.fecha = pedidoAntiguo.fecha;
+    respuesta.nro_pedido = pedidoAntiguo.Nro_Pedido;
+    respuesta.fecha = pedidoAntiguo.Fecha;
     respuesta.estado = "Rechazado";
     respuesta.aclaracion = message;
     if (respuesta.hasOwnProperty('json_data')) {
