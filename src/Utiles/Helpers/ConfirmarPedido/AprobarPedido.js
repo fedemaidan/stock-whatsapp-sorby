@@ -2,7 +2,7 @@ const { Pedido, Movimiento } = require('../../../models');
 const FlowManager = require('../../../FlowControl/FlowManager');
 const { editMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
 const { editPedidoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/pedido');
-
+require('dotenv').config();
 async function AprobarPedido(userId) {
     try {
         // Obtenemos la estructura almacenada en FlowManager
@@ -24,7 +24,7 @@ async function AprobarPedido(userId) {
 
         // Enviar actualizaciones a Google Sheets
         for (const movimiento of movimientosActualizados) {
-            await editMovimientoToSheetWithClientGeneral(movimiento.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await editMovimientoToSheetWithClientGeneral(movimiento.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
         }
 
 
@@ -41,7 +41,7 @@ async function AprobarPedido(userId) {
         const pedidoActualizado = await Pedido.findOne({ where: { id: Nro_Pedido } });
 
         // Enviar actualización del pedido a Google Sheets
-        await editPedidoToSheetWithClientGeneral(pedidoActualizado.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+        await editPedidoToSheetWithClientGeneral(pedidoActualizado.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
 
         return { Success: true, msg: '✅ El pedido ha sido aprobado correctamente.' };
     } catch (error) {

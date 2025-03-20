@@ -3,6 +3,9 @@ module.exports = async function CrearIngreso(userId, data, sock) {
 
     const {obra_name, nro_compra, items } = data.data;
 
+    console.log("Dentro de ingreso materiales.")
+    console.log(obra_name)
+
     // Creamos un string con la información de la obra
     let output = `📋 *Detalles de la Solicitud de Ingreso* 📋\n\n 📄 *Numero de compra:* ${nro_compra}\n\n 🏗️ Obra destino: ${obra_name} \n\n🛒 *Productos Detectados:*\n`;
 

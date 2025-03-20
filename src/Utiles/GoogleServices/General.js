@@ -69,18 +69,6 @@ async function addRow(sheetId, values, range) {
     }
 }
 
-//obtiene la ultima fila
-/*
-async function getLastRow(sheetId, sheetName) {
-    const request = {
-        spreadsheetId: sheetId,
-        range: `${sheetName}!A:A`,  // Obtiene la columna A
-    };
-    const response = await sheets.spreadsheets.values.get(request);
-    const rows = response.data.values || [];
-    return rows.length;  // Número de filas ocupadas en la columna A
-}
-*/
 async function getLastRow(sheetId, sheetName) {
     const request = {
         spreadsheetId: sheetId,

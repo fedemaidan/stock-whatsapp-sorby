@@ -2,7 +2,7 @@ const FlowManager = require('../../../FlowControl/FlowManager');
 const { Pedido, Movimiento, Material, Obra, sequelize } = require('../../../models');
 const { editMovimientoToSheetWithClientGeneral, addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
 const { editPedidoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/pedido');
-
+require('dotenv').config();
 module.exports = async function RechazarPedido(userId) {
     const transaction = await sequelize.transaction();
 
@@ -29,7 +29,7 @@ module.exports = async function RechazarPedido(userId) {
         );
 
         const pedidoActualizado = await Pedido.findOne({ where: { id: Nro_Pedido }, transaction });
-        await editPedidoToSheetWithClientGeneral(pedidoActualizado.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+        await editPedidoToSheetWithClientGeneral(pedidoActualizado.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
 
         // **Actualizar y Registrar Movimientos**
         for (const mov of rechazados) {
@@ -60,7 +60,7 @@ module.exports = async function RechazarPedido(userId) {
             );
 
             const movActualizado = await Movimiento.findOne({ where: { id: movimiento.id }, transaction });
-            await editMovimientoToSheetWithClientGeneral(movActualizado.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await editMovimientoToSheetWithClientGeneral(movActualizado.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
 
             // Registrar devolución
             console.log(`🔄 Creando "Devolución por rechazo" para ${mov.producto_name}`);
@@ -81,7 +81,7 @@ module.exports = async function RechazarPedido(userId) {
                 estado: 'Devolución por rechazo'
             }, { transaction });
 
-            await addMovimientoToSheetWithClientGeneral(devolucion.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await addMovimientoToSheetWithClientGeneral(devolucion.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
         }
 
         // **Confirmar transacción**

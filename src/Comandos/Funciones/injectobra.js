@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
-const { Obra } = require('../src/models'); // Ajusta la ruta según sea necesario
+const { Obra } = require('../../models'); // Ajusta la ruta según sea necesario
 
 async function importObrasFromCSV(filePath) {
     return new Promise((resolve, reject) => {

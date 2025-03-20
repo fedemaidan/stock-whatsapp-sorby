@@ -1,6 +1,8 @@
 const FlowManager = require('../../../FlowControl/FlowManager');
 const { Material,Movimiento } = require('../../../models');  // Importa el modelo Material
 const { addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
+require('dotenv').config();
+
 module.exports = async function realizarMovimientoIngreso(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
 
@@ -41,7 +43,8 @@ module.exports = async function realizarMovimientoIngreso(userId) {
     }));
 
     for (const movimiento of movimientosConIds) {
-        await addMovimientoToSheetWithClientGeneral(movimiento, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+        console.log('GOOGLE_SHEET_ID:', process.env.GOOGLE_SHEET_ID);
+        await addMovimientoToSheetWithClientGeneral(movimiento, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
     }
     //---------------------------------------//
     return { Success: true, msg: 'Movimientos ingresados correctamente' };

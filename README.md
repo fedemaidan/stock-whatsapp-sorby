@@ -14,3 +14,13 @@ cd..
 1. nodemon index.js (ejecutar bajo la libreria nodemon *SOLO PARA AMBIENTES CONTROLADO, NO PRODUCCION*)
 2. npm start (inicializacion normal)
 
+
+
+Inicializacion de datos:
+En una consola separada correr el contenedor creando los 2 volumenes Datos y codigo.
+	docker run --name=Cstockremito --network host -v ${PWD}/src:/app/src -v ${PWD}/CSV:/app/CSV stockremito
+En otra consola ejecutamos los siguientes comandos
+docker exec -it Cstockremito bash      (Acceder a la consola del contenedor)
+export GOOGLE_CREDENTIALS=  (Pasar como parametro la credencial de google)
+export GOOGLE_SHEET_ID="1N20iIt-mygURiFPt2GpqARhtt9hWU9aHPaFJQcN4Vgo"  (Pasar como parametro el id de la google sheet a utilizar)
+node ./src/Comandos/InicializarTodo.js     (Ejecutar el comando que crea y sube al sheet Obras, Materiales y Movimientos)

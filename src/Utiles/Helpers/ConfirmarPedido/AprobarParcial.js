@@ -2,7 +2,7 @@ const FlowManager = require('../../../FlowControl/FlowManager');
 const { Pedido, Movimiento, Material, Obra, sequelize } = require('../../../models');
 const { editMovimientoToSheetWithClientGeneral, addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
 const { editPedidoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/pedido');
-
+require('dotenv').config();
 module.exports = async function AprobarParcial(userId) {
     const transaction = await sequelize.transaction();
 
@@ -24,7 +24,7 @@ module.exports = async function AprobarParcial(userId) {
         );
 
         const pedidoActualizado = await Pedido.findOne({ where: { id: Nro_Pedido }, transaction });
-        await editPedidoToSheetWithClientGeneral(pedidoActualizado.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+        await editPedidoToSheetWithClientGeneral(pedidoActualizado.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
 
         // **Actualizar Movimientos Aprobados**
         for (const mov of aprobados) {
@@ -54,7 +54,7 @@ module.exports = async function AprobarParcial(userId) {
             );
 
             const movActualizado = await Movimiento.findOne({ where: { id: movimiento.id }, transaction });
-            await editMovimientoToSheetWithClientGeneral(movActualizado.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await editMovimientoToSheetWithClientGeneral(movActualizado.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
         }
 
         // **Crear Movimientos Rechazados y sus Devoluciones**
@@ -92,7 +92,7 @@ module.exports = async function AprobarParcial(userId) {
                 estado: 'Rechazado'
             }, { transaction });
 
-            await addMovimientoToSheetWithClientGeneral(nuevoMov.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await addMovimientoToSheetWithClientGeneral(nuevoMov.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
 
             console.log(`🔄 Creando "Devolución por rechazo" para ${mov.producto_name}`);
             const material = await Material.findOne({ where: { nombre: mov.producto_name }, transaction });
@@ -120,7 +120,7 @@ module.exports = async function AprobarParcial(userId) {
                 estado: 'Devolución por rechazo'
             }, { transaction });
 
-            await addMovimientoToSheetWithClientGeneral(devolucion.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await addMovimientoToSheetWithClientGeneral(devolucion.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
         }
 
         // **Confirmar transacción**

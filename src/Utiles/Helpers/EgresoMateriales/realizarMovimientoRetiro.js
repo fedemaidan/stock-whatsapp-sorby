@@ -7,7 +7,7 @@ const generarPDFConformidad = require('../../Helpers/EgresoMateriales/ImprimirCo
 const { addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
 const { addPedidoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/pedido');
 const { GuardarArchivoFire } = require('../../Chatgpt/storageHandler')
-
+require('dotenv').config();
 module.exports = async function realizarMovimientoRetiro(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
 
@@ -132,12 +132,12 @@ module.exports = async function realizarMovimientoRetiro(userId) {
 
         // **Enviar datos a Google Sheets**
         console.log("➡ Enviando PEDIDO a Sheets");
-        await addPedidoToSheetWithClientGeneral(nuevoPedido.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+        await addPedidoToSheetWithClientGeneral(nuevoPedido.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
 
         console.log("➡ Enviando MOVIMIENTOS a Sheets");
         for (const movimiento of movimientosCreados) {
             console.log("📤 Enviando movimiento:", movimiento.dataValues);
-            await addMovimientoToSheetWithClientGeneral(movimiento.dataValues, { sheetWithClient: '1Nd4_14gz03AXg8dJUY6KaZEynhoc5Eaq-EAVqcLh3ek' });
+            await addMovimientoToSheetWithClientGeneral(movimiento.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
         }
 
         return { Success: true, FiletPath: FiletPath };

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
-const { Material } = require('../src/models'); // Ajusta la ruta según sea necesario
+const { Material } = require('../../models'); // Ajusta la ruta según sea necesario
 
 async function importMaterialsFromCSV(filePath) {
     return new Promise((resolve, reject) => {
