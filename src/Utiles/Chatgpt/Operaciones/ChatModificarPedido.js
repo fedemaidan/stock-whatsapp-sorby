@@ -1,4 +1,4 @@
-const { getByChatgpt35TurboByText } = require("../Base");
+const { getByChatGpt4o } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
 const { obtenerTodosLosMateriales } = require('../../BDServices/Funciones/FuncionesMaterial');
 const { obtenerTodasLasObras } = require('../../BDServices/Funciones/FuncionesObra');
@@ -39,7 +39,7 @@ Stock disponible: ${JSON.stringify(materiales, null, 2)}
 Obras disponibles: ${JSON.stringify(Obras, null, 2)}
 `;
 
-    const response = await getByChatgpt35TurboByText(prompt);
+    const response = await getByChatGpt4o(prompt);
     const respuesta = JSON.parse(response);
 
     if (respuesta.hasOwnProperty('json_data')) {

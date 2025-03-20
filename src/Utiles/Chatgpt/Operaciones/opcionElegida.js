@@ -1,4 +1,4 @@
-const { getByChatgpt35TurboByText } = require("../Base");
+const { getByChatGpt4o } = require("../Base");
 
 const opcion =
 {
@@ -28,7 +28,7 @@ Formato de respuesta esperado (EXCLUSIVAMENTE JSON, sin texto adicional):
 ${JSON.stringify(opcion, null, 2)}
 `;
 
-    const response = await getByChatgpt35TurboByText(prompt);
+    const response = await getByChatGpt4o(prompt);
     const respuesta = JSON.parse(response);
 
     console.log(response)

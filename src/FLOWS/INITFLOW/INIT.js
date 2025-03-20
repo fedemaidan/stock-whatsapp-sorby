@@ -10,6 +10,7 @@ const defaultFlow = {
 
             //si es texto se analiza en cambio si es una imagen o documento o document-caption este ya se encuentra analizado y salta el "Analizar intencion"
             let result;
+            await sock.sendMessage(userId, { text: "⏳ Analizando mensaje ⏳" });
 
             if (messageType == "text" || messageType == "text_extended" || messageType == "audio" ) {
                 result = await analizarIntencion(message, userId);

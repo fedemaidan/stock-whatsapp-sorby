@@ -7,6 +7,8 @@ const transcribeImage = require('../Utiles/Chatgpt/transcribeImage');
 
 const messageResponder = async (messageType, msg, sock, sender) =>
 {
+
+
     switch (messageType) {
         case 'text':
         case 'text_extended': {
@@ -16,6 +18,7 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'image': {
             try {
+                await sock.sendMessage(sender, { text: "⏳ Analizando imagen... ⏳" });
                 // Verificar si el mensaje tiene una imagen (no audio)
                 if (!msg.message || !msg.message.imageMessage) {
                     await sock.sendMessage(sender, { text: "❌ No se encontró una imagen en el mensaje." });
@@ -58,6 +61,7 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'audio': {
             try {
+                await sock.sendMessage(sender, { text: "⏳ Escuchando tu mensaje... ⏳" });
                 if (!msg.message || !msg.message.audioMessage) {
                     await sock.sendMessage(sender, { text: "❌ No se encontró un audio en el mensaje." });
                     return;
@@ -79,6 +83,7 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         }
         case 'document': {
             try {
+                await sock.sendMessage(sender, { text: "⏳ Analizando documento... ⏳" });
                 if (!msg || !msg.message) {
                     console.error("❌ El objeto 'msg' no tiene la propiedad 'message'");
                     await sock.sendMessage(sender, { text: "❌ Hubo un problema al procesar tu documento." });
@@ -128,6 +133,7 @@ const messageResponder = async (messageType, msg, sock, sender) =>
 
         case 'document-caption': {
             try {
+                await sock.sendMessage(sender, { text: "⏳ Analizando documento... ⏳" });
                 if (!msg || !msg.message) {
                     console.error("❌ El objeto 'msg' no tiene la propiedad 'message'");
                     await sock.sendMessage(sender, { text: "❌ Hubo un problema al procesar tu documento." });

@@ -1,4 +1,4 @@
-const { getByChatgpt35TurboByText } = require("./Base");
+const { getByChatGpt4o } = require("./Base");
 const { obtenerTodosLosMateriales } = require('../BDServices/Funciones/FuncionesMaterial');
 const {obtenerTodasLasObras } = require('../BDServices/Funciones/FuncionesObra');
 const FlowManager = require('../../FlowControl/FlowManager')
@@ -75,7 +75,7 @@ const opciones = [
 ];
 
 // Servicio para analizar la intención del mensaje
-const analizarIntencion = async (message, userId) => {
+const analizarIntencion = async (message, sender) => {
     try
     {
         const materiales = await obtenerTodosLosMateriales();
@@ -101,9 +101,8 @@ ${JSON.stringify(materiales, null, 2)}
 Aqui estan las obras disponibles:
 ${JSON.stringify(Obras, null, 2)}
 `;
-        const response = await getByChatgpt35TurboByText(prompt);
+        const response = await getByChatGpt4o(prompt);
         const respuesta = JSON.parse(response);
-        console.log(response)
 
         if (respuesta.hasOwnProperty('json_data'))
         {
