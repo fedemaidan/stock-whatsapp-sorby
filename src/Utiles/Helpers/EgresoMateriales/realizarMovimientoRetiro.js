@@ -66,7 +66,7 @@ module.exports = async function realizarMovimientoRetiro(userId) {
             url_remito: null // Se actualizará después
         }, { transaction });
 
-        const UltimoNroPedido = await obtenerSiguienteNroPedido();
+        const UltimoNroPedido = nuevoPedido.id; //await obtenerSiguienteNroPedido();
 
         // **Creamos los movimientos**
         let movimientosParaCrear = [];
