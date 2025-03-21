@@ -10,8 +10,9 @@ module.exports = async function RechazarPedido(userId) {
         const flowData = FlowManager.userFlows[userId]?.flowData;
 
 
-
+        console.log("//*//*//*//*//*//*//*//*//*//*//*//*");
         console.log("📌 FlowData recibido:", flowData);
+        console.log("//*//*//*//*//*//*//*//*//*//*//*//*");
 
         if (!flowData || !flowData.Nro_Pedido) {
             return { Success: false, msg: '❌ No se encontró información del pedido en FlowManager.' };

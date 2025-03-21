@@ -66,6 +66,43 @@ const opciones = [
         }
     },
     {
+        accion: "Consultar Pedido",
+        info: "Aqui se debe consultar un pedido de retiro o hacer referencia a uno y su informacion",
+        data:
+        {
+            Nro_Pedido: "aqui va el numero de pedido dado por el usuario",
+        }
+    },
+    {
+        accion: "Tranfererir Materiales",
+        info: "Aqui se debe transferir materiales de una obra hacia otra",
+        data:
+        {
+            obra_id_origen: "El id de la obra de origen a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
+            obra_name_origen: "Aqui va la obra de origen a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            obra_id_destino: "El id de la obra de destino a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
+            obra_name_destino: "Aqui va la obra de destino a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            items:
+                [
+                    {
+                        producto_id: "id del producto al que me estoy refiriendo",
+                        producto_name: "nombre del producto al que me estoy refiriendo",
+                        cantidad: "Cantidad de este material indicado",
+                        SKU: "El codigo interno del deposito",
+                        zona: "ubicacion, en que zona del deposito se encuentra el material."
+                    },
+                ]
+        }
+    },
+    {
+        accion: "Consultar Stock",
+        info: "Aqui se debe consultar un material del stock listar las obras y cuanto de este material disponen y su informacion",
+        data:
+        {
+            id_material: "aqui va el id de material dado por el usuario",
+        }
+    },
+    {
         accion: "No comprendido",
         data:
         {

@@ -1,4 +1,5 @@
 const FlowManager = require('../../../FlowControl/FlowManager')
+
 module.exports = async function CrearEgreso(userId, data, sock)
 {
     const {obra_name, items } = data.data;

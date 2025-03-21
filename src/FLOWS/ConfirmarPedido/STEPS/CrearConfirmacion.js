@@ -9,7 +9,7 @@ module.exports = async function CrearConfirmacion(userId, data, sock)
     const pedido = await ObtenerPedido(Nro_Pedido);
 
     if (!pedido) {
-        await sock.sendMessage(userId, { text: '❌ No se pudo encontrar el pedido.' });
+        await sock.sendMessage(userId, { text: '❌ No se encuentra el pedido o este ya esta cerrado. ' });
         FlowManager.resetFlow(userId)
         return; // Termina la ejecución si no se encuentra el pedido
     }

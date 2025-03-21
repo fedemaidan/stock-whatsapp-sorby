@@ -2,10 +2,15 @@ const FlowManager = require('./FlowManager');
 const EgresoMaterialesFlow = require('../FLOWS/EgresoDeMateriales/EgresoDeMaterialesFlow');
 const IngresoDeMaterialesFlow = require('../FLOWS/IngresoDeMateriales/IngresoDeMaterialesFlow');
 const ConfirmarPedidoFlow = require('../FLOWS/ConfirmarPedido/ConfirmarPedidoFlow');
+const ConsultarPedidoFlow = require('../FLOWS/ConsultarPedido/ConsultarPedidoFlow');
+const TransferirMaterialesFlow = require('../FLOWS/TransferirMateriales/TransferirMaterialesFlow');
+const ConsultarStockFlow = require('../FLOWS/ConsultarStock/ConsultarStockFlow');
+
 const defaultFlow = require('../FLOWS/INITFLOW/INIT');
 class FlowMapper {
     async handleMessage(userId, message, sock, messageType) {
         const flow = FlowManager.getFlow(userId);
+
         if (flow)
         {
             switch (flow.flowName)
@@ -20,6 +25,18 @@ class FlowMapper {
 
                 case 'CONFIRMARPEDIDO':
                     await ConfirmarPedidoFlow.Handle(userId, message, flow.currentStep, sock, messageType);
+                    break;
+
+                case 'CONSULTARPEDIDO':
+                    await ConsultarPedidoFlow.Handle(userId, message, flow.currentStep, sock, messageType);
+                    break;
+
+                case 'TRANSFERENCIAMATERIALES':
+                    await TransferirMaterialesFlow.Handle(userId, message, flow.currentStep, sock, messageType);
+                    break;
+
+                case 'CONSULTARSTOCK':
+                    await ConsultarStockFlow.Handle(userId, message, flow.currentStep, sock, messageType);
                     break;
 
                 default:

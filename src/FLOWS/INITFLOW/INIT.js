@@ -3,6 +3,9 @@ const FlowManager = require('../../FlowControl/FlowManager');
 const EgresoDeMaterialesFlow = require('../EgresoDeMateriales/EgresoDeMaterialesFlow');
 const IngresoDeMaterialesFlow = require('../IngresoDeMateriales/IngresoDeMaterialesFlow');
 const ConfirmarPedidoFlow = require('../ConfirmarPedido/ConfirmarPedidoFlow');
+const ConsultarPedidoFlow = require('../ConsultarPedido/ConsultarPedidoFlow');
+const TransferirMaterialesFlow = require('../TransferirMateriales/TransferirMaterialesFlow');
+const ConsultarStockFlow = require('../ConsultarStock/ConsultarStockFlow');
 const defaultFlow = {
 
     async Init(userId, message, sock, messageType) {
@@ -34,6 +37,17 @@ const defaultFlow = {
                     IngresoDeMaterialesFlow.start(userId, { data: result.data }, sock)
                     break;
 
+                case "Consultar Pedido":
+                    ConsultarPedidoFlow.start(userId, { data: result.data }, sock)
+                    break;
+
+                case "Consultar Stock":
+                    ConsultarStockFlow.start(userId, { data: result.data }, sock)
+                    break;
+
+                case "Tranfererir Materiales":
+                    TransferirMaterialesFlow.start(userId, { data: result.data }, sock)
+                    break;
 
                 case "Crear Confirmacion":
                 case "Rechazar":

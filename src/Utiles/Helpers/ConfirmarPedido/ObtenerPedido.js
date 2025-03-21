@@ -17,6 +17,11 @@ async function ObtenerPedido(Nro_Pedido) {
             throw new Error('Pedido no encontrado');
         }
 
+        if (pedido.estado != "En Proceso")
+        {
+            return null
+        }
+
         // Consultar las obras de origen y destino de los movimientos y materiales
         const movimientosConObras = await Promise.all(pedido.movimientos.map(async (movimiento) => {
             // Si el material no está incluido en la consulta, lo buscamos por separado
