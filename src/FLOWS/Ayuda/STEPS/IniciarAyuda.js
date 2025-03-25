@@ -5,7 +5,7 @@ module.exports = async function IniciarConsultaStock(userId, data, sock) {
     const output = `📌 *Lista de comandos disponibles:*\n\n
     ────────────────────────────\n
     ✅ *Crear Egreso*  \n
-      📌 *Ejemplo:* "Ingresar *cantidad* *Nombre del material* a *Nombre de la obra*"\n\n
+      📌 *Ejemplo:* "Retirar *cantidad* *Nombre del material* a *Nombre de la obra*"\n\n
     ────────────────────────────\n
     ✅ *Crear Ingreso*  \n
       📌 *Ejemplo:* "Ingresar *cantidad* *Nombre del material* a *Nombre de la obra*"\n\n
