@@ -108,6 +108,13 @@ const opciones = [
         {
             Default: "No se comprendio el mensaje o es demasiado ambiguo en sus peticiones.",
         }
+    },
+    {
+        accion: "Ayuda",
+        data:
+        {
+            Default: "El usuario quiere ayuda sobre que comandos tiene disponible.",
+        }
     }
 ];
 

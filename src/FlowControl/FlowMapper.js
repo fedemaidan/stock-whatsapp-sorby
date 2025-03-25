@@ -5,6 +5,7 @@ const ConfirmarPedidoFlow = require('../FLOWS/ConfirmarPedido/ConfirmarPedidoFlo
 const ConsultarPedidoFlow = require('../FLOWS/ConsultarPedido/ConsultarPedidoFlow');
 const TransferirMaterialesFlow = require('../FLOWS/TransferirMateriales/TransferirMaterialesFlow');
 const ConsultarStockFlow = require('../FLOWS/ConsultarStock/ConsultarStockFlow');
+const AyudaFlow = require('../FLOWS/Ayuda/AyudaFlow');
 
 const defaultFlow = require('../FLOWS/INITFLOW/INIT');
 class FlowMapper {
@@ -37,6 +38,10 @@ class FlowMapper {
 
                 case 'CONSULTARSTOCK':
                     await ConsultarStockFlow.Handle(userId, message, flow.currentStep, sock, messageType);
+                    break;
+
+                case 'AYUDA':
+                    await AyudaFlow.Handle(userId, message, flow.currentStep, sock, messageType);
                     break;
 
                 default:
