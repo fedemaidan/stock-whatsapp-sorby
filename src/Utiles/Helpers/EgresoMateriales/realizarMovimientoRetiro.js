@@ -140,7 +140,7 @@ module.exports = async function realizarMovimientoRetiro(userId) {
             await addMovimientoToSheetWithClientGeneral(movimiento.dataValues, { sheetWithClient: process.env.GOOGLE_SHEET_ID });
         }
 
-        return { Success: true, FiletPath: FiletPath };
+        return { Success: true, FiletPath: FiletPath, NroPedido: nuevoPedido.id };
 
     } catch (error) {
         // Solo se hace rollback si hubo un error antes del commit.
