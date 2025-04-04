@@ -20,5 +20,5 @@ module.exports = async function ModificarPedido(userId, message, sock)
         text: "✅ ¿Desea confirmar el Egreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación"
     });
     //userId, flowName, initialStep = 0, flowData = {}//
-    FlowManager.setFlow(userId, "EGRESOMATERIALES", "ConfirmarOModificarEgreso", data)
+    FlowManager.setFlow(userId,"EGRESOMATERIALES","ConfirmarOModificarEgreso",data)
 }

@@ -96,7 +96,55 @@ async function saveImageToStorage(message, senderPhone) {
     }
 }
 
-module.exports = { saveImageToStorage, GuardarArchivoFire };
+async function saveImageToStorageHandle(imageMessage, senderPhone) {
+    try {
+        console.log('📥 Procesando imagen...');
+
+        if (!imageMessage || !imageMessage.mimetype) {
+            throw new Error('❌ No se encontró una imagen en el mensaje.');
+        }
+
+        // Obtener mimetype y definir extensión
+        const mimeType = imageMessage.mimetype;
+        let fileExtension = '';
+        if (mimeType.includes('jpeg')) fileExtension = '.jpeg';
+        else if (mimeType.includes('png')) fileExtension = '.png';
+        else if (mimeType.includes('jpg')) fileExtension = '.jpg';
+        else throw new Error('❌ Formato de imagen no soportado.');
+
+        // Descargar imagen como buffer
+        const buffer = await downloadMediaMessage({ message: { imageMessage } }, 'buffer');
+        console.log('📂 Imagen descargada');
+
+        // Generar nombre único
+        const randomNumber = Math.floor(Math.random() * 1000000);
+        const downloadsDir = path.join(__dirname, '../downloads');
+        if (!fs.existsSync(downloadsDir)) {
+            fs.mkdirSync(downloadsDir, { recursive: true });
+        }
+
+        const localImagePath = path.join(downloadsDir, `${randomNumber}${fileExtension}`);
+        fs.writeFileSync(localImagePath, buffer);
+        console.log(`✅ Imagen guardada en: ${localImagePath}`);
+
+        // Subir a Firebase
+        const date = new Date().toISOString().split('T')[0];
+        const filePath = `StockRemitos/${senderPhone}/${date}/${randomNumber}${fileExtension}`;
+        const imageBuffer = fs.readFileSync(localImagePath);
+
+        const storageResult = await saveFileToStorage(imageBuffer, `${randomNumber}${fileExtension}`, filePath, mimeType);
+        if (!storageResult.success) {
+            throw new Error('❌ Error al subir la imagen a Firebase.');
+        }
+
+        return { imagenLocal: localImagePath, imagenFirebase: storageResult.signedUrl };
+    } catch (error) {
+        console.error('❌ Error procesando la imagen:', error.message);
+        return null;
+    }
+}
+
+module.exports = { saveImageToStorage, GuardarArchivoFire, saveImageToStorageHandle };
 
 async function saveFileToStorage(buffer, fileName, filePath, mimeType) {
     const bucket = admin.storage().bucket();

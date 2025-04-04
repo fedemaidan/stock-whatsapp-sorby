@@ -4,6 +4,14 @@ module.exports = async function CrearEgreso(userId, data, sock)
 {
     const {obra_name, items } = data.data;
 
+
+    if (obra_name == "General" || obra_name==undefined)
+    {
+        await sock.sendMessage(userId, { text: "🏗️ especificar la obra es un campo  obligatorio" });
+        FlowManager.resetFlow(userId)
+        return
+    }
+
     // Creamos un string con la información de la obra
     let output = `📋 *Detalles de la Solicitud de Retiro* 📋\n\n🏗️ *Obra:* ${obra_name}\n\n🛒 *Productos Solicitados:*\n`;
 

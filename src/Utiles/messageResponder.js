@@ -2,13 +2,11 @@ const FlowMapper = require('../FlowControl/FlowMapper');
 const FlowManager = require('../FlowControl/FlowManager');
 const transcribeAudio = require('../Utiles/Chatgpt/transcribeAudio');
 const downloadMedia = require('../Utiles/Chatgpt/Operaciones/DownloadMedia');
-const { saveImageToStorage } = require('../Utiles/Chatgpt/storageHandler');
+const { saveImageToStorage, saveImageToStorageHandle } = require('../Utiles/Chatgpt/storageHandler');
 const transcribeImage = require('../Utiles/Chatgpt/transcribeImage');
 
 const messageResponder = async (messageType, msg, sock, sender) =>
 {
-
-
     switch (messageType) {
         case 'text':
         case 'text_extended': {
@@ -19,33 +17,33 @@ const messageResponder = async (messageType, msg, sock, sender) =>
         case 'image': {
             try {
                 await sock.sendMessage(sender, { text: "⏳ Analizando imagen... ⏳" });
-                // Verificar si el mensaje tiene una imagen (no audio)
-                if (!msg.message || !msg.message.imageMessage) {
+
+                if (!msg || !msg.message || !msg.message.imageMessage) {
+                    console.error("❌ No se encontró una imagen en el mensaje.");
                     await sock.sendMessage(sender, { text: "❌ No se encontró una imagen en el mensaje." });
                     return;
                 }
 
-                // Descargar la imagen
-                const filePath = await downloadMedia(msg,'image');
-
-                if (!filePath) {
-                    await sock.sendMessage(sender, { text: "❌ No se pudo descargar la imagen." });
+                // Guardar la imagen y obtener su URL pública en Firebase
+                const transcripcion = await saveImageToStorageHandle(msg.message.imageMessage, sender);
+                if (!transcripcion || !transcripcion.imagenFirebase) {
+                    console.error("❌ No se pudo obtener la imagen.");
+                    await sock.sendMessage(sender, { text: "❌ No se pudo procesar tu imagen." });
                     return;
                 }
 
-                // Realizar OCR sobre la imagen para extraer el texto
-                const transcripcion = await transcribeImage(filePath);
-
-                if (!transcripcion) {
+                // Transcribir la imagen utilizando la URL pública
+                const text = await transcribeImage(transcripcion.imagenFirebase);
+                if (!text) {
                     await sock.sendMessage(sender, { text: "⚠️ No pude extraer texto de la imagen." });
                     return;
                 }
 
                 // Enviar el texto extraído al flujo de procesamiento
-                await FlowMapper.handleMessage(sender, transcripcion, sock, 'text');
+                await FlowMapper.handleMessage(sender, text, sock, 'image');
 
             } catch (error) {
-                console.error("Error al procesar la imagen:", error);
+                console.error("❌ Error al procesar la imagen:", error);
                 await sock.sendMessage(sender, { text: "❌ Hubo un error al procesar tu imagen." });
             }
             break;

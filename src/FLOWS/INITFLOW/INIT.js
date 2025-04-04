@@ -19,7 +19,6 @@ const defaultFlow = {
 
             if (messageType == "text" || messageType == "text_extended" || messageType == "audio" ) {
                 result = await analizarIntencion(message, userId);
-               
             }
             else
             {

@@ -1,13 +1,11 @@
 const FlowManager = require('../../../FlowControl/FlowManager');
-const obtenerObrasConStock = require('../EgresoMateriales/ObtenerObrasConStock');
-const calcularStock = require('../EgresoMateriales/CalcularStock');
-const { obtenerSiguienteNroPedido } = require('../../../Utiles/BDServices/utiles/obtenerSiguienteNroPedido');
 const { Pedido, Movimiento, sequelize } = require('../../../models');
 const generarPDFConformidad = require('../../Helpers/EgresoMateriales/ImprimirConformidad');
 const { addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
 const { addPedidoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/pedido');
-const { GuardarArchivoFire } = require('../../Chatgpt/storageHandler')
+const { GuardarArchivoFire } = require('../../Chatgpt/storageHandler');
 require('dotenv').config();
+
 module.exports = async function realizarMovimientoRetiro(userId) {
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
 
@@ -19,41 +17,6 @@ module.exports = async function realizarMovimientoRetiro(userId) {
     const { obra_id, items } = pedidoAntiguo.data;
     const fecha = obtenerFecha();
 
-    let productosFaltantes = [];
-
-    // **Verificamos el stock**
-    const stockVerificado = await Promise.all(items.map(async (item) => {
-        let cantidadRestante = item.cantidad;
-        let fuentesStock = [{ obra_id: obra_id }];
-
-        if (cantidadRestante > 0) {
-            const obrasConStock = await obtenerObrasConStock(item.producto_id);
-            fuentesStock.push(...obrasConStock.map(o => ({ obra_id: o.obra_id })));
-        }
-
-        for (const fuente of fuentesStock) {
-            if (cantidadRestante <= 0) break;
-
-            const stockDisponible = await calcularStock(item.producto_id, fuente.obra_id);
-            if (stockDisponible > 0) {
-                cantidadRestante -= Math.min(cantidadRestante, stockDisponible);
-            }
-        }
-
-        if (cantidadRestante > 0) {
-            productosFaltantes.push({ producto_name: item.producto_name, cantidad: cantidadRestante });
-            return false;
-        }
-
-        return true;
-    }));
-
-    if (stockVerificado.includes(false)) {
-        const productosFaltantesMsg = productosFaltantes.map(item => `${item.producto_name}: Faltan ${item.cantidad}`).join("\n");
-        console.error(`❌ Stock insuficiente:\n${productosFaltantesMsg}`);
-        return { Success: false, msg: `❌ Stock insuficiente para los siguientes productos:\n${productosFaltantesMsg}` };
-    }
-
     // **Iniciamos la transacción**
     const transaction = await sequelize.transaction();
 
@@ -63,53 +26,27 @@ module.exports = async function realizarMovimientoRetiro(userId) {
             fecha,
             aclaracion: "",
             estado: "En Proceso",
-            url_remito: null // Se actualizará después
+            url_remito: null
         }, { transaction });
 
-        const UltimoNroPedido = nuevoPedido.id; //await obtenerSiguienteNroPedido();
+        const UltimoNroPedido = nuevoPedido.id;
 
-        // **Creamos los movimientos**
-        let movimientosParaCrear = [];
+        // **Generamos los movimientos sin análisis de stock**
+        const movimientosParaCrear = items.map(item => ({
+            fecha,
+            nombre: item.producto_name,
+            id_material: item.producto_id,
+            cod_obra_origen: obra_id,
+            cantidad: item.cantidad,
+            tipo: false,
+            nro_pedido: UltimoNroPedido.toString(),
+            cod_obradestino: null
+        }));
 
-        for (const item of items) {
-            let cantidadRestante = item.cantidad;
-            let fuentesStock = [{ obra_id: obra_id }];
-
-            if (cantidadRestante > 0) {
-                const obrasConStock = await obtenerObrasConStock(item.producto_id);
-                fuentesStock.push(...obrasConStock.map(o => ({ obra_id: o.obra_id })));
-            }
-
-            for (const fuente of fuentesStock) {
-                const obraIdFuente = fuente.obra_id;
-                if (cantidadRestante <= 0) break;
-
-                const stockDisponible = await calcularStock(item.producto_id, obraIdFuente);
-
-                if (stockDisponible > 0) {
-                    const cantidadATransferir = Math.min(cantidadRestante, stockDisponible);
-                    cantidadRestante -= cantidadATransferir;
-
-                    const Cod_ObraDestino = obraIdFuente !== obra_id ? obra_id : null;
-
-                    movimientosParaCrear.push({
-                        fecha,
-                        nombre: item.producto_name,
-                        id_material: item.producto_id,
-                        cod_obra_origen: obraIdFuente,
-                        cantidad: cantidadATransferir,
-                        tipo: false,
-                        nro_pedido: UltimoNroPedido.toString(),
-                        cod_obradestino: Cod_ObraDestino
-                    });
-                }
-            }
-        }
-
-        // **Creamos todos los movimientos en batch**
+        // **Insertamos los movimientos en la base de datos**
         const movimientosCreados = await Movimiento.bulkCreate(movimientosParaCrear, { transaction });
 
-        // **Generar y subir el PDF solo si todo salió bien**
+        // **Generar y subir el PDF**
         const FiletPath = await generarPDFConformidad(userId);
         const result = await GuardarArchivoFire(FiletPath, userId);
 
@@ -126,6 +63,7 @@ module.exports = async function realizarMovimientoRetiro(userId) {
         );
 
         nuevoPedido.url_remito = result.signedUrl;
+
         // **Confirmamos la transacción**
         await transaction.commit();
         console.log('✅ Movimientos y pedido generados con éxito');
@@ -143,7 +81,6 @@ module.exports = async function realizarMovimientoRetiro(userId) {
         return { Success: true, FiletPath: FiletPath, NroPedido: nuevoPedido.id };
 
     } catch (error) {
-        // Solo se hace rollback si hubo un error antes del commit.
         if (transaction.finished !== 'commit') {
             await transaction.rollback();
         }
@@ -152,11 +89,7 @@ module.exports = async function realizarMovimientoRetiro(userId) {
     }
 };
 
-
 const obtenerFecha = () => {
     const fecha = new Date();
-    const year = fecha.getFullYear();
-    const month = String(fecha.getMonth() + 1).padStart(2, '0'); // getMonth() es base 0
-    const day = String(fecha.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`; // Devuelve la fecha como cadena en formato YYYY-MM-DD
+    return fecha.toISOString().split('T')[0]; // Devuelve la fecha en formato YYYY-MM-DD
 };
