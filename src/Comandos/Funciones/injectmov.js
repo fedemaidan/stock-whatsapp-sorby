@@ -117,7 +117,7 @@ async function subirMovimientosAGoogleSheets(movimientos) {
         }
 
         // Pausa de 1 segundo entre cada solicitud
-        await delay(100);
+        await delay(1000);
     }
     console.log('📊 Todos los movimientos han sido subidos con pausas.');
 }

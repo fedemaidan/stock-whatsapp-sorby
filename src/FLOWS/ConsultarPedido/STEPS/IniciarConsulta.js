@@ -15,7 +15,7 @@ module.exports = async function IniciarConsulta(userId, data, sock) {
     const fechaFormateada = new Date(pedido.Fecha).toISOString().split('T')[0];
 
     // Partes del mensaje
-    let mensajeBase = `📋 *Detalles de la Solicitud Cerrada* 📋\n\n`;
+    let mensajeBase = `📋 *Detalles de la Solicitud* 📋\n\n`;
     mensajeBase += `📅 *Fecha:* ${fechaFormateada}\n`;
     mensajeBase += `🏗️ *Número de retiro:* ${pedido.Nro_Pedido}\n\n`;
     mensajeBase += `📄 *Estado:* ${pedido.Estado}\n`;
@@ -57,7 +57,7 @@ module.exports = async function IniciarConsulta(userId, data, sock) {
     }
 
     if (movimientosEnProceso.length > 0) {
-        let mensajeProceso = `🕓 *Este pedido aún no fue aprobado.*\n`;
+        let mensajeProceso = `🕓 Este pedido aún no fue *Conformado*.\n`;
         mensajeProceso += `🔍 A continuación se detallan los materiales en proceso y de dónde se obtendrán:\n\n`;
         mensajeProceso += organizarMovimientos('Materiales en Proceso', movimientosEnProceso);
 

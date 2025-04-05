@@ -1,18 +1,23 @@
-const FlowManager = require('../../../FlowControl/FlowManager')
+const FlowManager = require('../../../FlowControl/FlowManager');
+
 module.exports = async function CrearIngreso(userId, data, sock) {
+    const { obra_name, items } = data.data;
+    let { nro_compra } = data.data;
 
-    const {obra_name, items } = data.data;
-    let { nro_compra } = data.data
-    console.log("Dentro de ingreso materiales.")
-    console.log(obra_name)
+    console.log("Dentro de ingreso materiales.");
+    console.log(obra_name);
 
-    if (nro_compra == "00000")
-    {
-        nro_compra = "-"
+    // Validamos el número de compra
+    const mostrarNroCompra = nro_compra && nro_compra !== "00000" && nro_compra !== "-";
+
+    // Creamos el string del mensaje
+    let output = `📋 *Detalles de la Solicitud de Ingreso* 📋\n\n`;
+
+    if (mostrarNroCompra) {
+        output += `📄 *Número de compra:* ${nro_compra}\n\n`;
     }
 
-    // Creamos un string con la información de la obra
-    let output = `📋 *Detalles de la Solicitud de Ingreso* 📋\n\n 📄 *Numero de compra:* ${nro_compra}\n\n 🏗️ Obra destino: ${obra_name} \n\n🛒 *Productos Detectados:*\n`;
+    output += `🏗️ Obra destino: ${obra_name} \n\n🛒 *Productos Detectados:*\n`;
 
     items.forEach(item => {
         output += `🔹 *${item.producto_name}* ➝ Cantidad: *${item.cantidad}*\n`;
@@ -20,7 +25,9 @@ module.exports = async function CrearIngreso(userId, data, sock) {
 
     await sock.sendMessage(userId, { text: output });
 
-    await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación" });
+    await sock.sendMessage(userId, {
+        text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación"
+    });
 
-    FlowManager.setFlow(userId, "INGRESOMATERIALES", "ConfirmarOModificarIngreso", data)
+    FlowManager.setFlow(userId, "INGRESOMATERIALES", "ConfirmarOModificarIngreso", data);
 }

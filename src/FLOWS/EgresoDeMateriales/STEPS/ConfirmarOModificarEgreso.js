@@ -14,23 +14,49 @@ module.exports = async function ConfirmarOModificarEgreso(userId, message, sock)
         // Lógica que controla la disponibilidad de stock.
         const Operacion = await obtenerDisponibilidad(flowData.data.obra_id, flowData.data.items);
 
-        console.log(Operacion);
-
         switch (Operacion.Success) {
             case "Hay stock":
                 await sock.sendMessage(userId, { text: `✅ La obra principal tiene suficiente stock para cubrir el pedido.` });
-                const resultado = await realizarMovimientoRetiro(userId); // ← descomentar cuando esté listo
-                await enviarPDFWhatsApp(resultado.FiletPath, sock, userId);
+                const resultado = await realizarMovimientoRetiro(userId); 
+
+                if (resultado.Success)
+                {
+                    await enviarPDFWhatsApp(resultado.FiletPath, sock, userId);
+                    await sock.sendMessage(userId, { text: `✅ La operacion se realizo exitosamente.` });
+                }
+                else
+                {
+                    await sock.sendMessage(userId, { text: resultado.msg });
+                }
                 FlowManager.resetFlow(userId);
                 break;
 
             case "Otras obras":
                 // Mostrar el mensaje generado por `obtenerDisponibilidad`
-                await sock.sendMessage(userId, { text: Operacion.msg });
-                await sock.sendMessage(userId, { text: listadoObras });
+                // await sock.sendMessage(userId, { text: Operacion.msg });
+
 
                 // Habilitar el siguiente paso para que el usuario elija desde qué obra quiere el apoyo
-                FlowManager.setFlow(userId, "EGRESOMATERIALES", "RetirarEgresoFiltrado", flowData);
+                const productosFaltantes = Operacion.ProductosFaltantes;
+
+                if (productosFaltantes.length > 0) {
+                    const primerProducto = productosFaltantes[0];
+
+                    let mensaje = `⚠️ *Falta stock para un producto*\n\n`;
+                    mensaje += `📌 *${primerProducto.nombre}* - Necesita ${primerProducto.cantidadFaltante} unidades\n\n`;
+                    mensaje += `🏗️ Obras con stock disponible:\n`;
+
+                    primerProducto.opcionesObras.forEach((obra, index) => {
+                        mensaje += `   ${index + 1}. *${obra.nombre}* - ${obra.stockDisponible} unidades\n`;
+                    });
+
+                    mensaje += `\n✏️ Responde con el número de la obra de donde quieres retirar el material.`;
+
+                    await sock.sendMessage(userId, { text: mensaje });
+                }
+
+                FlowManager.setFlow(userId, "EGRESOMATERIALES", "RetirarEgresoFiltrado", { ...FlowManager.userFlows[userId]?.flowData, ...Operacion });
+
                 break;
 
             case "No stock":

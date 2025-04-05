@@ -14,7 +14,9 @@ module.exports = async function realizarMovimientoIngreso(userId) {
     let Preingreso = [];
 
     for (const item of items) {
-        let material = await Material.findOne({ where: { nombre: item.producto_name } });
+
+        //CAMBIAR Y BUSCAR POR ID
+        let material = await Material.findOne({ where: { id: item.producto_id } });
      
         // Se genera el nuevo movimiento
         const nuevoMovimiento = {
