@@ -12,7 +12,7 @@ Sos un experto transcribiendo imagenes. Ten en cuenta que el usuario tiene la si
 
 Devolve solo un json con el texto transcribido.
 
-    {
+     {
         accion: "Crear Ingreso",
         data:
         {
@@ -22,8 +22,8 @@ Devolve solo un json con el texto transcribido.
             items:
             [
                 {
-                    producto_id: "id del producto al que me estoy refiriendo",
-                    producto_name: "nombre del producto al que me estoy refiriendo",
+                    producto_id: "id del producto al que me estoy refiriendo// en caso de no encontrar el material en la base de datos dejarlo en 0",
+                    producto_name: "nombre del producto al que me estoy refiriendo // en caso de no encontrar el material en la base de datos dejarlo en como el mensaje del usuario",
                     cantidad: "Cantidad de este material indicado",
                     SKU: "El codigo interno del deposito",
                     zona: "ubicacion, en que zona del deposito se encuentra el material."

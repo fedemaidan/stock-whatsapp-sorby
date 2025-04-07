@@ -3,6 +3,7 @@ const FlowManager = require('../../../FlowControl/FlowManager')
 const realizarMovimientoIngreso = require('../../../Utiles/Helpers/IngresoMateriales/realizarMovimientoIngreso');  // Verifica la ruta aquí
 const enviarPDFWhatsApp = require('../../../Utiles/Helpers/EgresoMateriales/EnviarConformidad');
 
+
 module.exports = async function ConfirmarOModificarEgreso(userId, message, sock) {
 
     const data = await opcionElegida(message);
@@ -13,7 +14,6 @@ module.exports = async function ConfirmarOModificarEgreso(userId, message, sock)
         const Operacion = await realizarMovimientoIngreso(userId)
         if (Operacion.Success) {
             await sock.sendMessage(userId, { text: "✅ La operación finalizó exitosamente." });
-
         } else {
             await sock.sendMessage(userId, { text: Operacion.msg });
         }
