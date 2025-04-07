@@ -14,6 +14,7 @@ module.exports = async function realizarMovimientoIngreso(userId) {
     const { obra_id, nro_compra, items } = pedidoAntiguo.data;
     let Preingreso = [];
 
+
     for (const item of items) {
 
         //CAMBIAR Y BUSCAR POR ID

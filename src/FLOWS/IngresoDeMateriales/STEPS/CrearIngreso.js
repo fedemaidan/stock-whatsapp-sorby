@@ -15,7 +15,6 @@ module.exports = async function CrearIngreso(userId, data, sock) {
     const productosDetectados = items.filter(item => String(item.producto_id) !== "0");
     const productosNoEncontrados = items.filter(item => String(item.producto_id) === "0");
 
-
     // Si no se detectó ningún producto, cancelar operación
     if (productosDetectados.length === 0) {
         await sock.sendMessage(userId, {
@@ -50,9 +49,19 @@ module.exports = async function CrearIngreso(userId, data, sock) {
 
     await sock.sendMessage(userId, { text: output });
 
+    // Mensaje de advertencia si hay productos no detectados
+    if (productosNoEncontrados.length > 0) {
+        await sock.sendMessage(userId, {
+            text: "⚠️ *Atención:* Si confirma el ingreso, *solo se registrarán los productos detectados*. Los productos no encontrados serán descartados."
+        });
+    }
+
     await sock.sendMessage(userId, {
         text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación"
     });
+
+    // ⚠️ IMPORTANTE: Actualizamos el array de items en el JSON para que solo queden los detectados
+    data.data.items = productosDetectados;
 
     FlowManager.setFlow(userId, "INGRESOMATERIALES", "ConfirmarOModificarIngreso", data);
 }
