@@ -5,6 +5,8 @@ module.exports = async function ModificarPedido(userId, message, sock) {
 
     const data = await ChatModificarPedido(message, userId);
     const { obra_name, nro_compra, items } = data.data;
+    const mostrarNroCompra = nro_compra && nro_compra !== "00000" && nro_compra !== "-";
+
 
     // ⚠️ Verificar si items está vacío
     if (!items || items.length === 0) {
@@ -13,8 +15,14 @@ module.exports = async function ModificarPedido(userId, message, sock) {
         return;
     }
 
-    // Creamos un string con la información de la obra
-    let output = `📋 *Detalles de la Solicitud de Ingreso* 📋\n\n 📄 *Número de compra:* ${nro_compra}\n\n 🏗️ Obra destino: ${obra_name} \n\n🛒 *Productos Detectados:*\n`;
+    // Creamos el string del mensaje
+    let output = `📋 *Detalles de la Solicitud de Ingreso* 📋\n\n`;
+
+    if (mostrarNroCompra) {
+        output += `📄 *Número de compra:* ${nro_compra}\n\n`;
+    }
+
+    output += `🏗️ Obra destino: ${obra_name} \n\n🛒 *Productos Detectados:*\n`;
 
     items.forEach(item => {
         output += `🔹 *${item.producto_name}* ➝ Cantidad: *${item.cantidad}*\n`;

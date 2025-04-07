@@ -6,6 +6,355 @@ module.exports = async function obtenerDisponibilidad(obra_id, items) {
     const obrasDetalle = {};
     const productosFaltantes = [];
     const pedido_final = [];
+    const materialesFaltantesTotales = [];
+
+    for (const item of items) {
+        const stockPrincipal = await calcularStock(item.producto_id, obra_id);
+
+        if (stockPrincipal >= item.cantidad) {
+            if (!obrasDetalle[obra_id]) {
+                obrasDetalle[obra_id] = { id: obra_id, productos: [] };
+            }
+
+            obrasDetalle[obra_id].productos.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidad: item.cantidad
+            });
+
+            pedido_final.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidadTotal: item.cantidad,
+                obrasSeleccionadas: [{
+                    id: obra_id,
+                    nombre: "",
+                    stockRequerido: item.cantidad
+                }]
+            });
+
+            continue;
+        }
+
+        const cantidadDesdePrincipal = stockPrincipal > 0 ? stockPrincipal : 0;
+        const cantidadFaltante = item.cantidad - cantidadDesdePrincipal;
+
+        const obrasConStock = await obtenerObrasConStock(item.producto_id);
+        const opcionesDeObras = [];
+
+        for (const obra of obrasConStock) {
+            if (obra.obra_id == obra_id) continue;
+            opcionesDeObras.push({
+                id: obra.obra_id,
+                nombre: obra.obra_name,
+                stockDisponible: obra.stock
+            });
+        }
+
+        const totalStockDisponible =
+            cantidadDesdePrincipal +
+            opcionesDeObras.reduce((sum, obra) => sum + obra.stockDisponible, 0);
+
+        if (totalStockDisponible < item.cantidad) {
+            // Sumar la diferencia real que falta
+            const cantidadRealFaltante = item.cantidad - totalStockDisponible;
+
+            materialesFaltantesTotales.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidadFaltante: cantidadRealFaltante
+            });
+
+            if (cantidadDesdePrincipal > 0) {
+                if (!obrasDetalle[obra_id]) {
+                    obrasDetalle[obra_id] = { id: obra_id, productos: [] };
+                }
+
+                obrasDetalle[obra_id].productos.push({
+                    id: item.producto_id,
+                    nombre: item.producto_name,
+                    cantidad: cantidadDesdePrincipal
+                });
+            }
+
+            productosFaltantes.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidadFaltante: item.cantidad - cantidadDesdePrincipal,
+                opcionesObras: opcionesDeObras
+            });
+
+            pedido_final.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidadTotal: item.cantidad,
+                obrasSeleccionadas: [
+                    ...(cantidadDesdePrincipal > 0
+                        ? [{
+                            id: obra_id,
+                            nombre: "",
+                            stockRequerido: cantidadDesdePrincipal
+                        }] : []),
+                    ...opcionesDeObras.map(obra => ({
+                        id: obra.id,
+                        nombre: obra.nombre,
+                        stockRequerido: 0
+                    }))
+                ]
+            });
+
+            continue;
+        }
+
+        // Caso normal: se puede cubrir con otras obras
+        const obrasSeleccionadas = [];
+
+        if (cantidadDesdePrincipal > 0) {
+            if (!obrasDetalle[obra_id]) {
+                obrasDetalle[obra_id] = { id: obra_id, productos: [] };
+            }
+
+            obrasDetalle[obra_id].productos.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidad: cantidadDesdePrincipal
+            });
+
+            obrasSeleccionadas.push({
+                id: obra_id,
+                nombre: "",
+                stockRequerido: cantidadDesdePrincipal
+            });
+        }
+
+        productosFaltantes.push({
+            id: item.producto_id,
+            nombre: item.producto_name,
+            cantidadFaltante,
+            opcionesObras: opcionesDeObras
+        });
+
+        pedido_final.push({
+            id: item.producto_id,
+            nombre: item.producto_name,
+            cantidadTotal: item.cantidad,
+            obrasSeleccionadas: [
+                ...obrasSeleccionadas,
+                ...opcionesDeObras.map(obra => ({
+                    id: obra.id,
+                    nombre: obra.nombre,
+                    stockRequerido: 0
+                }))
+            ]
+        });
+    }
+
+    // Completar nombres de las obras en obrasDetalle
+    const idsObras = Object.keys(obrasDetalle);
+    const obrasInfo = await Obra.findAll({
+        where: { id: idsObras },
+        attributes: ['id', 'nombre']
+    });
+
+    obrasInfo.forEach(obra => {
+        obrasDetalle[obra.id].nombre = obra.nombre;
+    });
+
+    for (const producto of pedido_final) {
+        producto.obrasSeleccionadas.forEach(ob => {
+            ob.nombre = obrasDetalle[ob.id]?.nombre || ob.nombre || "Obra desconocida";
+        });
+    }
+
+    if (materialesFaltantesTotales.length > 0) {
+        return {
+            Success: "No stock",
+            msg: "No hay stock suficiente para cubrir el pedido ni con ayuda de otras obras.",
+            ListaObras: obrasDetalle,
+            ProductosFaltantes: productosFaltantes,
+            pedido_final,
+            materialesFaltantesTotales
+        };
+    }
+
+    if (productosFaltantes.length === 0) {
+        return {
+            Success: "Hay stock",
+            msg: "La obra principal tiene suficiente stock para cubrir el pedido.",
+            ListaObras: obrasDetalle,
+            ProductosFaltantes: [],
+            pedido_final
+        };
+    }
+
+    return {
+        Success: "Otras obras",
+        msg: "Hay productos que requieren apoyo de otras obras.",
+        ListaObras: obrasDetalle,
+        ProductosFaltantes: productosFaltantes,
+        pedido_final
+    };
+};
+
+
+
+/*
+module.exports = async function obtenerDisponibilidad(obra_id, items) {
+    const obrasDetalle = {};
+    const productosFaltantes = [];
+    const pedido_final = [];
+
+    for (const item of items) {
+        const stockPrincipal = await calcularStock(item.producto_id, obra_id);
+
+        // Si tiene stock suficiente
+        if (stockPrincipal >= item.cantidad) {
+            if (!obrasDetalle[obra_id]) {
+                obrasDetalle[obra_id] = { id: obra_id, productos: [] };
+            }
+
+            obrasDetalle[obra_id].productos.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidad: item.cantidad
+            });
+
+            pedido_final.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidadTotal: item.cantidad,
+                obrasSeleccionadas: [{
+                    id: obra_id,
+                    nombre: "", // Se completa más abajo
+                    stockRequerido: item.cantidad
+                }]
+            });
+
+            continue;
+        }
+
+        // Si tiene stock parcial
+        const cantidadDesdePrincipal = stockPrincipal > 0 ? stockPrincipal : 0;
+        const cantidadFaltante = item.cantidad - cantidadDesdePrincipal;
+
+        const obrasConStock = await obtenerObrasConStock(item.producto_id);
+        const opcionesDeObras = [];
+
+        for (const obra of obrasConStock) {
+            if (obra.obra_id == obra_id) continue;
+
+            opcionesDeObras.push({
+                id: obra.obra_id,
+                nombre: obra.obra_name,
+                stockDisponible: obra.stock
+            });
+        }
+
+        // Si no hay ninguna obra que tenga stock para ayudar
+        if (opcionesDeObras.length === 0 && cantidadDesdePrincipal === 0) {
+            productosFaltantes.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidadFaltante: item.cantidad,
+                opcionesObras: []
+            });
+
+            return {
+                Success: "No stock",
+                msg: "Ninguna obra tiene la posibilidad de suplir el pedido.",
+                ListaObras: obrasDetalle,
+                ProductosFaltantes: productosFaltantes,
+                pedido_final
+            };
+        }
+
+        // Si tiene stock parcial, lo usamos
+        const obrasSeleccionadas = [];
+        if (cantidadDesdePrincipal > 0) {
+            if (!obrasDetalle[obra_id]) {
+                obrasDetalle[obra_id] = { id: obra_id, productos: [] };
+            }
+
+            obrasDetalle[obra_id].productos.push({
+                id: item.producto_id,
+                nombre: item.producto_name,
+                cantidad: cantidadDesdePrincipal
+            });
+
+            obrasSeleccionadas.push({
+                id: obra_id,
+                nombre: "", // se completa más abajo
+                stockRequerido: cantidadDesdePrincipal
+            });
+        }
+
+        // Lo que falta se agrega como producto faltante con opciones de obras
+        productosFaltantes.push({
+            id: item.producto_id,
+            nombre: item.producto_name,
+            cantidadFaltante,
+            opcionesObras: opcionesDeObras
+        });
+
+        // Lo agregamos al pedido final con lo que sí se puede cubrir
+        pedido_final.push({
+            id: item.producto_id,
+            nombre: item.producto_name,
+            cantidadTotal: item.cantidad,
+            obrasSeleccionadas: [
+                ...obrasSeleccionadas,
+                ...opcionesDeObras.map(obra => ({
+                    id: obra.id,
+                    nombre: obra.nombre,
+                    stockRequerido: 0
+                }))
+            ]
+        });
+    }
+
+    // Completar nombres de las obras en obrasDetalle
+    const idsObras = Object.keys(obrasDetalle);
+    const obrasInfo = await Obra.findAll({
+        where: { id: idsObras },
+        attributes: ['id', 'nombre']
+    });
+
+    obrasInfo.forEach(obra => {
+        obrasDetalle[obra.id].nombre = obra.nombre;
+    });
+
+    // Completar nombres en pedido_final
+    for (const producto of pedido_final) {
+        producto.obrasSeleccionadas.forEach(ob => {
+            ob.nombre = obrasDetalle[ob.id]?.nombre || ob.nombre || "Obra desconocida";
+        });
+    }
+
+    if (productosFaltantes.length === 0) {
+        return {
+            Success: "Hay stock",
+            msg: "La obra principal tiene suficiente stock para cubrir el pedido.",
+            ListaObras: obrasDetalle,
+            ProductosFaltantes: [],
+            pedido_final
+        };
+    }
+
+    return {
+        Success: "Otras obras",
+        msg: "Hay productos que requieren apoyo de otras obras.",
+        ListaObras: obrasDetalle,
+        ProductosFaltantes: productosFaltantes,
+        pedido_final
+    };
+};
+*/
+
+/*
+module.exports = async function obtenerDisponibilidad(obra_id, items) {
+    const obrasDetalle = {};
+    const productosFaltantes = [];
+    const pedido_final = [];
 
     for (const item of items) {
         const stockPrincipal = await calcularStock(item.producto_id, obra_id);
@@ -125,9 +474,7 @@ module.exports = async function obtenerDisponibilidad(obra_id, items) {
         pedido_final
     };
 };
-
-
-
+*/
 
 /* version 3 continua el error hay stock
 const calcularStock = require('../EgresoMateriales/CalcularStock');

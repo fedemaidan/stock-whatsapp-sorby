@@ -7,7 +7,7 @@ module.exports = async function CrearEgreso(userId, data, sock)
 
     if (obra_name == "General" || obra_name==undefined)
     {
-        await sock.sendMessage(userId, { text: "🏗️ especificar la obra es un campo  obligatorio" });
+        await sock.sendMessage(userId, { text: "🏗️ No pudimos identificar la *obra* seleccionada." });
         FlowManager.resetFlow(userId)
         return
     }

@@ -23,10 +23,12 @@ module.exports = async function ConfirmarOModificarEgreso(userId, message, sock)
                 {
                     await enviarPDFWhatsApp(resultado.FiletPath, sock, userId);
                     await sock.sendMessage(userId, { text: `✅ La operacion se realizo exitosamente.` });
+                    FlowManager.resetFlow(userId);
                 }
                 else
                 {
                     await sock.sendMessage(userId, { text: resultado.msg });
+                    FlowManager.resetFlow(userId);
                 }
                 FlowManager.resetFlow(userId);
                 break;
@@ -61,8 +63,24 @@ module.exports = async function ConfirmarOModificarEgreso(userId, message, sock)
 
             case "No stock":
                 await sock.sendMessage(userId, { text: `🚫 ${Operacion.msg}` });
+
+                const faltantesTotales = Operacion.materialesFaltantesTotales;
+
+                if (faltantesTotales?.length > 0) {
+                    let mensaje = `\n📦 *Materiales sin stock suficiente:*\n\n`;
+
+                    faltantesTotales.forEach((prod, index) => {
+                        mensaje += `${index + 1}. *${prod.nombre}* - Faltan ${prod.cantidadFaltante} unidades\n`;
+                    });
+
+                    mensaje += `\n🛑 No se pueden cubrir ni desde la obra principal ni con apoyo de otras obras.`;
+
+                    await sock.sendMessage(userId, { text: mensaje });
+                }
+
                 FlowManager.resetFlow(userId);
                 break;
+
         }
 
     } else if (data.data.Eleccion == "2") {
