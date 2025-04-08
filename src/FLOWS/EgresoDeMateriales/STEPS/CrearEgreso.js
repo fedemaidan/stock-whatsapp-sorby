@@ -4,8 +4,7 @@ module.exports = async function CrearEgreso(userId, data, sock)
 {
     const {obra_name, items } = data.data;
 
-
-    if (obra_name == "General" || obra_name==undefined)
+    if (obra_name == "FlyDac" || obra_name==undefined)
     {
         await sock.sendMessage(userId, { text: "🏗️ No pudimos identificar la *obra* seleccionada." });
         FlowManager.resetFlow(userId)

@@ -56,11 +56,20 @@ module.exports = async function CrearIngreso(userId, data, sock) {
         });
     }
 
-    await sock.sendMessage(userId, {
-        text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación"
-    });
+    if (productosNoEncontrados.length > 0) {
 
-    // ⚠️ IMPORTANTE: Actualizamos el array de items en el JSON para que solo queden los detectados
+        await sock.sendMessage(userId, {
+            text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios de los productos detectados\n3️⃣ *Cancelar*, cancelar operación\n4️⃣ *Crear materiales*, Creara los materiales desconocidos, y volvera a listar"
+        });
+    }
+    else
+    {
+        await sock.sendMessage(userId, { text: "✅ ¿Desea confirmar el Ingreso?\n\n1️⃣ *Sí*, confirmar ingreso\n2️⃣ *No*, realizar cambios\n3️⃣ *Cancelar*, cancelar operación" });
+    }
+    // ⚠️ IMPORTANTE: Guardamos los productos no detectados también en el JSON
+    data.data.itemsNoDetectados = productosNoEncontrados;
+
+    // ⚠️ Y dejamos solo los detectados en el array principal
     data.data.items = productosDetectados;
 
     FlowManager.setFlow(userId, "INGRESOMATERIALES", "ConfirmarOModificarIngreso", data);

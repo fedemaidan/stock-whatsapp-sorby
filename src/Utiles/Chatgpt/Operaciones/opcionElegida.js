@@ -20,6 +20,7 @@ Advertencia:
 - Si el usuario responde con "1", "Sí", "Confirmar", "Aceptar", "👍", "✅", "✔️" o números con emojis (ej. "1️⃣"), se interpretará como confirmación del pedido y se debe asignar el valor numérico 1 en el campo "Eleccion".
 - Si el usuario responde con "2", "modificar", "rehacer", "cambiar" o números con emojis (ej. "2️⃣"), se interpretará como modificacion del pedido y se debe asignar el valor numérico 2 en el campo "Eleccion".
 - Si el usuario responde con "3", "No", "Cancelar", "Rechazar", "👎", "❌", "✖️" o números con emojis (ej. "3️⃣"), se interpretará como cancelación del pedido y se debe asignar el valor numérico 3 en el campo "Eleccion".
+- Si el usuario responde con "4", "quiero crear los materiales", "Crear materiales", "Crear", se interpretará como que quiere crear los materiales faltantes del pedido y se debe asignar el valor numérico 4 en el campo "Eleccion".
 Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y validar la intención del usuario con respecto a la confirmación o cancelación de pedidos.
 
 El usuario dice: "${mensajeCliente}"
