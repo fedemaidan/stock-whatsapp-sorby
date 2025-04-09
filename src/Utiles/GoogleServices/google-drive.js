@@ -17,7 +17,7 @@ const sheets = google.sheets({ version: 'v4', auth });
 
 //ID de tu Google Sheet (ponlo en .env)
 const SHEET_ID = process.env.GOOGLE_SHEET_ID;  // ← Aquí se guarda el ID de la hoja
-
+console.log(SHEET_ID)
 //Rango predeterminado (ejemplo: toda la hoja A1:Z1000)
 const SHEET_RANGE = 'Hoja1!A1:Z1000';
 
