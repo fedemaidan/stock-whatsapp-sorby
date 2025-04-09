@@ -32,7 +32,7 @@ async function importMovementsFromCSV(filePath) {
                         console.warn('⚠️ No se encontraron registros válidos en el CSV.');
                         return resolve();
                     }
-                    const General = await Obra.findOne({ where: { nombre: "General" } })
+                    const General = await Obra.findOne({ where: { nombre: "FlyDac" } })
 
                     let CentroDeCostosId = General.id
                     let obraDestinoId = General.id
@@ -117,7 +117,7 @@ async function subirMovimientosAGoogleSheets(movimientos) {
         }
 
         // Pausa de 1 segundo entre cada solicitud
-        await delay(100);
+        await delay(3000);
     }
     console.log('📊 Todos los movimientos han sido subidos con pausas.');
 }

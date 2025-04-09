@@ -1,8 +1,12 @@
-﻿const connectToWhatsApp = require('./src/whatsapp');
+const connectToWhatsApp = require('./src/whatsapp');
 const getMessageType = require('./src/Utiles/GetType');
 const messageResponder = require('./src/Utiles/messageResponder');
+require('dotenv').config();
 
 const startBot = async () => {
+    console.log("LLEGO A CORRER")
+    console.log(process.env.GOOGLE_CREDENTIALS)
+
     const sock = await connectToWhatsApp();
 
     // Escucha mensajes entrantes

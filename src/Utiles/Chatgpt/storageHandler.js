@@ -5,16 +5,20 @@ const { downloadMediaMessage } = require('@whiskeysockets/baileys');
 const { convertPdfToJpeg } = require('../Chatgpt/convertPdfToJpeg');
 const { admin } = require('../Chatgpt/firebaseUtils'); // Configuración de Firebase Admin
 
-async function saveImageToStorage(message, senderPhone) {
+async function saveImageToStorage(message, senderPhone, messageType) {
     try {
         console.log('📥 Procesando archivo...');
 
-        // Determinar tipo de mensaje
+        /*
         const messageType = message.mimetype.startsWith('image')
             ? 'image'
             : message.mimetype === 'application/pdf'
                 ? 'document'
                 : null;
+                */
+
+
+
 
         if (!messageType) {
             throw new Error('❌ No se encontró contenido multimedia en el mensaje.');
@@ -31,7 +35,13 @@ async function saveImageToStorage(message, senderPhone) {
             message: { [`${messageType}Message`]: mediaContent },
         };
 
+        console.log(messageType)
+
         const buffer = await downloadMediaMessage(enrichedMessage, 'buffer');
+        console.log("buffer")
+        console.log(buffer)
+
+
         console.log('📂 Archivo descargado');
 
         // Generar nombre único
@@ -65,9 +75,11 @@ async function saveImageToStorage(message, senderPhone) {
             }
 
             // Guardar imagen en descargas
+            /*
             const localImagePath = path.join(downloadsDir, `${randomNumber}.jpeg`);
             fs.copyFileSync(firstPagePath, localImagePath);
             console.log(`✅ Imagen guardada en: ${localImagePath}`);
+            */
 
 
             //FIREBASE
@@ -80,19 +92,28 @@ async function saveImageToStorage(message, senderPhone) {
             //------
 
 
-            return { imagenlocal: localImagePath, imagenFirebase: storageResult.signedUrl };
+            return { imagenlocal: firstPagePath, imagenFirebase: storageResult.signedUrl };
         } else {
             // Guardar imagen directamente
             const ext = path.extname(mediaContent.fileName || '.jpeg');
             const localImagePath = path.join(downloadsDir, `${randomNumber}${ext}`);
             fs.writeFileSync(localImagePath, buffer);
+
+
+            const date = new Date().toISOString().split('T')[0];
+            const filePath = `StockRemitos/${senderPhone}/${date}/${randomNumber}.jpeg`;
+            const imageBuffer = fs.readFileSync(localImagePath);
+
+            const storageResult = await saveFileToStorage(imageBuffer, `${randomNumber}.jpeg`, filePath, 'image/jpeg');
+
+
             console.log(`✅ Imagen guardada en: ${localImagePath}`);
 
-            return localImagePath;
+            return { imagenlocal: localImagePath, imagenFirebase: storageResult.signedUrl };
         }
     } catch (error) {
         console.error('❌ Error procesando el archivo:', error.message);
-        return null;
+        throw error
     }
 }
 

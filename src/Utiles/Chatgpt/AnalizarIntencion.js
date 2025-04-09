@@ -27,13 +27,13 @@ const opciones = [
         data:
         {
             obra_id: "El id de la obra a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
-            obra_name:"Aqui va la obra a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            obra_name:"Aqui va la obra a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon FlyDac",
             nro_compra: "Aqui va el numero del remito o factura en caso de no haber ingresado nada el usuario referiendose a este mismo simplemente poner 00000",
             items:
             [
                 {
-                    producto_id: "id del producto al que me estoy refiriendo",
-                    producto_name: "nombre del producto al que me estoy refiriendo",
+                    producto_id: "id del producto al que me estoy refiriendo// en caso de no encontrar el material en la base de datos dejarlo en 0",
+                    producto_name: "nombre del producto al que me estoy refiriendo // en caso de no encontrar el material en la base de datos dejarlo en como el mensaje del usuario",
                     cantidad: "Cantidad de este material indicado",
                     SKU: "El codigo interno del deposito",
                     zona: "ubicacion, en que zona del deposito se encuentra el material."
@@ -79,9 +79,9 @@ const opciones = [
         data:
         {
             obra_id_origen: "El id de la obra de origen a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
-            obra_name_origen: "Aqui va la obra de origen a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            obra_name_origen: "Aqui va la obra de origen a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon FlyDac",
             obra_id_destino: "El id de la obra de destino a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
-            obra_name_destino: "Aqui va la obra de destino a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
+            obra_name_destino: "Aqui va la obra de destino a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon FlyDac",
             items:
                 [
                     {
@@ -107,6 +107,13 @@ const opciones = [
         data:
         {
             Default: "No se comprendio el mensaje o es demasiado ambiguo en sus peticiones.",
+        }
+    },
+    {
+        accion: "Ayuda",
+        data:
+        {
+            Default: "El usuario quiere ayuda sobre que comandos tiene disponible.",
         }
     }
 ];

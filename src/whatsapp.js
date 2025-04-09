@@ -1,4 +1,4 @@
-﻿// Importa la librería Baileys para conexión con WhatsApp
+// Importa la librería Baileys para conexión con WhatsApp
 const { default: makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
 // Importa Boom para el manejo de errores (opcional)
 const { Boom } = require('@hapi/boom');
@@ -8,6 +8,7 @@ const QRCode = require('qrcode');
 // Importa Express para exponer el QR vía web
 const express = require('express');
 const app = express();
+const materiales = require('./materiales.routes')
 
 // Variable para almacenar el último QR generado (si se requiere)
 let latestQR = null;
@@ -60,7 +61,12 @@ const connectToWhatsApp = async () => {
     return sock;
 };
 
+
+app.use(express.json());
+app.use('/materiales', materiales)
 app.listen(3000, () => console.log('Servidor corriendo en http://localhost:3000/qr'));
+
+
 
 // Exporta la función para conectar a WhatsApp
 module.exports = connectToWhatsApp;

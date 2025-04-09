@@ -1,360 +1,420 @@
 Nº,Descripcion,CODIGO SKU,Marca,Producto,Rubro,Zona
-1,Mensulas Ino Flotante,Gr-MIF-Elect-Z1A,Gr,MIF,Elect,Z1A
-2,Bastidor Tablero,Ide-BT-Sant-Z2B,Ide,BT,Sant,Z2B
-3,Rollos Corrugados 3/4,LtPl-RC3/4-Sant-Z2B,LtPl,RC3/4,Sant,Z2B
-4,Kalop Conductor Subterraneo 3x1;5 (x125mts),Pei-CS3X1.5-125-Sant-Z2B,Pei,CS3X1.5-125,Sant,Z2B
-5,Kalop Conductor Subterraneo 3x2;5 (x150mts),Pei-CS3X2.5-150-Sant-Z2B,Pei,CS3X2.5-150,Sant,Z2B
-6,Rollo Manguera Azul 3/4,180º-RMA3/4-Elect-Z1A,180º,RMA3/4,Elect,Z1A
-7,Polinam Caño Pvc T/Manguera 3/4(rollox25Mts),9JL-CañPVCT/Mang3/4-Elect-Z1A,9JL,CañPVCT/Mang3/4,Elect,Z1A
-8,M.H Conductor Unipolar 10;00 V/Amarillo,9JL-CU10-Y-Elect-Z1A,9JL,CU10-Y,Elect,Z1A
-9,Epuyen (Te-00450-NG) Cond. Telefonico 4 pares Subt.782,9JL-CT4P-Elect-Z1A,9JL,CT4P,Elect,Z1A
-10,Kalop Conductor Unipolar 1;5 MM Celeste,9JL-CU1.5-C-Elect-Z1A,9JL,CU1.5-C,Elect,Z1A
-11,Kalop Conductor Unipolar 1;5MM Rojo,9JL-CU1.5-R-Elect-Z1A,9JL,CU1.5-R,Elect,Z1A
-12,Kalop Conductor Unipolar 1;5MM V/Amarillo,9JL-CU1.5-VY-Elect-Z1A,9JL,CU1.5-VY,Elect,Z1A
-13,Kalop Conductor Unipolar 1;5MM Blanco,Ab2-CU1.5-W-Elect-Z1A,Ab2,CU1.5-W,Elect,Z1A
-14,Kalop Conductor Unipolar 1;5 MM Marron,Ab2-CU1.5-M-Elect-Z1A,Ab2,CU1.5-M,Elect,Z1A
-15,Kalop Conductor Unipolar 1;5MM Negro,Ab2-CU1.5-N-Elect-Z1A,Ab2,CU1.5-N,Elect,Z1A
-16,Kalop Conductor Unipolar 2;5MM Negro,Ab2-CU2.5-N-Elect-Z1A,Ab2,CU2.5-N,Elect,Z1A
-17,Kalop Conductor Unipolar 2;5MM Marron,AN-CU2.5-M-Elect-Z1A,AN,CU2.5-M,Elect,Z1A
-18,Kalop Conductor Unipolar 2;5MM Celeste,Lsng-CU2.5-C-Sant-Z2B,Lsng,CU2.5-C,Sant,Z2B
-19,Kalop Conductor Unipolar 2;5MM V/Amarillo,Agmt-CU2.5-VY-Elect-Z1A,Agmt,CU2.5-VY,Elect,Z1A
-20,Kalop Conductor Unipolar 2;5MM Rojo,AN-CU2.5-R-Elect-Z1A,AN,CU2.5-R,Elect,Z1A
-21,Kalop Conductor Unipolar 4MM Rojo,Alb-CU4-R-Pnt-Z3G,Alb,CU4-R,Pnt,Z3G
-22,Kalop Conductor Unipolar 4MM Celeste,Amco-CU4-C-Sant-Z2B,Amco,CU4-C,Sant,Z2B
-23,Kalop Conductor Unipolar 4MM V/Amarillo,Amnco-CU4-VY-Sant-Z2B,Amnco,CU4-VY,Sant,Z2B
-24,Abb Termica Din 2x10,Amnco-T2X10-Sant-Z2B,Amnco,T2X10,Sant,Z2B
-25,Abb Termica Din 2x16,Amnco-T2X16-Sant-Z2B,Amnco,T2X16,Sant,Z2B
-26,Abb Termica Din 2x20,Amnco-T2X20-Sant-Z2B,Amnco,T2X20,Sant,Z2B
-27,Abb Termica Din 4x40,Amnco-T2X40-Sant-Z2B,Amnco,T2X40,Sant,Z2B
-28,Commax Portero con Apertura 1 telefono frente Embutir,Amnco-PAE1-Sant-Z2B,Amnco,PAE1,Sant,Z2B
-29,Jeluz Platinum Modulo 2 tomas Normalizado +Tierra 2x10A-250VCA Bl,Lngv-MTN2-Eldom-Z2A,Lngv,MTN2,Eldom,Z2A
-30,Jeluz Platinum Tapon Ciego Blanco,AN-TCB-Elect-Z1A,AN,TCB,Elect,Z1A
-31,Jeluz Verona Bastidor Oculto Rectangular,Argnpls-VBOR-Elect-Z1A,Argnpls,VBOR,Elect,Z1A
-32,Jeluz Platinum Tapa Rectangular Blanca,Argnpls-TRB-Elect-Z1A,Argnpls,TRB,Elect,Z1A
-33,Jeluz Verona Estanco 2 Mod.Bast y Tapa Transp,Atr-EMBT-Sant-Z2B,Atr,EMBT,Sant,Z2B
-34,Jeluz Platinum Modulo Punto Blanco 220V 10A,Aw-MPB10-Sant-Z2B,Aw,MPB10,Sant,Z2B
-35,Jeluz Platinum Modulo Combinacion Blanco 220V 10A,Aw-MCB10-Sant-Z2B,Aw,MCB10,Sant,Z2B
-36,Jeluz Platinum Modulo Toma 10A Blanco Combinado,Aw-MTC10-Sant-Z2B,Aw,MTC10,Sant,Z2B
-37,Jeluz Toma de telefonos tipo Americano 4 vias,Aw-TT4V-Sant-Z2B,Aw,TT4V,Sant,Z2B
-38,Jeluz Platinum Modulo Tv C/Acople pasante pin grueso Blanco,Aw-MTV-Sant-Z2B,Aw,MTV,Sant,Z2B
-39,Jeluz Tapa 5x5 Mignon Blanco,Aw-T5X5MGB-Sant-Z2B,Aw,T5X5MGB,Sant,Z2B
-40,BmB Curva de Plastico para caño de 1,Aw-CP1-Sant-Z2B,Aw,CP1,Sant,Z2B
-41,Sica Disyuntor Diferencial 2x63 A,Aw-DD2X63-Sant-Z2B,Aw,DD2X63,Sant,Z2B
-42,Sica Termica 2x10,Aw-T2X10-Sant-Z2B,Aw,T2X10,Sant,Z2B
-43,Sica Termica 2x15,Aw-T2X15-Sant-Z2B,Aw,T2X15,Sant,Z2B
-44,Sica Termica 2x20,Pei-T2X20-Sant-Z2B,Pei,T2X20,Sant,Z2B
-45,Sica Termica 2x63,Frr-T2X63-Sant-Z2B,Frr,T2X63,Sant,Z2B
-46,Sica Fusible NH 63 A,AN-FNH63-Sant-Z2B,AN,FNH63,Sant,Z2B
-47,Genrod Caja de pase derivacion (unidades) 15x15,AN-CP15X15-Sant-Z2B,AN,CP15X15,Sant,Z2B
-48,Genrod Caja de pase 20x20,Frr-CP20X20-Sant-Z2B,Frr,CP20X20,Sant,Z2B
-49,Tacsa Precinto 4;6 MM x 100 U-Negro (bolsas de 100 U),Frr-P4.6N-Sant-Z2B,Frr,P4.6N,Sant,Z2B
-50,9 de Julio Conectores de Hierro 3/4 (Bolsas de 100 unidades),AN-CH3/4-Elect-Z1A,AN,CH3/4,Elect,Z1A
-51,Gen Rod Caja Termica 8 Bocas Embutir Plastica Ecoo,Rc-CT8B-Sant-Z2B,Rc,CT8B,Sant,Z2B
-52,Gen Rod Caja Termica 24 Bocas Embutir Plastica Ecoo,Pei-CT24B-Sant-Z2B,Pei,CT24B,Sant,Z2B
-53,Gen Rod Caja Termica 4 Bocas Embutir Plastica Ecoo,Pei-CT4B-Sant-Z2B,Pei,CT4B,Sant,Z2B
-54,Gen Rod Jabalina con Toma Cable 1/2 x 1;5 Mts,Pei-JTC1/2-Sant-Z2B,Pei,JTC1/2,Sant,Z2B
-55,Jeluz Platinum Modulo Toma Blanco 20A 250V,Pei-MTB20-Sant-Z2B,Pei,MTB20,Sant,Z2B
-56,BmB Cupla de 3/4 (Bolsas de 100),Pei-C3/4-Sant-Z2B,Pei,C3/4,Sant,Z2B
+1,Mensulas Ino Flotante,AN-MIF-Sant-Z2B,AN,MIF,Sant,Z2B
+2,Bastidor Tablero,AN-BT-Elect-Z1A,AN,BT,Elect,Z1A
+3,Rollos Corrugados 3/4,AN-RC3/4-Elect-Z1A,AN,RC3/4,Elect,Z1A
+4,Kalop Conductor Subterraneo 3x1;5 (x125mts),Kp-CS3X1.5-125-Elect-Z1A,Kp,CS3X1.5-125,Elect,Z1A
+5,Kalop Conductor Subterraneo 3x2;5 (x150mts),Kp-CS3X2.5-150-Elect-Z1A,Kp,CS3X2.5-150,Elect,Z1A
+6,Rollo Manguera Azul 3/4,AN-RMA3/4-Elect-Z1A,AN,RMA3/4,Elect,Z1A
+7,Polinam Caño Pvc T/Manguera 3/4(rollox25Mts),Pl-CañPVCT/Mang3/4-Elect-Z1A,Pl,CañPVCT/Mang3/4,Elect,Z1A
+8,M.H Conductor Unipolar 10;00 V/Amarillo,MH-CU10-Y-Elect-Z1A,MH,CU10-Y,Elect,Z1A
+9,Epuyen (Te-00450-NG) Cond. Telefonico 4 pares Subt.782,Ep-CT4P-Elect-Z1A,Ep,CT4P,Elect,Z1A
+10,Kalop Conductor Unipolar 1;5 MM Celeste,Kp-CU1.5-C-Elect-Z1A,Kp,CU1.5-C,Elect,Z1A
+11,Kalop Conductor Unipolar 1;5MM Rojo,Kp-CU1.5-R-Elect-Z1A,Kp,CU1.5-R,Elect,Z1A
+12,Kalop Conductor Unipolar 1;5MM V/Amarillo,Kp-CU1.5-VY-Elect-Z1A,Kp,CU1.5-VY,Elect,Z1A
+13,Kalop Conductor Unipolar 1;5MM Blanco,Kp-CU1.5-W-Elect-Z1A,Kp,CU1.5-W,Elect,Z1A
+14,Kalop Conductor Unipolar 1;5 MM Marron,Kp-CU1.5-M-Elect-Z1A,Kp,CU1.5-M,Elect,Z1A
+15,Kalop Conductor Unipolar 1;5MM Negro,Kp-CU1.5-N-Elect-Z1A,Kp,CU1.5-N,Elect,Z1A
+16,Kalop Conductor Unipolar 2;5MM Negro,Kp-CU2.5-N-Elect-Z1A,Kp,CU2.5-N,Elect,Z1A
+17,Kalop Conductor Unipolar 2;5MM Marron,Kp-CU2.5-M-Elect-Z1A,Kp,CU2.5-M,Elect,Z1A
+18,Kalop Conductor Unipolar 2;5MM Celeste,Kp-CU2.5-C-Elect-Z1A,Kp,CU2.5-C,Elect,Z1A
+19,Kalop Conductor Unipolar 2;5MM V/Amarillo,Kp-CU2.5-VY-Elect-Z1A,Kp,CU2.5-VY,Elect,Z1A
+20,Kalop Conductor Unipolar 2;5MM Rojo,Kp-CU2.5-R-Elect-Z1A,Kp,CU2.5-R,Elect,Z1A
+21,Kalop Conductor Unipolar 4MM Rojo,Kp-CU4-R-Elect-Z1A,Kp,CU4-R,Elect,Z1A
+22,Kalop Conductor Unipolar 4MM Celeste,Kp-CU4-C-Elect-Z1A,Kp,CU4-C,Elect,Z1A
+23,Kalop Conductor Unipolar 4MM V/Amarillo,Kp-CU4-VY-Elect-Z1A,Kp,CU4-VY,Elect,Z1A
+24,Abb Termica Din 2x10,Ab2-T2X10-Elect-Z1A,Ab2,T2X10,Elect,Z1A
+25,Abb Termica Din 2x16,Ab2-T2X16-Elect-Z1A,Ab2,T2X16,Elect,Z1A
+26,Abb Termica Din 2x20,Ab2-T2X20-Elect-Z1A,Ab2,T2X20,Elect,Z1A
+27,Abb Termica Din 4x40,Ab2-T2X40-Elect-Z1A,Ab2,T2X40,Elect,Z1A
+28,Commax Portero con Apertura 1 telefono frente Embutir,Cmm-PAE1-Elect-Z1A,Cmm,PAE1,Elect,Z1A
+29,Jeluz Platinum Modulo 2 tomas Normalizado +Tierra 2x10A-250VCA Bl,Jz-MTN2-Elect-Z1A,Jz,MTN2,Elect,Z1A
+30,Jeluz Platinum Tapon Ciego Blanco,Jz-TCB-Elect-Z1A,Jz,TCB,Elect,Z1A
+31,Jeluz Verona Bastidor Oculto Rectangular,Jz-VBOR-Elect-Z1A,Jz,VBOR,Elect,Z1A
+32,Jeluz Platinum Tapa Rectangular Blanca,Jz-TRB-Elect-Z1A,Jz,TRB,Elect,Z1A
+33,Jeluz Verona Estanco 2 Mod.Bast y Tapa Transp,Jz-EMBT-Elect-Z1A,Jz,EMBT,Elect,Z1A
+34,Jeluz Platinum Modulo Punto Blanco 220V 10A,Jz-MPB10-Elect-Z1A,Jz,MPB10,Elect,Z1A
+35,Jeluz Platinum Modulo Combinacion Blanco 220V 10A,Jz-MCB10-Elect-Z1A,Jz,MCB10,Elect,Z1A
+36,Jeluz Platinum Modulo Toma 10A Blanco Combinado,Jz-MTC10-Elect-Z1A,Jz,MTC10,Elect,Z1A
+37,Jeluz Toma de telefonos tipo Americano 4 vias,Jz-TT4V-Elect-Z1A,Jz,TT4V,Elect,Z1A
+38,Jeluz Platinum Modulo Tv C/Acople pasante pin grueso Blanco,Jz-MTV-Elect-Z1A,Jz,MTV,Elect,Z1A
+39,Jeluz Tapa 5x5 Mignon Blanco,Jz-T5X5MGB-Elect-Z1A,Jz,T5X5MGB,Elect,Z1A
+40,"BmB Curva de Plastico para caño de 1""",Bmb-CP1-Elect-Z1A,Bmb,CP1,Elect,Z1A
+41,Sica Disyuntor Diferencial 2x63 A,Sc-DD2X63-Elect-Z1A,Sc,DD2X63,Elect,Z1A
+42,Sica Termica 2x10,Sc-T2X10-Elect-Z1A,Sc,T2X10,Elect,Z1A
+43,Sica Termica 2x15,Sc-T2X15-Elect-Z1A,Sc,T2X15,Elect,Z1A
+44,Sica Termica 2x20,Sc-T2X20-Elect-Z1A,Sc,T2X20,Elect,Z1A
+45,Sica Termica 2x63,Sc-T2X63-Elect-Z1A,Sc,T2X63,Elect,Z1A
+46,Sica Fusible NH 63 A,Sc-FNH63-Elect-Z1A,Sc,FNH63,Elect,Z1A
+47,Genrod Caja de pase derivacion (unidades) 15x15,Gr-CP15X15-Elect-Z1A,Gr,CP15X15,Elect,Z1A
+48,Genrod Caja de pase 20x20,Gr-CP20X20-Elect-Z1A,Gr,CP20X20,Elect,Z1A
+49,Tacsa Precinto 4;6 MM x 100 U-Negro (bolsas de 100 U),Tcs-P4.6N-Frrt-Z1B,Tcs,P4.6N,Frrt,Z1B
+50,9 de Julio Conectores de Hierro 3/4 (Bolsas de 100 unidades),9JL-CH3/4-Elect-Z1A,9JL,CH3/4,Elect,Z1A
+51,Gen Rod Caja Termica 8 Bocas Embutir Plastica Ecoo,Gr-CT8B-Elect-Z1A,Gr,CT8B,Elect,Z1A
+52,Gen Rod Caja Termica 24 Bocas Embutir Plastica Ecoo,Gr-CT24B-Elect-Z1A,Gr,CT24B,Elect,Z1A
+53,Gen Rod Caja Termica 4 Bocas Embutir Plastica Ecoo,Gr-CT4B-Elect-Z1A,Gr,CT4B,Elect,Z1A
+54,Gen Rod Jabalina con Toma Cable 1/2 x 1;5 Mts,Gr-JTC1/2-Elect-Z1A,Gr,JTC1/2,Elect,Z1A
+55,Jeluz Platinum Modulo Toma Blanco 20A 250V,Jz-MTB20-Elect-Z1A,Jz,MTB20,Elect,Z1A
+56,BmB Cupla de 3/4 (Bolsas de 100),Bmb-C3/4-Elect-Z1A,Bmb,C3/4,Elect,Z1A
 57,BmB Cupla de 1 (Bolsa de 50),Bmb-C1-Elect-Z1A,Bmb,C1,Elect,Z1A
-58,Tapa de Tablero,Bmb-TTB-Elect-Z1A,Bmb,TTB,Elect,Z1A
-59,Latynplast Tubo exten Universal (unidad),Bmb-TEU-Elect-Z1A,Bmb,TEU,Elect,Z1A
-60,Fv Epuyen Ferrum Juego Monocomando para Bañera y ducha 0106/L2,Bmb-DCHA-Elect-Z1A,Bmb,DCHA,Elect,Z1A
-61,Clavos 1 1/2 (x bolsa de 1 Kg),Aw-C1.2-Sant-Z2B,Aw,C1.2,Sant,Z2B
-62,Peirano Monocomando para pared de Cocina Bilbao 54-130,Aw-CnaBil-Sant-Z2B,Aw,CnaBil,Sant,Z2B
-63,Peirano Lavatorio Baño Soria 63-125,AN-LavSor-Sant-Z2B,AN,LavSor,Sant,Z2B
-64,Peirano Marbella Monocomando Cocina Cromo 20-121,Aw-CnaMarb-Sant-Z2B,Aw,CnaMarb,Sant,Z2B
-65,Ferrum Bacha Tori Vasija Chica LK303 B,AN-BchaTori-Sant-Z2B,AN,BchaTori,Sant,Z2B
-66,Robinet Bronx Bañera C/Transferencia Oxido,Gr-BañBronx-Elect-Z1A,Gr,BañBronx,Elect,Z1A
-67,Robinet Bronx Lavatorio Pared Oxido,AN-LavBronx-Crrln-Z3G,AN,LavBronx,Crrln,Z3G
-68,Peirano Soria Ducha Embutir C/Transf Monocomando 80-152,AN-DchaSor-Elect-Z1A,AN,DchaSor,Elect,Z1A
-69,Peirano Black Velvet Ducha Embutir C/Transf C.Cer Negro 80-190 P,AN-DchaBV-Elect-Z1A,AN,DchaBV,Elect,Z1A
-70,Johnson Acero Desagues de Bacha,AN-BchaDes-Sant-Z2B,AN,BchaDes,Sant,Z2B
-71,Ideal Deposito de Empotrar con Descarga Dual para Ahorro de Agua,CB-DED-Pnt-Z3G,CB,DED,Pnt,Z3G
-72,Roca Slendra Plus (Depositosx2),CB-DED-Pnt-Z3G,CB,DED,Pnt,Z3G
-73,180 Manguera Led 220V x 5 Mts Luz Calida (63025/5/BC),CB-MANL-Pnt-Z3G,CB,MANL,Pnt,Z3G
-74,Lumicom (5050) Cinta Led Interioir 14;4W Calida 5Mts,CB-MANL-Pnt-Z3G,CB,MANL,Pnt,Z3G
-75,Denka Cinta Aisladora PVC Vini Tape 10 Mts,CB-CINA-Pnt-Z3G,CB,CINA,Pnt,Z3G
-76,9 de Julio (10004) Caja H Liviana Cuadrada 10x10 Aluminizada Ch20,CB-CHC10-Pnt-Z3G,CB,CHC10,Pnt,Z3G
-77,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,AN-CHM5-Crrln-,AN,CHM5,Crrln,
-78,Peirano Respuesto Set Prolongador Vastago/Campana A1189,Drn-RepSp-Eldom-Z2A,Drn,RepSp,Eldom,Z2A
-79,Prolongador Vastago (los que traen las griferias) (xjuego),Elclx-PV-Eldom-Z2A,Elclx,PV,Eldom,Z2A
-80,Matafuego 5 Kg,Amnco-MF5-Sant-Z2B,Amnco,MF5,Sant,Z2B
-81,9 de Julio Caja H Liviana Octogonal chica Aluminizada Ch 20,Amnco-CHO-Sant-Z2B,Amnco,CHO,Sant,Z2B
-82,9 de Julio Caja H Liviana Rectangular chica Aluminizada Ch 20,Amnco-CHR-Sant-Z2B,Amnco,CHR,Sant,Z2B
-83,GenRod Caja p/Monoblock con base NH S/Fusible (085203),Aw-CMPNH-Sant-Z2B,Aw,CMPNH,Sant,Z2B
-84,Bachas Testa 45x32x11 Natural,Aw-BchaTNat-Sant-Z2B,Aw,BchaTNat,Sant,Z2B
-85,Bachas Testa 45x32x11 Oliva,Aw-BchaTOli-Sant-Z2B,Aw,BchaTOli,Sant,Z2B
-86,Compañía Nativa Fiso de Madera,Aw-FM-Sant-Z2B,Aw,FM,Sant,Z2B
-87,Tbcin Peines de Alimentacion Bipolar 63A,Aw-PAB63-Sant-Z2B,Aw,PAB63,Sant,Z2B
-88,LatynFlex Flexible Mallado de Acero Inoxidable macho Giratorio 1/2x35 (xunidad),Aw-FMASG-Sant-Z2B,Aw,FMASG,Sant,Z2B
-89,MayorLed Fuente Metalica Linea Slim para perfil de Aluminio y tira Led,Aw-FMET-Sant-Z2B,Aw,FMET,Sant,Z2B
-90,Sika Monotop-107 Seal Impermeabilizante cementicio de Alta Performance (xkg),Aw-IMPCE-Sant-Z2B,Aw,IMPCE,Sant,Z2B
-91,Netcolor Masilla para placas de Yeso Interioir (xKg),Aw-MPYI-Sant-Z2B,Aw,MPYI,Sant,Z2B
-92,Casablanca Interioir Mate Balsamo(x lts) Bse B (Abierto),Aw-BLS-Sant-Z2B,Aw,BLS,Sant,Z2B
-93,Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto),Aw-PINT-Sant-Z2B,Aw,PINT,Sant,Z2B
-94,Casablanca Interioir Mate Blanco (xLts) (Abierto),Aw-PINT-Sant-Z2B,Aw,PINT,Sant,Z2B
-95,Casablanca Esmalte Sintetico MultiAccion 3 en 1 (xlts) (cerrado),Aw-ESMA-Sant-Z2B,Aw,ESMA,Sant,Z2B
-96,Casablanca Interioir Mate Base A (xlts) (Abierto),Aw-PINT-Sant-Z2B,Aw,PINT,Sant,Z2B
-97,Dixilina Diluyente a Base de Aguarras (xlts) (Abierto),Aw-DIL-Sant-Z2B,Aw,DIL,Sant,Z2B
-98,Sherwin Williams Enduido Plastico Interioir Multiproposito (xlts) (Cerrado),Aw-END-Sant-Z2B,Aw,END,Sant,Z2B
-99,Alba Albalatex Formula Avanzada (xlts),Aw-PINT-Sant-Z2B,Aw,PINT,Sant,Z2B
-100,Solvex Diluyente para Sinteticos a base de Aguarras (xlts) (Abierto),Aw-DIL-Sant-Z2B,Aw,DIL,Sant,Z2B
-101,Pegalo Sellador Acrilico Blanco (cc),AN-SLLDR-Sant-Z2B,AN,SLLDR,Sant,Z2B
-102,Pegalo Silicona Neutra (cc),AN-SN-Sant-Z2B,AN,SN,Sant,Z2B
-103,Poximix Mezcla Adhesiva Blanca (xkg),AN-MAB-Elect-Z1A,AN,MAB,Elect,Z1A
-104,Perfiles para Tira Led Per12 para aplicar (x2mts cada uno),Cmm-PTL32-Elect-Z1A,Cmm,PTL32,Elect,Z1A
-105,Perfiles para Tira Led Per14 embutir (x2mts cada uno),Cnat-PTL14--,Cnat,PTL14,,
-106,Perfiles para Tira Led Per11 embutir (x2mts cada uno),Amnco-PTL11-Sant-Z2B,Amnco,PTL11,Sant,Z2B
-107,Perfiles para Tira Led Per32 para aplicar (x1/2mts cada uno),Amnco-PTL32-Sant-Z2B,Amnco,PTL32,Sant,Z2B
-108,Perfiles Bidireccional Exteriores (x2mts cada uno),Frr-PBE-Sant-Z2B,Frr,PBE,Sant,Z2B
-109,Reel para Spot Blanco de Aplicar (x2mts cada uno),Pei-REEL-Sant-Z2B,Pei,REEL,Sant,Z2B
-110,Cocina Drean CD5502AI,Dk-CCNA-Elect-Z1A,Dk,CCNA,Elect,Z1A
-111,Horno Longive H1500XF,AN-CCNA-Elect-Z1A,AN,CCNA,Elect,Z1A
-112,Cocina Electrolux 56DXQ,Dx-CCNA-Pnt-Z3G,Dx,CCNA,Pnt,Z3G
-113,Anafe Longive A2600XF,AN-CCNA-Elect-Z1A,AN,CCNA,Elect,Z1A
-114,Vera-Lavatorio Monocomando Alto-Linea Vera (S-B),AN-LavVera-Elect-Z1A,AN,LavVera,Elect,Z1A
-115,Peirano Soria-Bide Monocomando C/Transferencia-70-152-Linea Soria,AN-BdeSor-Elect-Z1A,AN,BdeSor,Elect,Z1A
-116,Temple Juego Cocina Monoc.C/Rociador-0412/87-CR,AN-CnaTmple-Elect-Z1A,AN,CnaTmple,Elect,Z1A
+58,Tapa de Tablero,AN-TTB-Elect-Z1A,AN,TTB,Elect,Z1A
+59,Latynplast Tubo exten Universal (unidad),LtPl-TEU-Sant-Z2B,LtPl,TEU,Sant,Z2B
+60,Fv Epuyen Ferrum Juego Monocomando para Bañera y ducha 0106/L2,Fv-DCHA-Sant-Z2B,Fv,DCHA,Sant,Z2B
+61,Clavos 1 1/2 (x bolsa de 1 Kg),AN-C1.2-Crrln-,AN,C1.2,Crrln,
+62,Peirano Monocomando para pared de Cocina Bilbao 54-130,Pei-CnaBil-Sant-Z2B,Pei,CnaBil,Sant,Z2B
+63,Peirano Lavatorio Baño Soria 63-125,Pei-LavSor-Sant-Z2B,Pei,LavSor,Sant,Z2B
+64,Peirano Marbella Monocomando Cocina Cromo 20-121,Pei-CnaMarb-Sant-Z2B,Pei,CnaMarb,Sant,Z2B
+65,Ferrum Bacha Tori Vasija Chica LK303 B,Frr-BchaTori-Sant-Z2B,Frr,BchaTori,Sant,Z2B
+66,Robinet Bronx Bañera C/Transferencia Oxido,Rb-BañBronx-Sant-Z2B,Rb,BañBronx,Sant,Z2B
+67,Robinet Bronx Lavatorio Pared Oxido,Rb-LavBronx-Sant-Z2B,Rb,LavBronx,Sant,Z2B
+68,Peirano Soria Ducha Embutir C/Transf Monocomando 80-152,Pei-DchaSor-Sant-Z2B,Pei,DchaSor,Sant,Z2B
+69,Peirano Black Velvet Ducha Embutir C/Transf C.Cer Negro 80-190 P,Pei-DchaBV-Sant-Z2B,Pei,DchaBV,Sant,Z2B
+70,Johnson Acero Desagues de Bacha,Jhn-BchaDes-Sant-Z2B,Jhn,BchaDes,Sant,Z2B
+71,Ideal Deposito de Empotrar con Descarga Dual para Ahorro de Agua,Ide-DED-Sant-Z2B,Ide,DED,Sant,Z2B
+72,Roca Slendra Plus (Depositosx2),Rc-DED-Sant-Z2B,Rc,DED,Sant,Z2B
+73,180 Manguera Led 220V x 5 Mts Luz Calida (63025/5/BC),180º-MANL-Elect-Z1A,180º,MANL,Elect,Z1A
+74,Lumicom (5050) Cinta Led Interioir 14;4W Calida 5Mts,Lmc-MANL-Elect-Z1A,Lmc,MANL,Elect,Z1A
+75,Denka Cinta Aisladora PVC Vini Tape 10 Mts,Dk-CINA-Elect-Z1A,Dk,CINA,Elect,Z1A
+76,9 de Julio (10004) Caja H Liviana Cuadrada 10x10 Aluminizada Ch20,9JL-CHC10-Elect-Z1A,9JL,CHC10,Elect,Z1A
+77,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,9JL-CHM5-Elect-Z1A,9JL,CHM5,Elect,Z1A
+78,Peirano Respuesto Set Prolongador Vastago/Campana A1189,Pei-RepSp-Sant-Z2B,Pei,RepSp,Sant,Z2B
+79,Prolongador Vastago (los que traen las griferias) (xjuego),AN-PV-Sant-Z2B,AN,PV,Sant,Z2B
+80,Matafuego 5 Kg,AN-MF5--,AN,MF5,,
+81,9 de Julio Caja H Liviana Octogonal chica Aluminizada Ch 20,9JL-CHO-Elect-Z1A,9JL,CHO,Elect,Z1A
+82,9 de Julio Caja H Liviana Rectangular chica Aluminizada Ch 20,9JL-CHR-Elect-Z1A,9JL,CHR,Elect,Z1A
+83,GenRod Caja p/Monoblock con base NH S/Fusible (085203),Gr-CMPNH-Elect-Z1A,Gr,CMPNH,Elect,Z1A
+84,Bachas Testa 45x32x11 Natural,AN-BchaTNat-Sant-Z2B,AN,BchaTNat,Sant,Z2B
+85,Bachas Testa 45x32x11 Oliva,AN-BchaTOli-Sant-Z2B,AN,BchaTOli,Sant,Z2B
+86,Compañía Nativa Fiso de Madera,Cnat-FM--,Cnat,FM,,
+87,Tbcin Peines de Alimentacion Bipolar 63A,Tbc-PAB63-Elect-Z1A,Tbc,PAB63,Elect,Z1A
+88,LatynFlex Flexible Mallado de Acero Inoxidable macho Giratorio 1/2x35 (xunidad),Lflx-FMASG-Sant-Z2B,Lflx,FMASG,Sant,Z2B
+89,MayorLed Fuente Metalica Linea Slim para perfil de Aluminio y tira Led,ML-FMET-Elect-Z1A,ML,FMET,Elect,Z1A
+90,Sika Monotop-107 Seal Impermeabilizante cementicio de Alta Performance (xkg),Sk-IMPCE-Crrln-Z3G,Sk,IMPCE,Crrln,Z3G
+91,Netcolor Masilla para placas de Yeso Interioir (xKg),Nc-MPYI-Pnt-Z3G,Nc,MPYI,Pnt,Z3G
+92,Casablanca Interioir Mate Balsamo(x lts) Bse B (Abierto),CB-BLS-Pnt-Z3G,CB,BLS,Pnt,Z3G
+93,Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto),CB-PINT-Pnt-Z3G,CB,PINT,Pnt,Z3G
+94,Casablanca Interioir Mate Blanco (xLts) (Abierto),CB-PINT-Pnt-Z3G,CB,PINT,Pnt,Z3G
+95,Casablanca Esmalte Sintetico MultiAccion 3 en 1 (xlts) (cerrado),CB-ESMA-Pnt-Z3G,CB,ESMA,Pnt,Z3G
+96,Casablanca Interioir Mate Base A (xlts) (Abierto),CB-PINT-Pnt-Z3G,CB,PINT,Pnt,Z3G
+97,Dixilina Diluyente a Base de Aguarras (xlts) (Abierto),Dx-DIL-Pnt-Z3G,Dx,DIL,Pnt,Z3G
+98,Sherwin Williams Enduido Plastico Interioir Multiproposito (xlts) (Cerrado),SW-END-Pnt-Z3G,SW,END,Pnt,Z3G
+99,Alba Albalatex Formula Avanzada (xlts),Alb-PINT-Pnt-Z3G,Alb,PINT,Pnt,Z3G
+100,Solvex Diluyente para Sinteticos a base de Aguarras (xlts) (Abierto),Svx-DIL-Pnt-Z3G,Svx,DIL,Pnt,Z3G
+101,Pegalo Sellador Acrilico Blanco (cc),Pgl-SLLDR-Frrt-Z1B,Pgl,SLLDR,Frrt,Z1B
+102,Pegalo Silicona Neutra (cc),Pgl-SN-Frrt-Z1B,Pgl,SN,Frrt,Z1B
+103,Poximix Mezcla Adhesiva Blanca (xkg),Pxmx-MAB-Crrln-Z1B,Pxmx,MAB,Crrln,Z1B
+104,Perfiles para Tira Led Per12 para aplicar (x2mts cada uno),AN-PTL32-Elect-Z1A,AN,PTL32,Elect,Z1A
+105,Perfiles para Tira Led Per14 embutir (x2mts cada uno),AN-PTL14-Elect-Z1A,AN,PTL14,Elect,Z1A
+106,Perfiles para Tira Led Per11 embutir (x2mts cada uno),AN-PTL11-Elect-Z1A,AN,PTL11,Elect,Z1A
+107,Perfiles para Tira Led Per32 para aplicar (x1/2mts cada uno),AN-PTL32-Elect-Z1A,AN,PTL32,Elect,Z1A
+108,Perfiles Bidireccional Exteriores (x2mts cada uno),AN-PBE-Elect-Z1A,AN,PBE,Elect,Z1A
+109,Reel para Spot Blanco de Aplicar (x2mts cada uno),AN-REEL-Elect-Z1A,AN,REEL,Elect,Z1A
+110,Cocina Drean CD5502AI,Drn-CCNA-Eldom-Z2A,Drn,CCNA,Eldom,Z2A
+111,Horno Longive H1500XF,Lngv-CCNA-Eldom-Z2A,Lngv,CCNA,Eldom,Z2A
+112,Cocina Electrolux 56DXQ,Elclx-CCNA-Eldom-Z2A,Elclx,CCNA,Eldom,Z2A
+113,Anafe Longive A2600XF,Lngv-CCNA-Eldom-Z2A,Lngv,CCNA,Eldom,Z2A
+114,Vera-Lavatorio Monocomando Alto-Linea Vera (S-B),Vr-LavVera-Sant-Z2B,Vr,LavVera,Sant,Z2B
+115,Peirano Soria-Bide Monocomando C/Transferencia-70-152-Linea Soria,Pei-BdeSor-Sant-Z2B,Pei,BdeSor,Sant,Z2B
+116,Temple Juego Cocina Monoc.C/Rociador-0412/87-CR,Tmpl-CnaTmple-Sant-Z2B,Tmpl,CnaTmple,Sant,Z2B
 117,Riel Embutir Magnetico Slim Negro Microled 3 metros 48V RMS-E-3M,AN-REMSL348-Elect-Z1A,AN,REMSL348,Elect,Z1A
 118,Riel Embutir Magnetico Slim Negro Macroled 2 metros 48V RMS-E-2M,AN-REMSL248-Elect-Z1A,AN,REMSL248,Elect,Z1A
 119,Acople Horizontal para Riel de Embutir Magnetico Slim Macroled RMS-CL-E,AN-ALHSM-Elect-Z1A,AN,ALHSM,Elect,Z1A
-120,Tend 60x120 C&S Sunny In x 1;44 M2,AN-PRCin144-Crrln-Z3G,AN,PRCin144,Crrln,Z3G
-121,Tend 60x120 C&S Sunny Out x 1;44M2,Aw-PRCout144-Sant-Z2B,Aw,PRCout144,Sant,Z2B
-122,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,AN-PRCmd122-Elect-Z1A,AN,PRCmd122,Elect,Z1A
-123,KlK Mezcla Porcelanato x 30 Kg,AN-MzclaPc-Elect-Z1A,AN,MzclaPc,Elect,Z1A
-124,Pastina Prestige Perlato x 5 Kg (x bolsa),AN-Pstina-Elect-Z1A,AN,Pstina,Elect,Z1A
-125,Temple Juego Cocina Monoc.C/Rociador-0412/87-CR,AN-CnnaMonoc-Elect-Z1A,AN,CnnaMonoc,Elect,Z1A
-126,Varese-Deposito de Apoyar-Linea Varese,AN-DpsitoApoy-Elect-Z1A,AN,DpsitoApoy,Elect,Z1A
-127,Varese-Bidet 1AG-Linea Varese,Ep-Bdt1AGVrs-Elect-Z1A,Ep,Bdt1AGVrs,Elect,Z1A
-128,Varese-Inodoro Largo-Linea Varese,Erpa-IndlrgVrs-Sant-Z2B,Erpa,IndlrgVrs,Sant,Z2B
-129,Daccord Bari-Tapa Mdf Herraje Nylon,Erpa-TpBari-Sant-Z2B,Erpa,TpBari,Sant,Z2B
-130,Bari-Deposito de Apoyar Desc Dual-Linea Bari,Erpa-DpsitoBari-Sant-Z2B,Erpa,DpsitoBari,Sant,Z2B
+120,Tend 60x120 C&S Sunny In x 1;44 M2,Tend-PRCin144-Crrln-Z3G,Tend,PRCin144,Crrln,Z3G
+121,Tend 60x120 C&S Sunny Out x 1;44M2,Tend-PRCout144-Crrln-Z3G,Tend,PRCout144,Crrln,Z3G
+122,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,Ilv-PRCmd122-Crrln-Z3G,Ilv,PRCmd122,Crrln,Z3G
+123,KlK Mezcla Porcelanato x 30 Kg,Klk-MzclaPc-Crrln-Z3G,Klk,MzclaPc,Crrln,Z3G
+124,Pastina Prestige Perlato x 5 Kg (x bolsa),Prdtg-Pstina-Frrt-Z1B,Prdtg,Pstina,Frrt,Z1B
+125,Temple Juego Cocina Monoc.C/Rociador-0412/87-CR,Fv-CnnaMonoc-Sant-Z2B,Fv,CnnaMonoc,Sant,Z2B
+126,Varese-Deposito de Apoyar-Linea Varese,Frr-DpsitoApoy-Sant-Z2B,Frr,DpsitoApoy,Sant,Z2B
+127,Varese-Bidet 1AG-Linea Varese,Frr-Bdt1AGVrs-Sant-Z2B,Frr,Bdt1AGVrs,Sant,Z2B
+128,Varese-Inodoro Largo-Linea Varese,Frr-IndlrgVrs-Sant-Z2B,Frr,IndlrgVrs,Sant,Z2B
+129,Daccord Bari-Tapa Mdf Herraje Nylon,Frr-TpBari-Sant-Z2B,Frr,TpBari,Sant,Z2B
+130,Bari-Deposito de Apoyar Desc Dual-Linea Bari,Frr-DpsitoBari-Sant-Z2B,Frr,DpsitoBari,Sant,Z2B
 131,Bari-Inodoro Largo-Linea Bari,Frr-IndBari-Sant-Z2B,Frr,IndBari,Sant,Z2B
-132,Bacha Porcelana Sanitaria,AN-BchaPor-Elect-Z1A,AN,BchaPor,Elect,Z1A
-133,Pileta Acero 304 Simple-Luxor SI 71A-Simples-71x48;2x21,Fv-Pleta71x48-Sant-Z2B,Fv,Pleta71x48,Sant,Z2B
-134,Varese/Veneto-Tapa Asiento Uf C/Cierre Suave-Linea Varese,Gr-TpaVrse-Elect-Z1A,Gr,TpaVrse,Elect,Z1A
-135,9 de julio Conector de hierro 1 (Bolsa de 50),Gr-CH1-Elect-Z1A,Gr,CH1,Elect,Z1A
-136,Ag.Met Grampa media Omega 3/4 Li.Zincada,Gr-GrMO3/4-Elect-Z1A,Gr,GrMO3/4,Elect,Z1A
-137,BmB Curva de Plastico para caño 3/4 (Bolson),Gr-CP3/4-Elect-Z1A,Gr,CP3/4,Elect,Z1A
+132,Bacha Porcelana Sanitaria,Frr-BchaPor-Sant-Z2B,Frr,BchaPor,Sant,Z2B
+133,Pileta Acero 304 Simple-Luxor SI 71A-Simples-71x48;2x21,Lux-Pleta71x48-Sant-Z2B,Lux,Pleta71x48,Sant,Z2B
+134,Varese/Veneto-Tapa Asiento Uf C/Cierre Suave-Linea Varese,Frr-TpaVrse-Sant-Z2B,Frr,TpaVrse,Sant,Z2B
+135,"9 de julio Conector de hierro 1"" (Bolsa de 50)",9JL-CH1-Elect-Z1A,9JL,CH1,Elect,Z1A
+136,Ag.Met Grampa media Omega 3/4 Li.Zincada,Agmt-GrMO3/4-Elect-Z1A,Agmt,GrMO3/4,Elect,Z1A
+137,BmB Curva de Plastico para caño 3/4 (Bolson),Bmb-CP3/4-Elect-Z1A,Bmb,CP3/4,Elect,Z1A
 138,Gen Rod Caja Termica 36 Bocas Embutir Plastica Ecoo,Gr-CT36B-Elect-Z1A,Gr,CT36B,Elect,Z1A
 139,Gen Rod Jabalina C/Toma Cable 3/8x1Mts,Gr-JTC3/8-Elect-Z1A,Gr,JTC3/8,Elect,Z1A
-140,Jeluz Termica 2x16,Gr-T2x16-Elect-Z1A,Gr,T2x16,Elect,Z1A
-141,Jeluz Termica 2x20,Gr-T2X20-Elect-Z1A,Gr,T2X20,Elect,Z1A
-142,Jeluz Disyuntor Diferencial 2x40A,Gr-DD2X40-Elect-Z1A,Gr,DD2X40,Elect,Z1A
-143,Schneider Peine Bipolar 80A 12 Polos,Gr-PAB8012P-Elect-Z1A,Gr,PAB8012P,Elect,Z1A
-144,Tacsa Taco 6MMx40 Kit Tarugo+Tornillo Bolsita (xbolsa),Gr-TARTOR6MM-Elect-Z1A,Gr,TARTOR6MM,Elect,Z1A
-145,Tbcin Terminal de cobre estañado 2;5MM,Lngv-TerCo2;5-Eldom-Z2A,Lngv,TerCo2;5,Eldom,Z2A
-146,Tbcin Punta Hueca Negra 1;5MM,Hfr-PtaHuNe1;5-Elect-Z1A,Hfr,PtaHuNe1;5,Elect,Z1A
-147,Tecnocom Caño Plastico Rigido Blanco 3/4 (37u),Hfr-CÑPlas3/4-Elect-Z1A,Hfr,CÑPlas3/4,Elect,Z1A
-148,Tecnocom Caño Plastico Rigido Blanco 1 (20u),Rc-CÑPlas1-Sant-Z2B,Rc,CÑPlas1,Sant,Z2B
-149,Jeluz Termica 2x10,Ilv-T2X10-Crrln-Z3G,Ilv,T2X10,Crrln,Z3G
-150,Gen Rod Caja de Inspeccion Jabalina 15x15 Aislante,Rc-CINSPJAB1515-Sant-Z2B,Rc,CINSPJAB1515,Sant,Z2B
-151,Soria-Lavatorio Pared Embutir Monoc-63-152-Linea Soria,Jhns-LavEmbSor-Sant-Z2B,Jhns,LavEmbSor,Sant,Z2B
-152,Codo Aw 90 M-H 50,Jhns-CD90MH50-Sant-Z2B,Jhns,CD90MH50,Sant,Z2B
-153,Erpa Disco Corte Abrasivo DSA PCP,Jz-DscoAbrsv-Elect-Z1A,Jz,DscoAbrsv,Elect,Z1A
-154,Atrim Desague Lienal 45Cm PP onda mate,Jz-LinalDes45-Elect-Z1A,Jz,LinalDes45,Elect,Z1A
-155,Tubo Aw Mac-Hem 1 Mt 50,Jz-TUBMacH1;5-50-Elect-Z1A,Jz,TUBMacH1;5-50,Elect,Z1A
-156,Codo Aw 45 H-H 50,Jz-CD45HH50-Elect-Z1A,Jz,CD45HH50,Elect,Z1A
-157,Tapa 3;2 110,Jz-TP3;2-110-Elect-Z1A,Jz,TP3;2-110,Elect,Z1A
-158,Codo Aw 90 H-H 50,Jz-CD90HH50-Elect-Z1A,Jz,CD90HH50,Elect,Z1A
-159,Erpa Disco Amarillo 115 Segmentado,Jz-DscoSegmenAmari115-Elect-Z1A,Jz,DscoSegmenAmari115,Elect,Z1A
-160,Manguito Aw 110,Jz-Mang110-Elect-Z1A,Jz,Mang110,Elect,Z1A
-161,Boca Aw Acc Horizontal Acome Cerrados 110x63,Jz-BcaHrz110x63-Elect-Z1A,Jz,BcaHrz110x63,Elect,Z1A
-162,Codo Aw 45 H-H 110,Jz-CD45HH110-Elect-Z1A,Jz,CD45HH110,Elect,Z1A
-163,Tapa 3;2 50,Jz-TP3;2-50-Elect-Z1A,Jz,TP3;2-50,Elect,Z1A
-164,Codo Aw 90 M-H 110,Jz-CD90MH110-Elect-Z1A,Jz,CD90MH110,Elect,Z1A
-165,Ramal Aw 45 110X40 M-H,Jz-RM45MH110X40-Elect-Z1A,Jz,RM45MH110X40,Elect,Z1A
-166,Manguito Aw 40,Jz-Mang40-Elect-Z1A,Jz,Mang40,Elect,Z1A
-167,Manguito Aw 63,Jz-Mang63-Elect-Z1A,Jz,Mang63,Elect,Z1A
-168,Tubo Aw Mac-Hem 1;00 Mt 110,Jz-TUBMacH1-110-Elect-Z1A,Jz,TUBMacH1-110,Elect,Z1A
-169,Tubo Aw Mac-Hem 1;00 Mt 63,Jz-TUBMacH1-63-Elect-Z1A,Jz,TUBMacH1-63,Elect,Z1A
-170,Codo Aw 90 M-H 40,Jhns-CD90MH40-Sant-Z2B,Jhns,CD90MH40,Sant,Z2B
-171,Tubo Aw Mac-Hem 1;00 Mt 40,Jhns-TUBMacH1-40-Sant-Z2B,Jhns,TUBMacH1-40,Sant,Z2B
-172,Erpa Disco Amarillo 230 Segmentado,Jhns-DscoSegmenAmari230-Sant-Z2B,Jhns,DscoSegmenAmari230,Sant,Z2B
-173,Codo Aw 45 H-H 63,Jhn-CD45HH63-Sant-Z2B,Jhn,CD45HH63,Sant,Z2B
-174,Solucion Losung Lubricante 400 CC,Kp-SolucLubric400-Elect-Z1A,Kp,SolucLubric400,Elect,Z1A
-175,Codo Aw 90 M-H 63,Kp-CD90MH63-Elect-Z1A,Kp,CD90MH63,Elect,Z1A
-176,Ramal Aw 45 40X40 M-H,Kp-RM45MH40X40-Elect-Z1A,Kp,RM45MH40X40,Elect,Z1A
-177,Codo Aw Hembra Corta H-H 40,Kp-CDHEMBR40HH-Elect-Z1A,Kp,CDHEMBR40HH,Elect,Z1A
-178,Buje Aw M-H 110X63,Kp-BJ110X63MH-Elect-Z1A,Kp,BJ110X63MH,Elect,Z1A
-179,Codo Aw 90 H-H 40,Kp-CD90HH40-Elect-Z1A,Kp,CD90HH40,Elect,Z1A
-180,Codo Aw 45 H-H 40,Kp-CD45HH40-Elect-Z1A,Kp,CD45HH40,Elect,Z1A
-181,Tubo Aw Mac-Hem 2;00 Mt 63,Kp-TUBMacH2-63-Elect-Z1A,Kp,TUBMacH2-63,Elect,Z1A
-182,Tapa 3;2 40,Kp-TP3;2-40-Elect-Z1A,Kp,TP3;2-40,Elect,Z1A
-183,Codo Aw 45 M-H 50,Kp-CD45MH50-Elect-Z1A,Kp,CD45MH50,Elect,Z1A
-184,Tubo Aw Mac-Hem 2;00 Mt 40,Kp-TUBMacH2-40-Elect-Z1A,Kp,TUBMacH2-40,Elect,Z1A
-185,Ramal Aw 45 110X63 M-H,Kp-RM45MH110X63-Elect-Z1A,Kp,RM45MH110X63,Elect,Z1A
-186,Boca Aw Ac-Cocina 63x50,Kp-BCCocin63x50-Elect-Z1A,Kp,BCCocin63x50,Elect,Z1A
-187,Embudo Aw Acanalado C/Rej 20x20,Kp-EMBAcan20x20-Elect-Z1A,Kp,EMBAcan20x20,Elect,Z1A
-188,Codo Aw 45 M-H 40,Kp-CD45MH40-Elect-Z1A,Kp,CD45MH40,Elect,Z1A
-189,Pileta Aw Poli.15X15 C/Oring,Kp-Pleta15X15Oring-Elect-Z1A,Kp,Pleta15X15Oring,Elect,Z1A
-190,Codo Aw 45 M-H 110,Kp-CD45MH110-Elect-Z1A,Kp,CD45MH110,Elect,Z1A
-191,O.V Cam Cojinete C/Marco 110 y Tapa,Kp-CamCjnMarcoyTapa110-Elect-Z1A,Kp,CamCjnMarcoyTapa110,Elect,Z1A
-192,Ramal Aw 45 63X63 M-H,Kp-RM45MH63X63-Elect-Z1A,Kp,RM45MH63X63,Elect,Z1A
-193,O.V CAM Aro Suplementario 10Cm,Kp-CamAroSuplm10-Elect-Z1A,Kp,CamAroSuplm10,Elect,Z1A
-194,Codo Aw 90 H-H 110,Kp-CD90HH110-Elect-Z1A,Kp,CD90HH110,Elect,Z1A
-195,Codo Aw 45 M-H 63,Kp-CD45MH63-Elect-Z1A,Kp,CD45MH63,Elect,Z1A
-196,Ramal Aw 45 110X110 M-H,AN-RM45MH110X110-Crrln-Z3G,AN,RM45MH110X110,Crrln,Z3G
-197,Tapas Colector losa Radiante,Klk-TPColectLR-Crrln-Z3G,Klk,TPColectLR,Crrln,Z3G
-198,Marcos Colector losa Radiante,AN-MRCColectLR-Crrln-Z3G,AN,MRCColectLR,Crrln,Z3G
-199,GenRod Caja Estanca 10X10,AN-CESTAN10X10-Crrln-Z3G,AN,CESTAN10X10,Crrln,Z3G
-200,GenRod Caja para Termica 48 Bocas Embutir Plastica Ecoo,AN-CT48B-Sant-Z2B,AN,CT48B,Sant,Z2B
-201,ICONIA ROCA MONOC. DUCHA C/T CR,Lflx-DchaIconia-Sant-Z2B,Lflx,DchaIconia,Sant,Z2B
-202,Huferjo Caño Rigido 3/4 x 3mts,Lox-CÑPlas3/4-Pnt-Z3G,Lox,CÑPlas3/4,Pnt,Z3G
-203,Huferjo Curva Pvc 3/4,Lmc-CP3/4-Elect-Z1A,Lmc,CP3/4,Elect,Z1A
-204,Sassin Peine Bipolar 63A,MH-PAB6312P-Elect-Z1A,MH,PAB6312P,Elect,Z1A
-205,Veyka Tarugo y Tornillo 6mm,Aw-TARTOR6MM-Sant-Z2B,Aw,TARTOR6MM,Sant,Z2B
-206,Argenplas Conductor Unipolar 1;5 MM Celeste,Aw-CU1.5-C-Sant-Z2B,Aw,CU1.5-C,Sant,Z2B
-207,Argenplas Conductor Unipolar 1;5 MM Rojo,Amnco-CU1.5-R-Sant-Z2B,Amnco,CU1.5-R,Sant,Z2B
-208,Tachos de Pintura Asfaltica 18 Lts,Aw-TACHPINTASFLTX18LT-Sant-Z2B,Aw,TACHPINTASFLTX18LT,Sant,Z2B
-209,Amaco Tubo 25mm gris para Desague A.A 2m,AN-TUBDes25mm-Crrln-Z3G,AN,TUBDes25mm,Crrln,Z3G
-210,Codo Aw 40 H-H 90,AN-CD40HH90-Elect-Z1A,AN,CD40HH90,Elect,Z1A
-211,Codo Aw 40 M-H 90,AN-CD40MH90-Pnt-Z3G,AN,CD40MH90,Pnt,Z3G
-212,Pileta de Patio Bajo Losa Aw,AN-PletaPatioBajoLosa--,AN,PletaPatioBajoLosa,,
-213,Buje PP 2 X 11/2,ML-BJ2X11/2-Elect-Z1A,ML,BJ2X11/2,Elect,Z1A
-214,SD Tubo PVC CL 10 40,AN-TUBPvc1040-Elect-Z1A,AN,TUBPvc1040,Elect,Z1A
-215,SD Manguito R/M 40X11/2,AN-Mang40x11/2-Elect-Z1A,AN,Mang40x11/2,Elect,Z1A
-216,SD Buje Corto HH 50X40,AN-BJCorto50x40-Sant-Z2B,AN,BJCorto50x40,Sant,Z2B
-217,Adhesivo Losung 500 CM3 C/Pincel,AN-Adh500Cm3Cpincel-Sant-Z2B,AN,Adh500Cm3Cpincel,Sant,Z2B
-218,Vulcano Toma de Fondo C/Tapa,AN-Tomac/Tapa-Pnt-Z3G,AN,Tomac/Tapa,Pnt,Z3G
-219,SD Codo 45º 40MM Amanco,Miks-CD45º40MM-Pnt-Z3G,Miks,CD45º40MM,Pnt,Z3G
-220,SD Codo 90º 40MM Amanco,Nc-CD90º40MM-Pnt-Z3G,Nc,CD90º40MM,Pnt,Z3G
-221,Awaduct Cupla de 63MM,O.V-C63MM-Sant-Z2B,O.V,C63MM,Sant,Z2B
-222,Awaduct Cupla de 110MM,O.V-C110MM-Sant-Z2B,O.V,C110MM,Sant,Z2B
-223,Awaduct Tapon 110MM,Prdtg-TAPON110-Frrt-Z1B,Prdtg,TAPON110,Frrt,Z1B
-224,Awaduct Tapa 110,Pgl-TP110-Frrt-Z1B,Pgl,TP110,Frrt,Z1B
-225,Awaduct Sifon de Pared,Pgl-SifonPared-Frrt-Z1B,Pgl,SifonPared,Frrt,Z1B
-226,Awaduct Caño 50X50,Pei-CÑ50X50-Sant-Z2B,Pei,CÑ50X50,Sant,Z2B
-227,Awaduct Caño 40X50,Pei-CÑ40X50-Sant-Z2B,Pei,CÑ40X50,Sant,Z2B
-228,Amanco Caño 20MM Fusion Verde,Pei-CÑ20MMFsnVerde-Sant-Z2B,Pei,CÑ20MMFsnVerde,Sant,Z2B
-229,Amanco Caño 25MM Fusion Verde,Pei-CÑ25MMFsnVerde-Sant-Z2B,Pei,CÑ25MMFsnVerde,Sant,Z2B
-230,Amanco Caño 32MM Fusion Verde,Pei-CÑ32MMFsnVerde-Sant-Z2B,Pei,CÑ32MMFsnVerde,Sant,Z2B
-231,Embutido C/ placa Led 7W Bt:Alther,Pei-EMBTPlcLed7W-Sant-Z2B,Pei,EMBTPlcLed7W,Sant,Z2B
-232,Downligh Medida Linea (1;70) Cocina,Pei-DwnLMedida(1;70)-Sant-Z2B,Pei,DwnLMedida(1;70),Sant,Z2B
+140,Jeluz Termica 2x16,Jz-T2x16-Elect-Z1A,Jz,T2x16,Elect,Z1A
+141,Jeluz Termica 2x20,Jz-T2X20-Elect-Z1A,Jz,T2X20,Elect,Z1A
+142,Jeluz Disyuntor Diferencial 2x40A,Jz-DD2X40-Elect-Z1A,Jz,DD2X40,Elect,Z1A
+143,Schneider Peine Bipolar 80A 12 Polos,Shn-PAB8012P-Elect-Z1A,Shn,PAB8012P,Elect,Z1A
+144,Tacsa Taco 6MMx40 Kit Tarugo+Tornillo Bolsita (xbolsa),Tcs-TARTOR6MM-Frrt-Z1B,Tcs,TARTOR6MM,Frrt,Z1B
+145,Tbcin Terminal de cobre estañado 2;5MM,Tbc-TerCo2;5-Elect-Z1A,Tbc,TerCo2;5,Elect,Z1A
+146,Tbcin Punta Hueca Negra 1;5MM,Tbc-PtaHuNe1;5-Elect-Z1A,Tbc,PtaHuNe1;5,Elect,Z1A
+147,Tecnocom Caño Plastico Rigido Blanco 3/4 (37u),Tcm-CÑPlas3/4-Elect-Z1A,Tcm,CÑPlas3/4,Elect,Z1A
+148,Tecnocom Caño Plastico Rigido Blanco 1 (20u),Tcm-CÑPlas1-Elect-Z1A,Tcm,CÑPlas1,Elect,Z1A
+149,Jeluz Termica 2x10,Jz-T2X10-Elect-Z1A,Jz,T2X10,Elect,Z1A
+150,Gen Rod Caja de Inspeccion Jabalina 15x15 Aislante,Gr-CINSPJAB1515-Elect-Z1A,Gr,CINSPJAB1515,Elect,Z1A
+151,Soria-Lavatorio Pared Embutir Monoc-63-152-Linea Soria,Pei-LavEmbSor-Sant-Z2B,Pei,LavEmbSor,Sant,Z2B
+152,Codo Aw 90 M-H 50,Aw-CD90MH50-Sant-Z2B,Aw,CD90MH50,Sant,Z2B
+153,Erpa Disco Corte Abrasivo DSA PCP,Erpa-DscoAbrsv-Sant-Z2B,Erpa,DscoAbrsv,Sant,Z2B
+154,Atrim Desague Lienal 45Cm PP onda mate,Atr-LinalDes45-Sant-Z2B,Atr,LinalDes45,Sant,Z2B
+155,Tubo Aw Mac-Hem 1 Mt 50,Aw-TUBMacH1;5-50-Sant-Z2B,Aw,TUBMacH1;5-50,Sant,Z2B
+156,Codo Aw 45 H-H 50,Aw-CD45HH50-Sant-Z2B,Aw,CD45HH50,Sant,Z2B
+157,Tapa 3;2 110,AN-TP3;2-110-Sant-Z2B,AN,TP3;2-110,Sant,Z2B
+158,Codo Aw 90 H-H 50,Aw-CD90HH50-Sant-Z2B,Aw,CD90HH50,Sant,Z2B
+159,Erpa Disco Amarillo 115 Segmentado,Erpa-DscoSegmenAmari115-Sant-Z2B,Erpa,DscoSegmenAmari115,Sant,Z2B
+160,Manguito Aw 110,Aw-Mang110-Sant-Z2B,Aw,Mang110,Sant,Z2B
+161,Boca Aw Acc Horizontal Acome Cerrados 110x63,Aw-BcaHrz110x63-Sant-Z2B,Aw,BcaHrz110x63,Sant,Z2B
+162,Codo Aw 45 H-H 110,Aw-CD45HH110-Sant-Z2B,Aw,CD45HH110,Sant,Z2B
+163,Tapa 3;2 50,Aw-TP3;2-50-Sant-Z2B,Aw,TP3;2-50,Sant,Z2B
+164,Codo Aw 90 M-H 110,Aw-CD90MH110-Sant-Z2B,Aw,CD90MH110,Sant,Z2B
+165,Ramal Aw 45 110X40 M-H,Aw-RM45MH110X40-Sant-Z2B,Aw,RM45MH110X40,Sant,Z2B
+166,Manguito Aw 40,Aw-Mang40-Sant-Z2B,Aw,Mang40,Sant,Z2B
+167,Manguito Aw 63,Aw-Mang63-Sant-Z2B,Aw,Mang63,Sant,Z2B
+168,Tubo Aw Mac-Hem 1;00 Mt 110,Aw-TUBMacH1-110-Sant-Z2B,Aw,TUBMacH1-110,Sant,Z2B
+169,Tubo Aw Mac-Hem 1;00 Mt 63,Aw-TUBMacH1-63-Sant-Z2B,Aw,TUBMacH1-63,Sant,Z2B
+170,Codo Aw 90 M-H 40,Aw-CD90MH40-Sant-Z2B,Aw,CD90MH40,Sant,Z2B
+171,Tubo Aw Mac-Hem 1;00 Mt 40,Aw-TUBMacH1-40-Sant-Z2B,Aw,TUBMacH1-40,Sant,Z2B
+172,Erpa Disco Amarillo 230 Segmentado,Erpa-DscoSegmenAmari230-Sant-Z2B,Erpa,DscoSegmenAmari230,Sant,Z2B
+173,Codo Aw 45 H-H 63,Aw-CD45HH63-Sant-Z2B,Aw,CD45HH63,Sant,Z2B
+174,Solucion Losung Lubricante 400 CC,Lsng-SolucLubric400-Sant-Z2B,Lsng,SolucLubric400,Sant,Z2B
+175,Codo Aw 90 M-H 63,Aw-CD90MH63-Sant-Z2B,Aw,CD90MH63,Sant,Z2B
+176,Ramal Aw 45 40X40 M-H,Aw-RM45MH40X40-Sant-Z2B,Aw,RM45MH40X40,Sant,Z2B
+177,Codo Aw Hembra Corta H-H 40,Aw-CDHEMBR40HH-Sant-Z2B,Aw,CDHEMBR40HH,Sant,Z2B
+178,Buje Aw M-H 110X63,Aw-BJ110X63MH-Sant-Z2B,Aw,BJ110X63MH,Sant,Z2B
+179,Codo Aw 90 H-H 40,Aw-CD90HH40-Sant-Z2B,Aw,CD90HH40,Sant,Z2B
+180,Codo Aw 45 H-H 40,Aw-CD45HH40-Sant-Z2B,Aw,CD45HH40,Sant,Z2B
+181,Tubo Aw Mac-Hem 2;00 Mt 63,Aw-TUBMacH2-63-Sant-Z2B,Aw,TUBMacH2-63,Sant,Z2B
+182,Tapa 3;2 40,Aw-TP3;2-40-Sant-Z2B,Aw,TP3;2-40,Sant,Z2B
+183,Codo Aw 45 M-H 50,Aw-CD45MH50-Sant-Z2B,Aw,CD45MH50,Sant,Z2B
+184,Tubo Aw Mac-Hem 2;00 Mt 40,Aw-TUBMacH2-40-Sant-Z2B,Aw,TUBMacH2-40,Sant,Z2B
+185,Ramal Aw 45 110X63 M-H,Aw-RM45MH110X63-Sant-Z2B,Aw,RM45MH110X63,Sant,Z2B
+186,Boca Aw Ac-Cocina 63x50,Aw-BCCocin63x50-Sant-Z2B,Aw,BCCocin63x50,Sant,Z2B
+187,Embudo Aw Acanalado C/Rej 20x20,Aw-EMBAcan20x20-Sant-Z2B,Aw,EMBAcan20x20,Sant,Z2B
+188,Codo Aw 45 M-H 40,Aw-CD45MH40-Sant-Z2B,Aw,CD45MH40,Sant,Z2B
+189,Pileta Aw Poli.15X15 C/Oring,Aw-Pleta15X15Oring-Sant-Z2B,Aw,Pleta15X15Oring,Sant,Z2B
+190,Codo Aw 45 M-H 110,Aw-CD45MH110-Sant-Z2B,Aw,CD45MH110,Sant,Z2B
+191,O.V Cam Cojinete C/Marco 110 y Tapa,O.V-CamCjnMarcoyTapa110-Sant-Z2B,O.V,CamCjnMarcoyTapa110,Sant,Z2B
+192,Ramal Aw 45 63X63 M-H,Aw-RM45MH63X63-Sant-Z2B,Aw,RM45MH63X63,Sant,Z2B
+193,O.V CAM Aro Suplementario 10Cm,O.V-CamAroSuplm10-Sant-Z2B,O.V,CamAroSuplm10,Sant,Z2B
+194,Codo Aw 90 H-H 110,Aw-CD90HH110-Sant-Z2B,Aw,CD90HH110,Sant,Z2B
+195,Codo Aw 45 M-H 63,Aw-CD45MH63-Sant-Z2B,Aw,CD45MH63,Sant,Z2B
+196,Ramal Aw 45 110X110 M-H,Aw-RM45MH110X110-Sant-Z2B,Aw,RM45MH110X110,Sant,Z2B
+197,Tapas Colector losa Radiante,AN-TPColectLR-Elect-Z1A,AN,TPColectLR,Elect,Z1A
+198,Marcos Colector losa Radiante,AN-MRCColectLR-Elect-Z1A,AN,MRCColectLR,Elect,Z1A
+199,GenRod Caja Estanca 10X10,Gr-CESTAN10X10-Elect-Z1A,Gr,CESTAN10X10,Elect,Z1A
+200,GenRod Caja para Termica 48 Bocas Embutir Plastica Ecoo,Gr-CT48B-Elect-Z1A,Gr,CT48B,Elect,Z1A
+201,ICONIA ROCA MONOC. DUCHA C/T CR,Rc-DchaIconia-Sant-Z2B,Rc,DchaIconia,Sant,Z2B
+202,Huferjo Caño Rigido 3/4 x 3mts,Hfr-CÑPlas3/4-Elect-Z1A,Hfr,CÑPlas3/4,Elect,Z1A
+203,Huferjo Curva Pvc 3/4,Hfr-CP3/4-Elect-Z1A,Hfr,CP3/4,Elect,Z1A
+204,Sassin Peine Bipolar 63A,Sass-PAB6312P-Elect-Z1A,Sass,PAB6312P,Elect,Z1A
+205,Veyka Tarugo y Tornillo 6mm,Veyk-TARTOR6MM-Elect-Z1A,Veyk,TARTOR6MM,Elect,Z1A
+206,Argenplas Conductor Unipolar 1;5 MM Celeste,Argnpls-CU1.5-C-Elect-Z1A,Argnpls,CU1.5-C,Elect,Z1A
+207,Argenplas Conductor Unipolar 1;5 MM Rojo,Argnpls-CU1.5-R-Elect-Z1A,Argnpls,CU1.5-R,Elect,Z1A
+208,Tachos de Pintura Asfaltica 18 Lts,AN-TACHPINTASFLTX18LT-Pint-Z3G,AN,TACHPINTASFLTX18LT,Pint,Z3G
+209,Amaco Tubo 25mm gris para Desague A.A 2m,Amco-TUBDes25mm-Sant-Z2B,Amco,TUBDes25mm,Sant,Z2B
+210,Codo Aw 40 H-H 90,Aw-CD40HH90-Sant-Z2B,Aw,CD40HH90,Sant,Z2B
+211,Codo Aw 40 M-H 90,Aw-CD40MH90-Sant-Z2B,Aw,CD40MH90,Sant,Z2B
+212,Pileta de Patio Bajo Losa Aw,Aw-PletaPatioBajoLosa-Sant-Z2B,Aw,PletaPatioBajoLosa,Sant,Z2B
+213,Buje PP 2 X 11/2,AN-BJ2X11/2-Sant-Z2B,AN,BJ2X11/2,Sant,Z2B
+214,SD Tubo PVC CL 10 40,Amnco-TUBPvc1040-Sant-Z2B,Amnco,TUBPvc1040,Sant,Z2B
+215,SD Manguito R/M 40X11/2,Amnco-Mang40x11/2-Sant-Z2B,Amnco,Mang40x11/2,Sant,Z2B
+216,SD Buje Corto HH 50X40,Amnco-BJCorto50x40-Sant-Z2B,Amnco,BJCorto50x40,Sant,Z2B
+217,Adhesivo Losung 500 CM3 C/Pincel,Lsng-Adh500Cm3Cpincel-Sant-Z2B,Lsng,Adh500Cm3Cpincel,Sant,Z2B
+218,Vulcano Toma de Fondo C/Tapa,Vlcno-Tomac/Tapa-Sant-Z2B,Vlcno,Tomac/Tapa,Sant,Z2B
+219,SD Codo 45º 40MM Amanco,Amnco-CD45º40MM-Sant-Z2B,Amnco,CD45º40MM,Sant,Z2B
+220,SD Codo 90º 40MM Amanco,Amnco-CD90º40MM-Sant-Z2B,Amnco,CD90º40MM,Sant,Z2B
+221,Awaduct Cupla de 63MM,Aw-C63MM-Sant-Z2B,Aw,C63MM,Sant,Z2B
+222,Awaduct Cupla de 110MM,Aw-C110MM-Sant-Z2B,Aw,C110MM,Sant,Z2B
+223,Awaduct Tapon 110MM,Aw-TAPON110-Sant-Z2B,Aw,TAPON110,Sant,Z2B
+224,Awaduct Tapa 110,Aw-TP110-Sant-Z2B,Aw,TP110,Sant,Z2B
+225,Awaduct Sifon de Pared,Aw-SifonPared-Sant-Z2B,Aw,SifonPared,Sant,Z2B
+226,Awaduct Caño 50X50,Aw-CÑ50X50-Sant-Z2B,Aw,CÑ50X50,Sant,Z2B
+227,Awaduct Caño 40X50,Aw-CÑ40X50-Sant-Z2B,Aw,CÑ40X50,Sant,Z2B
+228,Amanco Caño 20MM Fusion Verde,Amnco-CÑ20MMFsnVerde-Sant-Z2B,Amnco,CÑ20MMFsnVerde,Sant,Z2B
+229,Amanco Caño 25MM Fusion Verde,Amnco-CÑ25MMFsnVerde-Sant-Z2B,Amnco,CÑ25MMFsnVerde,Sant,Z2B
+230,Amanco Caño 32MM Fusion Verde,Amnco-CÑ32MMFsnVerde-Sant-Z2B,Amnco,CÑ32MMFsnVerde,Sant,Z2B
+231,Embutido C/ placa Led 7W Bt:Alther,AN-EMBTPlcLed7W-Elect-Z1A,AN,EMBTPlcLed7W,Elect,Z1A
+232,Downligh Medida Linea (1;70) Cocina,AN-DwnLMedida(1;70)-Elect-Z1A,AN,DwnLMedida(1;70),Elect,Z1A
 233,Downligh Medida Linea (1;20) Cocina y Oficina,AN-DwnLMedida(1;20)-Elect-Z1A,AN,DwnLMedida(1;20),Elect,Z1A
 234,Empotrable 10 Luces 275MM 30L 20W Gyon Plus,AN-Empotrb10L275MM-Elect-Z1A,AN,Empotrb10L275MM,Elect,Z1A
 235,Empotrable 5Luces 142MM 30L 10W Gyon Plus,AN-Empotrb5L142MM-Elect-Z1A,AN,Empotrb5L142MM,Elect,Z1A
 236,Empotrable 2 Luces 63 MM 45L 14W Gyon Plus,AN-Empotrb2L63MM-Elect-Z1A,AN,Empotrb2L63MM,Elect,Z1A
 237,Empotrable 1 Luzs 40 MM 45L 2W Gyon Plus,AN-Empotrb1L40MM-Elect-Z1A,AN,Empotrb1L40MM,Elect,Z1A
 238,Aplique de Ext/Int GU10 1X7W Wing,AN-Aplque1X7W-Elect-Z1A,AN,Aplque1X7W,Elect,Z1A
-239,Unidireccional Aluminio Negro Wing 1,Lux-UniAlNegro-Sant-Z2B,Lux,UniAlNegro,Sant,Z2B
-240,Plafon 5 Luces 140MM C/Opticas 10W 30 Gyon,Aw-Plfn5L140MM-Sant-Z2B,Aw,Plfn5L140MM,Sant,Z2B
-241,Downligh Perimetral Comedor 3000K (9;00M),Aw-DwnLPerimetralCOMEDOR9MM-Sant-Z2B,Aw,DwnLPerimetralCOMEDOR9MM,Sant,Z2B
+239,Unidireccional Aluminio Negro Wing 1,AN-UniAlNegro-Elect-Z1A,AN,UniAlNegro,Elect,Z1A
+240,Plafon 5 Luces 140MM C/Opticas 10W 30 Gyon,AN-Plfn5L140MM-Elect-Z1A,AN,Plfn5L140MM,Elect,Z1A
+241,Downligh Perimetral Comedor 3000K (9;00M),AN-DwnLPerimetralCOMEDOR9MM-Elect-Z1A,AN,DwnLPerimetralCOMEDOR9MM,Elect,Z1A
 242,Downligh Perimetral Pasillo 3000K (3;00M),AN-DwnLPerimetralPASILLO3MM-Elect-Z1A,AN,DwnLPerimetralPASILLO3MM,Elect,Z1A
-243,Downligh Perimetral Toilett (1M),Pl-DwnLPerimetralTOILETT1MM-Elect-Z1A,Pl,DwnLPerimetralTOILETT1MM,Elect,Z1A
-244,Downligh Perimetral Baño 3000K (2;00M),Pxmx-DwnLPerimetralBAÑO2MM-Crrln-Z1B,Pxmx,DwnLPerimetralBAÑO2MM,Crrln,Z1B
-245,Dicrioca PVC 7W GU10 Luz Calida,AN-DicriocaPVC7Wcal-Sant-Z2B,AN,DicriocaPVC7Wcal,Sant,Z2B
-246,Fuente 220-12V,Aw-F220-12V-Sant-Z2B,Aw,F220-12V,Sant,Z2B
-247,Te de 20 Fusion verde Amanco,Aw-TeFus20-Sant-Z2B,Aw,TeFus20,Sant,Z2B
-248,Te de 25X20 Fusion verde Amanco,Aw-TeFus25X20-Sant-Z2B,Aw,TeFus25X20,Sant,Z2B
-249,Te de 25X25 Fusion verde Amanco,Aw-TeFus25X25-Sant-Z2B,Aw,TeFus25X25,Sant,Z2B
-250,Tapa de 25 Fusion Verde Amanco,Aw-TPFus25-Sant-Z2B,Aw,TPFus25,Sant,Z2B
-251,Tapa de 32 Fusion Verde Amanco,AN-TPFus32-Elect-Z1A,AN,TPFus32,Elect,Z1A
-252,Cupla de 32 Fusion verde Amanco,Rflx-CFus32-Elect-Z1A,Rflx,CFus32,Elect,Z1A
-253,Te de 32 Fusion verde Amanco,Rflx-TeFus32-Elect-Z1A,Rflx,TeFus32,Elect,Z1A
-254,Codo 25X3/4 R-H Fusion verde Amanco,Rflx-CD25X3/4-Elect-Z1A,Rflx,CD25X3/4,Elect,Z1A
-255,Awaduct Cupla de 40MM,Rflx-C40MM-Elect-Z1A,Rflx,C40MM,Elect,Z1A
-256,Manguito Aw 40 con rosca 3/4,Rflx-Mang40cRosca3/4-Elect-Z1A,Rflx,Mang40cRosca3/4,Elect,Z1A
-257,Awaduct Caño de 50X1M,Rflx-CÑ50X1M-Elect-Z1A,Rflx,CÑ50X1M,Elect,Z1A
-258,Awaduct Caño de 40X1M,Rflx-CÑ40X1M-Elect-Z1A,Rflx,CÑ40X1M,Elect,Z1A
-259,Codo 25MM gris Amanco,Rflx-CD25MM-Elect-Z1A,Rflx,CD25MM,Elect,Z1A
-260,Cupla de 25 Fusion gris Amanco,Rflx-CFus25-Elect-Z1A,Rflx,CFus25,Elect,Z1A
-261,Amanco Caño 20MM Fusion Verde,Rflx-CÑ20MMFsnVerde-Elect-Z1A,Rflx,CÑ20MMFsnVerde,Elect,Z1A
-262,Codo 20MM gris Amanco,Rflx-CD20MM-Elect-Z1A,Rflx,CD20MM,Elect,Z1A
-263,Tbcin Punta Hueca gris 2;5MM,Rflx-PtaHuGr2;5-Elect-Z1A,Rflx,PtaHuGr2;5,Elect,Z1A
-264,Peirano Vigo Cocina Mes.Monoc C/Duch Extens,Rflx-CnaVigo-Elect-Z1A,Rflx,CnaVigo,Elect,Z1A
-265,Peirano Fabric Cocina Monocomando Gold,Rflx-CnaFabricGold-Elect-Z1A,Rflx,CnaFabricGold,Elect,Z1A
-266,Robinet Bronx Bidet Oxido,Rvmx-BdtBronx-Pnt-Z3G,Rvmx,BdtBronx,Pnt,Z3G
-267,Roca Inod The Gap LGO Sd Bco,Rvmx-IndTGapLgO-Pnt-Z3G,Rvmx,IndTGapLgO,Pnt,Z3G
-268,Roca Depos The Gap 6/3 lts Bco,AN-DeposTGap6/3lts-Elect-Z1A,AN,DeposTGap6/3lts,Elect,Z1A
-269,Roca Bidet The Gap 1AG C/LL Bco,AN-BdtTGap1AG-Elect-Z1A,AN,BdtTGap1AG,Elect,Z1A
-270,Roca Bidet The Gap 3AG C/LL Bco,AN-BdtTGap3AG-Elect-Z1A,AN,BdtTGap3AG,Elect,Z1A
-271,Roca Asiento The Gap Inod C/Amort Bco,Rb-AsntoTGapInod-Sant-Z2B,Rb,AsntoTGapInod,Sant,Z2B
-272,Roca Inod The Gap Corto Bco,Rb-IndTGapCorto-Sant-Z2B,Rb,IndTGapCorto,Sant,Z2B
-273,Roca Placa de Accionamiento Pl1adual Blanca,Rb-PlcAccionamientoBlanc-Sant-Z2B,Rb,PlcAccionamientoBlanc,Sant,Z2B
-274,Johns Acces Escurreplatos (Esac Q40),Rc-Escurreplatos-Sant-Z2B,Rc,Escurreplatos,Sant,Z2B
-275,Johns Pileta Simple (54x36x24) (E 54),Rc-PletaSimple-Sant-Z2B,Rc,PletaSimple,Sant,Z2B
-276,Amanco SD Valvula Esferica U/D 40MM,Rc-ValvEsferica40MM-Sant-Z2B,Rc,ValvEsferica40MM,Sant,Z2B
-277,Vulcano Retorno Orientable C/Aro Desem.50MM,Rc-RetOrientable50MM-Sant-Z2B,Rc,RetOrientable50MM,Sant,Z2B
-278,Vulcano Virola C/Aro Desm,Rc-VirolaCAro-Sant-Z2B,Rc,VirolaCAro,Sant,Z2B
-279,Vulcano Filtro VC-30 40MM 50 M3 Soplado,Rc-Filtro40mm-Sant-Z2B,Rc,Filtro40mm,Sant,Z2B
-280,Vulcano Electrobomba Autocebante Bae 0;75HP,Rc-ElectroBomba0;75HP-Sant-Z2B,Rc,ElectroBomba0;75HP,Sant,Z2B
-281,Vulcano Carga Filtrante (VC-30),Rc-CargaFiltrante-Sant-Z2B,Rc,CargaFiltrante,Sant,Z2B
-282,Teflon Alta Densidad 3/4X40,Rc-TeflonAltaDen-Sant-Z2B,Rc,TeflonAltaDen,Sant,Z2B
-283,Lar 11 Tela Esmeril-1 MTS,AN-TelaEsm1MTS-Crrln-Z3G,AN,TelaEsm1MTS,Crrln,Z3G
-284,Amanco SD Te 40,AN-Te40-Crrln-Z3G,AN,Te40,Crrln,Z3G
-285,Roca Monaco Deposito de Apoyo BCO,AN-DpsitoApoyoMonaco-Elect-Z1A,AN,DpsitoApoyoMonaco,Elect,Z1A
-286,Inodoro Roca Monaco Largo Bco,AN-IndlrgMonaco-Elect-Z1A,AN,IndlrgMonaco,Elect,Z1A
-287,Bide Roca Monaco 3 AG Blanco,AN-BdtMonaco3AG-Elect-Z1A,AN,BdtMonaco3AG,Elect,Z1A
-288,JA C37 CR A304 Doble C/Atrb.70.8X37X15,Sass-PletaCocinaDobleC37-Elect-Z1A,Sass,PletaCocinaDobleC37,Elect,Z1A
-289,Bacha Peirano Circular Apoyo 32X14;5 Cm,Shn-BchaCircular-Elect-Z1A,Shn,BchaCircular,Elect,Z1A
-290,Black Velvet Lavatorio Pared C.C 62-190,Amnco-LavBlackV-Sant-Z2B,Amnco,LavBlackV,Sant,Z2B
-291,Black Velvet Bidet C.C 70-190,Amnco-BdtBlackV-Sant-Z2B,Amnco,BdtBlackV,Sant,Z2B
-292,Black Velvet Ducha Embutir C/T C.C Plus 80-190P,Amnco-DchaBlackVCtransf-Sant-Z2B,Amnco,DchaBlackVCtransf,Sant,Z2B
-293,Daccord T/In Monaco Madera H/Nylon,Amnco-AsntoMonaco-Sant-Z2B,Amnco,AsntoMonaco,Sant,Z2B
-294,Black Velvet Monocomando Cocina 20-190,Amnco-CnaBlackV-Sant-Z2B,Amnco,CnaBlackV,Sant,Z2B
-295,JA Z52/18 A/430 Simple 52X32X18,SW-PletaCocinaSimpleZ52/18-Pnt-Z3G,SW,PletaCocinaSimpleZ52/18,Pnt,Z3G
-296,Jeluz Bastidor de Embutir 5X10Cm 3 Modulos,SW-BEmbtr5X10-3Mod-Pnt-Z3G,SW,BEmbtr5X10-3Mod,Pnt,Z3G
-297,Caño PVC 3/4,SW-CÑPVC3/4-Pnt-Z3G,SW,CÑPVC3/4,Pnt,Z3G
-298,Caño PVC 1,Sc-CÑPVC1-Elect-Z1A,Sc,CÑPVC1,Elect,Z1A
-299,Downligh Medida Linea (L) Cocina,Sc-DwnLMedidaLinea(L)-Elect-Z1A,Sc,DwnLMedidaLinea(L),Elect,Z1A
-300,Colgante c/Acrilico Led 1694MM Tasso,Sc-ClganteLed1694MM-Pnt-Z3G,Sc,ClganteLed1694MM,Pnt,Z3G
-301,Johns Pileta Doble (85;5x48;2x17;5) S/Dosif (Q 085 a),Sc-PletaDoble-Elect-Z1A,Sc,PletaDoble,Elect,Z1A
-302,Wd Dokker Vanitory 60 Colg Sint 3Ag Terrarum,Sc-Vanitory60Colg3Ag-Elect-Z1A,Sc,Vanitory60Colg3Ag,Elect,Z1A
-303,Vulcano Skimmer Boca Ancha P/Hormg.38 Cm 119003,Sc-BcaAnchaPHormg-Elect-Z1A,Sc,BcaAnchaPHormg,Elect,Z1A
-304,Vulcano Gabinete P/Eq.Filtrado Vc-30 139995,Sc-GabinetePeqFiltrado-Elect-Z1A,Sc,GabinetePeqFiltrado,Elect,Z1A
-305,Mesadas Retiradas de Solares,Sk-MesadasSolares-Crrln-Z3G,Sk,MesadasSolares,Crrln,Z3G
-306,CasaBlanca Pro Interior (xLt),Lsng-ProInterior-Sant-Z2B,Lsng,ProInterior,Sant,Z2B
-307,Sica Latex,Svx-Latex-Pnt-Z3G,Svx,Latex,Pnt,Z3G
-308,Microalisado de Cemento,AN-MicroAlisadoCem-Sant-Z2B,AN,MicroAlisadoCem,Sant,Z2B
-309,Masilla Finca,Pei-Mcilla-Sant-Z2B,Pei,Mcilla,Sant,Z2B
-310,Loxon Frente,AN-Frente-Pint-Z3G,AN,Frente,Pint,Z3G
-311,Miksa Microallisado de Cemento,Tcs-MicroAlisadoCem-Frrt-Z1B,Tcs,MicroAlisadoCem,Frrt,Z1B
-312,Sherwim Williams Quantum (X lt),Tcs-SWQuantum-Frrt-Z1B,Tcs,SWQuantum,Frrt,Z1B
-313,Revomax Yeso (X Kg),AN-Yeso-Sant-Z2B,AN,Yeso,Sant,Z2B
-314,Revomax Pegamento (X Kg),Aw-Pegamento-Sant-Z2B,Aw,Pegamento,Sant,Z2B
-315,Sherwim Williams Quantum Cielorraso (X lt),Aw-SWQuantumCieloR-Sant-Z2B,Aw,SWQuantumCieloR,Sant,Z2B
-316,Caja de Pase 115X165X110,Amnco-CP115X165X110-Sant-Z2B,Amnco,CP115X165X110,Sant,Z2B
-317,Aire Acondicionado,Amnco-AA-Sant-Z2B,Amnco,AA,Sant,Z2B
+243,Downligh Perimetral Toilett (1M),AN-DwnLPerimetralTOILETT1MM-Elect-Z1A,AN,DwnLPerimetralTOILETT1MM,Elect,Z1A
+244,Downligh Perimetral Baño 3000K (2;00M),AN-DwnLPerimetralBAÑO2MM-Elect-Z1A,AN,DwnLPerimetralBAÑO2MM,Elect,Z1A
+245,Dicrioca PVC 7W GU10 Luz Calida,AN-DicriocaPVC7Wcal-Elect-Z1A,AN,DicriocaPVC7Wcal,Elect,Z1A
+246,Fuente 220-12V,AN-F220-12V-Elect-Z1A,AN,F220-12V,Elect,Z1A
+247,Te de 20 Fusion verde Amanco,Amnco-TeFus20-Sant-Z2B,Amnco,TeFus20,Sant,Z2B
+248,Te de 25X20 Fusion verde Amanco,Amnco-TeFus25X20-Sant-Z2B,Amnco,TeFus25X20,Sant,Z2B
+249,Te de 25X25 Fusion verde Amanco,Amnco-TeFus25X25-Sant-Z2B,Amnco,TeFus25X25,Sant,Z2B
+250,Tapa de 25 Fusion Verde Amanco,Amnco-TPFus25-Sant-Z2B,Amnco,TPFus25,Sant,Z2B
+251,Tapa de 32 Fusion Verde Amanco,Amnco-TPFus32-Sant-Z2B,Amnco,TPFus32,Sant,Z2B
+252,Cupla de 32 Fusion verde Amanco,Amnco-CFus32-Sant-Z2B,Amnco,CFus32,Sant,Z2B
+253,Te de 32 Fusion verde Amanco,Amnco-TeFus32-Sant-Z2B,Amnco,TeFus32,Sant,Z2B
+254,Codo 25X3/4 R-H Fusion verde Amanco,Amnco-CD25X3/4-Sant-Z2B,Amnco,CD25X3/4,Sant,Z2B
+255,Awaduct Cupla de 40MM,Aw-C40MM-Sant-Z2B,Aw,C40MM,Sant,Z2B
+256,Manguito Aw 40 con rosca 3/4,Amnco-Mang40cRosca3/4-Sant-Z2B,Amnco,Mang40cRosca3/4,Sant,Z2B
+257,Awaduct Caño de 50X1M,Aw-CÑ50X1M-Sant-Z2B,Aw,CÑ50X1M,Sant,Z2B
+258,Awaduct Caño de 40X1M,Aw-CÑ40X1M-Sant-Z2B,Aw,CÑ40X1M,Sant,Z2B
+259,Codo 25MM gris Amanco,Amnco-CD25MM-Sant-Z2B,Amnco,CD25MM,Sant,Z2B
+260,Cupla de 25 Fusion gris Amanco,Amnco-CFus25-Sant-Z2B,Amnco,CFus25,Sant,Z2B
+261,Amanco Caño 20MM Fusion Verde,Amnco-CÑ20MMFsnVerde-Sant-Z2B,Amnco,CÑ20MMFsnVerde,Sant,Z2B
+262,Codo 20MM gris Amanco,Amnco-CD20MM-Sant-Z2B,Amnco,CD20MM,Sant,Z2B
+263,Tbcin Punta Hueca gris 2;5MM,Tbc-PtaHuGr2;5-Elect-Z1A,Tbc,PtaHuGr2;5,Elect,Z1A
+264,Peirano Vigo Cocina Mes.Monoc C/Duch Extens,Pei-CnaVigo-Sant-Z2B,Pei,CnaVigo,Sant,Z2B
+265,Peirano Fabric Cocina Monocomando Gold,Pei-CnaFabricGold-Sant-Z2B,Pei,CnaFabricGold,Sant,Z2B
+266,Robinet Bronx Bidet Oxido,Rb-BdtBronx-Sant-Z2B,Rb,BdtBronx,Sant,Z2B
+267,Roca Inod The Gap LGO Sd Bco,Rc-IndTGapLgO-Sant-Z2B,Rc,IndTGapLgO,Sant,Z2B
+268,Roca Depos The Gap 6/3 lts Bco,Rc-DeposTGap6/3lts-Sant-Z2B,Rc,DeposTGap6/3lts,Sant,Z2B
+269,Roca Bidet The Gap 1AG C/LL Bco,Rc-BdtTGap1AG-Sant-Z2B,Rc,BdtTGap1AG,Sant,Z2B
+270,Roca Bidet The Gap 3AG C/LL Bco,Rc-BdtTGap3AG-Sant-Z2B,Rc,BdtTGap3AG,Sant,Z2B
+271,Roca Asiento The Gap Inod C/Amort Bco,Rc-AsntoTGapInod-Sant-Z2B,Rc,AsntoTGapInod,Sant,Z2B
+272,Roca Inod The Gap Corto Bco,Rc-IndTGapCorto-Sant-Z2B,Rc,IndTGapCorto,Sant,Z2B
+273,Roca Placa de Accionamiento Pl1adual Blanca,Rc-PlcAccionamientoBlanc-Sant-Z2B,Rc,PlcAccionamientoBlanc,Sant,Z2B
+274,Johns Acces Escurreplatos (Esac Q40),Jhns-Escurreplatos-Sant-Z2B,Jhns,Escurreplatos,Sant,Z2B
+275,Johns Pileta Simple (54x36x24) (E 54),Jhns-PletaSimple-Sant-Z2B,Jhns,PletaSimple,Sant,Z2B
+276,Amanco SD Valvula Esferica U/D 40MM,Amnco-ValvEsferica40MM-Sant-Z2B,Amnco,ValvEsferica40MM,Sant,Z2B
+277,Vulcano Retorno Orientable C/Aro Desem.50MM,Vlcno-RetOrientable50MM-Sant-Z2B,Vlcno,RetOrientable50MM,Sant,Z2B
+278,Vulcano Virola C/Aro Desm,Vlcno-VirolaCAro-Sant-Z2B,Vlcno,VirolaCAro,Sant,Z2B
+279,Vulcano Filtro VC-30 40MM 50 M3 Soplado,Vlcno-Filtro40mm-Sant-Z2B,Vlcno,Filtro40mm,Sant,Z2B
+280,Vulcano Electrobomba Autocebante Bae 0;75HP,Vlcno-ElectroBomba0;75HP-Sant-Z2B,Vlcno,ElectroBomba0;75HP,Sant,Z2B
+281,Vulcano Carga Filtrante (VC-30),Vlcno-CargaFiltrante-Sant-Z2B,Vlcno,CargaFiltrante,Sant,Z2B
+282,Teflon Alta Densidad 3/4X40,AN-TeflonAltaDen-Sant-Z2B,AN,TeflonAltaDen,Sant,Z2B
+283,Lar 11 Tela Esmeril-1 MTS,AN-TelaEsm1MTS-Sant-Z2B,AN,TelaEsm1MTS,Sant,Z2B
+284,Amanco SD Te 40,Amnco-Te40-Sant-Z2B,Amnco,Te40,Sant,Z2B
+285,Roca Monaco Deposito de Apoyo BCO,Rc-DpsitoApoyoMonaco-Sant-Z2B,Rc,DpsitoApoyoMonaco,Sant,Z2B
+286,Inodoro Roca Monaco Largo Bco,Rc-IndlrgMonaco-Sant-Z2B,Rc,IndlrgMonaco,Sant,Z2B
+287,Bide Roca Monaco 3 AG Blanco,Rc-BdtMonaco3AG-Sant-Z2B,Rc,BdtMonaco3AG,Sant,Z2B
+288,JA C37 CR A304 Doble C/Atrb.70.8X37X15,Jhns-PletaCocinaDobleC37-Sant-Z2B,Jhns,PletaCocinaDobleC37,Sant,Z2B
+289,Bacha Peirano Circular Apoyo 32X14;5 Cm,Pei-BchaCircular-Sant-Z2B,Pei,BchaCircular,Sant,Z2B
+290,Black Velvet Lavatorio Pared C.C 62-190,Pei-LavBlackV-Sant-Z2B,Pei,LavBlackV,Sant,Z2B
+291,Black Velvet Bidet C.C 70-190,Pei-BdtBlackV-Sant-Z2B,Pei,BdtBlackV,Sant,Z2B
+292,Black Velvet Ducha Embutir C/T C.C Plus 80-190P,Pei-DchaBlackVCtransf-Sant-Z2B,Pei,DchaBlackVCtransf,Sant,Z2B
+293,Daccord T/In Monaco Madera H/Nylon,Pei-AsntoMonaco-Sant-Z2B,Pei,AsntoMonaco,Sant,Z2B
+294,Black Velvet Monocomando Cocina 20-190,Pei-CnaBlackV-Sant-Z2B,Pei,CnaBlackV,Sant,Z2B
+295,JA Z52/18 A/430 Simple 52X32X18,Jhns-PletaCocinaSimpleZ52/18-Sant-Z2B,Jhns,PletaCocinaSimpleZ52/18,Sant,Z2B
+296,Jeluz Bastidor de Embutir 5X10Cm 3 Modulos,Jz-BEmbtr5X10-3Mod-Elect-Z1A,Jz,BEmbtr5X10-3Mod,Elect,Z1A
+297,Caño PVC 3/4,AN-CÑPVC3/4-Elect-Z1A,AN,CÑPVC3/4,Elect,Z1A
+298,Caño PVC 1,AN-CÑPVC1-Elect-Z1A,AN,CÑPVC1,Elect,Z1A
+299,Downligh Medida Linea (L) Cocina,AN-DwnLMedidaLinea(L)-Elect-Z1A,AN,DwnLMedidaLinea(L),Elect,Z1A
+300,Colgante c/Acrilico Led 1694MM Tasso,AN-ClganteLed1694MM-Elect-Z1A,AN,ClganteLed1694MM,Elect,Z1A
+301,Johns Pileta Doble (85;5x48;2x17;5) S/Dosif (Q 085 a),Jhns-PletaDoble-Sant-Z2B,Jhns,PletaDoble,Sant,Z2B
+302,Wd Dokker Vanitory 60 Colg Sint 3Ag Terrarum,AN-Vanitory60Colg3Ag-Sant-Z2B,AN,Vanitory60Colg3Ag,Sant,Z2B
+303,Vulcano Skimmer Boca Ancha P/Hormg.38 Cm 119003,Vlcno-BcaAnchaPHormg-Sant-Z2B,Vlcno,BcaAnchaPHormg,Sant,Z2B
+304,Vulcano Gabinete P/Eq.Filtrado Vc-30 139995,Vlcno-GabinetePeqFiltrado-Sant-Z2B,Vlcno,GabinetePeqFiltrado,Sant,Z2B
+305,Mesadas Retiradas de Solares,AN-MesadasSolares-Sant-Z2B,AN,MesadasSolares,Sant,Z2B
+306,CasaBlanca Pro Interior (xLt),CB-ProInterior-Pnt-Z3G,CB,ProInterior,Pnt,Z3G
+307,Sica Latex,Sc-Latex-Pnt-Z3G,Sc,Latex,Pnt,Z3G
+308,Microalisado de Cemento,AN-MicroAlisadoCem-Pnt-Z3G,AN,MicroAlisadoCem,Pnt,Z3G
+309,Masilla Finca,AN-Mcilla-Pnt-Z3G,AN,Mcilla,Pnt,Z3G
+310,Loxon Frente,Lox-Frente-Pnt-Z3G,Lox,Frente,Pnt,Z3G
+311,Miksa Microallisado de Cemento,Miks-MicroAlisadoCem-Pnt-Z3G,Miks,MicroAlisadoCem,Pnt,Z3G
+312,Sherwim Williams Quantum (X lt),SW-SWQuantum-Pnt-Z3G,SW,SWQuantum,Pnt,Z3G
+313,Revomax Yeso (X Kg),Rvmx-Yeso-Pnt-Z3G,Rvmx,Yeso,Pnt,Z3G
+314,Revomax Pegamento (X Kg),Rvmx-Pegamento-Pnt-Z3G,Rvmx,Pegamento,Pnt,Z3G
+315,Sherwim Williams Quantum Cielorraso (X lt),SW-SWQuantumCieloR-Pnt-Z3G,SW,SWQuantumCieloR,Pnt,Z3G
+316,Caja de Pase 115X165X110,Gr-CP115X165X110-Elect-Z1A,Gr,CP115X165X110,Elect,Z1A
+317,Aire Acondicionado,AN-AA-Elect-Z1A,AN,AA,Elect,Z1A
 318,Unidad Exterioir,AN-Unex-Elect-Z1A,AN,Unex,Elect,Z1A
 319,Mensula para Aire Acondicionado,AN-MensAA-Elect-Z1A,AN,MensAA,Elect,Z1A
-320,Caños Galvanizados de 4 de 1m,"AN-CÑGalv4""x1M-Elect-Z1A",AN,"CÑGalv4""x1M",Elect,Z1A
-321,Codo Galvanizado de 4 a 90,"Tbc-CDGalv4""90-Elect-Z1A",Tbc,"CDGalv4""90",Elect,Z1A
-322,Codo Galvanizado de 4 a 45,"Tbc-CDGalv4""45-Elect-Z1A",Tbc,"CDGalv4""45",Elect,Z1A
-323,Sombrero Galvanizado de 4,"Tbc-SombreroGalv4""-Elect-Z1A",Tbc,"SombreroGalv4""",Elect,Z1A
-324,Ladrillo Refractario color cemento,Tbc-LadrilloRefractarioClorCement-Elect-Z1A,Tbc,LadrilloRefractarioClorCement,Elect,Z1A
-325,Lajas Refrectarias Simil Cemento,Amnco-LajasRefrectarias-Sant-Z2B,Amnco,LajasRefrectarias,Sant,Z2B
-326,Mensulas de 60 cm,Amnco-Mensu60Cm-Sant-Z2B,Amnco,Mensu60Cm,Sant,Z2B
-327,Black Velvet Lavatorio C.C 60-190,Amnco-LavBlackV-Sant-Z2B,Amnco,LavBlackV,Sant,Z2B
-328,Kalop Conductor Unipolar 6MM Rojo,Amnco-CU6-R-Sant-Z2B,Amnco,CU6-R,Sant,Z2B
-329,Kalop Conductor Unipolar 10MM Celeste,Tcm-CU10-C-Elect-Z1A,Tcm,CU10-C,Elect,Z1A
-330,Kalop Conductor Unipolar 10MM V/Amarillo,Tcm-CU10-VY-Elect-Z1A,Tcm,CU10-VY,Elect,Z1A
-331,Kalop Conductor Unipolar 10MM Rojo,AN-CU10-R-Sant-Z2B,AN,CU10-R,Sant,Z2B
-332,Reflex 6MM Rojo,Tmpl-Rflx6-R-Sant-Z2B,Tmpl,Rflx6-R,Sant,Z2B
-333,Reflex 2;5MM Rojo,Fv-Rflx2;5-R-Sant-Z2B,Fv,Rflx2;5-R,Sant,Z2B
-334,Reflex 1;5MM Rojo,Tend-Rflx1;5-R-Crrln-Z3G,Tend,Rflx1;5-R,Crrln,Z3G
-335,Reflex 6MM Verde,Tend-Rflx6-V-Crrln-Z3G,Tend,Rflx6-V,Crrln,Z3G
-336,Reflex 4MM Verde,Aw-Rflx4-V-Sant-Z2B,Aw,Rflx4-V,Sant,Z2B
-337,Reflex 2;5MM Verde,Aw-Rflx2;5-V-Sant-Z2B,Aw,Rflx2;5-V,Sant,Z2B
-338,Reflex 1;5MM Verde,Aw-Rflx1;5-V-Sant-Z2B,Aw,Rflx1;5-V,Sant,Z2B
-339,Reflex 6MM Celeste,Aw-Rflx6-C-Sant-Z2B,Aw,Rflx6-C,Sant,Z2B
-340,Reflex 2;5MM Celeste,Aw-Rflx2;5-C-Sant-Z2B,Aw,Rflx2;5-C,Sant,Z2B
-341,Reflex 1;5 MM Celeste,Aw-Rflx1;5-C-Sant-Z2B,Aw,Rflx1;5-C,Sant,Z2B
-342,Reflex 1;5MM Negro,AN-Rflx1;5-N-Elect-Z1A,AN,Rflx1;5-N,Elect,Z1A
-343,Kalop Conductor Unipolar 6MM Celeste,AN-CU6-C-Elect-Z1A,AN,CU6-C,Elect,Z1A
-344,Kalop Conductor Unipolar 6MM V/Amarillo,Frr-CU6-VY-Sant-Z2B,Frr,CU6-VY,Sant,Z2B
-345,Reflex 4MM Rojo,Frr-Rflx4-R-Sant-Z2B,Frr,Rflx4-R,Sant,Z2B
-346,Reflex 4MM Celeste,Frr-Rflx4-C-Sant-Z2B,Frr,Rflx4-C,Sant,Z2B
-347,Reflex 1;5MM Blanco,Frr-Rflx1;5-B-Sant-Z2B,Frr,Rflx1;5-B,Sant,Z2B
-348,Zocalo EPS Max W Premium (14mm*75mm*2;90m),Vr-Zoc14*75*2;90-Sant-Z2B,Vr,Zoc14*75*2;90,Sant,Z2B
-349,Rollo de Lana de Vidrio,Veyk-RollanVid-Elect-Z1A,Veyk,RollanVid,Elect,Z1A
-350,Rollo Isolant,Vlcno-RollIsolant-Sant-Z2B,Vlcno,RollIsolant,Sant,Z2B
-351,Eliane 10x20 Metro White Liso x1M2,Vlcno-Eliane10x20-Sant-Z2B,Vlcno,Eliane10x20,Sant,Z2B
-352,KlK Imp Flex Anclaje Int x25Kg,Vlcno-ImpFlex-Sant-Z2B,Vlcno,ImpFlex,Sant,Z2B
-353,Bomba Presuarizadora Vasser Qc Press,Vlcno-BombaPresVass-Sant-Z2B,Vlcno,BombaPresVass,Sant,Z2B
-354,Rollo Manguera Azul 1(x35Mts),Vlcno-RMA1-Sant-Z2B,Vlcno,RMA1,Sant,Z2B
-355,Riel Embutir Magnetico Slim Negro Macroled 1 metros 48V RMS-E-1M,Vlcno-REMSL148-Sant-Z2B,Vlcno,REMSL148,Sant,Z2B
-356,Perfil Aluminio Embutir Per14x2Mts Tapa Opal p/Tira,Vlcno-PTL14TapaOpalp/Tira-Sant-Z2B,Vlcno,PTL14TapaOpalp/Tira,Sant,Z2B
-357,Tapa de Gas Regularizada 40x50,Vlcno-TP40X50-Sant-Z2B,Vlcno,TP40X50,Sant,Z2B
-358,Caja de Piso Vinilico,AN-CpisoV-Sant-Z2B,AN,CpisoV,Sant,Z2B
+320,"Caños Galvanizados de 4"" de 1m","AN-CÑGalv4""x1M-Sant-Z2B",AN,"CÑGalv4""x1M",Sant,Z2B
+321,"Codo Galvanizado de 4"" a 90","AN-CDGalv4""90-Sant-Z2B",AN,"CDGalv4""90",Sant,Z2B
+322,"Codo Galvanizado de 4"" a 45","AN-CDGalv4""45-Sant-Z2B",AN,"CDGalv4""45",Sant,Z2B
+323,"Sombrero Galvanizado de 4""","AN-SombreroGalv4""-Sant-Z2B",AN,"SombreroGalv4""",Sant,Z2B
+324,Ladrillo Refractario color cemento,AN-LadrilloRefractarioClorCement-Crrln-Z3G,AN,LadrilloRefractarioClorCement,Crrln,Z3G
+325,Lajas Refrectarias Simil Cemento,AN-LajasRefrectarias-Crrln-Z3G,AN,LajasRefrectarias,Crrln,Z3G
+326,Mensulas de 60 cm,AN-Mensu60Cm-Elect-Z1A,AN,Mensu60Cm,Elect,Z1A
+327,Black Velvet Lavatorio C.C 60-190,Pei-LavBlackV-Sant-Z2B,Pei,LavBlackV,Sant,Z2B
+328,Kalop Conductor Unipolar 6MM Rojo,Kp-CU6-R-Elect-Z1A,Kp,CU6-R,Elect,Z1A
+329,Kalop Conductor Unipolar 10MM Celeste,Kp-CU10-C-Elect-Z1A,Kp,CU10-C,Elect,Z1A
+330,Kalop Conductor Unipolar 10MM V/Amarillo,Kp-CU10-VY-Elect-Z1A,Kp,CU10-VY,Elect,Z1A
+331,Kalop Conductor Unipolar 10MM Rojo,Kp-CU10-R-Elect-Z1A,Kp,CU10-R,Elect,Z1A
+332,Reflex 6MM Rojo,Rflx-Rflx6-R-Elect-Z1A,Rflx,Rflx6-R,Elect,Z1A
+333,Reflex 2;5MM Rojo,Rflx-Rflx2;5-R-Elect-Z1A,Rflx,Rflx2;5-R,Elect,Z1A
+334,Reflex 1;5MM Rojo,Rflx-Rflx1;5-R-Elect-Z1A,Rflx,Rflx1;5-R,Elect,Z1A
+335,Reflex 6MM Verde,Rflx-Rflx6-V-Elect-Z1A,Rflx,Rflx6-V,Elect,Z1A
+336,Reflex 4MM Verde,Rflx-Rflx4-V-Elect-Z1A,Rflx,Rflx4-V,Elect,Z1A
+337,Reflex 2;5MM Verde,Rflx-Rflx2;5-V-Elect-Z1A,Rflx,Rflx2;5-V,Elect,Z1A
+338,Reflex 1;5MM Verde,Rflx-Rflx1;5-V-Elect-Z1A,Rflx,Rflx1;5-V,Elect,Z1A
+339,Reflex 6MM Celeste,Rflx-Rflx6-C-Elect-Z1A,Rflx,Rflx6-C,Elect,Z1A
+340,Reflex 2;5MM Celeste,Rflx-Rflx2;5-C-Elect-Z1A,Rflx,Rflx2;5-C,Elect,Z1A
+341,Reflex 1;5 MM Celeste,Rflx-Rflx1;5-C-Elect-Z1A,Rflx,Rflx1;5-C,Elect,Z1A
+342,Reflex 1;5MM Negro,Rflx-Rflx1;5-N-Elect-Z1A,Rflx,Rflx1;5-N,Elect,Z1A
+343,Kalop Conductor Unipolar 6MM Celeste,Kp-CU6-C-Elect-Z1A,Kp,CU6-C,Elect,Z1A
+344,Kalop Conductor Unipolar 6MM V/Amarillo,Kp-CU6-VY-Elect-Z1A,Kp,CU6-VY,Elect,Z1A
+345,Reflex 4MM Rojo,Rflx-Rflx4-R-Elect-Z1A,Rflx,Rflx4-R,Elect,Z1A
+346,Reflex 4MM Celeste,Rflx-Rflx4-C-Elect-Z1A,Rflx,Rflx4-C,Elect,Z1A
+347,Reflex 1;5MM Blanco,Rflx-Rflx1;5-B-Elect-Z1A,Rflx,Rflx1;5-B,Elect,Z1A
+348,Zocalo EPS Max W Premium (14mm*75mm*2;90m),AN-Zoc14*75*2;90-Crrln-Z3G,AN,Zoc14*75*2;90,Crrln,Z3G
+349,Rollo de Lana de Vidrio,AN-RollanVid-Crrln-Z3G,AN,RollanVid,Crrln,Z3G
+350,Rollo Isolant,AN-RollIsolant-Crrln-Z3G,AN,RollIsolant,Crrln,Z3G
+351,Eliane 10x20 Metro White Liso x1M2,AN-Eliane10x20-Crrln-Z3G,AN,Eliane10x20,Crrln,Z3G
+352,KlK Imp Flex Anclaje Int x25Kg,AN-ImpFlex-Crrln-Z3G,AN,ImpFlex,Crrln,Z3G
+353,Bomba Presuarizadora Vasser Qc Press,AN-BombaPresVass-Sant-Z2B,AN,BombaPresVass,Sant,Z2B
+354,"Rollo Manguera Azul 1""(x35Mts)",AN-RMA1-Elect-Z1A,AN,RMA1,Elect,Z1A
+355,Riel Embutir Magnetico Slim Negro Macroled 1 metros 48V RMS-E-1M,AN-REMSL148-Elect-Z1A,AN,REMSL148,Elect,Z1A
+356,Perfil Aluminio Embutir Per14x2Mts Tapa Opal p/Tira,AN-PTL14TapaOpalp/Tira-Elect-Z1A,AN,PTL14TapaOpalp/Tira,Elect,Z1A
+357,Tapa de Gas Regularizada 40x50,AN-TP40X50-Elect-Z1A,AN,TP40X50,Elect,Z1A
+358,Caja de Piso Vinilico,AN-CpisoV-Crrln-Z3G,AN,CpisoV,Crrln,Z3G
 359,Maquina Ingletadora,AN-MaqIngletadora-Crrln-Z3G,AN,MaqIngletadora,Crrln,Z3G
+360,Griferia de Ducha Embutir Peirano Adra,Pei-DchaAdra-Sant-Z2B,Pei,DchaAdra,Sant,Z2B
+361,Griferia de Cocina Monocomanco Peirano Adra,Pei-CnaAdra-Sant-Z2B,Pei,CnaAdra,Sant,Z2B
+362,Griferia de Bidet Peirano Adra,Pei-BdtAdra-Sant-Z2B,Pei,BdtAdra,Sant,Z2B
+363,Griferia Lavatorio Monocomando Peirano Mora,Pei-LavMora-Sant-Z2B,Pei,LavMora,Sant,Z2B
+364,Bacha Peirano Ovalada Apoyo 58x35;5cm BCH08,Pei-BchaOvalada-Sant-Z2B,Pei,BchaOvalada,Sant,Z2B
+365,JA E 54 A/304 Simple 54x36x24,AN-JAE54X36X24-Sant-Z2B,AN,JAE54X36X24,Sant,Z2B
+366,Syra 20 Roca Monocomando Cocina A5A852ACOL,Rc-CnaSyraMonoc-Sant-Z2B,Rc,CnaSyraMonoc,Sant,Z2B
+367,JA Q085A A/304 Doble 85.5x48.2x17.5 C/Orif,AN-JA85.5X48.2X17.5 -Sant-Z2B,AN,JA85.5X48.2X17.5,Sant,Z2B
+368,JA G 50 A/304 Simple 50x40x26,AN-JA50X40X26simple-Sant-Z2B,AN,JA50X40X26simple,Sant,Z2B
+369,Temple Fv Monoc.Cocina 411.04/87 cr,Tmpl-CnaTemple411/87-Sant-Z2B,Tmpl,CnaTemple411/87,Sant,Z2B
+370,Iconia Roca Monoc. Bidet CR A54703ACOL,Rc-BdtRocaMonoc-Sant-Z2B,Rc,BdtRocaMonoc,Sant,Z2B
+371,Epuyen Fv Lavatorio Pared 203/L2 CR,Fv-LavFv-Sant-Z2B,Fv,LavFv,Sant,Z2B
+372,Epuyen Fv Monoc.Lavatorio Alto 181.02/L2 CR,Fv-LavAltoFv-Sant-Z2B,Fv,LavAltoFv,Sant,Z2B
+373,Epuyen Fv Monoc. Ducha C/T 106/L2 CR,Fv-DchaFvCtranf-Sant-Z2B,Fv,DchaFvCtranf,Sant,Z2B
+374,Epuyen Fv Monoc. Bidet 189/L2 CR,Fv-BdtFvMonoc-Sant-Z2B,Fv,BdtFvMonoc,Sant,Z2B
+375,Bacha Roca Inspira Soft Apoyo 50x37x14 Bco,Rc-BchaSoftApoyo-Sant-Z2B,Rc,BchaSoftApoyo,Sant,Z2B
+376,Bacha Roca Inspira Round 37Cm Apoyo Redonda Bco,Rc-BachaRedondaApoyo-Sant-Z2B,Rc,BachaRedondaApoyo,Sant,Z2B
+377,Griferías de ducha de embutir Peirano Adra (SIN CUADRO),Pei-DchaAdraS/C-Sant-Z2B,Pei,DchaAdraS/C,Sant,Z2B
+378,Griferías de lavatorio de embutir Peirano Adra (SIN CUADRO),Pei-LavAdraS/C-Sant-Z2B,Pei,LavAdraS/C,Sant,Z2B
+379,Gen Rod caño flexible Liviano Blanco 20MM (x25mts) 3/4,Gr-CÑFlexLiv3/4-Elect-Z1A,Gr,CÑFlexLiv3/4,Elect,Z1A
+380,Mindan Conector de Hierro 3/4,Mnd-CH3/4-Elect-Z1A,Mnd,CH3/4,Elect,Z1A
+381,Sica Disyuntor Diferencial 2x40A,Sc-DD2X40-Elect-Z1A,Sc,DD2X40,Elect,Z1A
+382,Tbcin Cinta Aisladora Vini Tape 10 Mts Negro,Tbc-CINTAAISLAD-Elect-Z1A,Tbc,CINTAAISLAD,Elect,Z1A
+383,Ag Met caja para conexion chapa 15x15x8,Agmt-CajaconexChapa15x15x8-Elect-Z1A,Agmt,CajaconexChapa15x15x8,Elect,Z1A
+384,Caños Sigas 40mm,AN-CÑSiga40mm-Sant-Z2B,AN,CÑSiga40mm,Sant,Z2B
+385,Griferia de Ducha Monocomando de embutir ADRA 80-203,Pei-DchaAdraMonoc80-203-Sant-Z2B,Pei,DchaAdraMonoc80-203,Sant,Z2B
+386,Grferia Libby cocina mes 411;04/39,AN-CnaLibby411;04/39-Sant-Z2B,AN,CnaLibby411;04/39,Sant,Z2B
+387,Rejilla de PVC,AN-RejillaPvc-Sant-Z2B,AN,RejillaPvc,Sant,Z2B
+388,Bocas de Acceso,AN-BcasAcceso-Sant-Z2B,AN,BcasAcceso,Sant,Z2B
+389,OV Cam,AN-OVCam-Sant-Z2B,AN,OVCam,Sant,Z2B
+390,Camara Septica,AN-CamaraSep-Sant-Z2B,AN,CamaraSep,Sant,Z2B
+391,Desague Lineal,AN-DesagueLineal-Sant-Z2B,AN,DesagueLineal,Sant,Z2B
+392,Soluciones en Aerosol,AN-SolcionesAerosol-Pint-Z3G,AN,SolcionesAerosol,Pint,Z3G
+393,Pool led Horus,AN-Pool led Horus-Elect-Z1A,AN,Pool led Horus,Elect,Z1A
+394,Controlador de Luces,AN-Contrldrluces-Elect-Z1A,AN,Contrldrluces,Elect,Z1A
+395,Anafe Longvie A6600XF,Lngv-CCNA6600-Eldom-Z2A,Lngv,CCNA6600,Eldom,Z2A
+396,Bomba Presurizadora Motorarg,AN-BombaPresMotorarg-Sant-Z2B,AN,BombaPresMotorarg,Sant,Z2B
+397,Perfiles para Mensula mesada,AN-PMM-Sant-Z2B,AN,PMM,Sant,Z2B
+398,Mensula para mesada,AN-MensMes-Sant-Z2B,AN,MensMes,Sant,Z2B
+399,Robinet Bronx Lavatorio Pared Bronce viejo,Rb-LavBronceViejo-Sant-Z2B,Rb,LavBronceViejo,Sant,Z2B
+400,Abb Disyuntor 2x25A 2 Polos,Ab2-DD2X25-Elect-Z1A,Ab2,DD2X25,Elect,Z1A
+401,Abb Disyuntor 2x40 2 Polos,Ab3-DD2X40-Elect-Z1A,Ab3,DD2X40,Elect,Z1A
+402,Abb Termica Din 2x32,Ab4-T2X32-Elect-Z1A,Ab4,T2X32,Elect,Z1A
+403,Gen Rod Caja Termica Exterior 1 Bip Blanca con tapa Fumé,Gr-CTExt1Bip-Elect-Z1A,Gr,CTExt1Bip,Elect,Z1A
+404,Gen Rod Caja Exterior Plastica 12 Bocas Ecoo,Gr-CTExt12B-Elect-Z1A,Gr,CTExt12B,Elect,Z1A
+405,Gen Rod Caja Exterior Plastica 8 ocas Ecoo,Gr-CTExt8B-Elect-Z1A,Gr,CTExt8B,Elect,Z1A
+406,Gen Rod Caja de Conexión Estanca PVC 165x165x80 Blanca,Gr-CEstanca165x165x80-Elect-Z1A,Gr,CEstanca165x165x80,Elect,Z1A
+407,Gen Rod Caja de Conexión Estanca PVC 210x210x110 Blanco,Gr-CEstanca210x210x110-Elect-Z1A,Gr,CEstanca210x210x110,Elect,Z1A
+408,Termotanque Electrico 53 Lts Escorial,AN-TermoElec53Lts-Sant-Z2B,AN,TermoElec53Lts,Sant,Z2B
+409,Pintura Casablanca Fibrada Blanco (Abierto) (Lts),CB-PintCasablancaFibradaBlanco-Pint-Z3G,CB,PintCasablancaFibradaBlanco,Pint,Z3G
+410,Restaurador Llana (Abierto) (Kg),AN-Restaurador Llana-Pint-Z3G,AN,Restaurador Llana,Pint,Z3G
+411,Masilla Casablanca (Cerrado)(Kg),CB-MasillaCblanca-Pint-Z3G,CB,MasillaCblanca,Pint,Z3G
+412,Pintura Quantum Cielorraso Blanco Mate (Abierto) (Lts),AN-PinturaClrrsoMatBlan-Pint-Z3G,AN,PinturaClrrsoMatBlan,Pint,Z3G
+413,Masilla Casablanca (Abierto) (Kg),CB-MasillaCblanca-Pint-Z3G,CB,MasillaCblanca,Pint,Z3G
+414,Laca al Agua Llana (Abierto) (Lts),AN-LacaalAguaLlana-Pint-Z3G,AN,LacaalAguaLlana,Pint,Z3G
+415,Pintura Casablanca Exterior Blanco (Abierto) (Kg),CB-PintCasablancaExtBlanco-Pint-Z3G,CB,PintCasablancaExtBlanco,Pint,Z3G
+416,Jeluz Platinum Modulo 2 Tomas Combinado + Tierra 2x10A-250Vca Bl,Jz-MTC2-Elect-Z1A,Jz,MTC2,Elect,Z1A
+417,Bomba Vulcano de 075,Vlcno-BmbaVulcano075-Sant-Z2B,Vlcno,BmbaVulcano075,Sant,Z2B
+418,Filtro Vulcano de 30,Vlcno-Filtro30-Sant-Z2B,Vlcno,Filtro30,Sant,Z2B
+419,Weber Col SuperFlex 25Kg,AN-WberSpFlx-Crrln-Z3G,AN,WberSpFlx,Crrln,Z3G

@@ -3,7 +3,7 @@
     "username": "sorby_development",
     "password": "sorby_development",
     "database": "stockremito",
-    "host": "localhost",
+    "host": "host.docker.internal",
     "port": 5432,
     "dialect": "postgres"
   },

@@ -1,10 +1,7 @@
 const { getByChatGpt4o } = require("../Base");
 const FlowManager = require('../../../../src/FlowControl/FlowManager')
-
-
 const ChatModificarConfirmacion = async (message, userId) => {
-    console.log("🔵 [ChatModificarConfirmacion]: ", message);
-    console.log("🔵 [FlowData]: ", FlowManager.userFlows[userId]?.flowData);
+
     const pedidoAntiguo = FlowManager.userFlows[userId]?.flowData;
     const itemsOriginales = pedidoAntiguo.movimientos;
 

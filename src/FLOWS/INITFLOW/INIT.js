@@ -6,6 +6,8 @@ const ConfirmarPedidoFlow = require('../ConfirmarPedido/ConfirmarPedidoFlow');
 const ConsultarPedidoFlow = require('../ConsultarPedido/ConsultarPedidoFlow');
 const TransferirMaterialesFlow = require('../TransferirMateriales/TransferirMaterialesFlow');
 const ConsultarStockFlow = require('../ConsultarStock/ConsultarStockFlow');
+const AyudaFlow = require('../Ayuda/AyudaFlow');
+
 const defaultFlow = {
 
     async Init(userId, message, sock, messageType) {
@@ -17,7 +19,6 @@ const defaultFlow = {
 
             if (messageType == "text" || messageType == "text_extended" || messageType == "audio" ) {
                 result = await analizarIntencion(message, userId);
-               
             }
             else
             {
@@ -55,9 +56,13 @@ const defaultFlow = {
                     ConfirmarPedidoFlow.start(userId, { data: result.data }, sock)
                     break;
 
+                case "Ayuda":
+                    AyudaFlow.start(userId, { data: result.data }, sock)
+                    break;
+
                 case "No comprendido":
                     await sock.sendMessage(userId, { text: "No entendi tu mensaje, porfavor repitelo"});
-                    FlowManager.resetFlow(userId)
+                    AyudaFlow.start(userId, { data: result.data }, sock)
                     break;
 
                 case "NoRegistrado":

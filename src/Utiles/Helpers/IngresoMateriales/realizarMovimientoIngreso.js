@@ -1,6 +1,7 @@
 const FlowManager = require('../../../FlowControl/FlowManager');
 const { Material,Movimiento } = require('../../../models');  // Importa el modelo Material
 const { addMovimientoToSheetWithClientGeneral } = require('../../GoogleServices/Sheets/movimiento');
+const EnviarMensaje = require('../../../Utiles/EnviarMensaje')
 require('dotenv').config();
 
 module.exports = async function realizarMovimientoIngreso(userId) {
@@ -13,8 +14,11 @@ module.exports = async function realizarMovimientoIngreso(userId) {
     const { obra_id, nro_compra, items } = pedidoAntiguo.data;
     let Preingreso = [];
 
+
     for (const item of items) {
-        let material = await Material.findOne({ where: { nombre: item.producto_name } });
+
+        //CAMBIAR Y BUSCAR POR ID
+        let material = await Material.findOne({ where: { id: item.producto_id } });
      
         // Se genera el nuevo movimiento
         const nuevoMovimiento = {
