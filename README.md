@@ -17,6 +17,7 @@ cd..
 
 
 Inicializacion de datos:
+docker build -t stockremito .
 En una consola separada correr el contenedor creando los 2 volumenes Datos y codigo.
 	docker run --name=Cstockremito --network host -v ${PWD}/src:/app/src -v ${PWD}/CSV:/app/CSV stockremito
 En otra consola ejecutamos los siguientes comandos
