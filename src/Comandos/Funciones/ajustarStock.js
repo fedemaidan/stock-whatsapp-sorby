@@ -9,7 +9,7 @@ module.exports = async function ajustarStock(idobra) {
         { "nombre": "BmB Curva de Plastico para caño de 1\"", "cantidad": 100 },
         { "nombre": "Casablanca Interioir Mate Blanco (xLts) (Abierto)", "cantidad": 11 },
         { "nombre": "Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto)", "cantidad": 9 },
-        { "nombre": "Genrod  Caja de pase derivacion (unidades) 15x15", "cantidad": 1 },
+        { "nombre": "Genrod Caja de pase derivacion (unidades) 15x15", "cantidad": 1 },
         { "nombre": "Genrod Caja de pase 20x20", "cantidad": 0 },
         { "nombre": "Horno Longive H1500XF", "cantidad": 2 },
         { "nombre": "Jeluz Platinum Modulo 2 tomas Normalizado +Tierra 2x10A-250VCA Bl", "cantidad": 50 },
