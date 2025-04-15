@@ -10,6 +10,7 @@ const express = require('express');
 const app = express();
 const materiales = require('./materiales.routes')
 
+
 // Variable para almacenar el último QR generado (si se requiere)
 let latestQR = null;
 

@@ -1,12 +1,12 @@
 const { Movimiento } = require("../../../models");
 
-module.exports = async function calcularStock(sku, obraId) {
+module.exports = async function calcularStock(id, obraId) {
     try {
         // Obtener todos los movimientos del material en la obra específica
         const movimientos = await Movimiento.findAll({
             attributes: ["cantidad", "tipo"],
             where: {
-                id_material: sku,
+                id_material: id,
                 cod_obra_origen: obraId
             }
         });
@@ -18,7 +18,7 @@ module.exports = async function calcularStock(sku, obraId) {
 
         return stockDisponible;
     } catch (err) {
-        console.error(`Error al calcular stock para SKU ${sku} en obra ${obraId}:`, err);
+        console.error(`Error al calcular stock para id ${id} en obra ${obraId}:`, err);
         return 0;
     }
 };

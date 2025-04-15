@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { Material } = require('../src/models'); // Ajustá el path si tu carpeta de modelos está en otro lado
-
+const ajustarStock = require('../src/Comandos/Funciones/ajustarStock')
 // Obtener todos los materiales
 router.get('/', async (req, res) => {
     try {
@@ -10,6 +10,11 @@ router.get('/', async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: 'Error al obtener los materiales' });
     }
+});
+
+router.get('/ajustar', async (req, res) => {
+    await ajustarStock()
+    res.send("Todo un exito")
 });
 
 // Obtener un material por ID
