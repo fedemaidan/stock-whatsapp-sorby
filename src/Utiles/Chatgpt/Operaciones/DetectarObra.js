@@ -15,24 +15,38 @@ async function DetectarObra(mensajeCliente, opcionesObras ,userId) {
     const Obras = await obtenerTodasLasObras()
 
     prompt = `
-Como bot de un sistema de control de stock, quiero identificar la intención del usuario y ejecutar la acción adecuada para gestionar correctamente la confirmación o cancelación de pedidos.
+Sos un bot de un sistema de control de stock. Tu tarea es interpretar correctamente la elección del usuario sobre una obra.
 
-Formato de respuesta: Devuelve exclusivamente un JSON modificando los datos dependiendo de la interpretación, sin incluir texto adicional.
+Formato de respuesta: EXCLUSIVAMENTE un JSON válido, sin explicaciones ni texto adicional.
 
-Resumen del contexto: Soy un bot encargado de gestionar y detectar obras.
+Contexto:
+- El usuario debe elegir una obra para devolver material.
+- Se le mostraron solo algunas obras con stock, en orden.
+- Si el usuario responde con un número (ej: "1"), ese número representa la posición en la lista de obras disponibles, NO su ID.
 
---En caso de que el usuario diga un numero, ese numero corresponde no al ID, si no a la posicion de la obra en la lista de "posibles obras disponibles"
-El usuario dice: "${mensajeCliente}"
+Ejemplo:
+Usuario dice: "2"
+Lista mostrada: 
+1. [id:58, nombre: "Solares"]
+2. [id:45, nombre: "Don Alberto"]
+3. [id:77, nombre: "FlyDac"]
+Respuesta del bot: Se elige la obra en la posición 2 → Don Alberto.
 
-Aqui estan las obras disponibles: (es solo para matchear las obras, no es la lista de la cual se tiene que elejir, esto es solo para corregir cualquier error en la eleccion. [EJ:s0lcito en realidad es la obra Solcito])
+---
+
+El usuario escribió:
+"${mensajeCliente}"
+
+Obras disponibles para corregir errores de tipeo o coincidencias aproximadas:
 ${JSON.stringify(Obras, null, 2)}
 
-Posibles obras disponibles que tienen stock y el mensaje que recientemente le envie:
+Lista de obras elegibles (en este orden, usar índice si el usuario dio un número):
 ${JSON.stringify(opcionesObras, null, 2)}
 
-Formato de respuesta esperado (EXCLUSIVAMENTE JSON, sin texto adicional):
+Formato de respuesta esperado (solo JSON, sin explicaciones):
 ${JSON.stringify(opcion, null, 2)}
 `;
+
 
     const response = await getByChatGpt4o(prompt);
     const respuesta = JSON.parse(response);

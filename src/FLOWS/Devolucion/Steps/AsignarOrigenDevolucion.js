@@ -37,8 +37,17 @@ module.exports = async function AsignarOrigenDevolucion(userId, message, sock) {
             return;
         }
 
-        // 🎯 Interpretar la respuesta del usuario (nombre de obra)
-        const resultado = await DetectarObra(message);
+        // 🎯 Interpretar la respuesta del usuario (nombre de obra) usando lista de obras disponibles
+        const resultado = await DetectarObra(message, obrasDisponibles);
+
+        console.log("🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯")
+        console.log(message)
+        console.log("------")
+        console.log(obrasDisponibles)
+        console.log("------")
+        console.log("Resultado de DetectarObra:", resultado);
+        console.log("🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯")
+
         if (!resultado?.data?.obra_id) {
             await sock.sendMessage(userId, {
                 text: "⚠️ No pude identificar la obra seleccionada. Por favor, intentá de nuevo con el nombre o número exacto."
@@ -53,7 +62,7 @@ module.exports = async function AsignarOrigenDevolucion(userId, message, sock) {
         const nuevoMovimiento = {
             id_material: materialActual.materialId,
             nombre: materialActual.nombre,
-            cod_obra_origen: obra_id,
+            cod_obra_origen: parseInt(obra_id),
             cantidad: materialActual.cantidad,
             tipo: true, // ingreso
             fecha: moment().toDate(),

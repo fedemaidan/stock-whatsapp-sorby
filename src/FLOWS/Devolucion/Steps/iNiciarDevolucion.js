@@ -15,6 +15,7 @@ module.exports = async function IniciarDevolucion(userId, flowData, sock) {
         }
 
         // 🔒 VALIDACIÓN: Si ya hay alguna devolución registrada, cancelar
+    
         const yaDevolvio = movimientos.some(m => m.estado?.toLowerCase() === 'devolucion');
         if (yaDevolvio) {
             await sock.sendMessage(userId, {
