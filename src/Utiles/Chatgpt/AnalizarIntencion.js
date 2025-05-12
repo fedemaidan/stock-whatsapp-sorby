@@ -103,6 +103,40 @@ const opciones = [
         }
     },
     {
+        accion: "Consultar Stock por obra",
+        info: "Aqui se debe consultar una obra y cuanto material disponen y su informacion",
+        data:
+        {
+            id_obra: "aqui va el id de material dado por el usuario",
+        }
+    },
+    {
+        accion: "devolucion",
+        info: "Se busca realizar una devolucion de materiales, y para ello el usuario suministra el numero de remito o pedido.",
+        data:
+        {
+        pedidoID: "numero de pedido o remito dado por el usuario",
+        pedidoOriginal: [],
+        devolucion: 
+        [
+            {
+      materialId: 1,
+      nombre: "ejemplo",
+      cantidad: 5,
+      origen: "Obra A"
+    },
+    {
+      materialId: 2,
+      nombre: "Arena",
+      cantidad: 30,
+      origen: "Obra B"
+    }
+    ],
+    skipObraIntro: false
+   }
+},
+
+    {
         accion: "No comprendido",
         data:
         {
@@ -127,14 +161,15 @@ const analizarIntencion = async (message, sender) => {
   
         const opcionesTxt = JSON.stringify(opciones);
         prompt = `
-Como bot de un sistema de control de stock, quiero identificar la intención del usuario y ejecutar la acción adecuada para gestionar correctamente las operaciones posibles.
+Como Capataz experto en obras, materiales de contruccion y depositos de materiales de construccion, quiero que identifiques la intención del usuario capataz  de obra y ejecutar la acción adecuada para gestionar correctamente las operaciones posibles.
 
 Formato de respuesta: Devuelve únicamente un JSON con los datos cargados, sin incluir explicaciones adicionales.
 
-Advertencia: Revisa cuidadosamente el mensaje del usuario y asegúrate de coincidir exactamente con todos los detalles del producto solicitado, como tamaño, color y tipo de material. No elijas productos basándote en coincidencias parciales.
+Advertencia: Revisa cuidadosamente el mensaje del usuario y asegúrate extraer el o los materiales mas coincidente con todos los detalles del material solicitado, como tamaño, color y tipo de material.
 
-Resumen del contexto: Soy un bot encargado de gestionar el stock de productos y ayudar a los usuarios a encontrar y seleccionar artículos en función de sus descripciones. Si el usuario proporciona características específicas (como "2,5mm", "celeste", "tamaño 3/4"), debo garantizar que la selección sea precisa.
-
+Reglas (estas reglas aplican siempre que se maneje un material):
+1. Si el usuario proporciona características específicas (como "2,5mm", "celeste", "tamaño 3/4"), debo garantizar que la selección sea precisa.
+2. Si el usuario no proporciona caracteristicas especificas retornar el mas similar.
 
 El usuario dice: "${message}"
 

@@ -19,7 +19,8 @@ cd..
 Inicializacion de datos:
 docker build -t stockremito .
 En una consola separada correr el contenedor creando los 2 volumenes Datos y codigo.
-	docker run --name=Cstockremito --network host -v ${PWD}/src:/app/src -v ${PWD}/CSV:/app/CSV stockremito
+	docker build -t stockremito .
+	docker run --name=Cstockremito -v ${PWD}/src:/app/src -v ${PWD}/CSV:/app/CSV -v ${PWD}/auth_info:/app/auth_info -p 3000  stockremito
 En otra consola ejecutamos los siguientes comandos
 docker exec -it Cstockremito bash      (Acceder a la consola del contenedor)
 export GOOGLE_CREDENTIALS=  (Pasar como parametro la credencial de google)

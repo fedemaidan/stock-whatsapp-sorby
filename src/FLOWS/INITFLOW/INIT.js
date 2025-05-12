@@ -6,6 +6,8 @@ const ConfirmarPedidoFlow = require('../ConfirmarPedido/ConfirmarPedidoFlow');
 const ConsultarPedidoFlow = require('../ConsultarPedido/ConsultarPedidoFlow');
 const TransferirMaterialesFlow = require('../TransferirMateriales/TransferirMaterialesFlow');
 const ConsultarStockFlow = require('../ConsultarStock/ConsultarStockFlow');
+const ConsultarStockPorObraFlow = require('../ConsultarStockPorObra/ConsultarStockPorObraFlow');
+const DevolucionFlow = require('../Devolucion/DevolucionFlow');
 const AyudaFlow = require('../Ayuda/AyudaFlow');
 
 const defaultFlow = {
@@ -54,6 +56,14 @@ const defaultFlow = {
                 case "Rechazar":
                 case "Aprobar Parcial":
                     ConfirmarPedidoFlow.start(userId, { data: result.data }, sock)
+                    break;
+
+                case "Consultar Stock por obra":
+                    ConsultarStockPorObraFlow.start(userId, { data: result.data }, sock)
+                    break;
+                
+                case "devolucion":
+                    DevolucionFlow.start(userId, { data: result.data }, sock)
                     break;
 
                 case "Ayuda":
