@@ -1,0 +1,718 @@
+movimiento.id,fechaSolo,material.nombre,material id,material.SKU,obraOrigen.id,obraOrigen,obraDestino.id,obraDestino,movimiento.cantidad,saldo,tipoMovimiento,nro_compra,NroPedido,estado,activo ?
+1425,2025-05-12,180 Manguera Led 220V x 5 Mts Luz Calida (63025/5/BC),1569,180º-MANL-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,48,48,Ingreso,,,importado,ACTIVE
+1426,2025-05-12,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,1573,9JL-CHM5-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,30,30,Ingreso,,,importado,ACTIVE
+1427,2025-05-12,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,1573,9JL-CHM5-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,425,425,Ingreso,,,importado,ACTIVE
+1428,2025-05-12,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,1573,9JL-CHM5-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1429,2025-05-12,9 de Julio (10004) Caja H Liviana Cuadrada 10x10 Aluminizada Ch20,1572,9JL-CHC10-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,30,30,Ingreso,,,importado,ACTIVE
+1430,2025-05-12,9 de Julio Caja H Liviana Octogonal chica Aluminizada Ch 20,1577,9JL-CHO-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,60,60,Ingreso,,,importado,ACTIVE
+1431,2025-05-12,9 de Julio Caja H Liviana Octogonal chica Aluminizada Ch 20,1577,9JL-CHO-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,430,430,Ingreso,,,importado,ACTIVE
+1432,2025-05-12,9 de Julio Caja H Liviana Octogonal chica Aluminizada Ch 20,1577,9JL-CHO-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,70,70,Ingreso,,,importado,ACTIVE
+1433,2025-05-12,9 de Julio Caja H Liviana Rectangular chica Aluminizada Ch 20,1578,9JL-CHR-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,80,80,Ingreso,,,importado,ACTIVE
+1434,2025-05-12,9 de Julio Caja H Liviana Rectangular chica Aluminizada Ch 20,1578,9JL-CHR-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,770,770,Ingreso,,,importado,ACTIVE
+1435,2025-05-12,9 de Julio Conectores de Hierro 3/4 (Bolsas de 100 unidades),1546,9JL-CH3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,160,160,Ingreso,,,importado,ACTIVE
+1436,2025-05-12,9 de Julio Conectores de Hierro 3/4 (Bolsas de 100 unidades),1546,9JL-CH3/4-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1437,2025-05-12,"9 de julio Conector de hierro 1"" (Bolsa de 50)",1631,9JL-CH1-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,51,51,Ingreso,,,importado,ACTIVE
+1438,2025-05-12,Abb Disyuntor 2x25A 2 Polos,1896,Ab2-DD2X25-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1439,2025-05-12,Abb Disyuntor 2x40 2 Polos,1897,Ab3-DD2X40-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1440,2025-05-12,Abb Termica Din 2x10,1520,Ab2-T2X10-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1441,2025-05-12,Abb Termica Din 2x10,1520,Ab2-T2X10-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,15,15,Ingreso,,,importado,ACTIVE
+1442,2025-05-12,Abb Termica Din 2x10,1520,Ab2-T2X10-Elect-Z1A,31,Solares,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1443,2025-05-12,Abb Termica Din 2x16,1521,Ab2-T2X16-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1444,2025-05-12,Abb Termica Din 2x16,1521,Ab2-T2X16-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1445,2025-05-12,Abb Termica Din 2x20,1522,Ab2-T2X20-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,13,13,Ingreso,,,importado,ACTIVE
+1446,2025-05-12,Abb Termica Din 2x20,1522,Ab2-T2X20-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1447,2025-05-12,Abb Termica Din 2x20,1522,Ab2-T2X20-Elect-Z1A,31,Solares,No Aplica,No Aplica,3,-3,Egreso,,,importado,ACTIVE
+1448,2025-05-12,Abb Termica Din 2x32,1898,Ab4-T2X32-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1449,2025-05-12,Abb Termica Din 4x40,1523,Ab2-T2X40-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1450,2025-05-12,Acople Horizontal para Riel de Embutir Magnetico Slim Macroled RMS-CL-E,1615,AN-ALHSM-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1451,2025-05-12,Adhesivo Losung 500 CM3 C/Pincel,1713,Lsng-Adh500Cm3Cpincel-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1452,2025-05-12,Ag Met caja para conexion chapa 15x15x8,1879,Agmt-CajaconexChapa15x15x8-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1453,2025-05-12,Ag.Met Grampa media Omega 3/4 Li.Zincada,1632,Agmt-GrMO3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,50,50,Ingreso,,,importado,ACTIVE
+1454,2025-05-12,Ag.Met Grampa media Omega 3/4 Li.Zincada,1632,Agmt-GrMO3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,550,550,Ingreso,,,importado,ACTIVE
+1455,2025-05-12,Aire Acondicionado,1813,AN-AA-Elect-Z1A,31,Solares,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1456,2025-05-12,Alba Albalatex Formula Avanzada (xlts),1595,Alb-PINT-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,3.6,3.6,Ingreso,,,importado,ACTIVE
+1457,2025-05-12,Amaco Tubo 25mm gris para Desague A.A 2m,1705,Amco-TUBDes25mm-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1458,2025-05-12,Amanco Caño 20MM Fusion Verde,1724,Amnco-CÑ20MMFsnVerde-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1459,2025-05-12,Amanco Caño 25MM Fusion Verde,1725,Amnco-CÑ25MMFsnVerde-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1460,2025-05-12,Amanco Caño 32MM Fusion Verde,1726,Amnco-CÑ32MMFsnVerde-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1461,2025-05-12,Amanco SD Te 40,1780,Amnco-Te40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1462,2025-05-12,Horno Longive H1500XF,1607,Lngv-CCNA-Eldom-Z2A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1463,2025-05-12,Anafe Longvie A6600XF,1891,Lngv-CCNA6600-Eldom-Z2A,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1464,2025-05-12,Aplique de Ext/Int GU10 1X7W Wing,1734,AN-Aplque1X7W-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1465,2025-05-12,Argenplas Conductor Unipolar 1;5 MM Rojo,1703,Argnpls-CU1.5-R-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1466,2025-05-12,Awaduct Caño 40X50,1723,Aw-CÑ40X50-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1467,2025-05-12,Awaduct Caño 50X50,1722,Aw-CÑ50X50-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1468,2025-05-12,Awaduct Cupla de 110MM,1718,Aw-C110MM-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1469,2025-05-12,Awaduct Cupla de 63MM,1717,Aw-C63MM-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1470,2025-05-12,Awaduct Tapa 110,1720,Aw-TP110-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1471,2025-05-12,Awaduct Tapon 110MM,1719,Aw-TAPON110-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1472,2025-05-12,Bacha Peirano Circular Apoyo 32X14;5 Cm,1785,Pei-BchaCircular-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1473,2025-05-12,Bacha Porcelana Sanitaria,1628,Frr-BchaPor-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1474,2025-05-12,Bacha Roca Inspira Round 37Cm Apoyo Redonda Bco,1872,Rc-BachaRedondaApoyo-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1475,2025-05-12,Bacha Roca Inspira Soft Apoyo 50x37x14 Bco,1871,Rc-BchaSoftApoyo-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1476,2025-05-12,Bari-Deposito de Apoyar Desc Dual-Linea Bari,1626,Frr-DpsitoBari-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1477,2025-05-12,Bari-Inodoro Largo-Linea Bari,1627,Frr-IndBari-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1478,2025-05-12,Bastidor Tablero,1498,AN-BT-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1479,2025-05-12,Bide Roca Monaco 3 AG Blanco,1783,Rc-BdtMonaco3AG-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1480,2025-05-12,Black Velvet Bidet C.C 70-190,1787,Pei-BdtBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1481,2025-05-12,Black Velvet Ducha Embutir C/T C.C Plus 80-190P,1788,Pei-DchaBlackVCtransf-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1482,2025-05-12,Black Velvet Lavatorio Pared C.C 62-190,1786,Pei-LavBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1483,2025-05-12,Black Velvet Lavatorio Pared C.C 62-190,1786,Pei-LavBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1484,2025-05-12,Black Velvet Monocomando Cocina 20-190,1790,Pei-CnaBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1485,2025-05-12,BmB Cupla de 1 (Bolsa de 50),1553,Bmb-C1-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,100,100,Ingreso,,,importado,ACTIVE
+1486,2025-05-12,BmB Cupla de 3/4 (Bolsas de 100),1552,Bmb-C3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1000,1000,Ingreso,,,importado,ACTIVE
+1487,2025-05-12,BmB Cupla de 3/4 (Bolsas de 100),1552,Bmb-C3/4-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,150,150,Ingreso,,,importado,ACTIVE
+1488,2025-05-12,BmB Curva de Plastico para caño 3/4 (Bolson),1633,Bmb-CP3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,100,100,Ingreso,,,importado,ACTIVE
+1489,2025-05-12,BmB Curva de Plastico para caño 3/4 (Bolson),1633,Bmb-CP3/4-Elect-Z1A,33,Ribera,No Aplica,No Aplica,99,99,Ingreso,,,importado,ACTIVE
+1490,2025-05-12,"BmB Curva de Plastico para caño de 1""",1536,Bmb-CP1-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,104,104,Ingreso,,,importado,ACTIVE
+1491,2025-05-12,"BmB Curva de Plastico para caño de 1""",1536,Bmb-CP1-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,40,40,Ingreso,,,importado,ACTIVE
+1492,2025-05-12,Boca Aw Ac-Cocina 63x50,1682,Aw-BCCocin63x50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1493,2025-05-12,Boca Aw Acc Horizontal Acome Cerrados 110x63,1657,Aw-BcaHrz110x63-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1494,2025-05-12,Boca Aw Acc Horizontal Acome Cerrados 110x63,1657,Aw-BcaHrz110x63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1495,2025-05-12,Bomba Presurizadora Motorarg,1892,AN-BombaPresMotorarg-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1496,2025-05-12,Bomba Vulcano de 075,1913,Vlcno-BmbaVulcano075-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1497,2025-05-12,Buje Aw M-H 110X63,1674,Aw-BJ110X63MH-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1498,2025-05-12,Buje PP 2 X 11/2,1709,AN-BJ2X11/2-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1499,2025-05-12,Caja de Pase 115X165X110,1812,Gr-CP115X165X110-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1500,2025-05-12,Caja de Piso Vinilico,1854,AN-CpisoV-Crrln-Z3G,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1501,2025-05-12,Camara Septica,1886,AN-CamaraSep-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1502,2025-05-12,CasaBlanca Pro Interior (xLt),1802,CB-ProInterior-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1503,2025-05-12,Casablanca Esmalte Sintetico MultiAccion 3 en 1 (xlts) (cerrado),1591,CB-ESMA-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,0.9,0.9,Ingreso,,,importado,ACTIVE
+1504,2025-05-12,Casablanca Interioir Mate Balsamo(x lts) Bse B (Abierto),1588,CB-BLS-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,3.6,3.6,Ingreso,,,importado,ACTIVE
+1505,2025-05-12,Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto),1589,CB-PINT-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,4.5,4.5,Ingreso,,,importado,ACTIVE
+1506,2025-05-12,Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto),1589,CB-PINT-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,11,11,Ingreso,,,importado,ACTIVE
+1507,2025-05-12,Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto),1589,CB-PINT-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,9,9,Ingreso,,,importado,ACTIVE
+1508,2025-05-12,Caño PVC 1,1794,AN-CÑPVC1-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,21,21,Ingreso,,,importado,ACTIVE
+1509,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1510,2025-05-12,"Caños Galvanizados de 4"" de 1m",1816,"AN-CÑGalv4""x1M-Sant-Z2B",29,Don Alberto,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1511,2025-05-12,"Caños Galvanizados de 4"" de 1m",1816,"AN-CÑGalv4""x1M-Sant-Z2B",31,Solares,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1512,2025-05-12,Clavos 1 1/2 (x bolsa de 1 Kg),1557,AN-C1.2-Crrln-,32,FlyDac,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1513,2025-05-12,Cocina Drean CD5502AI,1606,Drn-CCNA-Eldom-Z2A,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1514,2025-05-12,Cocina Electrolux 56DXQ,1608,Elclx-CCNA-Eldom-Z2A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1515,2025-05-12,Codo 20MM gris Amanco,1758,Amnco-CD20MM-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1516,2025-05-12,Codo Aw 40 H-H 90,1706,Aw-CD40HH90-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1517,2025-05-12,Codo Aw 40 M-H 90,1707,Aw-CD40MH90-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1518,2025-05-12,Codo Aw 45 H-H 110,1658,Aw-CD45HH110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,12,-12,Egreso,,,importado,ACTIVE
+1519,2025-05-12,Codo Aw 45 H-H 40,1676,Aw-CD45HH40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1520,2025-05-12,Codo Aw 45 H-H 50,1652,Aw-CD45HH50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1521,2025-05-12,Codo Aw 45 H-H 63,1669,Aw-CD45HH63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1522,2025-05-12,Codo Aw 45 M-H 110,1686,Aw-CD45MH110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,12,-12,Egreso,,,importado,ACTIVE
+1523,2025-05-12,Codo Aw 45 M-H 40,1684,Aw-CD45MH40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1524,2025-05-12,Codo Aw 45 M-H 50,1679,Aw-CD45MH50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1525,2025-05-12,Codo Aw 45 M-H 63,1691,Aw-CD45MH63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1526,2025-05-12,Codo Aw 90 H-H 110,1690,Aw-CD90HH110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1527,2025-05-12,Codo Aw 90 H-H 40,1675,Aw-CD90HH40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,8,-8,Egreso,,,importado,ACTIVE
+1528,2025-05-12,Codo Aw 90 H-H 50,1654,Aw-CD90HH50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1529,2025-05-12,Codo Aw 90 M-H 110,1660,Aw-CD90MH110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1530,2025-05-12,Codo Aw 90 M-H 40,1666,Aw-CD90MH40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,8,-8,Egreso,,,importado,ACTIVE
+1531,2025-05-12,Codo Aw 90 M-H 50,1648,Aw-CD90MH50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1532,2025-05-12,Codo Aw 90 M-H 63,1671,Aw-CD90MH63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,6,-6,Egreso,,,importado,ACTIVE
+1533,2025-05-12,Codo Aw Hembra Corta H-H 40,1673,Aw-CDHEMBR40HH-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1534,2025-05-12,"Codo Galvanizado de 4"" a 45",1818,"AN-CDGalv4""45-Sant-Z2B",29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1535,2025-05-12,"Codo Galvanizado de 4"" a 90",1817,"AN-CDGalv4""90-Sant-Z2B",29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1536,2025-05-12,"Codo Galvanizado de 4"" a 90",1817,"AN-CDGalv4""90-Sant-Z2B",31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1537,2025-05-12,Colgante c/Acrilico Led 1694MM Tasso,1796,AN-ClganteLed1694MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1538,2025-05-12,Commax Portero con Apertura 1 telefono frente Embutir,1524,Cmm-PAE1-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1539,2025-05-12,Compañía Nativa Fiso de Madera,1582,Cnat-FM--,31,Solares,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1540,2025-05-12,Controlador de Luces,1890,AN-Contrldrluces-Elect-Z1A,31,Solares,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1541,2025-05-12,Daccord Bari-Tapa Mdf Herraje Nylon,1625,Frr-TpBari-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1542,2025-05-12,Daccord T/In Monaco Madera H/Nylon,1789,Pei-AsntoMonaco-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1543,2025-05-12,Denka Cinta Aisladora PVC Vini Tape 10 Mts,1571,Dk-CINA-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,59,59,Ingreso,,,importado,ACTIVE
+1544,2025-05-12,Dicrioca PVC 7W GU10 Luz Calida,1741,AN-DicriocaPVC7Wcal-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,24,24,Ingreso,,,importado,ACTIVE
+1545,2025-05-12,Dixilina Diluyente a Base de Aguarras (xlts) (Abierto),1593,Dx-DIL-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1546,2025-05-12,Downligh Medida Linea (1;20) Cocina y Oficina,1729,AN-DwnLMedida(1;20)-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1547,2025-05-12,Downligh Medida Linea (1;70) Cocina,1728,AN-DwnLMedida(1;70)-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1548,2025-05-12,Downligh Medida Linea (L) Cocina,1795,AN-DwnLMedidaLinea(L)-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1549,2025-05-12,Downligh Perimetral Comedor 3000K (9;00M),1737,AN-DwnLPerimetralCOMEDOR9MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1550,2025-05-12,Eliane 10x20 Metro White Liso x1M2,1847,AN-Eliane10x20-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1551,2025-05-12,Embudo Aw Acanalado C/Rej 20x20,1683,Aw-EMBAcan20x20-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,22,22,Ingreso,,,importado,ACTIVE
+1552,2025-05-12,Embutido C/ placa Led 7W Bt:Alther,1727,AN-EMBTPlcLed7W-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,9,9,Ingreso,,,importado,ACTIVE
+1553,2025-05-12,Empotrable 1 Luzs 40 MM 45L 2W Gyon Plus,1733,AN-Empotrb1L40MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1554,2025-05-12,Empotrable 10 Luces 275MM 30L 20W Gyon Plus,1730,AN-Empotrb10L275MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1555,2025-05-12,Empotrable 2 Luces 63 MM 45L 14W Gyon Plus,1732,AN-Empotrb2L63MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,15,15,Ingreso,,,importado,ACTIVE
+1556,2025-05-12,Empotrable 5Luces 142MM 30L 10W Gyon Plus,1731,AN-Empotrb5L142MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,17,17,Ingreso,,,importado,ACTIVE
+1557,2025-05-12,Epuyen (Te-00450-NG) Cond. Telefonico 4 pares Subt.782,1505,Ep-CT4P-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,200,200,Ingreso,,,importado,ACTIVE
+1558,2025-05-12,Epuyen Fv Monoc. Bidet 189/L2 CR,1870,Fv-BdtFvMonoc-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1559,2025-05-12,Epuyen Fv Monoc.Lavatorio Alto 181.02/L2 CR,1868,Fv-LavAltoFv-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1560,2025-05-12,Erpa Disco Amarillo 115 Segmentado,1655,Erpa-DscoSegmenAmari115-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1561,2025-05-12,Erpa Disco Amarillo 230 Segmentado,1668,Erpa-DscoSegmenAmari230-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1562,2025-05-12,Erpa Disco Corte Abrasivo DSA PCP,1649,Erpa-DscoAbrsv-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1563,2025-05-12,Ferrum Bacha Tori Vasija Chica LK303 B,1561,Frr-BchaTori-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1564,2025-05-12,Filtro Vulcano de 30,1914,Vlcno-Filtro30-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1565,2025-05-12,Fuente 220-12V,1742,AN-F220-12V-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1566,2025-05-12,Gen Rod Caja Exterior Plastica 8 ocas Ecoo,1901,Gr-CTExt8B-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1567,2025-05-12,Gen Rod Caja Exterior Plastica 12 Bocas Ecoo,1900,Gr-CTExt12B-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1568,2025-05-12,Gen Rod Caja Termica 24 Bocas Embutir Plastica Ecoo,1548,Gr-CT24B-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1569,2025-05-12,Gen Rod Caja Termica 36 Bocas Embutir Plastica Ecoo,1634,Gr-CT36B-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1570,2025-05-12,Gen Rod Caja Termica 4 Bocas Embutir Plastica Ecoo,1549,Gr-CT4B-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1571,2025-05-12,Gen Rod Caja Termica 8 Bocas Embutir Plastica Ecoo,1547,Gr-CT8B-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1572,2025-05-12,Gen Rod Caja Termica Exterior 1 Bip Blanca con tapa Fumé,1899,Gr-CTExt1Bip-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1573,2025-05-12,Gen Rod Caja de Conexión Estanca PVC 165x165x80 Blanca,1902,Gr-CEstanca165x165x80-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1574,2025-05-12,Gen Rod Caja de Conexión Estanca PVC 210x210x110 Blanco,1903,Gr-CEstanca210x210x110-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1575,2025-05-12,Gen Rod Caja de Inspeccion Jabalina 15x15 Aislante,1646,Gr-CINSPJAB1515-Elect-Z1A,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1576,2025-05-12,Gen Rod Jabalina C/Toma Cable 3/8x1Mts,1635,Gr-JTC3/8-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1577,2025-05-12,Gen Rod Jabalina C/Toma Cable 3/8x1Mts,1635,Gr-JTC3/8-Elect-Z1A,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1578,2025-05-12,Gen Rod Jabalina con Toma Cable 1/2 x 1;5 Mts,1550,Gr-JTC1/2-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1579,2025-05-12,Gen Rod caño flexible Liviano Blanco 20MM (x25mts) 3/4,1875,Gr-CÑFlexLiv3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,745,745,Ingreso,,,importado,ACTIVE
+1580,2025-05-12,GenRod Caja p/Monoblock con base NH S/Fusible (085203),1579,Gr-CMPNH-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1581,2025-05-12,GenRod Caja para Termica 48 Bocas Embutir Plastica Ecoo,1696,Gr-CT48B-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1582,2025-05-12,Genrod Caja de pase 20x20,1544,Gr-CP20X20-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1583,2025-05-12,Genrod Caja de pase derivacion (unidades) 15x15,1543,Gr-CP15X15-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1584,2025-05-12,Grferia Libby cocina mes 411;04/39,1882,AN-CnaLibby411;04/39-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1585,2025-05-12,Griferia Lavatorio Monocomando Peirano Mora,1859,Pei-LavMora-Sant-Z2B,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1586,2025-05-12,Griferia de Bidet Peirano Adra,1858,Pei-BdtAdra-Sant-Z2B,33,Ribera,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1587,2025-05-12,Griferia de Cocina Monocomanco Peirano Adra,1857,Pei-CnaAdra-Sant-Z2B,33,Ribera,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1588,2025-05-12,Griferia de Ducha Embutir Peirano Adra,1856,Pei-DchaAdra-Sant-Z2B,33,Ribera,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1589,2025-05-12,Griferías de ducha de embutir Peirano Adra (SIN CUADRO),1873,Pei-DchaAdraS/C-Sant-Z2B,33,Ribera,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1590,2025-05-12,Griferías de lavatorio de embutir Peirano Adra (SIN CUADRO),1874,Pei-LavAdraS/C-Sant-Z2B,33,Ribera,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1591,2025-05-12,Horno Longive H1500XF,1607,Lngv-CCNA-Eldom-Z2A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1592,2025-05-12,Huferjo Caño Rigido 3/4 x 3mts,1698,Hfr-CÑPlas3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,60,60,Ingreso,,,importado,ACTIVE
+1593,2025-05-12,Huferjo Curva Pvc 3/4,1699,Hfr-CP3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,40,40,Ingreso,,,importado,ACTIVE
+1594,2025-05-12,ICONIA ROCA MONOC. DUCHA C/T CR,1697,Rc-DchaIconia-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1595,2025-05-12,Iconia Roca Monoc. Bidet CR A54703ACOL,1866,Rc-BdtRocaMonoc-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1596,2025-05-12,Ideal Deposito de Empotrar con Descarga Dual para Ahorro de Agua,1567,Ide-DED-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1597,2025-05-12,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,1618,Ilv-PRCmd122-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1598,2025-05-12,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,1618,Ilv-PRCmd122-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,27,27,Ingreso,,,importado,ACTIVE
+1599,2025-05-12,Inodoro Roca Monaco Largo Bco,1782,Rc-IndlrgMonaco-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1600,2025-05-12,JA C37 CR A304 Doble C/Atrb.70.8X37X15,1784,Jhns-PletaCocinaDobleC37-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1601,2025-05-12,JA E 54 A/304 Simple 54x36x24,1861,AN-JAE54X36X24-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1602,2025-05-12,JA G 50 A/304 Simple 50x40x26,1864,AN-JA50X40X26simple-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1603,2025-05-12,JA Q085A A/304 Doble 85.5x48.2x17.5 C/Orif,1863,AN-JA85.5X48.2X17.5 -Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1604,2025-05-12,JA Z52/18 A/430 Simple 52X32X18,1791,Jhns-PletaCocinaSimpleZ52/18-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,3,-3,Egreso,,,importado,ACTIVE
+1605,2025-05-12,Jeluz Bastidor de Embutir 5X10Cm 3 Modulos,1792,Jz-BEmbtr5X10-3Mod-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,90,90,Ingreso,,,importado,ACTIVE
+1606,2025-05-12,Jeluz Platinum Modulo 2 Tomas Combinado + Tierra 2x10A-250Vca Bl,1912,Jz-MTC2-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,60,60,Ingreso,,,importado,ACTIVE
+1607,2025-05-12,Jeluz Platinum Modulo 2 tomas Normalizado +Tierra 2x10A-250VCA Bl,1525,Jz-MTN2-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,50,50,Ingreso,,,importado,ACTIVE
+1608,2025-05-12,Jeluz Platinum Modulo 2 tomas Normalizado +Tierra 2x10A-250VCA Bl,1525,Jz-MTN2-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,90,90,Ingreso,,,importado,ACTIVE
+1609,2025-05-12,Jeluz Platinum Modulo Combinacion Blanco 220V 10A,1531,Jz-MCB10-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,30,30,Ingreso,,,importado,ACTIVE
+1610,2025-05-12,Jeluz Platinum Modulo Combinacion Blanco 220V 10A,1531,Jz-MCB10-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,44,44,Ingreso,,,importado,ACTIVE
+1611,2025-05-12,Jeluz Platinum Modulo Punto Blanco 220V 10A,1530,Jz-MPB10-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,70,70,Ingreso,,,importado,ACTIVE
+1612,2025-05-12,Jeluz Platinum Modulo Punto Blanco 220V 10A,1530,Jz-MPB10-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,80,80,Ingreso,,,importado,ACTIVE
+1613,2025-05-12,Jeluz Platinum Modulo Toma 10A Blanco Combinado,1532,Jz-MTC10-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,140,140,Ingreso,,,importado,ACTIVE
+1614,2025-05-12,Jeluz Platinum Modulo Toma Blanco 20A 250V,1551,Jz-MTB20-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,40,-40,Egreso,,,importado,ACTIVE
+1615,2025-05-12,Jeluz Platinum Modulo Tv C/Acople pasante pin grueso Blanco,1534,Jz-MTV-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,15,15,Ingreso,,,importado,ACTIVE
+1616,2025-05-12,Jeluz Platinum Tapa Rectangular Blanca,1528,Jz-TRB-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,200,200,Ingreso,,,importado,ACTIVE
+1617,2025-05-12,Jeluz Platinum Tapa Rectangular Blanca,1528,Jz-TRB-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,400,400,Ingreso,,,importado,ACTIVE
+1618,2025-05-12,Jeluz Platinum Tapon Ciego Blanco,1526,Jz-TCB-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1619,2025-05-12,Jeluz Platinum Tapon Ciego Blanco,1526,Jz-TCB-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,90,90,Ingreso,,,importado,ACTIVE
+1620,2025-05-12,Jeluz Tapa 5x5 Mignon Blanco,1535,Jz-T5X5MGB-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,32,32,Ingreso,,,importado,ACTIVE
+1621,2025-05-12,Jeluz Termica 2x10,1645,Jz-T2X10-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1622,2025-05-12,Jeluz Termica 2x16,1636,Jz-T2x16-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1623,2025-05-12,Jeluz Toma de telefonos tipo Americano 4 vias,1533,Jz-TT4V-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1624,2025-05-12,Jeluz Verona Bastidor Oculto Rectangular,1527,Jz-VBOR-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,450,450,Ingreso,,,importado,ACTIVE
+1625,2025-05-12,Jeluz Verona Estanco 2 Mod.Bast y Tapa Transp,1529,Jz-EMBT-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,23,23,Ingreso,,,importado,ACTIVE
+1626,2025-05-12,Johns Acces Escurreplatos (Esac Q40),1770,Jhns-Escurreplatos-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1627,2025-05-12,Johns Pileta Simple (54x36x24) (E 54),1771,Jhns-PletaSimple-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1628,2025-05-12,Johnson Acero Desagues de Bacha,1566,Jhn-BchaDes-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1629,2025-05-12,Kalop Conductor Subterraneo 3x1;5 (x125mts),1500,Kp-CS3X1.5-125-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,14,-14,Egreso,,,importado,ACTIVE
+1630,2025-05-12,Kalop Conductor Subterraneo 3x2;5 (x150mts),1501,Kp-CS3X2.5-150-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1631,2025-05-12,Kalop Conductor Unipolar 10MM Celeste,1825,Kp-CU10-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1632,2025-05-12,Kalop Conductor Unipolar 10MM Rojo,1827,Kp-CU10-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1633,2025-05-12,Kalop Conductor Unipolar 10MM V/Amarillo,1826,Kp-CU10-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1634,2025-05-12,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1635,2025-05-12,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1636,2025-05-12,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1637,2025-05-12,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1638,2025-05-12,Kalop Conductor Unipolar 1;5 MM Marron,1510,Kp-CU1.5-M-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1639,2025-05-12,Kalop Conductor Unipolar 1;5 MM Marron,1510,Kp-CU1.5-M-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1640,2025-05-12,Kalop Conductor Unipolar 1;5MM Blanco,1509,Kp-CU1.5-W-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1641,2025-05-12,Kalop Conductor Unipolar 1;5MM Blanco,1509,Kp-CU1.5-W-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1642,2025-05-12,Kalop Conductor Unipolar 1;5MM Negro,1511,Kp-CU1.5-N-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1643,2025-05-12,Kalop Conductor Unipolar 1;5MM Negro,1511,Kp-CU1.5-N-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1644,2025-05-12,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1645,2025-05-12,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1646,2025-05-12,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1647,2025-05-12,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1648,2025-05-12,Kalop Conductor Unipolar 1;5MM V/Amarillo,1508,Kp-CU1.5-VY-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1649,2025-05-12,Kalop Conductor Unipolar 1;5MM V/Amarillo,1508,Kp-CU1.5-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1650,2025-05-12,Kalop Conductor Unipolar 2;5MM Celeste,1514,Kp-CU2.5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,15,15,Ingreso,,,importado,ACTIVE
+1651,2025-05-12,Kalop Conductor Unipolar 2;5MM Celeste,1514,Kp-CU2.5-C-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1652,2025-05-12,Kalop Conductor Unipolar 2;5MM Celeste,1514,Kp-CU2.5-C-Elect-Z1A,31,Solares,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1653,2025-05-12,Kalop Conductor Unipolar 2;5MM Marron,1513,Kp-CU2.5-M-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1654,2025-05-12,Kalop Conductor Unipolar 2;5MM Marron,1513,Kp-CU2.5-M-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1655,2025-05-12,Kalop Conductor Unipolar 2;5MM Negro,1512,Kp-CU2.5-N-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1656,2025-05-12,Kalop Conductor Unipolar 2;5MM Negro,1512,Kp-CU2.5-N-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1657,2025-05-12,Kalop Conductor Unipolar 2;5MM Negro,1512,Kp-CU2.5-N-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1658,2025-05-12,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1659,2025-05-12,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1660,2025-05-12,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,31,Solares,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1661,2025-05-12,Kalop Conductor Unipolar 2;5MM V/Amarillo,1515,Kp-CU2.5-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,16,16,Ingreso,,,importado,ACTIVE
+1662,2025-05-12,Kalop Conductor Unipolar 2;5MM V/Amarillo,1515,Kp-CU2.5-VY-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1663,2025-05-12,Kalop Conductor Unipolar 2;5MM V/Amarillo,1515,Kp-CU2.5-VY-Elect-Z1A,31,Solares,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1664,2025-05-12,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1665,2025-05-12,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1666,2025-05-12,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1667,2025-05-12,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1668,2025-05-12,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1669,2025-05-12,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1670,2025-05-12,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1671,2025-05-12,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1672,2025-05-12,Kalop Conductor Unipolar 4MM V/Amarillo,1519,Kp-CU4-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1673,2025-05-12,Kalop Conductor Unipolar 4MM V/Amarillo,1519,Kp-CU4-VY-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1674,2025-05-12,Kalop Conductor Unipolar 4MM V/Amarillo,1519,Kp-CU4-VY-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1675,2025-05-12,Kalop Conductor Unipolar 6MM Rojo,1824,Kp-CU6-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1676,2025-05-12,Kalop Conductor Unipolar 6MM V/Amarillo,1840,Kp-CU6-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1677,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,40,40,Ingreso,,,importado,ACTIVE
+1678,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,30,Grandbell,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1679,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,7,-7,Egreso,,,importado,ACTIVE
+1680,2025-05-12,KlK Mezcla Porcelanato x 30 Kg,1619,Klk-MzclaPc-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,69,69,Ingreso,,,importado,ACTIVE
+1681,2025-05-12,Laca al Agua Llana (Abierto) (Lts),1910,AN-LacaalAguaLlana-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1682,2025-05-12,Ladrillo Refractario color cemento,1820,AN-LadrilloRefractarioClorCement-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,34,34,Ingreso,,,importado,ACTIVE
+1683,2025-05-12,Lajas Refrectarias Simil Cemento,1821,AN-LajasRefrectarias-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,63,63,Ingreso,,,importado,ACTIVE
+1684,2025-05-12,LatynFlex Flexible Mallado de Acero Inoxidable macho Giratorio 1/2x35 (xunidad),1584,Lflx-FMASG-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1685,2025-05-12,Latynplast Tubo exten Universal (unidad),1555,LtPl-TEU-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,20,20,Ingreso,,,importado,ACTIVE
+1686,2025-05-12,Loxon Frente,1806,Lox-Frente-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1687,2025-05-12,Lumicom (5050) Cinta Led Interioir 14;4W Calida 5Mts,1570,Lmc-MANL-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,28,28,Ingreso,,,importado,ACTIVE
+1688,2025-05-12,M.H Conductor Unipolar 10;00 V/Amarillo,1504,MH-CU10-Y-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1689,2025-05-12,Manguito Aw 110,1656,Aw-Mang110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,6,-6,Egreso,,,importado,ACTIVE
+1690,2025-05-12,Manguito Aw 40,1662,Aw-Mang40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1691,2025-05-12,Manguito Aw 63,1663,Aw-Mang63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1692,2025-05-12,Maquina Ingletadora,1855,AN-MaqIngletadora-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1693,2025-05-12,Masilla Casablanca (Cerrado)(Kg),1907,CB-MasillaCblanca-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,25,25,Ingreso,,,importado,ACTIVE
+1694,2025-05-12,Masilla Casablanca (Cerrado)(Kg),1907,CB-MasillaCblanca-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,32,32,Ingreso,,,importado,ACTIVE
+1695,2025-05-12,Masilla Finca,1805,AN-Mcilla-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1696,2025-05-12,Matafuego 5 Kg,1576,AN-MF5--,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1697,2025-05-12,MayorLed Fuente Metalica Linea Slim para perfil de Aluminio y tira Led,1585,ML-FMET-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1698,2025-05-12,Mensula para Aire Acondicionado,1815,AN-MensAA-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1699,2025-05-12,Mensula para mesada,1894,AN-MensMes-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1700,2025-05-12,Mensulas Ino Flotante,1497,AN-MIF-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1701,2025-05-12,Mensulas de 60 cm,1822,AN-Mensu60Cm-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1702,2025-05-12,Mesadas Retiradas de Solares,1801,AN-MesadasSolares-Sant-Z2B,31,Solares,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1703,2025-05-12,Microalisado de Cemento,1804,AN-MicroAlisadoCem-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1704,2025-05-12,Miksa Microallisado de Cemento,1807,Miks-MicroAlisadoCem-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1705,2025-05-12,Mindan Conector de Hierro 3/4,1876,Mnd-CH3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2700,2700,Ingreso,,,importado,ACTIVE
+1706,2025-05-12,Netcolor Masilla para placas de Yeso Interioir (xKg),1587,Nc-MPYI-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1707,2025-05-12,O.V CAM Aro Suplementario 10Cm,1689,O.V-CamAroSuplm10-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1708,2025-05-12,O.V Cam Cojinete C/Marco 110 y Tapa,1687,O.V-CamCjnMarcoyTapa110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1709,2025-05-12,Pastina Prestige Perlato x 5 Kg (x bolsa),1620,Prdtg-Pstina-Frrt-Z1B,28,Pool 460/459,No Aplica,No Aplica,33,33,Ingreso,,,importado,ACTIVE
+1710,2025-05-12,Pegalo Sellador Acrilico Blanco (cc),1597,Pgl-SLLDR-Frrt-Z1B,32,FlyDac,No Aplica,No Aplica,280,280,Ingreso,,,importado,ACTIVE
+1711,2025-05-12,Pegalo Silicona Neutra (cc),1598,Pgl-SN-Frrt-Z1B,32,FlyDac,No Aplica,No Aplica,280,280,Ingreso,,,importado,ACTIVE
+1712,2025-05-12,Peirano Black Velvet Ducha Embutir C/Transf C.Cer Negro 80-190 P,1565,Pei-DchaBV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1713,2025-05-12,Peirano Fabric Cocina Monocomando Gold,1761,Pei-CnaFabricGold-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1714,2025-05-12,Peirano Monocomando para pared de Cocina Bilbao 54-130,1558,Pei-CnaBil-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1715,2025-05-12,Peirano Respuesto Set Prolongador Vastago/Campana A1189,1574,Pei-RepSp-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,11,11,Ingreso,,,importado,ACTIVE
+1716,2025-05-12,Peirano Soria-Bide Monocomando C/Transferencia-70-152-Linea Soria,1611,Pei-BdeSor-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1717,2025-05-12,Peirano Soria-Bide Monocomando C/Transferencia-70-152-Linea Soria,1611,Pei-BdeSor-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1718,2025-05-12,Perfiles Bidireccional Exteriores (x2mts cada uno),1604,AN-PBE-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1719,2025-05-12,Perfiles para Mensula mesada,1893,AN-PMM-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1720,2025-05-12,Perfiles para Tira Led Per11 embutir (x2mts cada uno),1602,AN-PTL11-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1721,2025-05-12,Perfiles para Tira Led Per12 para aplicar (x2mts cada uno),1600,AN-PTL32-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1722,2025-05-12,Perfiles para Tira Led Per14 embutir (x2mts cada uno),1601,AN-PTL14-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1723,2025-05-12,Perfiles para Tira Led Per12 para aplicar (x2mts cada uno),1600,AN-PTL32-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1724,2025-05-12,Pileta Acero 304 Simple-Luxor SI 71A-Simples-71x48;2x21,1629,Lux-Pleta71x48-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1725,2025-05-12,Pileta de Patio Bajo Losa Aw,1708,Aw-PletaPatioBajoLosa-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1726,2025-05-12,Pintura Casablanca Exterior Blanco (Abierto) (Kg),1911,CB-PintCasablancaExtBlanco-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,15,15,Ingreso,,,importado,ACTIVE
+1727,2025-05-12,Pintura Casablanca Fibrada Blanco (Abierto) (Lts),1905,CB-PintCasablancaFibradaBlanco-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,18,18,Ingreso,,,importado,ACTIVE
+1728,2025-05-12,Pintura Quantum Cielorraso Blanco Mate (Abierto) (Lts),1908,AN-PinturaClrrsoMatBlan-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1729,2025-05-12,Plafon 5 Luces 140MM C/Opticas 10W 30 Gyon,1736,AN-Plfn5L140MM-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1730,2025-05-12,Poximix Mezcla Adhesiva Blanca (xkg),1599,Pxmx-MAB-Crrln-Z1B,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1731,2025-05-12,Prolongador Vastago (los que traen las griferias) (xjuego),1575,AN-PV-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1732,2025-05-12,Ramal Aw 45 110X110 M-H,1692,Aw-RM45MH110X110-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1733,2025-05-12,Ramal Aw 45 110X110 M-H,1692,Aw-RM45MH110X110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,20,-20,Egreso,,,importado,ACTIVE
+1734,2025-05-12,Ramal Aw 45 110X40 M-H,1661,Aw-RM45MH110X40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1735,2025-05-12,Ramal Aw 45 110X63 M-H,1681,Aw-RM45MH110X63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1736,2025-05-12,Ramal Aw 45 40X40 M-H,1672,Aw-RM45MH40X40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1737,2025-05-12,Ramal Aw 45 63X63 M-H,1688,Aw-RM45MH63X63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1738,2025-05-12,Reel para Spot Blanco de Aplicar (x2mts cada uno),1605,AN-REEL-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1739,2025-05-12,Reflex 1;5 MM Celeste,1837,Rflx-Rflx1;5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1740,2025-05-12,Reflex 1;5MM Blanco,1843,Rflx-Rflx1;5-B-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1741,2025-05-12,Reflex 1;5MM Negro,1838,Rflx-Rflx1;5-N-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1742,2025-05-12,Reflex 1;5MM Rojo,1830,Rflx-Rflx1;5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1743,2025-05-12,Reflex 1;5MM Verde,1834,Rflx-Rflx1;5-V-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1744,2025-05-12,Reflex 2;5MM Celeste,1836,Rflx-Rflx2;5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1745,2025-05-12,Reflex 2;5MM Rojo,1829,Rflx-Rflx2;5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1746,2025-05-12,Reflex 2;5MM Verde,1833,Rflx-Rflx2;5-V-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1747,2025-05-12,Reflex 4MM Celeste,1842,Rflx-Rflx4-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1748,2025-05-12,Reflex 4MM Rojo,1841,Rflx-Rflx4-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1749,2025-05-12,Reflex 4MM Verde,1832,Rflx-Rflx4-V-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1750,2025-05-12,Reflex 6MM Celeste,1835,Rflx-Rflx6-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1751,2025-05-12,Reflex 6MM Rojo,1828,Rflx-Rflx6-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1752,2025-05-12,Reflex 6MM Verde,1831,Rflx-Rflx6-V-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1753,2025-05-12,Restaurador Llana (Abierto) (Kg),1906,AN-Restaurador Llana-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,23,23,Ingreso,,,importado,ACTIVE
+1754,2025-05-12,Revomax Pegamento (X Kg),1810,Rvmx-Pegamento-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,5,5,Ingreso,,,importado,ACTIVE
+1755,2025-05-12,Revomax Yeso (X Kg),1809,Rvmx-Yeso-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1756,2025-05-12,Riel Embutir Magnetico Slim Negro Macroled 2 metros 48V RMS-E-2M,1614,AN-REMSL248-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1757,2025-05-12,Riel Embutir Magnetico Slim Negro Microled 3 metros 48V RMS-E-3M,1613,AN-REMSL348-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1758,2025-05-12,Robinet Bronx Bidet Oxido,1762,Rb-BdtBronx-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1759,2025-05-12,Roca Asiento The Gap Inod C/Amort Bco,1767,Rc-AsntoTGapInod-Sant-Z2B,31,Solares,No Aplica,No Aplica,3,-3,Egreso,,,importado,ACTIVE
+1760,2025-05-12,Roca Bidet The Gap 1AG C/LL Bco,1765,Rc-BdtTGap1AG-Sant-Z2B,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1761,2025-05-12,Roca Bidet The Gap 3AG C/LL Bco,1766,Rc-BdtTGap3AG-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1762,2025-05-12,Roca Depos The Gap 6/3 lts Bco,1764,Rc-DeposTGap6/3lts-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1763,2025-05-12,Roca Inod The Gap Corto Bco,1768,Rc-IndTGapCorto-Sant-Z2B,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1764,2025-05-12,Roca Inod The Gap LGO Sd Bco,1763,Rc-IndTGapLgO-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1765,2025-05-12,Roca Monaco Deposito de Apoyo BCO,1781,Rc-DpsitoApoyoMonaco-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1766,2025-05-12,Roca Placa de Accionamiento Pl1adual Blanca,1769,Rc-PlcAccionamientoBlanc-Sant-Z2B,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1767,2025-05-12,Rollo Isolant,1846,AN-RollIsolant-Crrln-Z3G,33,Ribera,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1768,2025-05-12,"Rollo Manguera Azul 1""(x35Mts)",1850,AN-RMA1-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1769,2025-05-12,Rollo Manguera Azul 3/4,1502,AN-RMA3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1770,2025-05-12,Rollo de Lana de Vidrio,1845,AN-RollanVid-Crrln-Z3G,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1771,2025-05-12,Rollos Corrugados 3/4,1499,AN-RC3/4-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,10,10,Ingreso,,,importado,ACTIVE
+1772,2025-05-12,SD Buje Corto HH 50X40,1712,Amnco-BJCorto50x40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,20,20,Ingreso,,,importado,ACTIVE
+1773,2025-05-12,SD Codo 45º 40MM Amanco,1715,Amnco-CD45º40MM-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,12,12,Ingreso,,,importado,ACTIVE
+1774,2025-05-12,SD Codo 90º 40MM Amanco,1716,Amnco-CD90º40MM-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,87,87,Ingreso,,,importado,ACTIVE
+1775,2025-05-12,SD Manguito R/M 40X11/2,1711,Amnco-Mang40x11/2-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,57,57,Ingreso,,,importado,ACTIVE
+1776,2025-05-12,SD Tubo PVC CL 10 40,1710,Amnco-TUBPvc1040-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,20,20,Ingreso,,,importado,ACTIVE
+1777,2025-05-12,Schneider Peine Bipolar 80A 12 Polos,1639,Shn-PAB8012P-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1778,2025-05-12,Sherwim Williams Quantum (X lt),1808,SW-SWQuantum-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1779,2025-05-12,Sherwim Williams Quantum Cielorraso (X lt),1811,SW-SWQuantumCieloR-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1780,2025-05-12,Sherwin Williams Enduido Plastico Interioir Multiproposito (xlts) (Cerrado),1594,SW-END-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1781,2025-05-12,Sica Disyuntor Diferencial 2x40A,1877,Sc-DD2X40-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1782,2025-05-12,Sica Disyuntor Diferencial 2x63 A,1537,Sc-DD2X63-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1783,2025-05-12,Sica Disyuntor Diferencial 2x63 A,1537,Sc-DD2X63-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1784,2025-05-12,Sica Fusible NH 63 A,1542,Sc-FNH63-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,15,15,Ingreso,,,importado,ACTIVE
+1785,2025-05-12,Sica Latex,1803,Sc-Latex-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1786,2025-05-12,Sica Termica 2x10,1538,Sc-T2X10-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1787,2025-05-12,Sica Termica 2x10,1538,Sc-T2X10-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,13,13,Ingreso,,,importado,ACTIVE
+1788,2025-05-12,Sica Termica 2x15,1539,Sc-T2X15-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,6,6,Ingreso,,,importado,ACTIVE
+1789,2025-05-12,Sica Termica 2x20,1540,Sc-T2X20-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1790,2025-05-12,Sika Monotop-107 Seal Impermeabilizante cementicio de Alta Performance (xkg),1586,Sk-IMPCE-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,8,8,Ingreso,,,importado,ACTIVE
+1791,2025-05-12,Solucion Losung Lubricante 400 CC,1670,Lsng-SolucLubric400-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,7,-7,Egreso,,,importado,ACTIVE
+1792,2025-05-12,Solvex Diluyente para Sinteticos a base de Aguarras (xlts) (Abierto),1596,Svx-DIL-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,0.9,0.9,Ingreso,,,importado,ACTIVE
+1793,2025-05-12,"Sombrero Galvanizado de 4""",1819,"AN-SombreroGalv4""-Sant-Z2B",29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1794,2025-05-12,"Sombrero Galvanizado de 4""",1819,"AN-SombreroGalv4""-Sant-Z2B",31,Solares,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1795,2025-05-12,Syra 20 Roca Monocomando Cocina A5A852ACOL,1862,Rc-CnaSyraMonoc-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1796,2025-05-12,Tachos de Pintura Asfaltica 18 Lts,1704,AN-TACHPINTASFLTX18LT-Pint-Z3G,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1797,2025-05-12,Tacsa Precinto 4;6 MM x 100 U-Negro (bolsas de 100 U),1545,Tcs-P4.6N-Frrt-Z1B,32,FlyDac,No Aplica,No Aplica,18,18,Ingreso,,,importado,ACTIVE
+1798,2025-05-12,Tacsa Taco 6MMx40 Kit Tarugo+Tornillo Bolsita (xbolsa),1640,Tcs-TARTOR6MM-Frrt-Z1B,32,FlyDac,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1799,2025-05-12,Tapa 3;2 110,1653,AN-TP3;2-110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,14,-14,Egreso,,,importado,ACTIVE
+1800,2025-05-12,Tapa 3;2 40,1678,Aw-TP3;2-40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1801,2025-05-12,Tapa 3;2 50,1659,Aw-TP3;2-50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,,importado,ACTIVE
+1802,2025-05-12,Tapa de Gas Regularizada 40x50,1853,AN-TP40X50-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1803,2025-05-12,Tapa de Tablero,1554,AN-TTB-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1804,2025-05-12,Tbcin Cinta Aisladora Vini Tape 10 Mts Negro,1878,Tbc-CINTAAISLAD-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,89,89,Ingreso,,,importado,ACTIVE
+1805,2025-05-12,Tbcin Peines de Alimentacion Bipolar 63A,1583,Tbc-PAB63-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1806,2025-05-12,Tbcin Peines de Alimentacion Bipolar 63A,1583,Tbc-PAB63-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1807,2025-05-12,Tbcin Punta Hueca Negra 1;5MM,1642,Tbc-PtaHuNe1;5-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,100,100,Ingreso,,,importado,ACTIVE
+1808,2025-05-12,Tbcin Terminal de cobre estañado 2;5MM,1641,Tbc-TerCo2;5-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,100,100,Ingreso,,,importado,ACTIVE
+1809,2025-05-12,Tbcin Terminal de cobre estañado 2;5MM,1641,Tbc-TerCo2;5-Elect-Z1A,33,Ribera,No Aplica,No Aplica,100,100,Ingreso,,,importado,ACTIVE
+1810,2025-05-12,Te de 20 Fusion verde Amanco,1743,Amnco-TeFus20-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,-3,Egreso,,,importado,ACTIVE
+1811,2025-05-12,Tecnocom Caño Plastico Rigido Blanco 1 (20u),1644,Tcm-CÑPlas1-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,60,60,Ingreso,,,importado,ACTIVE
+1812,2025-05-12,Tecnocom Caño Plastico Rigido Blanco 3/4 (37u),1643,Tcm-CÑPlas3/4-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,441,441,Ingreso,,,importado,ACTIVE
+1813,2025-05-12,Tecnocom Caño Plastico Rigido Blanco 3/4 (37u),1643,Tcm-CÑPlas3/4-Elect-Z1A,33,Ribera,No Aplica,No Aplica,78,78,Ingreso,,,importado,ACTIVE
+1814,2025-05-12,Temple Fv Monoc.Cocina 411.04/87 cr,1865,Tmpl-CnaTemple411/87-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1815,2025-05-12,Temple Juego Cocina Monoc.C/Rociador-0412/87-CR,1612,Tmpl-CnaTmple-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1816,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,162,162,Ingreso,,,importado,ACTIVE
+1817,2025-05-12,Tend 60x120 C&S Sunny Out x 1;44M2,1617,Tend-PRCout144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,93,93,Ingreso,,,importado,ACTIVE
+1818,2025-05-12,Termotanque Electrico 53 Lts Escorial,1904,AN-TermoElec53Lts-Sant-Z2B,32,FlyDac,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1819,2025-05-12,Tubo Aw Mac-Hem 1 Mt 50,1651,Aw-TUBMacH1;5-50-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1820,2025-05-12,Tubo Aw Mac-Hem 1;00 Mt 110,1664,Aw-TUBMacH1-110-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1821,2025-05-12,Tubo Aw Mac-Hem 1;00 Mt 40,1667,Aw-TUBMacH1-40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,16,-16,Egreso,,,importado,ACTIVE
+1822,2025-05-12,Tubo Aw Mac-Hem 1;00 Mt 63,1665,Aw-TUBMacH1-63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1823,2025-05-12,Tubo Aw Mac-Hem 2;00 Mt 40,1680,Aw-TUBMacH2-40-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,,importado,ACTIVE
+1824,2025-05-12,Tubo Aw Mac-Hem 2;00 Mt 63,1677,Aw-TUBMacH2-63-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,,importado,ACTIVE
+1825,2025-05-12,Unidad Exterioir,1814,AN-Unex-Elect-Z1A,31,Solares,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1826,2025-05-12,Unidireccional Aluminio Negro Wing 1,1735,AN-UniAlNegro-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,22,22,Ingreso,,,importado,ACTIVE
+1827,2025-05-12,Varese-Bidet 1AG-Linea Varese,1623,Frr-Bdt1AGVrs-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1828,2025-05-12,Varese-Deposito de Apoyar-Linea Varese,1622,Frr-DpsitoApoy-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1829,2025-05-12,Varese-Inodoro Largo-Linea Varese,1624,Frr-IndlrgVrs-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1830,2025-05-12,Varese/Veneto-Tapa Asiento Uf C/Cierre Suave-Linea Varese,1630,Frr-TpaVrse-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1831,2025-05-12,Vera-Lavatorio Monocomando Alto-Linea Vera (S-B),1610,Vr-LavVera-Sant-Z2B,29,Don Alberto,No Aplica,No Aplica,1,1,Ingreso,,,importado,ACTIVE
+1832,2025-05-12,Veyka Tarugo y Tornillo 6mm,1701,Veyk-TARTOR6MM-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,100,100,Ingreso,,,importado,ACTIVE
+1833,2025-05-12,Vulcano Electrobomba Autocebante Bae 0;75HP,1776,Vlcno-ElectroBomba0;75HP-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1834,2025-05-12,Vulcano Filtro VC-30 40MM 50 M3 Soplado,1775,Vlcno-Filtro40mm-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,-1,Egreso,,,importado,ACTIVE
+1835,2025-05-12,Vulcano Gabinete P/Eq.Filtrado Vc-30 139995,1800,Vlcno-GabinetePeqFiltrado-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,3,3,Ingreso,,,importado,ACTIVE
+1836,2025-05-12,Vulcano Skimmer Boca Ancha P/Hormg.38 Cm 119003,1799,Vlcno-BcaAnchaPHormg-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,4,4,Ingreso,,,importado,ACTIVE
+1837,2025-05-12,Wd Dokker Vanitory 60 Colg Sint 3Ag Terrarum,1798,AN-Vanitory60Colg3Ag-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,2,Ingreso,,,importado,ACTIVE
+1838,2025-05-12,Weber Col SuperFlex 25Kg,1915,AN-WberSpFlx-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,7,7,Ingreso,,,importado,ACTIVE
+1839,2025-05-12,Awaduct Caño de 40X1M,1754,Aw-CÑ40X1M-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1840,2025-05-12,Awaduct Caño de 50X1M,1753,Aw-CÑ50X1M-Sant-Z2B,29,Don Alberto,29,Don Alberto,4,4,Ingreso,,,Finalizado,ACTIVE
+1841,2025-05-12,Awaduct Cupla de 40MM,1751,Aw-C40MM-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1842,2025-05-12,Caño PVC 1,1794,AN-CÑPVC1-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,21,-21,Egreso,,32,En Proceso,ACTIVE
+1843,2025-05-12,Codo 25MM gris Amanco,1755,Amnco-CD25MM-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1844,2025-05-12,Codo 25X3/4 R-H Fusion verde Amanco,1750,Amnco-CD25X3/4-Sant-Z2B,29,Don Alberto,29,Don Alberto,3,3,Ingreso,,,Finalizado,ACTIVE
+1845,2025-05-12,Codo Aw 45 M-H 40,1684,Aw-CD45MH40-Sant-Z2B,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1846,2025-05-12,Codo 20MM gris Amanco,1758,Amnco-CD20MM-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1847,2025-05-12,Ag.Met Grampa media Omega 3/4 Li.Zincada,1632,Agmt-GrMO3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,50,-50,Egreso,,33,En Proceso,ACTIVE
+1848,2025-05-12,Amanco Caño 20MM Fusion Verde,1757,Amnco-CÑ20MMFsnVerde-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1849,2025-05-12,Cupla de 25 Fusion gris Amanco,1756,Amnco-CFus25-Sant-Z2B,29,Don Alberto,29,Don Alberto,4,4,Ingreso,,,Finalizado,ACTIVE
+1850,2025-05-12,Cupla de 32 Fusion verde Amanco,1748,Amnco-CFus32-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1851,2025-05-12,GenRod Caja para Termica 48 Bocas Embutir Plastica Ecoo,1696,Gr-CT48B-Elect-Z1A,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1852,2025-05-12,Kalop Conductor Unipolar 1;5MM V/Amarillo,1508,Kp-CU1.5-VY-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,-2,Egreso,,34,En Proceso,ACTIVE
+1853,2025-05-12,Manguito Aw 40 con rosca 3/4,1752,Amnco-Mang40cRosca3/4-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1854,2025-05-12,Marcos Colector losa Radiante,1694,AN-MRCColectLR-Elect-Z1A,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1855,2025-05-12,Sassin Peine Bipolar 63A,1700,Sass-PAB6312P-Elect-Z1A,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1856,2025-05-12,Tapa de 25 Fusion Verde Amanco,1746,Amnco-TPFus25-Sant-Z2B,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1857,2025-05-12,Tapa de 32 Fusion Verde Amanco,1747,Amnco-TPFus32-Sant-Z2B,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1858,2025-05-12,Tapas Colector losa Radiante,1693,AN-TPColectLR-Elect-Z1A,29,Don Alberto,29,Don Alberto,2,2,Ingreso,,,Finalizado,ACTIVE
+1859,2025-05-12,Te de 20 Fusion verde Amanco,1743,Amnco-TeFus20-Sant-Z2B,29,Don Alberto,29,Don Alberto,3,3,Ingreso,,,Finalizado,ACTIVE
+1860,2025-05-12,Te de 25X20 Fusion verde Amanco,1744,Amnco-TeFus25X20-Sant-Z2B,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1861,2025-05-12,Te de 25X25 Fusion verde Amanco,1745,Amnco-TeFus25X25-Sant-Z2B,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1862,2025-05-12,Te de 32 Fusion verde Amanco,1749,Amnco-TeFus32-Sant-Z2B,29,Don Alberto,29,Don Alberto,3,3,Ingreso,,,Finalizado,ACTIVE
+1863,2025-05-12,Tecnocom Caño Plastico Rigido Blanco 1 (20u),1644,Tcm-CÑPlas1-Elect-Z1A,29,Don Alberto,29,Don Alberto,21,21,Ingreso,,,Finalizado,ACTIVE
+1864,2025-05-12,Tecnocom Caño Plastico Rigido Blanco 3/4 (37u),1643,Tcm-CÑPlas3/4-Elect-Z1A,29,Don Alberto,29,Don Alberto,23,23,Ingreso,,,Finalizado,ACTIVE
+1865,2025-05-12,Peirano Black Velvet Ducha Embutir C/Transf C.Cer Negro 80-190 P,1565,Pei-DchaBV-Sant-Z2B,28,Pool 460/459,31,Solares,1,-1,Transferencia,,35,En Proceso,ACTIVE
+1866,2025-05-12,Peirano Black Velvet Ducha Embutir C/Transf C.Cer Negro 80-190 P,1565,Pei-DchaBV-Sant-Z2B,28,Pool 460/459,31,Solares,1,-1,Transferencia,,36,En Proceso,ACTIVE
+1867,2025-05-12,Acople Horizontal para Riel de Embutir Magnetico Slim Macroled RMS-CL-E,1615,AN-ALHSM-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,-3,Egreso,,37,En Proceso,ACTIVE
+1868,2025-05-12,Amanco SD Te 40,1780,Amnco-Te40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1869,2025-05-12,Amanco SD Te 40,1780,Amnco-Te40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1870,2025-05-12,Amanco SD Valvula Esferica U/D 40MM,1772,Amnco-ValvEsferica40MM-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,12,12,Ingreso,,,Finalizado,ACTIVE
+1871,2025-05-12,Atrim Desague Lienal 45Cm PP onda mate,1650,Atr-LinalDes45-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1872,2025-05-12,Black Velvet Bidet C.C 70-190,1787,Pei-BdtBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,-1,Egreso,,38,En Proceso,ACTIVE
+1873,2025-05-12,Black Velvet Lavatorio C.C 60-190,1823,Pei-LavBlackV-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1874,2025-05-12,Black Velvet Lavatorio Pared C.C 62-190,1786,Pei-LavBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,3,-3,Egreso,,39,En Proceso,ACTIVE
+1875,2025-05-12,Black Velvet Monocomando Cocina 20-190,1790,Pei-CnaBlackV-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,1,-1,Egreso,,40,En Proceso,ACTIVE
+1876,2025-05-12,"BmB Curva de Plastico para caño de 1""",1536,Bmb-CP1-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,40,-40,Egreso,,41,En Proceso,ACTIVE
+1877,2025-05-12,Boca Aw Acc Horizontal Acome Cerrados 110x63,1657,Aw-BcaHrz110x63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1878,2025-05-12,Boca Aw Ac-Cocina 63x50,1682,Aw-BCCocin63x50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,6,6,Ingreso,,,Finalizado,ACTIVE
+1879,2025-05-12,Codo Aw 45 H-H 110,1658,Aw-CD45HH110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,12,12,Ingreso,,,Finalizado,ACTIVE
+1880,2025-05-12,Codo Aw 45 H-H 40,1676,Aw-CD45HH40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1881,2025-05-12,Codo Aw 45 H-H 50,1652,Aw-CD45HH50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1882,2025-05-12,Codo Aw 45 H-H 63,1669,Aw-CD45HH63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1883,2025-05-12,Codo Aw 45 M-H 40,1684,Aw-CD45MH40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1884,2025-05-12,Codo Aw 45 M-H 50,1679,Aw-CD45MH50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1885,2025-05-12,Codo Aw 45 M-H 63,1691,Aw-CD45MH63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1886,2025-05-12,Codo Aw 90 H-H 110,1690,Aw-CD90HH110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1887,2025-05-12,Codo Aw 90 H-H 40,1675,Aw-CD90HH40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,8,8,Ingreso,,,Finalizado,ACTIVE
+1888,2025-05-12,Codo Aw 90 H-H 50,1654,Aw-CD90HH50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1889,2025-05-12,Codo Aw 90 M-H 110,1660,Aw-CD90MH110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1890,2025-05-12,Codo Aw 90 M-H 40,1666,Aw-CD90MH40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,8,8,Ingreso,,,Finalizado,ACTIVE
+1891,2025-05-12,Codo Aw 90 M-H 50,1648,Aw-CD90MH50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1892,2025-05-12,Codo Aw 90 M-H 63,1671,Aw-CD90MH63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,6,6,Ingreso,,,Finalizado,ACTIVE
+1893,2025-05-12,Codo Aw Hembra Corta H-H 40,1673,Aw-CDHEMBR40HH-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1894,2025-05-12,Commax Portero con Apertura 1 telefono frente Embutir,1524,Cmm-PAE1-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,1,-1,Egreso,,42,En Proceso,ACTIVE
+1895,2025-05-12,Erpa Disco Amarillo 115 Segmentado,1655,Erpa-DscoSegmenAmari115-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1896,2025-05-12,Erpa Disco Amarillo 230 Segmentado,1668,Erpa-DscoSegmenAmari230-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1897,2025-05-12,Erpa Disco Corte Abrasivo DSA PCP,1649,Erpa-DscoAbrsv-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1898,2025-05-12,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,1618,Ilv-PRCmd122-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,5,-5,Egreso,,43,En Proceso,ACTIVE
+1899,2025-05-12,JA Z52/18 A/430 Simple 52X32X18,1791,Jhns-PletaCocinaSimpleZ52/18-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,5,5,Ingreso,,,Finalizado,ACTIVE
+1900,2025-05-12,KlK Mezcla Porcelanato x 30 Kg,1619,Klk-MzclaPc-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,67,-67,Egreso,,44,En Proceso,ACTIVE
+1901,2025-05-12,Lar 11 Tela Esmeril-1 MTS,1779,AN-TelaEsm1MTS-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1902,2025-05-12,Manguito Aw 110,1656,Aw-Mang110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,6,6,Ingreso,,,Finalizado,ACTIVE
+1903,2025-05-12,Manguito Aw 40,1662,Aw-Mang40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1904,2025-05-12,Manguito Aw 63,1663,Aw-Mang63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1905,2025-05-12,O.V CAM Aro Suplementario 10Cm,1689,O.V-CamAroSuplm10-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,8,8,Ingreso,,,Finalizado,ACTIVE
+1906,2025-05-12,Ramal Aw 45 110X110 M-H,1692,Aw-RM45MH110X110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,20,20,Ingreso,,,Finalizado,ACTIVE
+1907,2025-05-12,Ramal Aw 45 110X40 M-H,1661,Aw-RM45MH110X40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1908,2025-05-12,Ramal Aw 45 110X63 M-H,1681,Aw-RM45MH110X63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1909,2025-05-12,Ramal Aw 45 40X40 M-H,1672,Aw-RM45MH40X40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1910,2025-05-12,Ramal Aw 45 63X63 M-H,1688,Aw-RM45MH63X63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1911,2025-05-12,Riel Embutir Magnetico Slim Negro Macroled 2 metros 48V RMS-E-2M,1614,AN-REMSL248-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,-3,Egreso,,45,En Proceso,ACTIVE
+1912,2025-05-12,Riel Embutir Magnetico Slim Negro Microled 3 metros 48V RMS-E-3M,1613,AN-REMSL348-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,3,-3,Egreso,,46,En Proceso,ACTIVE
+1913,2025-05-12,Rollos Corrugados 3/4,1499,AN-RC3/4-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,1,-1,Egreso,,47,En Proceso,ACTIVE
+1914,2025-05-12,SD Codo 90º 40MM Amanco,1716,Amnco-CD90º40MM-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,45,-45,Egreso,,48,En Proceso,ACTIVE
+1915,2025-05-12,Solucion Losung Lubricante 400 CC,1670,Lsng-SolucLubric400-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,12,12,Ingreso,,,Finalizado,ACTIVE
+1916,2025-05-12,Tapa 3;2 110,1653,AN-TP3;2-110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,14,14,Ingreso,,,Finalizado,ACTIVE
+1917,2025-05-12,Tapa 3;2 40,1678,Aw-TP3;2-40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1918,2025-05-12,Tapa 3;2 50,1659,Aw-TP3;2-50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1919,2025-05-12,Teflon Alta Densidad 3/4X40,1778,AN-TeflonAltaDen-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1920,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,45,-45,Egreso,,49,En Proceso,ACTIVE
+1921,2025-05-12,Tubo Aw Mac-Hem 1 Mt 50,1651,Aw-TUBMacH1;5-50-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1922,2025-05-12,Tubo Aw Mac-Hem 1;00 Mt 110,1664,Aw-TUBMacH1-110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1923,2025-05-12,Tubo Aw Mac-Hem 1;00 Mt 40,1667,Aw-TUBMacH1-40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,16,16,Ingreso,,,Finalizado,ACTIVE
+1924,2025-05-12,Tubo Aw Mac-Hem 1;00 Mt 63,1665,Aw-TUBMacH1-63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1925,2025-05-12,Tubo Aw Mac-Hem 2;00 Mt 40,1680,Aw-TUBMacH2-40-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1926,2025-05-12,Tubo Aw Mac-Hem 2;00 Mt 63,1677,Aw-TUBMacH2-63-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+1927,2025-05-12,Vulcano Carga Filtrante (VC-30),1777,Vlcno-CargaFiltrante-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1928,2025-05-12,Vulcano Electrobomba Autocebante Bae 0;75HP,1776,Vlcno-ElectroBomba0;75HP-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,1,1,Ingreso,,,Finalizado,ACTIVE
+1929,2025-05-12,Vulcano Filtro VC-30 40MM 50 M3 Soplado,1775,Vlcno-Filtro40mm-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,1,1,Ingreso,,,Finalizado,ACTIVE
+1930,2025-05-12,Vulcano Gabinete P/Eq.Filtrado Vc-30 139995,1800,Vlcno-GabinetePeqFiltrado-Sant-Z2B,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,50,En Proceso,ACTIVE
+1931,2025-05-12,Vulcano Retorno Orientable C/Aro Desem.50MM,1773,Vlcno-RetOrientable50MM-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,12,12,Ingreso,,,Finalizado,ACTIVE
+1932,2025-05-12,Vulcano Virola C/Aro Desm,1774,Vlcno-VirolaCAro-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,8,8,Ingreso,,,Finalizado,ACTIVE
+1933,2025-05-12,Zocalo EPS Max W Premium (14mm*75mm*2;90m),1844,AN-Zoc14*75*2;90-Crrln-Z3G,28,Pool 460/459,28,Pool 460/459,178,178,Ingreso,,,Finalizado,ACTIVE
+1934,2025-05-12,Rejilla de PVC,1883,AN-RejillaPvc-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,22,22,Ingreso,,,Finalizado,ACTIVE
+1935,2025-05-12,Bocas de Acceso,1884,AN-BcasAcceso-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+1936,2025-05-12,OV Cam,1885,AN-OVCam-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1937,2025-05-12,Camara Septica,1886,AN-CamaraSep-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1938,2025-05-12,Desague Lineal,1887,AN-DesagueLineal-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+1939,2025-05-12,Soluciones en Aerosol,1888,AN-SolcionesAerosol-Pint-Z3G,28,Pool 460/459,28,Pool 460/459,5,5,Ingreso,,,Finalizado,ACTIVE
+1940,2025-05-12,Fv Epuyen Ferrum Juego Monocomando para Bañera y ducha 0106/L2,1556,Fv-DCHA-Sant-Z2B,30,Grandbell,30,Grandbell,2,2,Ingreso,,,Finalizado,ACTIVE
+1941,2025-05-12,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,-1,Egreso,,51,En Proceso,ACTIVE
+1942,2025-05-12,Caño PVC 1,1794,AN-CÑPVC1-Elect-Z1A,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1943,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,31,Solares,31,Solares,14,14,Ingreso,,,Finalizado,ACTIVE
+1944,2025-05-12,Johns Acces Escurreplatos (Esac Q40),1770,Jhns-Escurreplatos-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1945,2025-05-12,Johns Pileta Doble (85;5x48;2x17;5) S/Dosif (Q 085 a),1797,Jhns-PletaDoble-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1946,2025-05-12,Johns Pileta Simple (54x36x24) (E 54),1771,Jhns-PletaSimple-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1947,2025-05-12,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,52,En Proceso,ACTIVE
+1948,2025-05-12,Kalop Conductor Unipolar 1;5 MM Marron,1510,Kp-CU1.5-M-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,53,En Proceso,ACTIVE
+1949,2025-05-12,Kalop Conductor Unipolar 1;5MM Blanco,1509,Kp-CU1.5-W-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,54,En Proceso,ACTIVE
+1950,2025-05-12,Kalop Conductor Unipolar 1;5MM Negro,1511,Kp-CU1.5-N-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,55,En Proceso,ACTIVE
+1951,2025-05-12,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,56,En Proceso,ACTIVE
+1952,2025-05-12,Kalop Conductor Unipolar 2;5MM Celeste,1514,Kp-CU2.5-C-Elect-Z1A,31,Solares,No Aplica,No Aplica,4,-4,Egreso,,57,En Proceso,ACTIVE
+1953,2025-05-12,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,31,Solares,No Aplica,No Aplica,4,-4,Egreso,,58,En Proceso,ACTIVE
+1954,2025-05-12,Kalop Conductor Unipolar 2;5MM V/Amarillo,1515,Kp-CU2.5-VY-Elect-Z1A,31,Solares,No Aplica,No Aplica,7,-7,Egreso,,59,En Proceso,ACTIVE
+1955,2025-05-12,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,60,En Proceso,ACTIVE
+1956,2025-05-12,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,61,En Proceso,ACTIVE
+1957,2025-05-12,Kalop Conductor Unipolar 4MM V/Amarillo,1519,Kp-CU4-VY-Elect-Z1A,31,Solares,No Aplica,No Aplica,2,-2,Egreso,,62,En Proceso,ACTIVE
+1958,2025-05-12,Peirano Fabric Cocina Monocomando Gold,1761,Pei-CnaFabricGold-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1959,2025-05-12,Robinet Bronx Bidet Oxido,1762,Rb-BdtBronx-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1960,2025-05-12,Roca Asiento The Gap Inod C/Amort Bco,1767,Rc-AsntoTGapInod-Sant-Z2B,31,Solares,31,Solares,3,3,Ingreso,,,Finalizado,ACTIVE
+1961,2025-05-12,Roca Bidet The Gap 1AG C/LL Bco,1765,Rc-BdtTGap1AG-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1962,2025-05-12,Roca Bidet The Gap 3AG C/LL Bco,1766,Rc-BdtTGap3AG-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1963,2025-05-12,Roca Depos The Gap 6/3 lts Bco,1764,Rc-DeposTGap6/3lts-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1964,2025-05-12,Roca Inod The Gap Corto Bco,1768,Rc-IndTGapCorto-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1965,2025-05-12,Roca Inod The Gap LGO Sd Bco,1763,Rc-IndTGapLgO-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1966,2025-05-12,Roca Placa de Accionamiento Pl1adual Blanca,1769,Rc-PlcAccionamientoBlanc-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1967,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,31,Solares,31,Solares,6,6,Ingreso,,,Finalizado,ACTIVE
+1968,2025-05-12,JA E 54 A/304 Simple 54x36x24,1861,AN-JAE54X36X24-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1969,2025-05-12,Caño PP 1 1/4 6 mts,1917,AN-CÑPP1/4X6mts-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1970,2025-05-12,Caño de agua 1/2,1918,AN-CÑAgua1/2-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1971,2025-05-12,Caño de Agua 3/4,1919,AN-CÑAgua3/4-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1972,2025-05-12,Caño de agua 1,1920,AN-CÑAgua1-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1973,2025-05-12,Caño Fusiogas 32,1921,AN-CÑFus32-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1974,2025-05-12,Caño Fusiogas 20,1922,AN-CÑFus20-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1975,2025-05-12,Caño Fusiogas 25,1923,AN-CÑFus25-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1976,2025-05-12,Tubo Awaduct 63 3mts,1924,AN-TUBAwadct63-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1977,2025-05-12,Caño PVC de 22,1925,AN-CÑPvc22-Elect-Z1A,31,Solares,31,Solares,53,53,Ingreso,,,Finalizado,ACTIVE
+1978,2025-05-12,Caño Tigre gris de 25 PVC,1926,AN-CÑTigreGris25PVC-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1979,2025-05-12,Caño Climatizacion de Agua 32MM,1927,AN-CÑClimAgua32MM-Sant-Z2B,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1980,2025-05-12,"Tubo Awaduct 110 1,7mts",1928,AN-TUBAwaduct110-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1981,2025-05-12,Tubo Awaduct 40 1mts,1929,AN-TUBAwaduct40-Sant-Z2B,31,Solares,31,Solares,6,6,Ingreso,,,Finalizado,ACTIVE
+1982,2025-05-12,"Tubo Awaduct 110 1,5mts",1930,AN-TUBAwaduct110-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1983,2025-05-12,"Tubo Awaduct 110 1,2mts",1931,AN-TUBAwaduct110-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1984,2025-05-12,Tubo Awaduct 110 1mts,1932,AN-TUBAwaduct110-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1985,2025-05-12,"Tubo Awaduct 63 1,60mts",1933,AN-TUBAwaduct63-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1986,2025-05-12,Tubo Awaduct 50 1mts,1934,AN-TUBAwaduct50-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+1987,2025-05-12,"Ceramicos 1,20x60 (Caja)",1935,"AN-Ceramicos1,20x60-Crrln-Z3G",31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+1988,2025-05-12,"ceramico gres porcelanato 0,19 x 1,50 (caja)",1936,"AN-Ceramico 0,19x1,50-Crrln-Z3G",31,Solares,31,Solares,9.5,9.5,Ingreso,,,Finalizado,ACTIVE
+1989,2025-05-12,"ceramico gres porcelanato 0,19 x 1,50 (piezas)",1937,"AN-PiezaCeramico0,19x1,50-Crrln-Z3G",31,Solares,31,Solares,3,3,Ingreso,,,Finalizado,ACTIVE
+1990,2025-05-12,Ceramico StoneWare 60x120 (Caja),1938,AN-CeramicoStoneWare60x120-Crrln-Z3G,31,Solares,31,Solares,4,4,Ingreso,,,Finalizado,ACTIVE
+1991,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,31,Solares,9,9,Ingreso,,,Finalizado,ACTIVE
+1992,2025-05-12,Tejuelas Negras,1940,AN-Tejnegras-Crrln-Z3G,31,Solares,31,Solares,36,36,Ingreso,,,Finalizado,ACTIVE
+1993,2025-05-12,Argenplas Conductor Unipolar 1;5 MM Celeste,1702,Argnpls-CU1.5-C-Elect-Z1A,29,Don Alberto,29,Don Alberto,1,1,Ingreso,,,Finalizado,ACTIVE
+1994,2025-05-12,9 de Julio Caja H Liviana Rectangular chica Aluminizada Ch 20,1578,9JL-CHR-Elect-Z1A,29,Don Alberto,29,Don Alberto,10,10,Ingreso,,,Finalizado,ACTIVE
+1995,2025-05-12,Anafe Longive A2600XF,1609,Lngv-CCNA-Eldom-Z2A,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+1996,2025-05-12,Casablanca Interioir Mate Base A (xlts) (Abierto),1592,CB-PINT-Pnt-Z3G,32,FlyDac,32,FlyDac,4.5,4.5,Ingreso,,,Finalizado,ACTIVE
+1997,2025-05-12,O.V CAM Aro Suplementario 10Cm,1689,O.V-CamAroSuplm10-Sant-Z2B,32,FlyDac,32,FlyDac,4,4,Ingreso,,,Finalizado,ACTIVE
+1998,2025-05-12,Perfiles para Tira Led Per32 para aplicar (x1/2mts cada uno),1603,AN-PTL32-Elect-Z1A,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+1999,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2000,2025-05-12,Caño Tigre gris de 25 PVC,1926,AN-CÑTigreGris25PVC-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2001,2025-05-12,Tubo Awaduct 110 1mts,1932,AN-TUBAwaduct110-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2002,2025-05-12,Tubo Awaduct 50 1mts,1934,AN-TUBAwaduct50-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2003,2025-05-12,Tubo Awaduct 110 2mts,1944,AN-TUBAwaduct110-Sant-Z2B,32,FlyDac,32,FlyDac,5,5,Ingreso,,,Finalizado,ACTIVE
+2004,2025-05-12,Caño sigas de 32,1945,AN-CAÑ32-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2005,2025-05-12,Caño Sigas de 25,1946,AN-CAÑ25-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2006,2025-05-12,Caño de agua de 20,1947,CAÑAgua20,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+2007,2025-05-12,Caño Sigas de 25,1948,AN-CAÑ25-Sant-Z2B,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+2008,2025-05-12,Caño Sigas de 40 2mts,1949,AN-CAÑ40-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2009,2025-05-12,Caño de agua de 32 1mts,1950,AN-CAÑ32-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2010,2025-05-12,Caño sigas de 25 1mts,1951,AN-CAÑ25-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2011,2025-05-12,Caño Sigas de 40 1mts,1952,AN-CAÑ40-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2012,2025-05-12,Caño de climatizacion de agua 32mm,1953,AN-CAÑClimatizAgua32-Sant-Z2B,32,FlyDac,32,FlyDac,4,4,Ingreso,,,Finalizado,ACTIVE
+2013,2025-05-12,Caño de climatizacion de agua 25mm,1954,AN-CAÑClimatizAgua25-Sant-Z2B,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+2014,2025-05-12,Caño de climatización agua de 20,1955,AN-CAÑClimatizAgua20-Sant-Z2B,32,FlyDac,32,FlyDac,6,6,Ingreso,,,Finalizado,ACTIVE
+2015,2025-05-12,Caño de agua de 32,1956,AN-CAÑ32-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2016,2025-05-12, Perfil de aluminio blanco 25×50 (mts),1957,AN-PerfilAlumnBlanco25x50-Sant-Z2B,32,FlyDac,32,FlyDac,3,3,Ingreso,,,Finalizado,ACTIVE
+2017,2025-05-12,Tubo PVC Amanco 25,1958,AN-TUBPVC25-Sant-Z2B,32,FlyDac,32,FlyDac,3,3,Ingreso,,,Finalizado,ACTIVE
+2018,2025-05-12,Tubo PVC Amanco 40 4mts,1959,AN-TUBPVC40-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2019,2025-05-12,Tubo PVC amanco 25 4mts,1960,AN-TUBPVC25-Sant-Z2B,32,FlyDac,32,FlyDac,1,1,Ingreso,,,Finalizado,ACTIVE
+2020,2025-05-12,Perfil de aluminio 20×20 (mts),1963,AN-PerfilAlumn20X20-Sant-Z2B,32,FlyDac,32,FlyDac,1.5,1.5,Ingreso,,,Finalizado,ACTIVE
+2021,2025-05-12,Tapa O.V Cam,1962,AN-TapOVcam-Sant-Z2B,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+2022,2025-05-12,"BmB Curva de Plastico para caño de 1""",1536,Bmb-CP1-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,-4,Egreso,,,Ajuste,ACTIVE
+2023,2025-05-12,Casablanca Interioir Mate Blanco (xLts) (Abierto),1590,CB-PINT-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,11,11,Ingreso,,,Ajuste,ACTIVE
+2024,2025-05-12,Casablanca Interioir Mate Copa Real (x lts) Bse B (Abierto),1589,CB-PINT-Pnt-Z3G,32,FlyDac,No Aplica,No Aplica,15.5,-15.5,Egreso,,,Ajuste,ACTIVE
+2025,2025-05-12,Genrod Caja de pase 20x20,1544,Gr-CP20X20-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2026,2025-05-12,Horno Longive H1500XF,1607,Lngv-CCNA-Eldom-Z2A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,Ajuste,ACTIVE
+2027,2025-05-12,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,-3,Egreso,,,Ajuste,ACTIVE
+2028,2025-05-12,Kalop Conductor Unipolar 1;5MM Blanco,1509,Kp-CU1.5-W-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,Ajuste,ACTIVE
+2029,2025-05-12,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,Ajuste,ACTIVE
+2030,2025-05-12,Kalop Conductor Unipolar 2;5MM Celeste,1514,Kp-CU2.5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,-3,Egreso,,,Ajuste,ACTIVE
+2031,2025-05-12,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,-3,Egreso,,,Ajuste,ACTIVE
+2032,2025-05-12,Kalop Conductor Unipolar 2;5MM V/Amarillo,1515,Kp-CU2.5-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,3,-3,Egreso,,,Ajuste,ACTIVE
+2033,2025-05-12,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2034,2025-05-12,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2035,2025-05-12,Kalop Conductor Unipolar 4MM V/Amarillo,1519,Kp-CU4-VY-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2036,2025-05-12,Ladrillo Refractario color cemento,1820,AN-LadrilloRefractarioClorCement-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,20,20,Ingreso,,,Ajuste,ACTIVE
+2037,2025-05-12,Lajas Refrectarias Simil Cemento,1821,AN-LajasRefrectarias-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,38,38,Ingreso,,,Ajuste,ACTIVE
+2038,2025-05-12,Perfiles para Tira Led Per12 para aplicar (x2mts cada uno),1600,AN-PTL32-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,Ajuste,ACTIVE
+2039,2025-05-12,Tacsa Precinto 4;6 MM x 100 U-Negro (bolsas de 100 U),1545,Tcs-P4.6N-Frrt-Z1B,32,FlyDac,No Aplica,No Aplica,3,-3,Egreso,,,Ajuste,ACTIVE
+2040,2025-05-12,Reflex 2;5MM Rojo,1829,Rflx-Rflx2;5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,Ajuste,ACTIVE
+2041,2025-05-12,Reflex 1;5MM Rojo,1830,Rflx-Rflx1;5-R-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2042,2025-05-12,Reflex 2;5MM Verde,1833,Rflx-Rflx2;5-V-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2043,2025-05-12,Reflex 1;5MM Verde,1834,Rflx-Rflx1;5-V-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2044,2025-05-12,Reflex 2;5MM Celeste,1836,Rflx-Rflx2;5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,2,-2,Egreso,,,Ajuste,ACTIVE
+2045,2025-05-12,Reflex 1;5 MM Celeste,1837,Rflx-Rflx1;5-C-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2046,2025-05-12,Reflex 1;5MM Negro,1838,Rflx-Rflx1;5-N-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2047,2025-05-12,Reflex 1;5MM Blanco,1843,Rflx-Rflx1;5-B-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,1,-1,Egreso,,,Ajuste,ACTIVE
+2048,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,7,-7,Egreso,,,Ajuste,ACTIVE
+2049,2025-05-12,Tbcin Cinta Aisladora Vini Tape 10 Mts Negro,1878,Tbc-CINTAAISLAD-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,10,-10,Egreso,,,Ajuste,ACTIVE
+2050,2025-05-12,Masilla Casablanca (Cerrado)(Kg),1907,CB-MasillaCblanca-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,25,-25,Egreso,,,Ajuste,ACTIVE
+2051,2025-05-12,Masilla Casablanca (Abierto) (Kg),1909,CB-MasillaCblanca-Pint-Z3G,32,FlyDac,No Aplica,No Aplica,25,25,Ingreso,,,Ajuste,ACTIVE
+2052,2025-05-12,Weber Col SuperFlex 25Kg,1915,AN-WberSpFlx-Crrln-Z3G,32,FlyDac,No Aplica,No Aplica,7,-7,Egreso,,,Ajuste,ACTIVE
+2053,2025-05-12,Genrod Caja de pase derivacion (unidades) 15x15,1543,Gr-CP15X15-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,4,-4,Egreso,,,Ajuste,ACTIVE
+2054,2025-05-12,Candela Led Panel Circular Aplicar 18 W Calida (B20),1964,CAN-LedCircular18WCalida-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,20,20,Ingreso,,,Finalizado,ACTIVE
+2055,2025-05-12,Candela Led Panel Circular Aplicar 18 W Calida (B20),1964,CAN-LedCircular18WCalida-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,20,20,Ingreso,,,Finalizado,ACTIVE
+2056,2025-05-12,Candela Reflector Led 10W Dia,1965,Can-RflectLed10WDia-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,2,2,Ingreso,,,Finalizado,ACTIVE
+2057,2025-05-12,Candela Estaca de Plastico Calida Sw C/Lamp (B/50),1966,Can-EstacaPlastCalida-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,30,30,Ingreso,,,Finalizado,ACTIVE
+2058,2025-05-12,San Justo Bidifusor Cuadrado P/Lamp G9 Negro,1967,SJ-BidifusorCuadradNegro-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,4,4,Ingreso,,,Finalizado,ACTIVE
+2059,2025-05-12,San Justo Spots PolicarbonaTo redondo Movil Blanco C/Zocalo GU10,1968,SJ-SpotsPolicarbBlanco-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,44,44,Ingreso,,,Finalizado,ACTIVE
+2060,2025-05-12,Tbcin Lampara Bipin-Led 75 Leds Calida,1969,Tbc-LamparaBipin75LCal-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,5,5,Ingreso,,,Finalizado,ACTIVE
+2061,2025-05-12,Candela Lampara Dicro 7W Calida,1970,Can-LamparaDicro7WCal-Elect-Z1A,28,Pool 460/459,28,Pool 460/459,44,44,Ingreso,,,Finalizado,ACTIVE
+2062,2025-05-12,Farolas,1971,AN-Farolas-Elect-Z1A,31,Solares,31,Solares,17,17,Ingreso,,,Finalizado,ACTIVE
+2063,2025-05-12,Luces para Farola,1972,AN-LcesFarola-Elect-Z1A,31,Solares,31,Solares,17,17,Ingreso,,,Finalizado,ACTIVE
+2064,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,8,-8,Egreso,,63,En Proceso,ACTIVE
+2065,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,32,FlyDac,28,Pool 460/459,6,-6,Transferencia,,64,En Proceso,ACTIVE
+2066,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,28,Pool 460/459,10,10,Ingreso,,,Finalizado,ACTIVE
+2067,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,28,Pool 460/459,28,Pool 460/459,7,7,Ingreso,,,Finalizado,ACTIVE
+2068,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,10,-10,Egreso,,65,En Proceso,ACTIVE
+2069,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,32,FlyDac,28,Pool 460/459,8,-8,Transferencia,,66,En Proceso,ACTIVE
+2070,2025-05-12,Jeluz Platinum Tapa Rectangular Blanca,1528,Jz-TRB-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,43,-43,Egreso,,67,En Proceso,ACTIVE
+2071,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,32,FlyDac,28,Pool 460/459,12,-12,Transferencia,,68,En Proceso,ACTIVE
+2072,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,26,-26,Egreso,,69,En Proceso,ACTIVE
+2073,2025-05-12,Tend 60x120 C&S Sunny Out x 1;44M2,1617,Tend-PRCout144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,11,-11,Egreso,,70,En Proceso,ACTIVE
+2074,2025-05-12,Pastina Prestige Perlato x 5 Kg (x bolsa),1620,Prdtg-Pstina-Frrt-Z1B,28,Pool 460/459,No Aplica,No Aplica,3,-3,Egreso,,71,En Proceso,ACTIVE
+2075,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,32,FlyDac,28,Pool 460/459,6,-6,Transferencia,,72,En Proceso,ACTIVE
+2076,2025-05-12,Tend 60x120 C&S Sunny Out x 1;44M2,1617,Tend-PRCout144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,5,-5,Egreso,,73,En Proceso,ACTIVE
+2077,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,36,-36,Egreso,,74,En Proceso,ACTIVE
+2078,2025-05-12,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,1618,Ilv-PRCmd122-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,15,-15,Egreso,,75,En Proceso,ACTIVE
+2079,2025-05-12,Ladrillo Refractario color cemento,1820,AN-LadrilloRefractarioClorCement-Crrln-Z3G,32,FlyDac,30,Grandbell,6,-6,Transferencia,,76,En Proceso,ACTIVE
+2080,2025-05-12,Peirano Soria-Bide Monocomando C/Transferencia-70-152-Linea Soria,1611,Pei-BdeSor-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+2081,2025-05-12,GenRod Caja Estanca 10X10,1695,Gr-CESTAN10X10-Elect-Z1A,29,Don Alberto,29,Don Alberto,10,10,Ingreso,,,Finalizado,ACTIVE
+2082,2025-05-12,Ladrillo Refractario color cemento,1820,AN-LadrilloRefractarioClorCement-Crrln-Z3G,32,FlyDac,30,Grandbell,6,-6,Transferencia,,77,En Proceso,ACTIVE
+2083,2025-05-12,JA E 54 A/304 Simple 54x36x24,1861,AN-JAE54X36X24-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,78,En Proceso,ACTIVE
+2084,2025-05-12,JA E 54 A/304 Simple 54x36x24,1861,AN-JAE54X36X24-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,-1,Egreso,,79,En Proceso,ACTIVE
+2085,2025-05-12,JA G 50 A/304 Simple 50x40x26,1864,AN-JA50X40X26simple-Sant-Z2B,30,Grandbell,No Aplica,No Aplica,1,-1,Egreso,,80,En Proceso,ACTIVE
+2086,2025-05-12,Abb Termica Din 2x10,1520,Ab2-T2X10-Elect-Z1A,30,Grandbell,30,Grandbell,10,10,Ingreso,,,Finalizado,ACTIVE
+2087,2025-05-12,Abb Termica Din 2x10,1520,Ab2-T2X10-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,10,-10,Egreso,,81,En Proceso,ACTIVE
+2088,2025-05-12,Denka Cinta Aisladora PVC Vini Tape 10 Mts,1571,Dk-CINA-Elect-Z1A,32,FlyDac,31,Solares,20,-20,Transferencia,,82,En Proceso,ACTIVE
+2089,2025-05-12,Peirano Black Velvet Ducha Embutir C/Transf C.Cer Negro 80-190 P,1565,Pei-DchaBV-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,1,1,Ingreso,,,Finalizado,ACTIVE
+2090,2025-05-12,Codo Aw 45 M-H 110,1686,Aw-CD45MH110-Sant-Z2B,28,Pool 460/459,28,Pool 460/459,12,12,Ingreso,,,Finalizado,ACTIVE
+2091,2025-05-12,Ladrillo Refractario color cemento,1820,AN-LadrilloRefractarioClorCement-Crrln-Z3G,32,FlyDac,32,FlyDac,6,6,Ingreso,,,Finalizado,ACTIVE
+2092,2025-05-12,Rollo Manguera Azul 3/4,1502,AN-RMA3/4-Elect-Z1A,32,FlyDac,31,Solares,2,-2,Transferencia,,83,En Proceso,ACTIVE
+2093,2025-05-12,Denka Cinta Aisladora PVC Vini Tape 10 Mts,1571,Dk-CINA-Elect-Z1A,31,Solares,31,Solares,10,10,Ingreso,,,Finalizado,ACTIVE
+2094,2025-05-12,Sica Disyuntor Diferencial 2x63 A,1537,Sc-DD2X63-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,84,En Proceso,ACTIVE
+2095,2025-05-12,Sica Termica 2x10,1538,Sc-T2X10-Elect-Z1A,28,Pool 460/459,No Aplica,No Aplica,4,-4,Egreso,,85,En Proceso,ACTIVE
+2096,2025-05-12,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,20,-20,Egreso,,86,En Proceso,ACTIVE
+2097,2025-05-12,Perfiles para Tira Led Per14 embutir (x2mts cada uno),1601,AN-PTL14-Elect-Z1A,29,Don Alberto,29,Don Alberto,16,16,Ingreso,,,Finalizado,ACTIVE
+2098,2025-05-12,KlK Imp Flex Anclaje Int x25Kg,1848,AN-ImpFlex-Crrln-Z3G,30,Grandbell,No Aplica,No Aplica,3,-3,Egreso,,87,En Proceso,ACTIVE
+2099,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,31,Solares,31,Solares,3,3,Ingreso,,,Finalizado,ACTIVE
+2100,2025-05-12,Farolas,1971,AN-Farolas-Elect-Z1A,31,Solares,No Aplica,No Aplica,17,-17,Egreso,,88,En Proceso,ACTIVE
+2101,2025-05-12,Luces para Farola,1972,AN-LcesFarola-Elect-Z1A,31,Solares,No Aplica,No Aplica,17,-17,Egreso,,89,En Proceso,ACTIVE
+2102,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,29,Don Alberto,2,-2,Transferencia,,90,Aprobado,ACTIVE
+2103,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,-2,Egreso,,90,Aprobado,ACTIVE
+2104,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,90,Devolucion,ACTIVE
+2105,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,90,Devolucion,ACTIVE
+2106,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,29,Don Alberto,2,-2,Transferencia,,91,Aprobado,ACTIVE
+2107,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,-2,Egreso,,91,Aprobado,ACTIVE
+2108,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,91,Devolucion,ACTIVE
+2109,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,91,Devolucion,ACTIVE
+2110,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,29,Don Alberto,31,Solares,2,-2,Transferencia,,,Traspaso,ACTIVE
+2111,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,Traspaso,ACTIVE
+2112,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,29,Don Alberto,2,-2,Transferencia,,92,Aprobado,ACTIVE
+2113,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,-2,Egreso,,92,Aprobado,ACTIVE
+2114,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,92,Devolucion,ACTIVE
+2115,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,30,Grandbell,No Aplica,No Aplica,2,2,Ingreso,,92,Devolucion,ACTIVE
+2116,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,30,Grandbell,31,Solares,2,-2,Transferencia,,,Traspaso,ACTIVE
+2117,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,,Traspaso,ACTIVE
+2118,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,29,Don Alberto,2,-2,Transferencia,,93,Aprobado,ACTIVE
+2119,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,-2,Egreso,,93,Aprobado,ACTIVE
+2120,2025-05-12,Caño PVC 3/4,1793,AN-CÑPVC3/4-Elect-Z1A,29,Don Alberto,No Aplica,No Aplica,2,2,Ingreso,,93,Devolucion,ACTIVE
+2121,2025-05-12,Baldosas Piu Guarda,1939,AN-BaldosaPiuGuarda-Crrln-Z3G,31,Solares,No Aplica,No Aplica,2,2,Ingreso,,93,Devolucion,ACTIVE
+2122,2025-05-15,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,31,Solares,No Aplica,No Aplica,6,-6,Egreso,,94,En Proceso,ACTIVE
+2123,2025-05-15,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,27,-27,Egreso,,95,En Proceso,ACTIVE
+2124,2025-05-15,Tend 60x120 C&S Sunny In x 1;44 M2,1616,Tend-PRCin144-Crrln-Z3G,32,FlyDac,28,Pool 460/459,1,-1,Transferencia,,96,En Proceso,ACTIVE
+2125,2025-05-15,9 de Julio Caja H Liviana Rectangular chica Aluminizada Ch 20,1578,9JL-CHR-Elect-Z1A,32,FlyDac,No Aplica,No Aplica,20,-20,Egreso,,97,En Proceso,ACTIVE
+2126,2025-05-15,Ilva 45x90 Mediterranea Dig Steel i x 1;22M2,1618,Ilv-PRCmd122-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,7,-7,Egreso,,98,En Proceso,ACTIVE
+2127,2025-05-15,"Caños Galvanizados de 4"" de 1m",1816,"AN-CÑGalv4""x1M-Sant-Z2B",29,Don Alberto,No Aplica,No Aplica,6,-6,Egreso,,99,En Proceso,ACTIVE
+2129,2025-05-16,Kalop Conductor Unipolar 1;5 MM Celeste,1506,Kp-CU1.5-C-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,-2,Egreso,,100,En Proceso,ACTIVE
+2130,2025-05-16,Kalop Conductor Unipolar 1;5MM Rojo,1507,Kp-CU1.5-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,2,-2,Egreso,,101,En Proceso,ACTIVE
+2131,2025-05-16,Kalop Conductor Unipolar 2;5MM Celeste,1514,Kp-CU2.5-C-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,5,-5,Egreso,,102,En Proceso,ACTIVE
+2132,2025-05-16,Kalop Conductor Unipolar 2;5MM Negro,1512,Kp-CU2.5-N-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,-1,Egreso,,103,En Proceso,ACTIVE
+2133,2025-05-16,Kalop Conductor Unipolar 2;5MM Rojo,1516,Kp-CU2.5-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,3,-3,Egreso,,104,En Proceso,ACTIVE
+2134,2025-05-16,Kalop Conductor Unipolar 2;5MM V/Amarillo,1515,Kp-CU2.5-VY-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,6,-6,Egreso,,105,En Proceso,ACTIVE
+2135,2025-05-16,Kalop Conductor Unipolar 4MM Celeste,1518,Kp-CU4-C-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,-1,Egreso,,106,En Proceso,ACTIVE
+2136,2025-05-16,Kalop Conductor Unipolar 4MM Rojo,1517,Kp-CU4-R-Elect-Z1A,30,Grandbell,No Aplica,No Aplica,1,-1,Egreso,,107,En Proceso,ACTIVE
+2137,2025-05-20,Tend 60x120 C&S Sunny Out x 1;44M2,1617,Tend-PRCout144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,22,-22,Egreso,,108,En Proceso,ACTIVE
+2138,2025-05-20,Tend 60x120 C&S Sunny Out x 1;44M2,1617,Tend-PRCout144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,109,En Proceso,ACTIVE
+2139,2025-05-20,Tubo Awaduct 110 2mts,1944,AN-TUBAwaduct110-Sant-Z2B,32,FlyDac,31,Solares,2,-2,Transferencia,,110,En Proceso,ACTIVE
+2140,2025-05-20,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,1573,9JL-CHM5-Elect-Z1A,32,FlyDac,33,Ribera,25,-25,Transferencia,,111,En Proceso,ACTIVE
+2141,2025-05-23,Tubo Awaduct 110 1mts,1932,AN-TUBAwaduct110-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,112,En Proceso,ACTIVE
+-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-

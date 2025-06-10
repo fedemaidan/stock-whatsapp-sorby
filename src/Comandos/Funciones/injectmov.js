@@ -8,8 +8,6 @@ const { addMovimientoToSheetWithClientGeneral } = require('../../Utiles/GoogleSe
 
 async function importMovementsFromCSV(filePath) {
 
-
-
     console.log(filePath)
     let movimientosCreados;
     return new Promise((resolve, reject) => {
