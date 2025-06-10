@@ -34,6 +34,10 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: true,
         },
+        alias: {
+            type: DataTypes.JSONB,
+            allowNull: true,
+        },
     }, {
         sequelize,
         modelName: 'Material',

@@ -26,6 +26,11 @@ module.exports = {
             type: Sequelize.STRING,
             allowNull: true, // Cambiar a false si es requerido
         });
+
+         await queryInterface.addColumn('materiales', 'alias', {
+            type: Sequelize.JSONB,
+            allowNull: true, // Cambiar a false si es requerido
+        });
     },
 
     down: async (queryInterface, Sequelize) => {
@@ -34,5 +39,6 @@ module.exports = {
         await queryInterface.removeColumn('materiales', 'producto');
         await queryInterface.removeColumn('materiales', 'rubro');
         await queryInterface.removeColumn('materiales', 'zona');
+        await queryInterface.removeColumn('materiales', 'alias');
     }
 };

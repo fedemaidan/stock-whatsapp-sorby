@@ -2,9 +2,9 @@
   "development": {
     "username": "sorby_development",
     "password": "sorby_development",
-    "database": "stockremito",
+    "database": "FlydacBD",
     "host": "host.docker.internal",
-    "port": 5432,
+    "port": 5480,
     "dialect": "postgres"
   },
   "test": {
@@ -14,14 +14,12 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres",
-    "dialectOptions": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
-    }
+ "production": {
+    "username": "postgres",
+    "password": "sorby_development",
+    "database": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
   }
 }

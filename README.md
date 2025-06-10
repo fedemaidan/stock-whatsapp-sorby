@@ -26,3 +26,6 @@ docker exec -it Cstockremito bash      (Acceder a la consola del contenedor)
 export GOOGLE_CREDENTIALS=  (Pasar como parametro la credencial de google)
 export GOOGLE_SHEET_ID="1N20iIt-mygURiFPt2GpqARhtt9hWU9aHPaFJQcN4Vgo"  (Pasar como parametro el id de la google sheet a utilizar)
 node ./src/Comandos/InicializarTodo.js     (Ejecutar el comando que crea y sube al sheet Obras, Materiales y Movimientos)
+
+
+node ./src/Comandos/FuncionExtraerMat.js
