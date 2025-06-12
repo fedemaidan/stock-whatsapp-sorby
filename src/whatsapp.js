@@ -73,7 +73,7 @@ const connectToWhatsApp = async () =>
 
 app.use(express.json());
 app.use('/materiales', materiales)
-app.listen(3000, () => console.log('Servidor corriendo en http://localhost:3000/qr'));
+app.listen(3008, () => console.log('Servidor corriendo en http://localhost:3000/qr'));
 
 // Exporta la función para conectar a WhatsApp
 module.exports = connectToWhatsApp;
