@@ -9,6 +9,10 @@ const QRCode = require('qrcode');
 const express = require('express');
 const app = express();
 const SocketSingleton = require('../src/Utiles/SockSingleton');
+const materiales = require('./materiales.routes')
+const cors = require('cors');
+
+app.use(cors());
 
 // Variable para almacenar el último QR generado (si se requiere)
 let latestQR = null;
