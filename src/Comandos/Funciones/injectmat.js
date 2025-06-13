@@ -1,51 +1,75 @@
 const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
-const { Material } = require('../../models'); // Ajusta la ruta según sea necesario
+const { Material } = require('../../models');
 
-async function importMaterialsFromCSV(filePath) {
+async function importMaterialsFromCSV() {
     return new Promise((resolve, reject) => {
         const materials = [];
+        const logPath = path.join(__dirname, 'log_insertados_materiales.txt');
 
-        if (!fs.existsSync(filePath)) {
-            console.error('❌ El archivo no existe en la ruta proporcionada:', filePath);
-            return reject(new Error('Archivo CSV no encontrado'));
-        }
+        fs.writeFileSync(logPath, '', 'utf8');
 
         console.log('📂 Leyendo archivo CSV...');
 
-        fs.createReadStream(filePath)
+        fs.createReadStream('./materiales.csv')
             .pipe(csv({
                 separator: ',',
                 mapHeaders: ({ header }) => header.trim()
             }))
             .on('data', (row) => {
-                console.log('🔍 Fila leída:', row);
+                if ('id' in row) {
+                    console.warn(`⚠️ CSV contiene un campo 'id': ${row.id} (será ignorado)`);
+                    delete row.id;
+                }
 
-                materials.push({
-                    nombre: row.Descripcion,
-                    SKU: row['CODIGO SKU'],
-                    marca: row.Marca,
-                    producto: row.Producto,
-                    rubro: row.Rubro,
-                    zona: row.Zona,
-                });
+                const nombre = row.Descripcion?.trim();
+
+                if (!nombre) {
+                    console.warn('⚠️ Fila ignorada: Descripción vacía o inválida.');
+                    return;
+                }
+
+                const material = {
+                    nombre,
+                    SKU: row['CODIGO SKU']?.trim(),
+                    marca: row.Marca?.trim(),
+                    producto: row.Producto?.trim(),
+                    rubro: row.Rubro?.trim(),
+                    zona: row.Zona?.trim(),
+                };
+
+                materials.push(material);
             })
             .on('end', async () => {
                 try {
-                    console.log('📊 Datos procesados:', materials);
+                    console.log(`📦 Procesando ${materials.length} materiales...`);
 
-                    if (materials.length === 0) {
-                        console.warn('⚠️ No se encontraron registros válidos en el CSV.');
-                        return resolve();
+                    for (const material of materials) {
+                        try {
+                            const yaExiste = await Material.findOne({
+                                where: { nombre: material.nombre }
+                            });
+
+                            if (yaExiste) {
+                                console.log(`ℹ️ Ya existe: "${material.nombre}"`);
+                                continue;
+                            }
+
+                            await Material.create(material);
+
+                            const logMsg = `✔️ Insertado: "${material.nombre}" (SKU: ${material.SKU || 'sin SKU'})\n`;
+                            console.log(logMsg.trim());
+                            fs.appendFileSync(logPath, logMsg);
+                        } catch (innerErr) {
+                            console.error(`❌ Error con material "${material.nombre}":`, innerErr.message);
+                        }
                     }
 
-                    console.log('🚀 Insertando datos en la base de datos...');
-                    await Material.bulkCreate(materials);
-                    console.log('✅ Materiales importados correctamente');
+                    console.log(`✅ Materiales importados correctamente. Log guardado en ${logPath}`);
                     resolve();
                 } catch (error) {
-                    console.error('❌ Error al importar materiales:', error);
+                    console.error('❌ Error general al importar materiales:', error);
                     reject(error);
                 }
             })
@@ -56,4 +80,6 @@ async function importMaterialsFromCSV(filePath) {
     });
 }
 
-module.exports = importMaterialsFromCSV;
+importMaterialsFromCSV()
+    .then(() => console.log('🏁 Proceso finalizado.'))
+    .catch((err) => console.error('🔥 Falló el proceso:', err));

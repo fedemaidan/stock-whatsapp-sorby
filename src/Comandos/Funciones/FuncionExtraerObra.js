@@ -5,19 +5,6 @@ const path = require('path');
 //const initMaterialModel = require('./models/material'); // Asegurate de tener bien el path
 const { Obra } = require('../../models');
 
-/*
-const sequelize = new Sequelize('MGDB', 'sorby_development', 'sorby_development', {
-  host: 'localhost',
-  dialect: 'postgres',
-  port: 5440, // o tu puerto real
-  logging: false,
-});
-*/
-
-//obraOrigen.id, obraOrigen
-
-//const Material = initMaterialModel(sequelize);
-
 (async () => {
   try {
     //await sequelize.authenticate();
