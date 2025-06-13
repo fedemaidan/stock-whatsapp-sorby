@@ -714,5 +714,19 @@ movimiento.id,fechaSolo,material.nombre,material id,material.SKU,obraOrigen.id,o
 2138,2025-05-20,Tend 60x120 C&S Sunny Out x 1;44M2,1617,Tend-PRCout144-Crrln-Z3G,28,Pool 460/459,No Aplica,No Aplica,2,-2,Egreso,,109,En Proceso,ACTIVE
 2139,2025-05-20,Tubo Awaduct 110 2mts,1944,AN-TUBAwaduct110-Sant-Z2B,32,FlyDac,31,Solares,2,-2,Transferencia,,110,En Proceso,ACTIVE
 2140,2025-05-20,9 de Julio (100021) Caja H Liviana Mignon 5x5 Aluminizada Ch20,1573,9JL-CHM5-Elect-Z1A,32,FlyDac,33,Ribera,25,-25,Transferencia,,111,En Proceso,ACTIVE
-2141,2025-05-23,Tubo Awaduct 110 1mts,1932,AN-TUBAwaduct110-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,112,En Proceso,ACTIVE
--,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+2141,2025-05-23,Tubo Awaduct 110 1mts,1932,AN-TUBAwaduct110-Sant-Z2B,31,Solares,No Aplica,No Aplica,1,-1,Egreso,,112,En Proceso,ACTIVE,
+1,2025-06-12,Anafe Longvie A6600XF,1891,Lngv-CCNA6600-Eldom-Z2A,29,Don Alberto,No Aplica,No Aplica,1,-1,Egreso,,1,En Proceso,ACTIVE
+2,2025-06-12,Perfil Doble T 20 Cm de Altura,1,AN-PerDobleT-Sant-Z2B,31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+3,2025-06-12,Puerta de Chapa Galvanizada,2,AN-PtaChapaGalv-Crrln-Z3G,31,Solares,31,Solares,2,2,Ingreso,,,Finalizado,ACTIVE
+4,2025-06-12,"Caños Galvanizados de 4"" de 1m",1816,"AN-CÑGalv4""x1M-Sant-Z2B",31,Solares,31,Solares,5,5,Ingreso,,,Finalizado,ACTIVE
+5,2025-06-12,"Sombrero Galvanizado de 4""",1819,"AN-SombreroGalv4""-Sant-Z2B",31,Solares,31,Solares,1,1,Ingreso,,,Finalizado,ACTIVE
+6,2025-06-12,Reflex 1;5MM Rojo,1830,Rflx-Rflx1;5-R-Elect-Z1A,32,FlyDac,33,Ribera,4,-4,Transferencia,,2,En Proceso,ACTIVE
+7,2025-06-12,Reflex 1;5 MM Celeste,1837,Rflx-Rflx1;5-C-Elect-Z1A,32,FlyDac,33,Ribera,3,-3,Transferencia,,2,En Proceso,ACTIVE
+8,2025-06-12,Reflex 1;5MM Verde,1834,Rflx-Rflx1;5-V-Elect-Z1A,32,FlyDac,33,Ribera,1,-1,Transferencia,,2,En Proceso,ACTIVE
+9,2025-06-12,Kalop Conductor Unipolar 1;5MM Negro,1511,Kp-CU1.5-N-Elect-Z1A,32,FlyDac,33,Ribera,4,-4,Transferencia,,2,En Proceso,ACTIVE
+10,2025-06-12,Reflex 2;5MM Celeste,1836,Rflx-Rflx2;5-C-Elect-Z1A,32,FlyDac,33,Ribera,1,-1,Transferencia,,2,En Proceso,ACTIVE
+11,2025-06-12,Reflex 4MM Rojo,1841,Rflx-Rflx4-R-Elect-Z1A,32,FlyDac,33,Ribera,1,-1,Transferencia,,2,En Proceso,ACTIVE
+12,2025-06-12,Reflex 1;5 MM Celeste,1837,Rflx-Rflx1;5-C-Elect-Z1A,32,FlyDac,33,Ribera,2,-2,Transferencia,,3,En Proceso,ACTIVE
+13,2025-06-12,Reflex 1;5 MM Celeste,1837,Rflx-Rflx1;5-C-Elect-Z1A,32,FlyDac,32,FlyDac,2,2,Ingreso,,,Finalizado,ACTIVE
+14,2025-06-12,Reflex 1;5 MM Celeste,1837,Rflx-Rflx1;5-C-Elect-Z1A,32,FlyDac,33,Ribera,3,-3,Transferencia,,4,En Proceso,ACTIVE
+15,2025-06-12,Reflex 1;5MM Verde,1834,Rflx-Rflx1;5-V-Elect-Z1A,32,FlyDac,33,Ribera,1,-1,Transferencia,,5,En Proceso,ACTIVE
