@@ -11,7 +11,7 @@ class SockSingleton {
     }
     async setSock(sockInstance) {
         this.sock = sockInstance;
-        autoReporter.startAutoReport(this.sock,"blend","http://localhost:4000/api/reportar");
+        autoReporter.startAutoReport(this.sock,"sorby_stock","http://localhost:4000/api/reportar");
         this.sock.ev.on('messages.upsert', async (message) => {
             
             if (message.type === 'notify') {
