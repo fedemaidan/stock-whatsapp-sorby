@@ -18,26 +18,3 @@ module.exports = async function CrearTransferencia(userId, data, sock) {
 
     FlowManager.setFlow(userId, "TRANSFERENCIAMATERIALES","ConfirmarOModificarTransferencia",data)
 }
-
-/* 
-accion: "Tranfererir Materiales",
-        info: "Aqui se debe transferir materiales de una obra hacia otra",
-        data:
-        {
-            obra_id_origen: "El id de la obra de origen a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
-            obra_name_origen: "Aqui va la obra de origen a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
-            obra_id_destino: "El id de la obra de destino a la que se refiere en caso de no referise a una obra dentro del mensaje pon 0",
-            obra_name_destino: "Aqui va la obra de destino a la que iran asignado los materiales en caso de no especificarla en el mensaje solo pon GENERAL",
-            items:
-                [
-                    {
-                        producto_id: "id del producto al que me estoy refiriendo",
-                        producto_name: "nombre del producto al que me estoy refiriendo",
-                        cantidad: "Cantidad de este material indicado",
-                        SKU: "El codigo interno del deposito",
-                        zona: "ubicacion, en que zona del deposito se encuentra el material."
-                    },
-                ]
-        }
-    },
- */

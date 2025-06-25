@@ -1,6 +1,6 @@
 const GetMessageType = require("../../src/Utiles/GetType");
 const messageResponder = require("../../src/Utiles/messageResponder");
-
+const autoReporter = require("baileys-status-reporter");
 class SockSingleton {
     constructor() {
         if (!SockSingleton.instance) {
@@ -11,7 +11,7 @@ class SockSingleton {
     }
     async setSock(sockInstance) {
         this.sock = sockInstance;
-
+        autoReporter.startAutoReport(this.sock,"blend","http://localhost:4000/api/reportar");
         this.sock.ev.on('messages.upsert', async (message) => {
             
             if (message.type === 'notify') {

@@ -29,3 +29,32 @@ node ./src/Comandos/InicializarTodo.js     (Ejecutar el comando que crea y sube 
 
 
 node ./src/Comandos/FuncionExtraerMat.js
+
+
+
+
+---- MIGRAR A OTRA BD
+node FuncionExtraerMat.js
+node FuncionExtraerObra.js
+node FuncionExtraerPed.js
+node FuncionExtraerMov.js
+
+node injectmat.js
+
+
+
+REVISAR REPETIDOS:
+SELECT nombre, COUNT(*) AS cantidad
+FROM materiales
+GROUP BY nombre
+HAVING COUNT(*) > 1;
+
+
+
+---- MIGRAR A OTRA BD en PROD
+NODE_ENV=production node FuncionExtraerMat.js
+NODE_ENV=production node FuncionExtraerObra.js
+NODE_ENV=production node FuncionExtraerPed.js
+NODE_ENV=production node FuncionExtraerMov.js
+
+NODE_ENV=production node injectmat.js
