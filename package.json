@@ -22,7 +22,7 @@
   "homepage": "https://github.com/fedemaidan/stock-whatsapp-sorby#readme",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.13",
-    "baileys-status-reporter": "^1.0.8",
+    "baileys-status-reporter": "^2.1.3",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "csv-parser": "^3.2.0",
